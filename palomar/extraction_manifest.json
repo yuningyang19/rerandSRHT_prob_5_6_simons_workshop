@@ -1,0 +1,39 @@
+{
+  "source_commit": "93acaadec26c715917c1cf54d22781820a8a20c6",
+  "paper_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "definitions": {
+    "WalshIndex": "6544dc2ccea4aaa95dcdd9c1f13c7a423fc6aa3ab17a7e28c0a8dfbb6a1a2cd5",
+    "SignLayer": "f5522ae2efb66096ea78e919662364f4b880182f375c5995935a7e3effb8d2d8",
+    "walshCard": "3127760b5d25813c16b3dd733ec410d0254fb89b6dd92adbad57c1e381ddeb7d",
+    "walshDot": "dffce8d4c116b97ee464bbc673ff137caf7c3ea4636264a63454f8f505767e81",
+    "walshCharacter": "b50c8e72a348ec7ef06b49444d5338fb78f5bd9714b298c6fb2e1fad7a9ef1c1",
+    "normalizedWalsh": "1e9b6f4138fc17041c8b654f672bc97f9dcb83e00f51ddfc75ba25cc5c316a21",
+    "signValue": "2c58182e93c9c7a66128161cc860a0b7be1566486933f5f9d165fa279546589b",
+    "signDiagonal": "476235884eaa955682ab78c4a21b7f37744452efb5c1585fc63e8f5724cd2d50",
+    "FixedSubset": "eb71b3b530415ddbdfab385ffa4ea2edde3a4b5f63f3d9a9783f232e1d2620b0",
+    "sampleMatrix": "a73660f3b27392801bcb69ce3857436f62b3c101b52b7c18689f080ee92da571",
+    "rerandomizedSRHT": "68f3213c0c196f83e4318817d5988873bbebd9154f8c1d65473aa937c79fb912",
+    "OrthonormalFrame": "0e17bb903ca0b358eb10aad8284648330dfc08aa9862a0a48451340f3fd55e47",
+    "compressedGram": "0f354ebc80775bc816c570bbb22599ae14cf66f6aeffa8f8c933af0b76b12eb7",
+    "euclideanNorm": "c43d4ba69b8a456b268c0f7b8c0657a78ffb1239042ed3b2a59ecd1c97574945",
+    "euclideanOperatorNorm": "35bd3e1cc9e756993d827940e296c28a075f69ce67a415361e867a7807414564",
+    "uniformProbability": "5e793edf2fc0f4a2b98e42dc9bc93c5f89e5a93bd7aeb1f0be0509a5bc17b3a8",
+    "frameFailureProbability": "5f17ca8741a284dcb703a01424641fca80cf4ff0680a0af6c0d2e3ffe74f4ceb",
+    "spectralFailureSup": "265ad187d77b680b255cbf6029d6cbfb45c21ff1750886a80b0a3638070e0399",
+    "K\u2082": "f7ad06e0e893308bee6682b63b78cd29745a21bd7480edf6048166cc12ba91a5",
+    "K\u2080": "1cf9e3c3dc540cd2ed3e6140756ec08dca47c71c13f9e6c59b12c0e57231507f",
+    "R\u2080": "5b71a5c84a2310323eae70a821d2c612a3fa980aeb82068f312001b8e0f03a69",
+    "explicitUniversalConstant": "2ad8a75f05591921d079efab40bce9b812849ef17b1807a0e1ecd160558be991"
+  },
+  "theorem_signatures": {
+    "Problem56.main_universal_ose": "15af223af16150b334e80f1ca69fc6b5280cdeb464fe70528ad9f48ed7c12fc3",
+    "Problem56.PaperV6.fixed_frame_squared_norm_success": "9e89f0f49f6ce01e5cdfa9261510ea5a3dbea7d97e72f8d44d247bc762eccc3c"
+  },
+  "SquaredNormEdges_sha256": "7cebfa5887edfd8c7420e259dcfb87874d262fef334134d519b55505db591416",
+  "challenge_sha256": "695eac8c5205db715f5ac66da0b87772e1ec58c4d42f36a413dd710bf1d103d0",
+  "auxiliary_declarations": [
+    "Problem56.PaperV6.FixedFrameOSE._proof_1"
+  ],
+  "FixedFrameOSE_sha256": "f01aece87cb474d35d56d60bf07e1425b6c2fbe75abc7d286a33cf8690ff8161",
+  "auxiliary_generation": "Reset only the non-persisted Lean.Meta.auxLemmasExt cache at the original module boundary; copy FixedFrameOSE to regenerate its source-identical auxiliary"
+}

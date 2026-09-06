@@ -1,0 +1,31 @@
+{
+  "captured_utc": "2026-09-06T17:46:25.165240+00:00",
+  "receipt_kind": "Local tool-executed command outputs; not an authenticated external attestation",
+  "checks": {
+    "challenge": {
+      "log": "palomar/local_evidence/challenge.log",
+      "sha256": "d94c28c6be1b25e4f232d38b263353396b433b71f1bed079e7e9edb45949ee41",
+      "observed_returncode": 0
+    },
+    "solution": {
+      "log": "palomar/local_evidence/solution.log",
+      "sha256": "6ab5b4a03358084fb9b0c9302a17ce2d5bb4a277d9a723ae9e884a4d259f350b",
+      "observed_returncode": 0
+    },
+    "axioms": {
+      "log": "palomar/local_evidence/axioms.log",
+      "sha256": "aa5ea98722cc1bcd7c628168bbad0948b7883a260e4142f9ad35f274fa9f48f9",
+      "observed_returncode": 0
+    },
+    "closure": {
+      "log": "palomar/local_evidence/closure.log",
+      "sha256": "873dda294f9eafaaaa5030f42bdf6d599a48a16b1a99204f414407f39804c672",
+      "observed_returncode": 0
+    }
+  },
+  "compiled_dependency_cache_reused": true,
+  "certified_proof_byte_identity": "601/601 PASS",
+  "declared_closure_count": 11960,
+  "proof_dependency_count": 61548,
+  "official_comparator_or_nanoda_claimed": false
+}

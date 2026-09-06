@@ -55,3 +55,17 @@ The combined audit covers 359 targets and 134 primitive definitions. Audited the
 Mathematical certification does not establish novelty, priority, citation accuracy, author comprehension, or editorial acceptance. The retained [workflow metadata limitations](research/problem_5_6/formalization/v6_certification/workflow_limitations.md) are separate from the mathematical checks. See [source binding](audit/SOURCE_BINDING.md) for exact versions and the distinction between inherited cold verification and this package's reproduction checks.
 
 The exported package also passed a fresh local proof build, the current scope gate, and kernel replay. See the [public-package verification record](audit/STATUS.md) for actual execution evidence and dependency-cache reuse.
+
+## Palomar-facing surface
+
+The root [Challenge](Challenge.lean) and [Solution](Solution.lean) expose two
+certified declarations: the main spectral OSE theorem and its fixed-frame
+squared-norm guarantee. The other v6 results remain in the complete supporting
+proof development. The entry metadata is [formalization.yaml](formalization.yaml),
+and [comparator.json](comparator.json) fixes the exact compared declarations.
+The repository snapshot uses the user-confirmed Apache-2.0 [licence](LICENSE).
+
+Run `python3 scripts/verify_palomar.py --static-only` for the source and metadata
+layout checks. See the [Palomar guide](palomar/README.md) for Lean elaboration,
+declaration closure, the Linux Comparator/NanoDa workflow, and the distinction
+between package verification and actual service submission or registration.

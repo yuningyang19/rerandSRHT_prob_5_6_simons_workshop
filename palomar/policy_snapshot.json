@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-09-06T17:31:34.850004+00:00",
+  "repositories": {
+    "PalomarRegistry/PalomarPolicy": "42cc43f70b1b019d20d4b64e9016396e666a6bc7",
+    "PalomarRegistry/PalomarSubmission": "c605f23466450a52999fcfb3c6d68ed8febc56bf",
+    "mathlib-initiative/formalization.yaml": "99c678e569c7c4c0772db297c5ddd5e4c9b6322e",
+    "leanprover/comparator": "575674928e239f5bc452aab72d1dd7b0f1326494"
+  },
+  "files": {
+    "specification.md": "2d63f09a1a3e38985791a9aba906e16d40fa4330dcbf86b75b76f9251941aa68",
+    "comparator-README.md": "cfdf0ff608755d56f3bad62acc86273bc0c11591335678344bf53cb733b61772",
+    "formalization-v0.4.schema.json": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+    "submission-llms.txt": "1931e560d673eb3fb308943e60e84bcb9c91a215091a96b8606b58bd745c2ec1",
+    "verifier-workflow.yml": "250725485e0f70188334a891a9b3b8ae96d9b59d97fbfd04a48996c7a0a38fc1",
+    "formalization-profile.json": "d695b838bbab69236f6e43afda6bd4d719a91099412351f89c3c2cfeb26d5131",
+    "toolchains.json": "b9b749bd4c0c3fb485cbf53870d8fb791ae0e3e071db611b9ea6228d1c051bad",
+    "CONTRIBUTING.md": "fb32381ec5d0bb2be6fab794819e97d02a5c9349ca65b5c94a22ebfe4f0fc680"
+  },
+  "canonical_bundle_sha256": "5b5918d239ec7441fb858bffaf1101c3b2333aa1dafd6674d98bd96de50f84ca",
+  "source_urls": {
+    "submission_protocol": "https://submit.palomar-registry.org/llms.txt",
+    "policy": "https://github.com/PalomarRegistry/PalomarPolicy/blob/42cc43f70b1b019d20d4b64e9016396e666a6bc7/CONTRIBUTING.md",
+    "specification": "https://github.com/PalomarRegistry/PalomarPolicy/blob/42cc43f70b1b019d20d4b64e9016396e666a6bc7/docs/specification.md",
+    "verifier": "https://github.com/PalomarRegistry/PalomarSubmission/tree/c605f23466450a52999fcfb3c6d68ed8febc56bf",
+    "schema": "https://github.com/mathlib-initiative/formalization.yaml/tree/99c678e569c7c4c0772db297c5ddd5e4c9b6322e",
+    "comparator": "https://github.com/leanprover/comparator/tree/575674928e239f5bc452aab72d1dd7b0f1326494"
+  }
+}

@@ -1,0 +1,109 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/v0.4.schema.json
+version: "v0.4"
+project:
+  name: "Subspace embeddings with the rerandomized SRHT"
+  description: >-
+    A Lean 4 formalization of a rerandomized SRHT subspace embedding theorem.
+    For every ambient Walsh dimension n = 2^m, rank 1 <= r <= n, and
+    0 < epsilon < 1, one deterministic width k <= min(n, ceil(C r / epsilon^2))
+    can be chosen independently of the orthonormal frame. For each fixed frame,
+    the transform with two independent uniform sign layers and an independent
+    uniform k-subset has spectral failure probability at most 1/100, and
+    preserves all squared norms in that subspace within 1 +/- epsilon with
+    probability at least 99/100. C is an explicit universal constant, with no
+    sharp numerical value claimed. The Comparator selects the spectral theorem
+    and its fixed-frame squared-norm consequence. The full repository retains
+    the 12 named v6 results and their supporting proofs and correspondence maps.
+  authors: ["Yuning Yang"]
+  responsible_maintainers: ["Yuning Yang"]
+  license: "Apache-2.0"
+
+sources:
+  - title: "Subspace embeddings with the rerandomized SRHT"
+    authors: ["Yuning Yang"]
+    id: "https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/blob/d0276b4b5bb85e25a43e6f677356dd625a19c1d6/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/snapshots/research/problem_5_6/paper/v6/main.tex"
+    type: "paper"
+    location: "Frozen v6 paper f279b6fac180125dce81a82d824da971bb7ae715, Theorem 1 and its squared-norm interpretation"
+    relationship: "formalizes"
+    note: >-
+      The link is a public byte-identical snapshot of the frozen paper. The
+      source TeX retains its original empty author field; Yuning Yang supplied
+      the author name for this metadata. The independent current three-way
+      correspondence map and exact source hashes are included in the repository.
+  - title: "Linear Systems and Eigenvalue Problems: Open Questions from a Simons Workshop"
+    id: "https://arxiv.org/abs/2602.05394v3"
+    type: "paper"
+    location: "Definitions 5.1 and 5.3 and Problem 5.6"
+    relationship: "background"
+    note: >-
+      Source of the motivating open question and the rerandomized transform.
+      The submitted theorem concerns the without-replacement model specified
+      in the frozen v6 paper; prior results and proof sources are cited there.
+
+classification:
+  arxiv: ["math.NA", "math.PR"]
+  msc2020: ["65F55", "60B20"]
+
+status:
+  scope: >-
+    Two selected public declarations express the main spectral OSE theorem and
+    simultaneous squared-norm success for a fixed subspace. All supporting
+    proofs remain present. The 12/50/34 manuscript correspondence inventory
+    and the 359-target audit are larger than this two-declaration public surface.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Quot.sound", "Classical.choice"]
+  main_results:
+    - declaration: "Problem56.main_universal_ose"
+      file: "research/problem_5_6/formalization/lean/Problem56/Statements.lean"
+      sorry_count: 0
+      axioms: ["propext", "Quot.sound", "Classical.choice"]
+      comparator_config: "comparator.json"
+    - declaration: "Problem56.PaperV6.fixed_frame_squared_norm_success"
+      file: "research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrame.lean"
+      sorry_count: 0
+      axioms: ["propext", "Quot.sound", "Classical.choice"]
+      comparator_config: "comparator.json"
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["gpt-6-astra"]
+      framework: "Codex"
+      tool_setup: >-
+        Repository-backed Lean development, proof-preserving incremental
+        formalization, separate agent correspondence review, Lean compilation,
+        transitive dependency and axiom audits, and kernel replay. Current
+        packaging uses the my-academic-palomar-release workflow with the
+        requested Astra official execution guidance.
+  notes: >-
+    AI assistance was substantive in mathematical and Lean development,
+    verification, and packaging. Historical model identities are not reconstructed
+    where the preserved record does not establish them. Yuning Yang is the human
+    author and responsible maintainer named by the user. No human-comprehension
+    attestation is inferred from compilation or automated review.
+
+fidelity:
+  divergences: >-
+    The current independent map records exact reused results, wrappers and
+    additional formalizations. Some formal proofs follow valid alternative
+    routes to the written proof. The Palomar layer copies transparent definitions
+    and the exact types of the two existing declarations; it changes no certified
+    proof. The supremum over frames remains outside the failure probability.
+
+review:
+  status: "agent-reviewed"
+  reviewers: ["Independent Codex agent contexts recorded in the v6 correspondence evidence"]
+  notes: >-
+    The independently reviewed current paper binding closes 12/12 named results,
+    50/50 mathematical interfaces and 34/34 definitions, including I-V6-11.
+    See the positive-dimensions revision record and audit/STATUS.md. This reports
+    pre-submission automated review, not a Palomar editorial outcome, human peer
+    review, novelty certification, or external endorsement.
+
+alignment:
+  paper_commit: "f279b6fac180125dce81a82d824da971bb7ae715"
+  mathematical_source_commit: "93acaadec26c715917c1cf54d22781820a8a20c6"
+  public_surface: "palomar/PUBLIC_SURFACE_AUDIT.md"
+  definition_holes: 0
+  deliberate_challenge_theorem_holes: 2

@@ -1,0 +1,216 @@
+name: Verify submission
+run-name: >-
+  ${{ inputs.mode == 'preflight'
+      && format('Preflight submission {0}', inputs.request_id)
+      || inputs.mode == 'correction'
+      && format('Validate registry correction {0}', inputs.request_id)
+      || format('Verify submission {0}', inputs.request_id) }}
+
+# Submissions arrive through the submission server, which dispatches this
+# workflow. The run name carries the submission id because dispatching does
+# not return a run id, and the server has to find the run it started.
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: Public GitHub repository in owner/name form
+        required: true
+        type: string
+      commit:
+        description: Full 40-character commit to verify
+        required: true
+        type: string
+      request_id:
+        description: Opaque submission id from the submission server
+        required: true
+        type: string
+      mode:
+        description: Run shared preparation only, or the complete verifier
+        required: false
+        default: full
+        type: choice
+        options:
+          - preflight
+          - full
+          - correction
+      options:
+        description: JSON object of optional submission fields
+        required: false
+        type: string
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: read
+    # One group per submission, so two admitted submissions may verify at the
+    # same time. The single literal group that used to be here was a cap, but a
+    # cap of one, and it was standing in for a bound that belongs to the
+    # submission server: that server decides what is admitted and how much may
+    # be in flight at once, so how many runs this workflow can be asked for is
+    # settled before any run starts. Sharing one group added nothing to that
+    # bound and took a great deal away, because GitHub holds at most one run of
+    # a group pending and cancels the one already waiting when another arrives.
+    # With a run able to hold the group for the whole 350 minutes below, a few
+    # deliberately slow submissions meant days in which the next submitter
+    # either waited or had their run cancelled by the one behind it.
+    #
+    # `request_id` is minted by the submission server rather than chosen by the
+    # submitter, and dispatching this workflow at all needs write access here,
+    # so the group name is not something an outsider picks. What per-submission
+    # groups spend is the organisation's concurrent-job allowance, which is the
+    # resource worth spending: this repository is public and runs on standard
+    # runners, so the minutes themselves are free. `render-challenge.yml` has
+    # always queued this way.
+    concurrency:
+      group: palomar-verify-${{ inputs.mode }}-${{ inputs.request_id }}
+      cancel-in-progress: false
+    steps:
+      - name: Record verification deadline origin
+        run: echo "PALOMAR_JOB_STARTED_AT=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: Checkout submission pipeline
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: pipeline
+          persist-credentials: false
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11.10"
+
+      - uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
+        with:
+          ruby-version: "3.3.12"
+          bundler-cache: true
+          working-directory: pipeline
+
+      - name: Install verifier dependencies
+        run: python -m pip install --disable-pip-version-check --require-hashes --no-deps -r pipeline/requirements.txt
+
+      - name: Parse and fetch immutable source
+        id: prepare
+        env:
+          BUNDLE_GEMFILE: ${{ github.workspace }}/pipeline/Gemfile
+        run: |
+          python pipeline/scripts/verify_submission.py prepare \
+            --event "$GITHUB_EVENT_PATH" \
+            --work-dir "$RUNNER_TEMP/palomar" \
+            --output "$RUNNER_TEMP/mechanical-report.json" \
+            --licensee "$(command -v bundle)"
+
+      - name: Free disk space
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be # v1.3.1
+        with:
+          tool-cache: false
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: false
+          docker-images: true
+          swap-storage: false
+
+      - name: Install pinned elan
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        run: |
+          curl --fail --location --proto '=https' --tlsv1.2 \
+            --output "$RUNNER_TEMP/elan.tar.gz" \
+            https://github.com/leanprover/elan/releases/download/v4.2.3/elan-x86_64-unknown-linux-gnu.tar.gz
+          echo "df0b2b3a439961ffcbb3985214365ffe40f49bc871df04dff268c7d8e21ca8b2  $RUNNER_TEMP/elan.tar.gz" \
+            | sha256sum --check
+          mkdir "$RUNNER_TEMP/elan"
+          tar -xzf "$RUNNER_TEMP/elan.tar.gz" -C "$RUNNER_TEMP/elan"
+          "$RUNNER_TEMP/elan/elan-init" -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        with:
+          go-version: "1.24.0"
+
+      - name: Build pinned landrun
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        run: |
+          CGO_ENABLED=0 go install github.com/zouuup/landrun/cmd/landrun@811cfff51ceaf3d9843708aa6d22e9b84ccac8b4
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Build pinned Comparator
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        run: |
+          git clone --filter=blob:none https://github.com/leanprover/comparator.git "$RUNNER_TEMP/comparator"
+          git -C "$RUNNER_TEMP/comparator" checkout 575674928e239f5bc452aab72d1dd7b0f1326494
+          cd "$RUNNER_TEMP/comparator"
+          lake build comparator
+
+      - name: Build pinned NanoDa kernel
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        run: |
+          git clone --filter=blob:none https://github.com/robsimmons/nanoda_lib.git "$RUNNER_TEMP/nanoda"
+          git -C "$RUNNER_TEMP/nanoda" checkout 68d5ca9db226849b41a6fff59d796ff19d0a8840
+          cargo build --release --locked --manifest-path "$RUNNER_TEMP/nanoda/Cargo.toml"
+
+      - name: Build toolchain-matched lean4export
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        env:
+          LEAN4EXPORT_COMMIT: ${{ steps.prepare.outputs.lean4export_commit }}
+          SUBMISSION_TOOLCHAIN: ${{ steps.prepare.outputs.lean_toolchain }}
+        run: |
+          git clone --filter=blob:none https://github.com/leanprover/lean4export.git "$RUNNER_TEMP/lean4export"
+          git -C "$RUNNER_TEMP/lean4export" checkout "$LEAN4EXPORT_COMMIT"
+          LEAN4EXPORT_TOOLCHAIN="$(tr -d '\r\n' < "$RUNNER_TEMP/lean4export/lean-toolchain")"
+          python -c 'import sys; sys.path.insert(0, "pipeline"); from scripts.verify_submission import compatible_lean4export_toolchain; raise SystemExit(not compatible_lean4export_toolchain(sys.argv[1], sys.argv[2]))' \
+            "$SUBMISSION_TOOLCHAIN" "$LEAN4EXPORT_TOOLCHAIN"
+          cd "$RUNNER_TEMP/lean4export"
+          ELAN_TOOLCHAIN="$SUBMISSION_TOOLCHAIN" lake build lean4export
+
+      - name: Run Comparator and challenge provenance audit
+        if: inputs.mode == 'full' && steps.prepare.outputs.ready == 'true'
+        run: |
+          python pipeline/scripts/verify_submission.py execute \
+            --work-dir "$RUNNER_TEMP/palomar" \
+            --output "$RUNNER_TEMP/mechanical-report.json" \
+            --comparator "$RUNNER_TEMP/comparator/.lake/build/bin/comparator" \
+            --lean4export "$RUNNER_TEMP/lean4export/.lake/build/bin/lean4export" \
+            --landrun "$(go env GOPATH)/bin/landrun" \
+            --nanoda "$RUNNER_TEMP/nanoda/target/release/nanoda_bin" \
+            --comparator-commit 575674928e239f5bc452aab72d1dd7b0f1326494 \
+            --landrun-commit 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4 \
+            --nanoda-commit 68d5ca9db226849b41a6fff59d796ff19d0a8840 \
+            --execution-budget-seconds 19800 \
+            --workflow-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: Upload bounded mechanical report
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ${{ inputs.mode == 'preflight' && 'preflight-report' || inputs.mode == 'correction' && 'correction-report' || 'mechanical-report' }}-${{ inputs.request_id }}
+          path: ${{ runner.temp }}/mechanical-report.json
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Fail the run when verification did not pass
+        # Every step after intake is conditional on it having succeeded, so a
+        # failed submission skipped its way to a green run and was recorded as
+        # having passed. The report is the outcome; the run has to say so.
+        if: always()
+        env:
+          PALOMAR_MODE: ${{ inputs.mode }}
+          PALOMAR_READY: ${{ steps.prepare.outputs.ready }}
+        run: |
+          python - <<'PYTHON'
+          import json, pathlib, sys, os
+          report = json.loads(pathlib.Path(os.environ["RUNNER_TEMP"], "mechanical-report.json").read_text())
+          mode = os.environ.get("PALOMAR_MODE", "full")
+          status = report.get("status")
+          if (mode == "preflight" and os.environ.get("PALOMAR_READY") == "true"
+                  and status == "pending"):
+              sys.exit(0)
+          if status == "pass":
+              sys.exit(0)
+          print(f"::error::mechanical verification did not pass: {status}")
+          for problem in report.get("errors", []):
+              print(f"::error::{problem}")
+          sys.exit(1)
+          PYTHON

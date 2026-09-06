@@ -1,0 +1,2 @@
+'Problem56.main_universal_ose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Problem56.PaperV6.fixed_frame_squared_norm_success' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,32 @@
+Problem56.main_universal_ose :
+  ∃ C,
+    C = Problem56.explicitUniversalConstant ∧
+      1 ≤ C ∧
+        ∀ (m r : ℕ) (ε : ℝ),
+          1 ≤ r →
+            r ≤ Problem56.walshCard m →
+              0 < ε →
+                ε < 1 →
+                  ∃ k,
+                    r ≤ k ∧
+                      k ≤ Problem56.walshCard m ∧
+                        k ≤ (Problem56.walshCard m).min ⌈↑C * ↑r / ε ^ 2⌉₊ ∧
+                          Problem56.spectralFailureSup m r k ε ≤ 1 / 100
+Problem56.PaperV6.fixed_frame_squared_norm_success :
+  ∃ C,
+    C = Problem56.explicitUniversalConstant ∧
+      1 ≤ C ∧
+        ∀ (m r : ℕ) (ε : ℝ),
+          1 ≤ r →
+            r ≤ Problem56.walshCard m →
+              0 < ε →
+                ε < 1 →
+                  ∃ k,
+                    r ≤ k ∧
+                      k ≤ Problem56.walshCard m ∧
+                        k ≤ (Problem56.walshCard m).min ⌈↑C * ↑r / ε ^ 2⌉₊ ∧
+                          ∀ (V : Matrix (Problem56.WalshIndex m) (Fin r) ℝ),
+                            Problem56.OrthonormalFrame V →
+                              99 / 100 ≤
+                                Problem56.uniformProbability fun ω =>
+                                  Problem56.PaperV6.SquaredNormEdges ε V ω.1 ω.2.1 ω.2.2
