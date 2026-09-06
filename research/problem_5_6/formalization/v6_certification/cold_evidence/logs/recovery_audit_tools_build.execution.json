@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "--no-cache",
+    "build",
+    "Problem56.PaperV6.AuditTools"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+  "start_utc": "2026-09-06T14:38:13.367484+00:00",
+  "end_utc": "2026-09-06T14:38:18.445775+00:00",
+  "elapsed_seconds": 5.078207916987594,
+  "returncode": 0,
+  "stdout_stderr": "logs/recovery_audit_tools_build.log",
+  "log_sha256": "4f638867ac611bf0c34af1eef3c33735ed3b16335058a9a0a985c96aca20ca50",
+  "local_lean_sources": {
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/AuditTools.lean": "9ee6d1be4338010fce110c4ffd6d1075952fa59bd61c7f6608aabcb2b4bee842",
+    "research/problem_5_6/formalization/lean/lake-manifest.json": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540",
+    "research/problem_5_6/formalization/lean/lakefile.lean": "d5e2b1d68953f7348d5ccca257d40afe9eb4d772d9680ae8d4c4512ebf052c29",
+    "research/problem_5_6/formalization/lean/lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_logged.py": "7204dd717c1e4f7b168cc52ed5df337673e55115f7cc87344e29a471ef3ee73c",
+    "research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py": "97702a8f033f6a4f7ffced7355244f620f681055f0722b6f57e69b62b67e15c1"
+  },
+  "receipt_kind": "local subprocess execution record; not authenticated external attestation"
+}

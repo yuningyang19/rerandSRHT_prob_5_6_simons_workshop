@@ -1,0 +1,19 @@
+{
+  "reviewer": "/root/baseline_audit",
+  "execution_head": "e87db85c6ec07a8aca32ee88ed76a58c304297ef",
+  "B": "40f96935796e484ab4c03865bc93b47827f99980",
+  "C": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "hashes": {
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+    "research/problem_5_6/formalization/lean/Problem56/Statements.lean": "92de0ac75f8162160d7d5e069ae747a00246954fde12dd79dbed6bd5455e9642",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean": "3c6db375116f1364edaeafd484d10f14e20f3b7472efb6389bcd7a6e4772652e",
+    "research/problem_5_6/formalization/lean/Problem56/RankCutStateFactorGeneral.lean": "5b916b447e86e2f68aa472221b14ee77641dcbd3c4e3ad9b6318efe085cae076",
+    "research/problem_5_6/formalization/lean/Problem56/GraphRankEdgeSplit.lean": "46fff34a3cce0997d856ebbede9ccd4cc29528c6e71d0ac5edf4664965cd5181",
+    "research/problem_5_6/formalization/lean/Problem56/GraphBridgelessConversion.lean": "8703ff942b0e8ea724b378671e1abf0f2d73bc41ecf9dc93c7a25604ba5e09a6",
+    "research/problem_5_6/formalization/lean/Problem56/AggregatePartitionCumulant.lean": "7e0d263950ef767f7ef0e44e43403d5a41c4434cbeaf814d5637a06ea4fa758b",
+    "research/problem_5_6/formalization/lean/Problem56/SignedTraceExpansion.lean": "e7315c47790b083622ead4ef9d172734dbb12356837487f82cdcbdc66708b762",
+    "research/problem_5_6/formalization/lean/Problem56/SignedTraceSummation.lean": "1520d4adc28f90e158ae835d01b423c94b756c0e5e46b034d425846fb4176432",
+    "A solution.tex": "53efe688a3845cc6823d31504c04b471e83cee0371e327168e16742f87465c2c",
+    "research/problem_5_6/formalization/v6_certification/snapshots/research/problem_5_6/paper/v6/main.tex": "3f140ac21cf98d07371ba81c307db1b272251fabe80fd58f7f290683e8d95286"
+  }
+}

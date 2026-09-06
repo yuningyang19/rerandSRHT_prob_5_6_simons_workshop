@@ -1,0 +1,62 @@
+{
+  "LEAN_OPERATION": "CERTIFICATION",
+  "status": "ENCODED_PROOFS_AND_TESTED_COMPANION_PASS_I11_SOURCE_CLARIFICATION_REQUIRED",
+  "actual_input_head": "e87db85c6ec07a8aca32ee88ed76a58c304297ef",
+  "branch": "codex/problem-5-6-v6-certification",
+  "A": "source_A_manifest.json",
+  "B": "baseline_B_manifest.json",
+  "C": "frozen_C_manifest.json",
+  "source_manifests": {
+    "source_A_manifest.json": "d97b0348f21ca3955b7f2ffcd9603e0bf577a24da9814437c61fd63deed2489f",
+    "baseline_B_manifest.json": "063c94e3b04781d0e154457358927a512202573ed01ac8c30b3a446283420f2e",
+    "frozen_C_manifest.json": "2d0adbc6ac5e5a47e3cb2fe3e20ccc649e0d05371d99da46cddf16530bab0dfd"
+  },
+  "skills": [
+    {
+      "path": "/Users/yuningyang/.codex/skills/my-academic-research-flow-6-0/SKILL.md",
+      "sha256": "d65f9865400baccf8fd1e48eb4e51358a02c6edc5c5d4b65b29639c265b64028"
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/my-academic-lean-formalizer/SKILL.md",
+      "sha256": "57f40f74b1712688c6edc5a160d88932c73c1c7b2d8924e4f1a686b614200821"
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/.system/openai-docs/SKILL.md",
+      "sha256": "7cb8fa1b2a0c635b5c61ffe1da7b8594a7ea0fce5b71e8d523e2025d88b2a05e"
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "baseline_targets": 53,
+  "v6_denominators": {
+    "named_results": 12,
+    "named_conjuncts": 30,
+    "interfaces": 50,
+    "definitions": 34
+  },
+  "author_comprehension_or_publication_approval": "NOT_ASSERTED",
+  "historical_operation_B": "PROBE",
+  "astra_official_review": {
+    "url": "https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra",
+    "adjustment": "No mathematical scope change. Reuse authorization, persist, delegate independent review, proportional development checks plus all mandatory final checks."
+  },
+  "protected_bytes_verified": true,
+  "current_additive_audit": "combined_graph_component_result.json",
+  "coverage_counts_are_independent_of_helper_count": true,
+  "source_scope_issue": {
+    "id": "I-V6-11",
+    "summary": "Generic coordinate dimension convention is not explicit enough for unconditional identity norm one / norm-product equality; positive-dimensional and weak zero-dimensional statements are separately proved.",
+    "manuscript_changed": false
+  },
+  "local_final_execution": "local_final_execution_summary.json",
+  "entrypoint_repair_review": "reviews/independent_entrypoint_prerequisite_review.json",
+  "combined_verification_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "final_independent_execution": "reproduction/independent_final_source_cold_completion_6bb96aa-final.json",
+  "final_encoded_proofs_status": "PASS",
+  "full_manuscript_scope": "NOT_ESTABLISHED",
+  "source_object_mirror_reused": true,
+  "compiled_cache_reused": false
+}

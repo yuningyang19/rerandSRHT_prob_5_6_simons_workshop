@@ -1,0 +1,9 @@
+[
+  "Problem56.bernoulli_coordinate_sampling_corollary_of_trace",
+  "Problem56.signBernoulliExpectation_trace_centered_product_pow_expansion",
+  "Problem56.trace_centeredSelector_product_pow_expansion",
+  "Problem56.signBernoulliExpectation_trace_eq_partition_cumulant_sum",
+  "Problem56.signedTrace_master_geometric_bound",
+  "_private.Problem56.SignedTraceExpansion.0.Problem56.signedTrace_abs_le_boundedSelectorData",
+  "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEqualityData_contribution_sum_le"
+]

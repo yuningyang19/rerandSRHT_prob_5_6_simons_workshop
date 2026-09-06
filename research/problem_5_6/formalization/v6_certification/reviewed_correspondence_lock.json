@@ -1,0 +1,19 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "status": "INDEPENDENTLY_REVIEWED_WITH_EXPLICIT_I_V6_11_REPAIR",
+  "source_and_graph_binding": {
+    "log": "logs/combined_audit.log",
+    "log_sha256": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58",
+    "execution_receipt_sha256": "b94c679338cade0d745f3420ac8ac3d9694375a09ae72c67f4518c2e5b47b754",
+    "targets": 359,
+    "nodes": 63329,
+    "primitive_definitions": 134,
+    "local_source_files": 159
+  },
+  "files": {
+    "three_way_crosswalk.json": "279b272d692cbebe4f80e3ae9d45f263596b95ae310ce2dee931776649045d81",
+    "combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5",
+    "reviewed_type_lock.json": "37e446452f1c9bea9ef2346f317d647749624e09f4253f3d87322ae5d4aab135",
+    "reviewed_definition_lock.json": "026d9cce127ef96bc4eccb21ea73360af86aef06aa3a3dcdb7678c43504ffd9d"
+  }
+}

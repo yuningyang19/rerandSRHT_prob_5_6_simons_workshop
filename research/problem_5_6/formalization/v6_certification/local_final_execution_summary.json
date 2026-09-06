@@ -1,0 +1,104 @@
+{
+  "target_count": 359,
+  "graph_nodes": 63329,
+  "status": "PASS",
+  "scope": "encoded declarations only",
+  "full_manuscript_scope": "NOT_ESTABLISHED",
+  "unresolved_source_items": [
+    "I-V6-11"
+  ],
+  "verification_commit": "c0303801ca01e9507a27ef4a47236807c9e39ab7",
+  "mandatory_checks": {
+    "unified_build": {
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "Problem56.PaperV6.Certification"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+      "elapsed_seconds": 2.8364280000096187,
+      "returncode": 0,
+      "log_sha256": "889e3fd9e374cc989b0a01198e848bc7284075d464cbebfa02b366e1f732edac"
+    },
+    "dependency_environment": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/record_environment.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+      "elapsed_seconds": 0.3224829590180889,
+      "returncode": 0,
+      "log_sha256": "13164957f6d5f83b0be88f3fb330d22aee2c4e4bd3390281186d87e34a534a92"
+    },
+    "expected_type_checks": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Problem56/PaperV6/ExpectedChecks.lean"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+      "elapsed_seconds": 11.860893874953035,
+      "returncode": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "semantic_witnesses": {
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "Problem56.ExtractionRegression",
+        "Problem56.GraphOperatorRegression",
+        "Problem56.GraphOperatorUnequalRegression",
+        "Problem56.PaperV6.SemanticWitnesses"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+      "elapsed_seconds": 3.2217587910126895,
+      "returncode": 0,
+      "log_sha256": "ca52fbfb70a80cfa92c719a87b41ba083d88aee5973e955533f58e6110eef1fb"
+    },
+    "structural_guards": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/run_structural_guards.py",
+        "../semantic_regressions.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+      "elapsed_seconds": 0.43536254100035876,
+      "returncode": 0,
+      "log_sha256": "d039f4572aea9682a0da844ccae47a1a50e6ce61ce0d8ad4a22d974e161ee23b"
+    },
+    "negative_tests": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/test_verifier.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+      "elapsed_seconds": 0.08758070803014562,
+      "returncode": 0,
+      "log_sha256": "74a4f17a11f9484d419bf6b8047d857b08e997045d1a7a7cbdf2ab9c55603b35"
+    },
+    "kernel_replay": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "-v",
+        "Problem56.PaperV6.Certification"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+      "elapsed_seconds": 817.209371667006,
+      "returncode": 0,
+      "log_sha256": "d90ac4b8825593db94e2bacd3980be32d9f060dc5cc0af018ba6a5f97718bfc3"
+    }
+  },
+  "full_paper_scope_gate": {
+    "returncode": 1,
+    "only_unresolved_item": "I-V6-11",
+    "receipt": "logs/final_full_paper_scope.execution.json"
+  },
+  "historical_B_reproduced_targets": 53,
+  "historical_B_operation": "PROBE"
+}

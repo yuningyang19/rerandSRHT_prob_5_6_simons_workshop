@@ -1,0 +1,23 @@
+{
+  "verification_commit": "6c12db598e56103309f7e41144f84b75246fa96b",
+  "archive": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/frozen-v6-companion.tar.gz",
+  "archive_sha256": "23b3c187af9b3fd2ecb3ad3738395eaa2fb8005c8e4653cb380204deecc1d54b",
+  "destination": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6c12db598e56",
+  "initial_compiled_objects": 0,
+  "source_members_checked": 417,
+  "command": [
+    "python3",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_suite.py"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6c12db598e56",
+  "start_utc": "2026-09-06T13:09:52.017923+00:00",
+  "scope": "fresh unpack; all project and dependency sources; installed standard Lean toolchain trusted",
+  "cache_policy": "No .lake in archive; no copied objects; MATHLIB_NO_CACHE_ON_UPDATE=1 and lake --no-cache build",
+  "status": "FAIL",
+  "returncode": 1,
+  "elapsed_seconds": 227.3550561669981,
+  "end_utc": "2026-09-06T13:13:39.481773+00:00",
+  "stdout_stderr": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_cold_export.log",
+  "log_sha256": "99f980d28554ea2b43cc09448b3f8478d79129af160487534997810b0f6c3c3a",
+  "changed_proof_or_build_inputs": []
+}

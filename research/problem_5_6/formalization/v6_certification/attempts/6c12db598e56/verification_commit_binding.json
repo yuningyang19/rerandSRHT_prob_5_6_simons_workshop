@@ -1,0 +1,9 @@
+{
+  "certification_branch": "codex/problem-5-6-v6-certification",
+  "combined_verification_commit": "6c12db598e56103309f7e41144f84b75246fa96b",
+  "baseline_and_frozen_manuscript_files_changed_by_task": false,
+  "paper_branch_head": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "manuscript_binding": "EXACT_SNAPSHOT",
+  "stale_for_newer_head": false,
+  "source_closure_manifest_sha256": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8"
+}

@@ -1,0 +1,446 @@
+{
+  "commit": "40f96935796e484ab4c03865bc93b47827f99980",
+  "closure_record_commit": "394f2468311996c10b4d1f1ad33429ef1eb975e6",
+  "files": [
+    {
+      "path": "research/problem_5_6/formalization/lean/.gitignore",
+      "sha256": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+      "git_blob": "01f8cdb637da2370fa79960e25efa59dd8cffd6d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56.lean",
+      "sha256": "e0689c720dfe54e1711f104dabfe5b29810d8215a215da9768a626338051523c",
+      "git_blob": "1fbd7f4061a7eb4c9b2336ec536d9176ed0824b1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/AggregatePartitionCumulant.lean",
+      "sha256": "7e0d263950ef767f7ef0e44e43403d5a41c4434cbeaf814d5637a06ea4fa758b",
+      "git_blob": "498773678b82fe56d6dd50baae3ee6b88acb244c"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/BernoulliSamplingCorollary.lean",
+      "sha256": "ac550f6b516e602114f39823e2b9f90f4ec56f4e13a2ba4e10325caf2efe07e2",
+      "git_blob": "19bac2fef69f2bf619c464f558672cd92eb15cc0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/BinomialTail.lean",
+      "sha256": "1fd7dfd2e752eaf1d49bd7fea83e4f7cafe560096e0c7cb9759813a5e6670abc",
+      "git_blob": "da2f98d897dae2d278262ecc8bcf7be790b1b860"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreAbstractCode.lean",
+      "sha256": "e01936ff44af4c85666061cc8facfa496f4c1cf8aa92568dc87f60f5ff657943",
+      "git_blob": "816566b6c0c086ec0d56325d35ddad804527d425"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonical.lean",
+      "sha256": "8ce9ecb14f960f35f0e0cb4c5873438f20710e66c13aaeeaed387d6091146caf",
+      "git_blob": "1f00fac63d7a9c4f29c595d50d7c724195b340fb"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCard.lean",
+      "sha256": "f8d060caa53084744b7fd0060019273db342b0cf15a31d4484a1e4266ac02f5f",
+      "git_blob": "ba416c35f4245b6aefd49dae00d417aa83988edb"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCount.lean",
+      "sha256": "c946db2e2915072c8b33d0bdd6f5886edd8df59c35a4a32d65b02c8bb871498a",
+      "git_blob": "f392e0c07025a0db7cda98de8dd7168cedec454f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean",
+      "sha256": "44023ecd3e95914192ae875ba102205bf28342a31c96e496cae91bc2dbbbc3f3",
+      "git_blob": "a058373077fc29e6eaf56854269c236111f04119"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean",
+      "sha256": "41f19294046e281a07384c64a81a644dbd8da331b77006c9dbec36b5c5036e72",
+      "git_blob": "5007595828270e8865aef9437da1962dbca3151b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean",
+      "sha256": "0610495bf796c22842d164d2c78d979c1f352d49e7ecc6556511080de5c3dbdf",
+      "git_blob": "73a1a50cfeee2aa18718cc9bf9a7ebd3cb24c76d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreComponents.lean",
+      "sha256": "f7ab6355a559c0f5521e7c17ef0815abef95e4efcedee9df8f7a970c164ee031",
+      "git_blob": "ed81a318b46aae9ce43832753cc4b8178c3ee5c5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCount.lean",
+      "sha256": "8f4cde05d37f29d0845d6db566d5869f8ed0d01465807a59972eb78a81d4a643",
+      "git_blob": "9857a49d196310bcc88c4b88948c6bb1e0e665cf"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreEncodingClosure.lean",
+      "sha256": "889896065795eb1d08273b4bd62697fca198b690f919f94b61a459f1b6e443a0",
+      "git_blob": "c1cebc673ebd4829ae04b6db0a72fa60ab843d77"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreEuler.lean",
+      "sha256": "a75b027bbaf8e697c0f788533d62d7d3db998c600036382022c13a0ed10cbfef",
+      "git_blob": "1316e0a7a5e7d37dc30f214fa6c7e43ff5330b8e"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreExtraction.lean",
+      "sha256": "40d989a38f201704565fbd27299c55771f5c88fc0ad3621bdebb85e4e3e3c03c",
+      "git_blob": "3c137e8c826ef9a67af29f0e0d06876e158bf4ab"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCorePairingCode.lean",
+      "sha256": "f0385c9062ddcdd95cdc1ae5f2f5af8b824be2060616dcc942a237216255e310",
+      "git_blob": "7119454712c2db8ce16a159c558cf89e303135e1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCorePathOrder.lean",
+      "sha256": "fc60d8962ca99eb56e3d9624ee31ac4c43c5e2b211ddfa0a019bf69ea7ff0fb0",
+      "git_blob": "f89d7118bacef564c0af85bfbe2b64400535fdad"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCorePaths.lean",
+      "sha256": "859d7cd82fd3a82ea43b68509dac9fcca82b601e3ec44f0d3c33a2368df0e798",
+      "git_blob": "893f557420544d94900b747553aecb81572acfc6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCorePortMapCode.lean",
+      "sha256": "4aa4c937fe765bec9d8daa803204390703602840eef057662c114a1a4071ce7f",
+      "git_blob": "7731080f61744ec1f24351249f8c7948337391a5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreProfile.lean",
+      "sha256": "4a3a7b1c67655fc4790f329010eb09d2c8b0fb1238b26fb459a33e5dbffca1a4",
+      "git_blob": "aa9a7fb3c376278281ead8e2357907a99834d536"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreSerialization.lean",
+      "sha256": "3d3b5f4549e2786b20b599e30eaf96e8b30827a0ab6b976494704cbc2a884f00",
+      "git_blob": "75823d28bcc1f2b06aac11df8dd18398e325e19b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTerminalBudget.lean",
+      "sha256": "60f272932a86739db54f862532faa7afcde47612ee7f5476f1a431f632f12b02",
+      "git_blob": "daf03df804272238e1e6aebb827c5a7c9df28cf6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTopology.lean",
+      "sha256": "dffc9f44b3214a378058db417015e2b1ef82a26864883ad16d06611f9f89c149",
+      "git_blob": "1219f97e4bb5ae8b315562ba43b33764f678dc8a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTransition.lean",
+      "sha256": "bdfc936e799bea2d52e92091253e5280f492bb0b3cf8b29ed0a2cd736014b367",
+      "git_blob": "ec72357fee0e7eb9df079813917dcf66cc7a6459"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreWordReconstruction.lean",
+      "sha256": "fd34f08a2c39c5fc85953cf722656ad72ec5ce5b46e167151e60e9f8eeaf0681",
+      "git_blob": "ebc7eb623e8e606bdbade290ff8bd9b037588716"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreZeroParameter.lean",
+      "sha256": "e32d1fa041aa6a99841ecd616108ac3ace70ef547ea1f5aa740de259cff5b0cb",
+      "git_blob": "58812a01e8bee6f5e319a4f7aa4c04873ea622cf"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/CumulantMoment.lean",
+      "sha256": "82c7b3a4e9ab2b12511d6e4f337ce7b2b2925706d277d7dbbf1f167d39b32b40",
+      "git_blob": "9df00875b89f8b31b952a945162edaebf947c5e2"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/Definitions.lean",
+      "sha256": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+      "git_blob": "493ff3031606679c3c17bb24d4f361143bba8769"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/Dependencies.lean",
+      "sha256": "af4260c66690d5b42648f6107b3ed180f799810a362b338e207e51a3a6daa639",
+      "git_blob": "eacbd226eae221167f6aa2b8e72751548160281b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/DependencyAudit.lean",
+      "sha256": "43de41b3f2d7ef3bc032ecb441ea2a8e341ee112304f05fe956edc392bf12e9a",
+      "git_blob": "21e0575b502873045325e1ee21c0dc1210e7fa3d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/DisjointPairCount.lean",
+      "sha256": "7c7562d18ee0d0e6584b9282cd9993f583d554fe97efef5b92642c4ad4eb94ce",
+      "git_blob": "f33b980f27433fcc266017019e0d9606a8b7c9fe"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/EncodingCount.lean",
+      "sha256": "0700b3c634cca4329f6bbaa2c9b0e83aef5a4c66cdd6f9b5060c4b10f086dfc8",
+      "git_blob": "eeebf3ca40b453dfc277e55175fc68bd2d92a96a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/EqualityBudget.lean",
+      "sha256": "aa043075bff1d85b7ee42d9e508103960ffd489508c2f5e200e12a0b18ff1ce5",
+      "git_blob": "3718a45c77ef583a9a926231db41a16d8a4542cc"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/EqualityDegreeFour.lean",
+      "sha256": "1da40e94057fac2811f27ee6fd7cf94d52b756c8f431b1b13b60e210dbb1708d",
+      "git_blob": "1aaf35daffd187db5055d3f79f8a20d2d312af34"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ExtractionRegression.lean",
+      "sha256": "bd2b3925aac7d974e2abbb6d0aeeab9f02515f817583b1aa3850dfffcc4c47be",
+      "git_blob": "09124958c647713427af81a77cf8150acc068da4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/FinalWidth.lean",
+      "sha256": "49333414a1820d5b8818191805c58a404f6a91bbcaa57f26a4563fbfcc8a3bd2",
+      "git_blob": "17a3114dcaed64f4d5378c77392063acfaf48263"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/FinitePopulationMoment.lean",
+      "sha256": "bcc4f897dc04706fc496a6884c08a3299709994f3fa8c2bd309103278525d8a8",
+      "git_blob": "81c3d6f5581859c4329c11b9f8a310c8a2916f9e"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/FixedSizeSamplingTransfer.lean",
+      "sha256": "4b35c0f6f665fc7bcfce74fe882f85d3e3bbc8b03a95ba712d2da080a788d20d",
+      "git_blob": "c355d59c14b62697e7c4a24b633831f41ff8f143"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphBridgelessConversion.lean",
+      "sha256": "8703ff942b0e8ea724b378671e1abf0f2d73bc41ecf9dc93c7a25604ba5e09a6",
+      "git_blob": "498714509b1d7375a5f83b90db1fc681a2ea89c1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphEven.lean",
+      "sha256": "69e426bf8b5a39ae4acd680bb7092958d9e5922836eaa9d02f89f46b3983f4aa",
+      "git_blob": "f0638929ff07acaebc6873956574d60702e811ef"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphFiberSplit.lean",
+      "sha256": "a97451a00d60c63142ee53a108ba5370f24ffa4b27fa6bd90a5d78f65ed9545d",
+      "git_blob": "a201dcd70acde461f7d4722aba3deddd4f173f9d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean",
+      "sha256": "3c6db375116f1364edaeafd484d10f14e20f3b7472efb6389bcd7a6e4772652e",
+      "git_blob": "7163ee847b4df6874cf19a6dbada638d3e827892"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphOperatorRegression.lean",
+      "sha256": "b105b7edae08e44cd2f4a6da1dce84e89d00b53d69ae9eb877c2cb8bb92bcdd1",
+      "git_blob": "0822af6f8cc7a731d552cfdd83857cbb723dff10"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphOperatorUnequalRegression.lean",
+      "sha256": "6d4f1589ec84b2fe0e55be1673ad280634b9f40c2ce3fa6523659c93f6351aef",
+      "git_blob": "82543e9bce8b849c4d88802c13c2b3af97ceaaaa"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphRankEdgeSplit.lean",
+      "sha256": "46fff34a3cce0997d856ebbede9ccd4cc29528c6e71d0ac5edf4664965cd5181",
+      "git_blob": "17e2884cbf952b29d26d1e4bff361f938395c5d8"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphRankEndpoint.lean",
+      "sha256": "b2f229fee645ae0c14d4270f4779c1e8f5dde369ed6b04c6191b444dcee8b3e0",
+      "git_blob": "20892944172278f2f35bb2245a3d09e606868bd4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphVertexSplit.lean",
+      "sha256": "b3811b6dfd32bc17b5312cd85d9ec99266caedeea3d2f0945e85ec8472d9f363",
+      "git_blob": "353622ce6a92ea3001de3087ccb9b22cc73c3735"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphWeightLoops.lean",
+      "sha256": "e4bb08146e409447f4248286a297a66d5128c8aa303f380105f6f3a09d30b0f6",
+      "git_blob": "12eda8621a8dc1436d73256ba27e9405a8fedcf9"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/IndexedEulerCircuit.lean",
+      "sha256": "9f2c22a12811a02af2acf6906a38dc0c71076207004377ff7f9a266e75bdf4df",
+      "git_blob": "bb0ad964601c6a26f1904ccd4fc7e11f402c1e23"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/JointEntryCumulant.lean",
+      "sha256": "e812218385967d9a89351200c5d0d06708ed0a462c1fff7c06e24a364f54b8a3",
+      "git_blob": "567e5bb135e3fdb8cd05f15fd4b4e55c1c72c98b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/LargeBlockCount.lean",
+      "sha256": "43be8f33c6fc6b764e154851cf77f6b43d07c9a9e5b7b36e8a94528b8c9951ef",
+      "git_blob": "044a28127bc7191468e902d8cdf1dd269a6f8797"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/LargeBlockSupportRank.lean",
+      "sha256": "0d720b396bb84a67d0f3c51e3223f57e146516768d04a1cac1a1d3bb70aa2c57",
+      "git_blob": "321bb786c27e7ca60e154c178bbd0b4e890baa64"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/LargeRankCutoff.lean",
+      "sha256": "c1b369edf679a31c0ebefe948b2632ee8bc24500d80efab271b1bbf7fc4f1cb1",
+      "git_blob": "6cbcfd36e48b7f407e6ff94f1093e1df3f575033"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/MixedCumulant.lean",
+      "sha256": "8ad8009aa23c93a27c41164270584abca3feb1daf3a7a09f46a200ede25f8dad",
+      "git_blob": "9c563d1895b8f8f71a3a4431d3ca0186cc5958ed"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/NestedCoupling.lean",
+      "sha256": "e78796625ffaec1137e160162d76fb9a1a0e287ffd7df84bce4f001050f15b20",
+      "git_blob": "357f614e71eabada61e6da686b051975a38423b3"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/OccurrenceGraph.lean",
+      "sha256": "f26f569d5b8cab4c5462d9db92d639aac74aac937a4ba3e18f35d129b7d11f5c",
+      "git_blob": "2feb502d2a97572a9369db997dd879e97a9cd5d4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PairingParallelBound.lean",
+      "sha256": "4019c5f0deb286963c614e618e360d8f3c8bf4703f9f44ea297bf03d097eaede",
+      "git_blob": "0765f20dcbcc45e6cd7e60c013d1322f88adb1bd"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PointwiseVanishing.lean",
+      "sha256": "b27cbce52925064d8867d482b3ba163fec6e5104401f3203a9c9ab59c183a067",
+      "git_blob": "e2c67c6347fcd8d064e22ead52e65eec04f43da5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ProbabilityFrobenius.lean",
+      "sha256": "7e2eacf99d2980a162a68eb2902df1a6aad18c4c4a87417d2789e05faf761ac4",
+      "git_blob": "870a79cf1e262da21db26756bf86cb5fcf66a22c"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ProductCumulant.lean",
+      "sha256": "576d9c4020193fabd85432446e08b15aeea48a91ae40bb6e18e66c7bc5b6d7cc",
+      "git_blob": "d65ac152e91957ba77331bf21c25489728fa416a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ProjectionMean.lean",
+      "sha256": "7f5827c2a57c0b0e0ef150f42348dfbc8f11c9a22704c15bf05182c14363e338",
+      "git_blob": "401ddc94c5c4bd37823ee5f890f57bc39b66dc66"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RademacherCumulant.lean",
+      "sha256": "5c7da578d8d42a66e5fcbcf6b800493e46271fdebd0f92665eb8295f5fd884b0",
+      "git_blob": "2e179a423747f073ebbaf19dc7293939bc0534e3"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RademacherFourthMoment.lean",
+      "sha256": "e35b2e1bf9cf401ccc7128b593973f31f92b66dd5b90821f2ca544c1dceac98e",
+      "git_blob": "b3f824d87cd7004b9e129aa148d722ad78d6442c"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RankCutFactorization.lean",
+      "sha256": "5d7d5655b35349d2b597d1bbd63b6839b461cc1237bf4c542b421826f13d9bce",
+      "git_blob": "d645fd67eca193a4eb907dfd2f6f6d3a55930333"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RankCutStateFactorGeneral.lean",
+      "sha256": "5b916b447e86e2f68aa472221b14ee77641dcbd3c4e3ad9b6318efe085cae076",
+      "git_blob": "182caea30b51559f1ef15a5c3fb7f4dd5d4c1465"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SamplingArithmetic.lean",
+      "sha256": "5b1c54e04b0f582c11a119ce2ba11a3f4156028cbdae699766110fdc4ab040bd",
+      "git_blob": "3e1e8f311e5dd27b91f9162254768ffe48f97fd6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SelectorQuotient.lean",
+      "sha256": "7c384aa63a635cb43e86be535a143d1ff0cc63f52e422cb68c9d0a73e4d9c579",
+      "git_blob": "d64d3f2231d412ad21244d9802536f19002f38c0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceEntryCumulant.lean",
+      "sha256": "fdafb82c9ed2e3095e1c60d417734ca039abd2197d2e0ff2ab859907156e10e9",
+      "git_blob": "20a9d970e4c034a15166784e3a2147cf14af39dc"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceExpansion.lean",
+      "sha256": "e7315c47790b083622ead4ef9d172734dbb12356837487f82cdcbdc66708b762",
+      "git_blob": "890c1e12493935dbc98f4c427412bb214477863f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceExpectationExpansion.lean",
+      "sha256": "bb20b6a7a48fa234545254303a86a6ff7af3aa122202f19ffdd476379abb2131",
+      "git_blob": "4dd00fc22fcbc09ef32e80960701a93889d4b40f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceMomentExpansion.lean",
+      "sha256": "bdb76434d1f164274f20b3eeb69be2d53968a9188637648fa3a335adfa8b1759",
+      "git_blob": "7f04e6acade15a1e7e4705c916985c0f36d74c47"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceSummation.lean",
+      "sha256": "1520d4adc28f90e158ae835d01b423c94b756c0e5e46b034d425846fb4176432",
+      "git_blob": "00fb394cf6fb0e271b5322e2c54644c008525eac"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SmallRankSecondMoment.lean",
+      "sha256": "1bb346eb7191d045b64783aa818cdf73e74ab01845a7d051ecd68f81aac1fc5a",
+      "git_blob": "bbb053e84bbb34356fdeda52d70966373fefd34a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SpectralRoot.lean",
+      "sha256": "c0bb7f43adc4f84fc017e6b3635d45474150065bca0f03c8bae046952c9e11e0",
+      "git_blob": "15c48dbbc825aac2eaa9a5f772613f8beab978b2"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/Statements.lean",
+      "sha256": "92de0ac75f8162160d7d5e069ae747a00246954fde12dd79dbed6bd5455e9642",
+      "git_blob": "b86f20e6fe86793ff278ec9f7a5febe8408b2b01"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ThreeCategoryOrderCoupling.lean",
+      "sha256": "7e54564783fd3688e8620959f64895c2c474a83fb39ced14e688b0e063815ead",
+      "git_blob": "13d1027e492826b9c0ed12ce8f1858287c2459c3"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TraceCyclicExpansion.lean",
+      "sha256": "f8c6789bbcd81b81e1c3cb6954985afb6faeb08a1d8466b20f01f6cf1ffa9a95",
+      "git_blob": "08081d55a3b37ce1bff2b3e377115762e323cb9e"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TraceGeometric.lean",
+      "sha256": "ddd10cb6f7d6bcd9d7327880e714dae11562179e1424fe0e58ac2a2cf576470a",
+      "git_blob": "14e04dec3dfac91f32eb2e1d65fb47c27d175003"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TwoProjection.lean",
+      "sha256": "62a7df4ec93fb62a3fe49f16d884090a2dc813d9e10bec0692cbb268eb0e1e97",
+      "git_blob": "d74e3d1f7fa3485971f9b2163d868f1ba5f7d70e"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TwoProjectionTransfer.lean",
+      "sha256": "794824155e93c32f56d91b07e8403824231f655cd4c5939004da516ab1603cdb",
+      "git_blob": "f265f9470bef6f8693809fbceb5da2b32b9c2219"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/WalshSymmetry.lean",
+      "sha256": "3b7e30ade32362ea77c57df9f858aaf282a33ce38e6c78c50b7c6d791ec036d9",
+      "git_blob": "8e286c16e495e3e5f3ac4a3e497644ce19715339"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/XorKernel.lean",
+      "sha256": "74dc3443b4d4d7be14deb43eddeb13a96540f4a52d0292e6fe37e137152db420",
+      "git_blob": "ce79561c6e22a041b618d9f903e9036abe3502ee"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/README.md",
+      "sha256": "1fa6ca250fc96705aa736ae714db30e560f5219381250763f199f4bf9cf18a63",
+      "git_blob": "9237dd24db50e65c57c825002c6d95df1ba11bcb"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/lake-manifest.json",
+      "sha256": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540",
+      "git_blob": "3bb6bfeea349f228bcaf654eca5634b124472e99"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/lakefile.lean",
+      "sha256": "d5e2b1d68953f7348d5ccca257d40afe9eb4d772d9680ae8d4c4512ebf052c29",
+      "git_blob": "cc5f7ba813fad5f1a6db7570b86f50bdfee2b7d5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "git_blob": "025e59548e48cf71f2744154e2890beefe30a258"
+    }
+  ]
+}

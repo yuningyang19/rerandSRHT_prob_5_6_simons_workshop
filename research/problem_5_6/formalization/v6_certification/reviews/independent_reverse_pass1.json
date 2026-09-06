@@ -1,0 +1,820 @@
+{
+  "schema": "independent_reverse_pass1_custom_v1",
+  "not_installed_lifecycle_receipt": true,
+  "reviewer_context": "/root/baseline_audit",
+  "reviewed_at_utc": "2026-09-06T11:52:25.493947+00:00",
+  "operation": "AUDIT_ONLY_REVERSE_PASS1",
+  "status": "CANDIDATES_PREPARED_WITH_EXPLICIT_SCOPE_GAPS",
+  "independence": "Reviewer did not author candidate proof bodies. GeneralSamplingExpected definitions were reviewer-authored, separately source-reviewed, then controller implemented proofs. No pass2 recommendations were read for this pass.",
+  "frozen_C_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "graph_binding": {
+    "targets": 189,
+    "nodes": 62407,
+    "definitions": 39,
+    "end": [
+      62407
+    ],
+    "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "body_paths": [
+      {
+        "root": "Problem56.PaperV6.generalCumulantIdentities",
+        "dependency": "Problem56.PaperV6.generalMomentIdentity",
+        "path": [
+          "Problem56.PaperV6.generalCumulantIdentities",
+          "Problem56.PaperV6.generalMomentIdentity"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.generalCumulantIdentities",
+        "dependency": "Problem56.PaperV6.generalProductIdentity",
+        "path": [
+          "Problem56.PaperV6.generalCumulantIdentities",
+          "Problem56.PaperV6.generalProductIdentity"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.generalCumulantIdentities",
+        "dependency": "Problem56.PaperV6.generalMixedIndependence",
+        "path": [
+          "Problem56.PaperV6.generalCumulantIdentities",
+          "Problem56.PaperV6.generalMixedIndependence"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.generalCumulantIdentities",
+        "dependency": "Problem56.PaperV6.generalMultilinearity",
+        "path": [
+          "Problem56.PaperV6.generalCumulantIdentities",
+          "Problem56.PaperV6.generalMultilinearity"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.generalCumulantIdentities",
+        "dependency": "Problem56.PaperV6.generalShiftInvariance",
+        "path": [
+          "Problem56.PaperV6.generalCumulantIdentities",
+          "Problem56.PaperV6.generalShiftInvariance"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.generalCumulantIdentities",
+        "dependency": "Problem56.PaperV6.generalOddSymmetry",
+        "path": [
+          "Problem56.PaperV6.generalCumulantIdentities",
+          "Problem56.PaperV6.generalOddSymmetry"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.general_sampling_joint",
+        "dependency": "Problem56.PaperV6.finiteNoiseFailureLaw",
+        "path": [
+          "Problem56.PaperV6.general_sampling_joint",
+          "Problem56.PaperV6.bernoulli_noise_failure_law",
+          "Problem56.PaperV6.finiteNoiseFailureLaw"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.general_sampling_joint",
+        "dependency": "Problem56.PaperV6.general_sampling",
+        "path": [
+          "Problem56.PaperV6.general_sampling_joint",
+          "Problem56.PaperV6.general_sampling"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.general_sampling",
+        "dependency": "Problem56.PaperV6.sampling_pointwise",
+        "path": [
+          "Problem56.PaperV6.general_sampling",
+          "Problem56.PaperV6.sampling_pointwise"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.entry_absolute_contribution",
+        "dependency": "Problem56.PaperV6.paperEntry_fixed_class_sum_bound",
+        "path": [
+          "Problem56.PaperV6.entry_absolute_contribution",
+          "Problem56.PaperV6.paperEntry_fixed_class_sum_bound"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.entry_absolute_contribution",
+        "dependency": "Problem56.I28_aggregate_partition_cumulant_bound",
+        "path": [
+          "Problem56.PaperV6.entry_absolute_contribution",
+          "Problem56.PaperV6.entry_weighted_count",
+          "Problem56.I28_aggregate_partition_cumulant_bound"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.graph_rank",
+        "dependency": "Problem56.graph_rank_contraction",
+        "path": [
+          "Problem56.PaperV6.graph_rank",
+          "Problem56.graph_rank_contraction"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.graph_fiber_boundary",
+        "dependency": "Problem56.fiberSplitConsistentEquiv",
+        "path": [
+          "Problem56.PaperV6.graph_fiber_boundary",
+          "Problem56.fiberSplitConsistentEquiv"
+        ]
+      },
+      {
+        "root": "Problem56.PaperV6.fixed_frame_squared_norm_success",
+        "dependency": "Problem56.PaperV6.squared_edges_iff_spectral_bound",
+        "path": [
+          "Problem56.PaperV6.fixed_frame_squared_norm_success",
+          "Problem56.PaperV6.squared_edges_iff_spectral_bound"
+        ]
+      }
+    ],
+    "hashes": {
+      "logs/combined_audit.log": "d71c4db87cad0fce2be6b4d8c85ebcc4acf6b310b44934635f4dca5ca037b3e7",
+      "combined_actual_types.json": "0bdbae7b711b4648298788d0346fbb844979cbb503c97aac703db7bd411a10c6",
+      "combined_actual_definitions.json": "6938ff778017aece7d519351cf1fc794548083e1b9ad32318081f4515724e54e",
+      "combined_source_manifest.json": "663ed0fae2776e949c7bbab978b6f71243de2340739558ef3030ca5e494655cf",
+      "inventory_named_results.json": "fe3324f58e323d6fd878f52e692dbe02abf38f1cf622f300f58a0c222f8285ef",
+      "inventory_interfaces.json": "6ac8641a027876cc13de6d5ab50850c8add7370abd774671bcf847ebc2a6c0e0",
+      "inventory_definitions.json": "4a4c69da398d7077d3e5b134501086fb48353265a32444b5c55d797308fda10e"
+    },
+    "explicitly_missing_targets": []
+  },
+  "current_manifest_drift_at_report": [],
+  "candidates": [
+    {
+      "id": "R1",
+      "result_id": "thm:main",
+      "source_interfaces": [
+        "I-V6-01",
+        "I-V6-02",
+        "I-V6-49",
+        "I-V6-50"
+      ],
+      "root_declaration": "Problem56.PaperV6.fixed_frame_squared_norm_success",
+      "dependency_id": "Problem56.PaperV6.squared_edges_iff_spectral_bound",
+      "actual_body_path": [
+        "Problem56.PaperV6.fixed_frame_squared_norm_success",
+        "Problem56.PaperV6.squared_edges_iff_spectral_bound"
+      ],
+      "candidate": "Universal width is chosen before a deterministic frame; success means both squared-norm edges for every vector in this fixed frame.",
+      "deletion_test": "Removing normalization or supremum domination severs the fixed-frame probability conclusion.",
+      "object_identity_test": "Read exact sampled Gram, uniformProbability, spectralFailureSup and Euclidean L2 objects; no simultaneous all-subspaces event.",
+      "route_substitution_test": "Quadratic-form equivalence is a valid explicit elaboration, while casts and normalized-vector case splits need no manuscript text.",
+      "endpoint_test": "Check k=n, z=0, nonempty k-subsets and both inclusive success edges; failure is strict > epsilon.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R2",
+      "result_id": "lem:transfer",
+      "source_interfaces": [
+        "I-V6-04",
+        "I-V6-05",
+        "I-V6-06",
+        "I-V6-07"
+      ],
+      "root_declaration": "Problem56.two_projection_spectral_transfer",
+      "dependency_id": "Problem56.real_matrix_fin_two_trace_pow_eq_root_power_sum_re",
+      "actual_body_path": [
+        "Problem56.two_projection_spectral_transfer",
+        "Problem56.two_projection_spectral_transfer_proof",
+        "Problem56.exists_twoProjection_bad_block_trace_gt",
+        "Problem56.twoProjectionPairTransferMatrix_trace_even_power_gt_of_large_real_root",
+        "Problem56.real_matrix_fin_two_trace_pow_eq_root_power_sum_re"
+      ],
+      "candidate": "The two-projection route includes endpoint blocks, defective 2x2 blocks and compensation for nonreal roots.",
+      "deletion_test": "Deleting endpoint or negative-block compensation would invalidate the spectral-to-signed-trace implication.",
+      "object_identity_test": "The paper and Lean use the same centered projections and signed even trace, not an expected absolute moment.",
+      "route_substitution_test": "Matrix trace equals root power sum even without diagonalizability; a spectral-only argument assuming simple roots cannot replace it.",
+      "endpoint_test": "Retain lambda=0,1 and delta endpoints and the zero spectral-deviation branches.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R3",
+      "result_id": "prop:trace",
+      "source_interfaces": [
+        "I-V6-03",
+        "I-V6-23",
+        "I-V6-24",
+        "I-V6-31",
+        "I-V6-40",
+        "I-V6-41"
+      ],
+      "root_declaration": "Problem56.signed_trace_proposition",
+      "dependency_id": "Problem56.aggregate_partition_cumulant_bound",
+      "actual_body_path": [
+        "Problem56.signed_trace_proposition",
+        "Problem56.signedTrace_bound",
+        "Problem56.signedTrace_master_geometric_bound",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEqualityData_contribution_sum_le",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEntryContribution_abs_sum_le_aggregateBound",
+        "Problem56.aggregate_partition_cumulant_bound"
+      ],
+      "candidate": "Actual signed trace aggregation reaches the concrete partition-weight estimate, through the centered Gram and cyclic trace identities.",
+      "deletion_test": "Deleting selector/entry factorization or exact-class regrouping destroys the finite trace majorization.",
+      "object_identity_test": "Equality partition pi differs from entry occurrence partition rho; absolute expected trace remains distinct from expected absolute trace.",
+      "route_substitution_test": "Finite reindexing implementation is bookkeeping; the dimension factors and geometric parameter ranges are mathematical obligations.",
+      "endpoint_test": "Retain zero/positive parameter branches, empty classes and logarithmic-rank hypotheses.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R4",
+      "result_id": "cor:bernoulli",
+      "source_interfaces": [
+        "I-V6-08"
+      ],
+      "root_declaration": "Problem56.bernoulli_coordinate_sampling_corollary",
+      "dependency_id": "Problem56.signed_trace_proposition",
+      "actual_body_path": [
+        "Problem56.bernoulli_coordinate_sampling_corollary",
+        "Problem56.signed_trace_proposition"
+      ],
+      "candidate": "Bernoulli probability derives from compensated signed trace and the stated logarithmic choice of p.",
+      "deletion_test": "Without compensation, a negative signed contribution cannot support Markov-type probability inference.",
+      "object_identity_test": "Same two independent sign layers, centered Bernoulli law and effective width kappa.",
+      "route_substitution_test": "Elementary final arithmetic may differ in algebraic order but cannot replace the signed trace by a norm moment.",
+      "endpoint_test": "Check all density/rank inequalities used by the corollary rather than only asymptotic large rank.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R5",
+      "result_id": "lem:graph",
+      "source_interfaces": [
+        "I-V6-09",
+        "I-V6-12",
+        "I-V6-13"
+      ],
+      "root_declaration": "Problem56.PaperV6.graph_rank",
+      "dependency_id": "Problem56.graph_rank_contraction",
+      "actual_body_path": [
+        "Problem56.PaperV6.graph_rank",
+        "Problem56.graph_rank_contraction"
+      ],
+      "candidate": "The paper orientation and rectangular boundary convention are transported to the existing rank proof.",
+      "deletion_test": "Removing transpose/boundary transport would prove a differently oriented matrix statement.",
+      "object_identity_test": "Target-row/source-column paper matrices match the explicit transposition of B; loops and distinct boundary copies are retained.",
+      "route_substitution_test": "The graph proof reaches a constructed factorization, not an assumed norm field; mere equality of scalar sums would be insufficient.",
+      "endpoint_test": "Projection edge can be a loop; factorization creates two distinct r-dimensional copies and preserves the rank multiplier.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R6",
+      "result_id": "lem:graph",
+      "source_interfaces": [
+        "I-V6-11"
+      ],
+      "root_declaration": "Problem56.PaperV6.graph_fiber_boundary",
+      "dependency_id": "Problem56.fiberSplitConsistentEquiv",
+      "actual_body_path": [
+        "Problem56.PaperV6.graph_fiber_boundary",
+        "Problem56.fiberSplitConsistentEquiv"
+      ],
+      "candidate": "Each allowed fiber split preserves every entry with designated boundary labels fixed.",
+      "deletion_test": "A full scalar-sum identity alone cannot replace boundary-entry preservation in the operator argument.",
+      "object_identity_test": "The fiber label equality is enforced by actual identity edges, with fixed input/output copy labels.",
+      "route_substitution_test": "Restriction to consistent labels and its finite bijection is an equivalent elaboration; the implementation does not encode a general finite modification-history datatype.",
+      "endpoint_test": "Positive coordinate dimensions are necessary for identity norm exactly 1; dimension zero would give only the weaker bound.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R7",
+      "result_id": "lem:graph",
+      "source_interfaces": [
+        "I-V6-10"
+      ],
+      "root_declaration": "Problem56.PaperV6.graph_rank",
+      "dependency_id": "Problem56.mingo_speicher_bridgeless_conversion",
+      "actual_body_path": [
+        "Problem56.PaperV6.graph_rank",
+        "Problem56.graph_rank_contraction",
+        "Problem56.I07_rank_edge_factorization_bound",
+        "Problem56.I05_mingo_speicher_bridgeless_conversion",
+        "Problem56.mingo_speicher_bridgeless_conversion"
+      ],
+      "candidate": "The broad connected-bridgeless conversion stated in v6 is not established merely by the narrower even-degree B conversion.",
+      "deletion_test": "Deleting even-degree hypotheses from B is invalid; the general construction remains a separate obligation.",
+      "object_identity_test": "GeneralBridgelessExpected uses connectedness and edge deletion, with prescribed distinct endpoints and no assumed norm certificate.",
+      "route_substitution_test": "An imported published statement can validate the written source, but does not make the general conversion a local kernel theorem.",
+      "endpoint_test": "Current ear/path helpers do not themselves close arbitrary connected bridgeless graphs or allowed modification histories.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R8",
+      "result_id": "lem:cumulant-identities",
+      "source_interfaces": [
+        "I-V6-14",
+        "I-V6-15"
+      ],
+      "root_declaration": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency_id": "Problem56.PaperV6.generalMomentIdentity",
+      "actual_body_path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMomentIdentity"
+      ],
+      "candidate": "General moment and product identities are algebraic partition identities in actual integral moment data.",
+      "deletion_test": "Finite-uniform-only expectation would leave the stated arbitrary probability-space conclusion uncovered.",
+      "object_identity_test": "measureJointCumulant uses real finite products and integrals; no target identity is a field of the moment structure.",
+      "route_substitution_test": "Partition cancellation validly replaces the written formal-log route for the conclusion; formal logarithm and exponential coefficient objects themselves are not kernel encoded.",
+      "endpoint_test": "Nonempty occurrence families and empty moment normalization are distinct; no analytic exponential-integrability assumption is introduced.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R9",
+      "result_id": "lem:cumulant-identities",
+      "source_interfaces": [
+        "I-V6-16"
+      ],
+      "root_declaration": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency_id": "Problem56.PaperV6.generalMixedIndependence",
+      "actual_body_path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMixedIndependence"
+      ],
+      "candidate": "Mixed independence, multilinearity, shifts and odd symmetry retain the manuscript general domain.",
+      "deletion_test": "Without expectation factorization under independent families, mixed vanishing would be assumed rather than proved.",
+      "object_identity_test": "Finite requisite products are integrable under arbitrary probability measure; IndepFun and IdentDistrib supply the actual law facts.",
+      "route_substitution_test": "Cardinality induction and finite partition cancellation are alternative valid proof organization, while measurable representatives alone do not require prose expansion.",
+      "endpoint_test": "Shift invariance requires q>=2; symmetry uses odd order and exact distributional symmetry, not pointwise oddness.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R10",
+      "result_id": "lem:cumulants",
+      "source_interfaces": [
+        "I-V6-17",
+        "I-V6-18",
+        "I-V6-19",
+        "I-V6-20",
+        "I-V6-21",
+        "I-V6-22"
+      ],
+      "root_declaration": "Problem56.joint_entry_cumulant_lemma",
+      "dependency_id": "Problem56.signDiagonal_translate",
+      "actual_body_path": [
+        "Problem56.joint_entry_cumulant_lemma",
+        "Problem56.joint_entry_cumulant_assembly",
+        "Problem56.joint_entry_cumulant_assembly_of_occurrence_expansion",
+        "Problem56.joint_entry_cumulant_vanish",
+        "_private.Problem56.JointEntryCumulant.0.Problem56.joint_entry_cumulant_covariance",
+        "_private.Problem56.JointEntryCumulant.0.Problem56.randomProjection_walsh_transform_entry",
+        "Problem56.randomProjection_walsh_symmetry",
+        "Problem56.transformedFrame_walsh_symmetry",
+        "Problem56.signDiagonal_translate"
+      ],
+      "candidate": "The cumulant bounds and XOR vanishing use both normalized Walsh layers and the fixed-frame law.",
+      "deletion_test": "Deleting the fixed-frame sign-law invariance invalidates character-induced XOR vanishing.",
+      "object_identity_test": "Occurrence partitions allow repeated labels across blocks; graph contractions are unrestricted signed sums.",
+      "route_substitution_test": "The partition route is exact reuse; XOR is a necessary support condition and never a sufficient nonvanishing certificate.",
+      "endpoint_test": "Centering leaves cumulants unchanged only in orders >=2; first cumulants are handled separately.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R11",
+      "result_id": "lem:count",
+      "source_interfaces": [
+        "I-V6-25",
+        "I-V6-26",
+        "I-V6-27",
+        "I-V6-28",
+        "I-V6-29",
+        "I-V6-30"
+      ],
+      "root_declaration": "Problem56.selector_equality_graph_count",
+      "dependency_id": "Problem56.I20_contracted_core_encoding_bound",
+      "actual_body_path": [
+        "Problem56.selector_equality_graph_count",
+        "Problem56.I20_contracted_core_encoding_bound"
+      ],
+      "candidate": "Exact equality counts preserve half-edge ports, returning paths and the separate unmarked case.",
+      "deletion_test": "Deleting port identity or a=0 handling destroys the claimed decoding/count injection.",
+      "object_identity_test": "Counted objects are numbered equality patterns with no extra vertex-permutation factor; returning and parallel links are distinct.",
+      "route_substitution_test": "Lean finite encoding is a valid elaboration only because deterministic expansion recovers the actual original graph.",
+      "endpoint_test": "Zero chain lengths and B-empty exceptional graphs are retained, rather than dismissed by positive-parameter bounds.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R12",
+      "result_id": "lem:binary-constraints",
+      "source_interfaces": [
+        "I-V6-32",
+        "I-V6-33",
+        "I-V6-34"
+      ],
+      "root_declaration": "Problem56.PaperV6.binary_count",
+      "dependency_id": "Problem56.entryXorConstraintSolutionCount",
+      "actual_body_path": [
+        "Problem56.PaperV6.binary_count",
+        "Problem56.entryXorConstraintSolutionCount"
+      ],
+      "candidate": "Unrestricted XOR kernel count is exact; injective label count is bounded by inclusion.",
+      "deletion_test": "Removing forbidden injective pairs before using unrestricted labels is mathematically necessary.",
+      "object_identity_test": "Paper block XOR and actual binary constraint rank are proved equal; B weight-four support is a safe superset of source disjoint-pair support U, not identical.",
+      "route_substitution_test": "Coordinatewise kernel cardinality is a valid proof route; necessity cannot be promoted to sufficiency.",
+      "endpoint_test": "Retain rank-zero, repeated-loop cases and t<=12d+4h without assuming every supported labeling contributes nonzero.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R13",
+      "result_id": "prop:entry-contribution",
+      "source_interfaces": [
+        "I-V6-35",
+        "I-V6-36",
+        "I-V6-37",
+        "I-V6-38",
+        "I-V6-39"
+      ],
+      "root_declaration": "Problem56.PaperV6.entry_absolute_contribution",
+      "dependency_id": "Problem56.PaperV6.paperEntry_fixed_class_sum_bound",
+      "actual_body_path": [
+        "Problem56.PaperV6.entry_absolute_contribution",
+        "Problem56.PaperV6.paperEntry_fixed_class_sum_bound"
+      ],
+      "candidate": "Fixed-(d,h) bounds contain the actual weighted partition sum and internal absolute label/selector contributions.",
+      "deletion_test": "Deleting the explicit finite-sum bridge leaves a code-count theorem with the wrong object.",
+      "object_identity_test": "The weight is product_C (2|C|)^(12|C|), and all r/n powers match the paper; pi and rho are distinct.",
+      "route_substitution_test": "Termwise absolute sums imply the required signed absolute contribution; reverse implication is not used.",
+      "endpoint_test": "All natural d,h are covered via a proved empty-class alternative; nonempty class implies d<=p-1 and s+h<=p, preventing unsafe Nat subtraction.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R14",
+      "result_id": "lem:sampling",
+      "source_interfaces": [
+        "I-V6-42",
+        "I-V6-43",
+        "I-V6-44",
+        "I-V6-45"
+      ],
+      "root_declaration": "Problem56.PaperV6.general_sampling_joint",
+      "dependency_id": "Problem56.PaperV6.finiteNoiseFailureLaw",
+      "actual_body_path": [
+        "Problem56.PaperV6.general_sampling_joint",
+        "Problem56.PaperV6.bernoulli_noise_failure_law",
+        "Problem56.PaperV6.finiteNoiseFailureLaw"
+      ],
+      "candidate": "Arbitrary independent random frame sampling is certified through averaged pointwise bounds and exact finite-noise law transfer.",
+      "deletion_test": "Replacing averaged marginal failures by a maximum gamma would weaken the target and is not done.",
+      "object_identity_test": "Measurable coordinate maps represent the same random real matrix; uniform k-subset and Bernoulli marginals are exact.",
+      "route_substitution_test": "Finite common-order coupling is a valid alternative to continuous uniforms; the latter order-statistic object and null-tie proof are written-source only.",
+      "endpoint_test": "No independence between lower and upper Bernoulli samples is assumed; only independence from X and the required marginal laws are used.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    },
+    {
+      "id": "R15",
+      "result_id": "lem:small",
+      "source_interfaces": [
+        "I-V6-46",
+        "I-V6-47",
+        "I-V6-48"
+      ],
+      "root_declaration": "Problem56.small_rank_second_moment",
+      "dependency_id": "Problem56.small_rank_frobenius_expectation_bound",
+      "actual_body_path": [
+        "Problem56.small_rank_second_moment",
+        "Problem56.small_rank_second_moment_of_gram_reduction",
+        "Problem56.small_rank_frobenius_expectation_bound"
+      ],
+      "candidate": "Finite-population second moment and row fourth moment preserve fixed-size without-replacement sampling.",
+      "deletion_test": "Substituting independent row selection would change the finite-population factor.",
+      "object_identity_test": "The row Rademacher law and Frobenius domination refer to the same normalized Gram.",
+      "route_substitution_test": "Operator domination and probability arithmetic are valid consequences of the exact expectation identity.",
+      "endpoint_test": "Full sampling, n=1 where allowed, and the chosen small-rank width branch retain their explicit cases.",
+      "pass2_classification": "NOT_ASSIGNED_BY_PASS1"
+    }
+  ],
+  "named_result_ids": [
+    "thm:main",
+    "lem:transfer",
+    "prop:trace",
+    "cor:bernoulli",
+    "lem:graph",
+    "lem:cumulant-identities",
+    "lem:cumulants",
+    "lem:count",
+    "lem:binary-constraints",
+    "prop:entry-contribution",
+    "lem:sampling",
+    "lem:small"
+  ],
+  "interfaces": [
+    {
+      "id": "I-V6-01",
+      "source_hash": "f8aa9d58a3f1dbd6bcaec95c83462abeb639b4e3f84666ba5611647840d70263",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-02",
+      "source_hash": "757d7c717bfeaa12ff87400757d4dddb4a9a5007c1ce5538ec8afa13ceb34a65",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-03",
+      "source_hash": "8e6927016b763adc592b78326833a4d600492b67a0db61e965128398ab77d9a2",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-04",
+      "source_hash": "04eee8da8a3fe3d2c0fbc2d8f03a9d4214e4d22e16f5e5a12b422180233de407",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-05",
+      "source_hash": "16f40760e19854d28e41488944f786b1d9ad597625c47c975456f2d309e98c1b",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-06",
+      "source_hash": "63a0dead3bd7b5338c3101a877ada4bdfde10fbacfff36f6722c79e02ff8a7e5",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-07",
+      "source_hash": "a6403a96629f3f204baea100f6db0008c7750f7d2c63473251c0d8e91dd1b5c2",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-08",
+      "source_hash": "3f4159d185357a48bb7819d56b09ed40e7b7fb30f8aa945c91c7881b1de023b9",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-09",
+      "source_hash": "67b084e4687812aa59e957af1f8b0c03aed57c8d76a13076e5d9779c9e2cba49",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-10",
+      "source_hash": "ca5565a8c5ed0a702459a3cd18e9938829b79b157aec96bf1805f59ffcfcc845",
+      "review_status": "GENERAL_CONVERSION_UNRESOLVED_IN_SNAPSHOT"
+    },
+    {
+      "id": "I-V6-11",
+      "source_hash": "88b47d896708ec93deb5cf6a732c08d98492ac73bec40b3543701fa95dea5e8f",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-12",
+      "source_hash": "53357d640f428de0ca6722376413235f57e033bce392b4286c13bb0d62a9e680",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-13",
+      "source_hash": "63c763b6c3596b9a690e8efc59549feb6eea1e1d71dd22ce8ce51af6540efbfc",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-14",
+      "source_hash": "c6fb4f8e1dcb925e0810ad2a55904ed519510e417ed7d0de0fc8eeea2c90caec",
+      "review_status": "DOWNSTREAM_CONCLUSION_PROVED_BY_VALID_ALTERNATIVE_LITERAL_OBJECTS_NOT_KERNEL_ENCODED"
+    },
+    {
+      "id": "I-V6-15",
+      "source_hash": "232295c365ae6f154056e2667e22594320f2cdfe6880dabf023a2fb799499c33",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-16",
+      "source_hash": "6aeba4dbe06f29f58655fdad4725862cf1d2230abcfbd4fee029bf28d713bd79",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-17",
+      "source_hash": "16e43bef5b39e5c43afa0a790ce3788a39fecdaad3cf6ffbdf3b502eb2d921b3",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-18",
+      "source_hash": "83f378f366a9f4aa6312e394f00f201b5520e9e0fc4f8d8e05d3c215d4f28c88",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-19",
+      "source_hash": "2acdce6b761a384177db823a6ac2a8eb5d7eea9125c02cb7aca260eb4a87d8e2",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-20",
+      "source_hash": "e3ee016b113b02b470dea27b40e3c07e62b4361c390a09359951052972b08263",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-21",
+      "source_hash": "13c39413fcbee900af569888bababc87216f41246e79548323d1feb1d374eef4",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-22",
+      "source_hash": "e1a9e7b7a304928fd5a4be39c83dddcdaa831f7c28d240bd75c19095c49fc1a6",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-23",
+      "source_hash": "06daf359e1b958bcd1d3180df3a3d7098325fefe156b3ea4032e6b2dbb47b483",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-24",
+      "source_hash": "1b3fbcb56da8fd4b1f5531b7bfa1e85dd7e4606d0c7ca1f42f193721034d8e73",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-25",
+      "source_hash": "a4344e333f397989f47e8127f75bc7ba4a2bd2bce9c6ae7c268500ea41a29eb6",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-26",
+      "source_hash": "fe80b0f805f844b6e00c345e8ad187a0cda155028dd217467f43fbe222053098",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-27",
+      "source_hash": "e880294b15cea239e86e128cae7e427537d7ea2f1285868c6d3686b9c13a803b",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-28",
+      "source_hash": "71b74c56fd60bad6361d84e73d7eb0048555800351423e6ea461fb24d94fbbe9",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-29",
+      "source_hash": "aafed97e81c0294188c7efdf5198d49cf0daf27c26cdcf36fbbcfb9132eefe2d",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-30",
+      "source_hash": "219cc78706edba1d4fb190bbff025301b4a473c941d5dc69edf363128da56dee",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-31",
+      "source_hash": "439264835df8ad8e18ce0948d1bdbe33e498c0c863ad193745e39c0d948d16ef",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-32",
+      "source_hash": "706c2e9f1a1f8cb5c864a67437914999863c6e3839f51a955fabfa34b14137fb",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-33",
+      "source_hash": "f65202ea43fd628ac1dd1ea6dd3860ee3fab1af3d3c65a3988d70117ec9229af",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-34",
+      "source_hash": "48eeb9ff4ddaaf6074b66ff929c52e0b54004f38a17e0928230b8df26f43e398",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-35",
+      "source_hash": "7d9fb901ac677d51b5f5eb925b85e6a780315288670af936a1f6b2d24f045d01",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-36",
+      "source_hash": "7c1782b820289dc401f20b6f7035d2b4eeba3d32fed8ed507ce77d9a70557a3c",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-37",
+      "source_hash": "1805cf31559131552e2be6c32cff990045e8e3142733abe72eede0ba7fd9bd04",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-38",
+      "source_hash": "c95806da969dcd8c64bd0f14589897f1c2024f50f48e326f21ae86ead6bb629b",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-39",
+      "source_hash": "968446aa9a289094b8887a40cc7211c41a6e7b5d48561b52f35d1248b7a94693",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-40",
+      "source_hash": "f100cc79d6b9d9890d0bc7c75dd7c835069f2e26762a63dacf8172f10cd0a33d",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-41",
+      "source_hash": "2828c76bde3c5aa951763cfccf1a0f08073eeb20c49835bba197234e2895cc2b",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-42",
+      "source_hash": "725d0b2464049c2397bb15dc14a8337673562f2b02922fb0619c284c3b671560",
+      "review_status": "DOWNSTREAM_CONCLUSION_PROVED_BY_VALID_ALTERNATIVE_LITERAL_OBJECTS_NOT_KERNEL_ENCODED"
+    },
+    {
+      "id": "I-V6-43",
+      "source_hash": "8c75347e497276a52333d118472bef56806b65180d360a419321ff0b8f235323",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-44",
+      "source_hash": "4db038571c4a31f74c78ae30608e3b66d65e4a337e1f086e019c893cc41f1b35",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-45",
+      "source_hash": "a826bc1a77e9a339de86e5a68b5bcfb031863156e145bcb2c5fb04182fe9465f",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-46",
+      "source_hash": "f9a100a5700ee88c9894fdc876ef8604a2e567906e8b7c4a283efdd41a85964d",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-47",
+      "source_hash": "a23576e3c0fe39069ca25d684fb1f2bc7628eb884cddaba94c4fefc9c07f6748",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-48",
+      "source_hash": "fe71fbe91ff48acf3ac58b3e6faa57b5faef27ff26cf6249b64f9de868b86a74",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-49",
+      "source_hash": "3893365ab43bf4428976c896b5771ae83f01c7b396757732c09b2bcdd2fbbbd4",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    },
+    {
+      "id": "I-V6-50",
+      "source_hash": "6cf65048efbfca6da31c9b25ae197fe667f273b1660296e2e0a876f37f50fb8a",
+      "review_status": "LITERAL_OBLIGATION_REVIEWED"
+    }
+  ],
+  "definition_ids": [
+    "def:graph-contraction",
+    "def:boundary-matrix",
+    "def:input-output",
+    "def:joint-cumulant",
+    "def:partition-join",
+    "def:equality-class",
+    "def:binary-constraint",
+    "D-V6-08",
+    "D-V6-09",
+    "D-V6-10",
+    "D-V6-11",
+    "D-V6-12",
+    "D-V6-13",
+    "D-V6-14",
+    "D-V6-15",
+    "D-V6-16",
+    "D-V6-17",
+    "D-V6-18",
+    "D-V6-19",
+    "D-V6-20",
+    "D-V6-21",
+    "D-V6-22",
+    "D-V6-23",
+    "D-V6-24",
+    "D-V6-25",
+    "D-V6-26",
+    "D-V6-27",
+    "D-V6-28",
+    "D-V6-29",
+    "D-V6-30",
+    "D-V6-31",
+    "D-V6-32",
+    "D-V6-33",
+    "D-V6-34"
+  ],
+  "counts": {
+    "named_inventory": 12,
+    "conjunct_inventory": 30,
+    "interface_inventory": 50,
+    "definition_inventory": 34,
+    "literal_interface_obligations_reviewed": 47,
+    "downstream_conclusions_including_valid_alternative_routes": 49
+  },
+  "count_limits": "Semantic review counts are not final clean-build/replay certification. I11 counts per-operation preservation as frozen, not an unencoded general finite-history theorem. I10, I14 and I42 remain excluded from literal interface kernel-coverage count.",
+  "required_next": [
+    "Independent source-first pass2 RA classification in genuinely separate context",
+    "Refresh target discovery for three same-line @[simp] helpers adjoinedEarPoint_zero/last/internal; previous whitespace omissions now fixed",
+    "Fresh combined receipts after tooling/source changes",
+    "General I10 construction or exact unresolved return; no full manuscript PASS on this snapshot",
+    "Final source-bound clean build, kernel replay and export test"
+  ],
+  "review_hashes": {
+    "reviews/readable_crosswalk.md": "769cf1895bb5c1cd1fd94ecd83895940ebed4ea6b262a8bc026f13f1baf934ca",
+    "certification_packet.json": "508c36e275973d63ecea7a5cc9fa9a437c82d9a254be5b86c104fad5da81ece9",
+    "reviews/baseline_packet_validation.json": "78e510dbaa3470de2e374e37d9412b50cdbd9b1c8398dc472ee949d7db7869cd"
+  },
+  "new_graph_modules_reviewed": [
+    "GeneralBridgelessDAGSplit.lean",
+    "GeneralBridgelessEarInsertion.lean",
+    "GeneralBridgelessTotalRank.lean"
+  ],
+  "general_graph_status": "FORMALIZATION_OPEN; known published mathematical source checked independently"
+}

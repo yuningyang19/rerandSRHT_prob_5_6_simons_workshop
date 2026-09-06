@@ -1,0 +1,67 @@
+{
+  "packet_id": "problem56_i11_positive_dimensions_rebinding_20260907",
+  "version": "1",
+  "kernel_operation": "SOURCE_INTERFACE_CHECK",
+  "research_flow_mode": "VERIFICATION_MODE",
+  "research_flow_state": "S8 COLD_VERIFICATION",
+  "verification_profile": "BASIC",
+  "claim_id": "I-V6-11",
+  "exact_version": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "exact_statement": "Under the positive integer coordinate-dimension convention in the revised def:graph-contraction, the written identity splits and edge reversals preserve boundary entries and full sums and preserve the product of edge operator norms.",
+  "objects_and_spaces": [
+    "Finite real graph contractions with target-row/source-column matrices and compatible positive integer coordinate dimensions",
+    "Permitted rooted identity-splitting and reversal histories with fixed boundary labels"
+  ],
+  "assumptions_and_quantifiers": [
+    "For every such graph and every permitted finite modification history",
+    "Each original coordinate dimension N_u is a positive integer; inserted coordinates inherit the declared dimensions"
+  ],
+  "constants_and_parameter_regime": [
+    "No new constants or asymptotic regime; N_u > 0"
+  ],
+  "evidence_status": "UNASSESSED",
+  "provenance_status": "ADAPTED",
+  "lifecycle_status": "ACTIVE",
+  "accepted_dependencies": [],
+  "candidate_artifact": {
+    "path": "candidate_obligation.md",
+    "sha256": "2a2c0e6afdb617eb903a6a062e74232cf86158aaa9233b8fa5cef63baa15c0af"
+  },
+  "proof_layers": [
+    "ADAPT",
+    "ROUTINE"
+  ],
+  "allowed_source_records": [
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/frozen_C_manifest.json",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/combined_source_manifest.json"
+  ],
+  "known_counterexamples_and_attacks": [
+    "The zero-dimensional identity has norm zero; the new source excludes that case",
+    "Check positive dimensions of every inserted identity edge and affected downstream definition"
+  ],
+  "generator_context": "/root",
+  "required_verifier_independence": true,
+  "acceptance_criteria": [
+    "Exact one-location delta only",
+    "Existing elaborated theorems cover the revised I11 and affected graph-definition uses without changing proof bytes",
+    "All 96 source rows reanchor with unchanged denominators and unchanged theorem/definition hashes; preserve unresolved defects"
+  ],
+  "files_allowed_to_read": [
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean"
+  ],
+  "files_allowed_to_change": [
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/independent_report.json",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/independent_report.md",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/reviewed_crosswalk.json",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/reviewed_revision_lock.json"
+  ],
+  "forbidden_stronger_conclusions": [
+    "No claim for zero-dimensional identity norm one",
+    "No publication or lifecycle approval",
+    "No new mathematical proof generation"
+  ],
+  "return_path": "my-academic-research-flow-6-0 controller /root",
+  "semantic_sha256": "76fec8fc9182fb8912f3d3ae9d36836d3ba200a8e331962356630d55b8df6520"
+}

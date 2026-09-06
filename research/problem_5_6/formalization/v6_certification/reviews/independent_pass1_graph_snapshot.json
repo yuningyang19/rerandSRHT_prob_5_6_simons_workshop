@@ -1,0 +1,139 @@
+{
+  "targets": 189,
+  "nodes": 62407,
+  "definitions": 39,
+  "end": [
+    62407
+  ],
+  "axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "body_paths": [
+    {
+      "root": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency": "Problem56.PaperV6.generalMomentIdentity",
+      "path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMomentIdentity"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency": "Problem56.PaperV6.generalProductIdentity",
+      "path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalProductIdentity"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency": "Problem56.PaperV6.generalMixedIndependence",
+      "path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMixedIndependence"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency": "Problem56.PaperV6.generalMultilinearity",
+      "path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMultilinearity"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency": "Problem56.PaperV6.generalShiftInvariance",
+      "path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalShiftInvariance"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.generalCumulantIdentities",
+      "dependency": "Problem56.PaperV6.generalOddSymmetry",
+      "path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalOddSymmetry"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.general_sampling_joint",
+      "dependency": "Problem56.PaperV6.finiteNoiseFailureLaw",
+      "path": [
+        "Problem56.PaperV6.general_sampling_joint",
+        "Problem56.PaperV6.bernoulli_noise_failure_law",
+        "Problem56.PaperV6.finiteNoiseFailureLaw"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.general_sampling_joint",
+      "dependency": "Problem56.PaperV6.general_sampling",
+      "path": [
+        "Problem56.PaperV6.general_sampling_joint",
+        "Problem56.PaperV6.general_sampling"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.general_sampling",
+      "dependency": "Problem56.PaperV6.sampling_pointwise",
+      "path": [
+        "Problem56.PaperV6.general_sampling",
+        "Problem56.PaperV6.sampling_pointwise"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.entry_absolute_contribution",
+      "dependency": "Problem56.PaperV6.paperEntry_fixed_class_sum_bound",
+      "path": [
+        "Problem56.PaperV6.entry_absolute_contribution",
+        "Problem56.PaperV6.paperEntry_fixed_class_sum_bound"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.entry_absolute_contribution",
+      "dependency": "Problem56.I28_aggregate_partition_cumulant_bound",
+      "path": [
+        "Problem56.PaperV6.entry_absolute_contribution",
+        "Problem56.PaperV6.entry_weighted_count",
+        "Problem56.I28_aggregate_partition_cumulant_bound"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.graph_rank",
+      "dependency": "Problem56.graph_rank_contraction",
+      "path": [
+        "Problem56.PaperV6.graph_rank",
+        "Problem56.graph_rank_contraction"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.graph_fiber_boundary",
+      "dependency": "Problem56.fiberSplitConsistentEquiv",
+      "path": [
+        "Problem56.PaperV6.graph_fiber_boundary",
+        "Problem56.fiberSplitConsistentEquiv"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.fixed_frame_squared_norm_success",
+      "dependency": "Problem56.PaperV6.squared_edges_iff_spectral_bound",
+      "path": [
+        "Problem56.PaperV6.fixed_frame_squared_norm_success",
+        "Problem56.PaperV6.squared_edges_iff_spectral_bound"
+      ]
+    }
+  ],
+  "hashes": {
+    "logs/combined_audit.log": "d71c4db87cad0fce2be6b4d8c85ebcc4acf6b310b44934635f4dca5ca037b3e7",
+    "combined_actual_types.json": "0bdbae7b711b4648298788d0346fbb844979cbb503c97aac703db7bd411a10c6",
+    "combined_actual_definitions.json": "6938ff778017aece7d519351cf1fc794548083e1b9ad32318081f4515724e54e",
+    "combined_source_manifest.json": "663ed0fae2776e949c7bbab978b6f71243de2340739558ef3030ca5e494655cf",
+    "inventory_named_results.json": "fe3324f58e323d6fd878f52e692dbe02abf38f1cf622f300f58a0c222f8285ef",
+    "inventory_interfaces.json": "6ac8641a027876cc13de6d5ab50850c8add7370abd774671bcf847ebc2a6c0e0",
+    "inventory_definitions.json": "4a4c69da398d7077d3e5b134501086fb48353265a32444b5c55d797308fda10e"
+  },
+  "explicitly_missing_targets": []
+}

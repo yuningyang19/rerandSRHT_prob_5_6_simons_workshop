@@ -1,0 +1,38 @@
+{
+  "command": [
+    "lake",
+    "--no-cache",
+    "build",
+    "Problem56.ExtractionRegression",
+    "Problem56.GraphOperatorRegression",
+    "Problem56.GraphOperatorUnequalRegression",
+    "Problem56.PaperV6.SemanticWitnesses"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+  "start_utc": "2026-09-06T15:49:21.450250+00:00",
+  "end_utc": "2026-09-06T15:49:26.065217+00:00",
+  "elapsed_seconds": 4.614814541011583,
+  "returncode": 0,
+  "stdout_stderr": "logs/final_semantic_witnesses.log",
+  "log_sha256": "ca52fbfb70a80cfa92c719a87b41ba083d88aee5973e955533f58e6110eef1fb",
+  "local_lean_sources": {
+    "research/problem_5_6/formalization/lean/Problem56/CumulantMoment.lean": "82c7b3a4e9ab2b12511d6e4f337ce7b2b2925706d277d7dbbf1f167d39b32b40",
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+    "research/problem_5_6/formalization/lean/Problem56/ExtractionRegression.lean": "bd2b3925aac7d974e2abbb6d0aeeab9f02515f817583b1aa3850dfffcc4c47be",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean": "3c6db375116f1364edaeafd484d10f14e20f3b7472efb6389bcd7a6e4772652e",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorRegression.lean": "b105b7edae08e44cd2f4a6da1dce84e89d00b53d69ae9eb877c2cb8bb92bcdd1",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorUnequalRegression.lean": "6d4f1589ec84b2fe0e55be1673ad280634b9f40c2ce3fa6523659c93f6351aef",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrameExpected.lean": "7a060c21c36812f6acfc0cb1f10e462605d81626f4ac2fbe6960b428c80deff1",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsExpected.lean": "e455d314ba827a7be386fb256a5041c54e625435c95bd44fcce49dcd5e1fc1e0",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingExpected.lean": "f7cfcb4cb64fa8e1260b2754b536a76abfa66eb4acc61d4354990c9cb4aba8c6",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingJointExpected.lean": "a398279d2501b7b55d3923440000fe30ce7226b851ec3dcb2ece5ffefbf896f2",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/SemanticWitnesses.lean": "d427010719c6dc4ee917432a4b6d2ebf3385cfe446daf8e30a04285e5aa2dc61",
+    "research/problem_5_6/formalization/lean/Problem56/ProductCumulant.lean": "576d9c4020193fabd85432446e08b15aeea48a91ae40bb6e18e66c7bc5b6d7cc",
+    "research/problem_5_6/formalization/lean/lake-manifest.json": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540",
+    "research/problem_5_6/formalization/lean/lakefile.lean": "d5e2b1d68953f7348d5ccca257d40afe9eb4d772d9680ae8d4c4512ebf052c29",
+    "research/problem_5_6/formalization/lean/lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_logged.py": "7204dd717c1e4f7b168cc52ed5df337673e55115f7cc87344e29a471ef3ee73c",
+    "research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py": "97702a8f033f6a4f7ffced7355244f620f681055f0722b6f57e69b62b67e15c1"
+  },
+  "receipt_kind": "local subprocess execution record; not authenticated external attestation"
+}

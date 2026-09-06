@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "test_revision_gate.py"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions",
+  "start_utc": "2026-09-06T16:39:29.547593+00:00",
+  "end_utc": "2026-09-06T16:39:30.411199+00:00",
+  "elapsed_seconds": 0.8636120419832878,
+  "returncode": 0,
+  "log_sha256": "fdabf3ccddb7edf712567db8f7299a191bf3112dad1dc18548e6458b017b8d18",
+  "script_sha256": "d2103e5a042fd6068aaab04f0e024beacfe4bdc26dc137eb65078400c437219c",
+  "stdout_stderr": "logs/revision_negative_tests.log",
+  "reviewed_revision_lock_sha256": "71d4eabc6ff36b91ff4432568f56acaae9f127f0de22ddf061e24d16c3752cbb"
+}

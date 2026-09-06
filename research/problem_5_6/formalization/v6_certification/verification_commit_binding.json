@@ -1,0 +1,47 @@
+{
+  "combined_verification_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "mathematical_source_freeze_commit": "6c12db598e56103309f7e41144f84b75246fa96b",
+  "mathematical_source_changes_between_commits": false,
+  "orchestration_repair": "Run all nineteen historical structural IDs; retain independent audit logs separately from final execution logs.",
+  "source_manifest_sha256": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+  "paper_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "manuscript_binding": "EXACT_SNAPSHOT",
+  "public_release_authorized": false,
+  "combined_verification_commit_push": {
+    "status": "SUCCESS",
+    "remote": "origin",
+    "branch": "codex/problem-5-6-v6-certification",
+    "commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+    "purpose": "Exact corrected package source commit, independently tested afterward"
+  },
+  "preserved_intervening_evidence_commit": {
+    "commit": "64ce860bf25749427b532ede2c01485bb607db6c",
+    "observed_remote_equal": true,
+    "changed_paths": 46,
+    "scope": "v6_certification evidence and metadata only",
+    "mathematical_inputs_changed": false,
+    "created_by_this_root_agent": false,
+    "author_attribution": "not inferred from Git author metadata"
+  },
+  "latest_preserved_intervening_evidence_commit": {
+    "commit": "2ebddadbb02f507a5201e35cb40fa56bd3fb523d",
+    "scope": "only v6_certification metadata and execution records",
+    "mathematical_inputs_changed": false,
+    "created_by_this_root_agent": false
+  },
+  "entrypoint_correction": "Explicitly build unchanged PaperV6.AuditTools before the seven mandatory checks; verified by independent_entrypoint_prerequisite_review.json",
+  "previous_combined_verification_commit": "c0303801ca01e9507a27ef4a47236807c9e39ab7",
+  "source_archive_sha256": "9e4dcf6c813914bf4d98f23a2fdf54d408ef71b811cedd169b4cd1c5b8fa12a7",
+  "entrypoint_correction_source_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "corrected_source_push": "SUCCESS",
+  "previous_combined_verification_commit_push": {
+    "status": "SUCCESS",
+    "remote": "origin",
+    "branch": "codex/problem-5-6-v6-certification",
+    "commit": "c0303801ca01e9507a27ef4a47236807c9e39ab7",
+    "purpose": "resumable source milestone; independent cold reproduction still running at push"
+  },
+  "final_package_verification": "reproduction/independent_final_source_cold_completion_6bb96aa-final.json",
+  "final_package_command_result": "PASS",
+  "final_delivery_layer": "Subsequent commits contain evidence/documentation only; the tested archive remains bound to 6bb96aa."
+}

@@ -1,0 +1,111 @@
+{
+  "source_report_sha256": "6a4682c3d424659ae9bc2efb1314046317fc3e6cc32bbffd558bb98cf8fa6237",
+  "scope": "Identity and obligation fields only; all recommendations, tests, conclusions and review decisions omitted.",
+  "candidates": [
+    {
+      "CANDIDATE_ID": "R1",
+      "PUBLIC_RESULT_ID": "thm:main",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.PaperV6.squared_edges_iff_spectral_bound",
+      "ROOT_DECLARATION": "Problem56.PaperV6.fixed_frame_squared_norm_success",
+      "LEAN_OBLIGATION": "Universal width is chosen before a deterministic frame; success means both squared-norm edges for every vector in this fixed frame."
+    },
+    {
+      "CANDIDATE_ID": "R2",
+      "PUBLIC_RESULT_ID": "lem:transfer",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.real_matrix_fin_two_trace_pow_eq_root_power_sum_re",
+      "ROOT_DECLARATION": "Problem56.two_projection_spectral_transfer",
+      "LEAN_OBLIGATION": "The two-projection route includes endpoint blocks, defective 2x2 blocks and compensation for nonreal roots."
+    },
+    {
+      "CANDIDATE_ID": "R3",
+      "PUBLIC_RESULT_ID": "prop:trace",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.aggregate_partition_cumulant_bound",
+      "ROOT_DECLARATION": "Problem56.signed_trace_proposition",
+      "LEAN_OBLIGATION": "Actual signed trace aggregation reaches the concrete partition-weight estimate, through the centered Gram and cyclic trace identities."
+    },
+    {
+      "CANDIDATE_ID": "R4",
+      "PUBLIC_RESULT_ID": "cor:bernoulli",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.signed_trace_proposition",
+      "ROOT_DECLARATION": "Problem56.bernoulli_coordinate_sampling_corollary",
+      "LEAN_OBLIGATION": "Bernoulli probability derives from compensated signed trace and the stated logarithmic choice of p."
+    },
+    {
+      "CANDIDATE_ID": "R5",
+      "PUBLIC_RESULT_ID": "lem:graph",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.graph_rank_contraction",
+      "ROOT_DECLARATION": "Problem56.PaperV6.graph_rank",
+      "LEAN_OBLIGATION": "The paper orientation and rectangular boundary convention are transported to the existing rank proof."
+    },
+    {
+      "CANDIDATE_ID": "R6",
+      "PUBLIC_RESULT_ID": "lem:graph",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.fiberSplitConsistentEquiv",
+      "ROOT_DECLARATION": "Problem56.PaperV6.graph_fiber_boundary",
+      "LEAN_OBLIGATION": "Each allowed fiber split preserves every entry with designated boundary labels fixed."
+    },
+    {
+      "CANDIDATE_ID": "R7",
+      "PUBLIC_RESULT_ID": "lem:graph",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.mingo_speicher_bridgeless_conversion",
+      "ROOT_DECLARATION": "Problem56.PaperV6.graph_rank",
+      "LEAN_OBLIGATION": "The broad connected-bridgeless conversion stated in v6 is not established merely by the narrower even-degree B conversion."
+    },
+    {
+      "CANDIDATE_ID": "R8",
+      "PUBLIC_RESULT_ID": "lem:cumulant-identities",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.PaperV6.generalMomentIdentity",
+      "ROOT_DECLARATION": "Problem56.PaperV6.generalCumulantIdentities",
+      "LEAN_OBLIGATION": "General moment and product identities are algebraic partition identities in actual integral moment data."
+    },
+    {
+      "CANDIDATE_ID": "R9",
+      "PUBLIC_RESULT_ID": "lem:cumulant-identities",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.PaperV6.generalMixedIndependence",
+      "ROOT_DECLARATION": "Problem56.PaperV6.generalCumulantIdentities",
+      "LEAN_OBLIGATION": "Mixed independence, multilinearity, shifts and odd symmetry retain the manuscript general domain."
+    },
+    {
+      "CANDIDATE_ID": "R10",
+      "PUBLIC_RESULT_ID": "lem:cumulants",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.signDiagonal_translate",
+      "ROOT_DECLARATION": "Problem56.joint_entry_cumulant_lemma",
+      "LEAN_OBLIGATION": "The cumulant bounds and XOR vanishing use both normalized Walsh layers and the fixed-frame law."
+    },
+    {
+      "CANDIDATE_ID": "R11",
+      "PUBLIC_RESULT_ID": "lem:count",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.I20_contracted_core_encoding_bound",
+      "ROOT_DECLARATION": "Problem56.selector_equality_graph_count",
+      "LEAN_OBLIGATION": "Exact equality counts preserve half-edge ports, returning paths and the separate unmarked case."
+    },
+    {
+      "CANDIDATE_ID": "R12",
+      "PUBLIC_RESULT_ID": "lem:binary-constraints",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.entryXorConstraintSolutionCount",
+      "ROOT_DECLARATION": "Problem56.PaperV6.binary_count",
+      "LEAN_OBLIGATION": "Unrestricted XOR kernel count is exact; injective label count is bounded by inclusion."
+    },
+    {
+      "CANDIDATE_ID": "R13",
+      "PUBLIC_RESULT_ID": "prop:entry-contribution",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.PaperV6.paperEntry_fixed_class_sum_bound",
+      "ROOT_DECLARATION": "Problem56.PaperV6.entry_absolute_contribution",
+      "LEAN_OBLIGATION": "Fixed-(d,h) bounds contain the actual weighted partition sum and internal absolute label/selector contributions."
+    },
+    {
+      "CANDIDATE_ID": "R14",
+      "PUBLIC_RESULT_ID": "lem:sampling",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.PaperV6.finiteNoiseFailureLaw",
+      "ROOT_DECLARATION": "Problem56.PaperV6.general_sampling_joint",
+      "LEAN_OBLIGATION": "Arbitrary independent random frame sampling is certified through averaged pointwise bounds and exact finite-noise law transfer."
+    },
+    {
+      "CANDIDATE_ID": "R15",
+      "PUBLIC_RESULT_ID": "lem:small",
+      "LEAN_DECLARATION_OR_DEPENDENCY_ID": "Problem56.small_rank_frobenius_expectation_bound",
+      "ROOT_DECLARATION": "Problem56.small_rank_second_moment",
+      "LEAN_OBLIGATION": "Finite-population second moment and row fourth moment preserve fixed-size without-replacement sampling."
+    }
+  ]
+}

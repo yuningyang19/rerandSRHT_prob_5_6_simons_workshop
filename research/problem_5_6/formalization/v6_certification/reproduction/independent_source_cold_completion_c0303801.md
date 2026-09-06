@@ -1,0 +1,15 @@
+# Independent source-cold reproduction of c0303801
+
+The recovered source-cold checks pass for the encoded declarations. The original unchanged `run_suite.py` invocation failed, and full manuscript coverage remains REPAIR at I-V6-11.
+
+The tested archive is `frozen-v6-companion-c0303801.tar.gz`, SHA-256 `15b07372fcf0e146347c447ec2aed1db0782f7a37499bd97037273460c41cfb6`, bound to verification commit `c0303801ca01e9507a27ef4a47236807c9e39ab7`. A newly absent destination was populated from this archive. After two separately recorded full-history Git transport failures, all nine exact official dependency revisions were acquired by shallow source fetch. Both the initial unpack and the prebuild dependency tree contained zero compiled objects. No compiled cache was copied or downloaded.
+
+The actual source build completed all 8,859 jobs in 1,982.761 seconds. All seven mandatory checks received fresh successful receipts; the fresh kernel replay exited 0 after 943.053 seconds. The next combined-audit invocation failed because `Certification` does not import or build `AuditTools`, which `CombinedAudit` imports directly. This is an execution-order defect in the frozen one-command suite. Its failed log and receipt remain preserved.
+
+Bounded recovery compiled the unchanged `AuditTools` source with `lake --no-cache build Problem56.PaperV6.AuditTools` (exit 0, 5.078 seconds), then reran `CombinedAudit` under a separate receipt name (exit 0, 25.182 seconds). Independent verification checked the exact seven cold receipts, their source bindings and timestamps, the recovered compiler output, definition bodies, manifest completeness and archived correspondence locks. It confirmed 359 targets, 134 primitive definitions and 63,329 dependency nodes. All immutable archive members remained byte-identical; only generated execution/environment records changed.
+
+The archived full-paper scope checker was independently executed afterward and exited 1 with only I-V6-11 unresolved. Coverage remains 12/12 named results, 49/50 literal interfaces and 34 frozen definitions. The generic source sentence does not state the positive-coordinate-dimension hypothesis needed for norm-product equality; the formal results preserve the full sum, prove nonincrease for arbitrary dimensions, and prove equality for positive dimensions.
+
+The archived c030 crosswalk retains its original hash `f0e0702505d1a5fc25b0e3f2da0bf448f15378f37bc28ce24033288941382ca0`. The later root metadata clarification has hash `279b272d692cbebe4f80e3ae9d45f263596b95ae310ce2dee931776649045d81` and its independently refreshed lock passed the root evidence verifier. This clarification was not applied inside the cold archive.
+
+Machine-readable evidence is in `independent_source_cold_completion_c0303801.json`, `independent_recovered_verifier_c0303801.execution.json`, and `independent_cold_full_paper_scope_c0303801.execution.json`. The earlier failed executions remain separate evidence and must not be described as successful one-command export reproductions.

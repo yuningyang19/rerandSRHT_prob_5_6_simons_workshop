@@ -1,0 +1,13 @@
+{
+  "status": "APPROVED_BEFORE_PROOF_GENERATION",
+  "reviewer": "root; independent of RootedHistory proof author graph_entry_proofs",
+  "expected_file": "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistoryExpected.lean",
+  "sha256": "e3645969f8fe9f6bfeaa5ac6e89f1355b7ee600396552288e284ac73beb864ee",
+  "review": [
+    "Read primitive FiniteBoundaryGraph data and literal reverse/split constructors; neither contains analytic conclusions.",
+    "boundaryGraphOperator uses existing input-row/output-column graphOperator; manuscript transpose bridge remains required and separately proved.",
+    "RootedElementaryExpected and RootedHistoryExpected conclude exact endpoint-dimension casts, every boundary entry, weak product inequality for zero dimensions, and equality plus preserved positivity in positive dimensions.",
+    "Rooted split removes identity self-loops at root; each non-root copy remains joined by identity so endpoint equality and finite sums are the actual obligation.",
+    "GeneralBridgelessConsequenceBridgeExpected is explicitly a compositional lemma; full coverage requires applying it to independently proved generalBridgeless_modification, without a hypothesis left to caller."
+  ]
+}

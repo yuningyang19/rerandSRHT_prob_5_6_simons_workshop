@@ -1,0 +1,273 @@
+{
+  "packet_id": "problem56_i11_positive_dimensions_rebinding_20260907",
+  "kernel_operation": "SOURCE_INTERFACE_CHECK",
+  "operation_status": "PASS",
+  "claim_id": "I-V6-11",
+  "exact_version": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "verification_profile": "BASIC",
+  "generator_context": "/root",
+  "verifier_context": "/root/positive_dimension_correspondence",
+  "independence_declaration": "This separate verifier context did not generate or repair the manuscript, Lean candidate, candidate crosswalk, or reanchored inventories. It received the frozen packet, checked raw source and existing exact elaborated evidence, and owns only the reviewed crosswalk and independent reports/lock.",
+  "generator_is_verifier": false,
+  "evidence_status": "UNASSESSED",
+  "provenance_status": "ADAPTED",
+  "lifecycle_status": "ACTIVE",
+  "closed_obligations": [
+    "O1 PASS: packet validator exited 0 and exact output is preserved; source operation, BASIC profile and UNASSESSED/ADAPTED/ACTIVE axes remain unchanged.",
+    "O2 PASS: new manuscript snapshots match f279b6fac180125dce81a82d824da971bb7ae715 Git blobs and manifest SHA256 values; one replacement at old lines 855-856/new 855-857; figure unchanged.",
+    "O3 PASS: all 96 inventory IDs and raw source anchors independently rechecked; 95 context bodies unchanged, only def:graph-contraction context changes; denominators stay 12 named results, 50 interfaces, 34 definitions and 30 named conjuncts.",
+    "O4 PASS: all 220 actual row bindings recomputed from elaborated type/value bytes; 359 theorem type representations equal reviewed_type_lock and all 134 exact definition records equal reviewed_definition_lock. Actual row bindings are unchanged from the parent.",
+    "O5 PASS: current bytes for all 159 Lean files match combined_source_manifest; paper positivity is the only new hypothesis and no proof source is edited.",
+    "O6 PASS: paper_identity_norm explicitly requires 0 < n and constructs Nonempty (Fin n); fiber and rooted norm products apply it to the original dimension of every inserted identity.",
+    "O7 PASS: ElementaryBoundaryModification uses actual reversal or finite rooted identity split constructors, with no boundary/norm conclusion assumed. Reverse leaves dimensions unchanged; split assigns dim(z)=dim(z.1).",
+    "O8 PASS: RootedHistoryExpected includes preservation of positivity and exact norm-product equality. The actual rooted_history proof inducts over ReflTransGen and passes preserved intermediate positivity into rooted_elementary; the empty history is included.",
+    "O9 PASS: graph_orientation maps manuscript target-row/source-column matrices to transposed internal graph matrices; reversal transposes actual edge matrices and preserves entries. BoundaryEntriesPreserved includes endpoint casts; graph_boundary recovers full sums. Signed sums, rectangular dimensions, loops, parallel occurrences and distinct boundary vertices remain as written.",
+    "O10 PASS: positive restriction is compatible with boundary definition, I-V6-09--13 and lem:graph. New factorization vertices have dimension r with r>=1. Later cumulant graph labels lie in K with size 2^m>=1; restricted row-label sums do not introduce zero-dimensional graph coordinates.",
+    "O11 PASS: historical I11 REPAIR remains in parent evidence and parent_semantic_review; new source obtains EXACT_REUSE of existing positive-dimension branches. D-V6-27 nonidentical representation and inherited scope qualifications remain intact."
+  ],
+  "open_obligations": [],
+  "critical_errors": [],
+  "boundary_constant_normalization_checks": [
+    {
+      "category": "BOUNDARY",
+      "check": "Every original dimension is positive; inserted copies inherit dimensions; induction preserves positivity; r>=1 and n=2^m>=1 at downstream uses; empty history retains equality. Zero-dimensional norm-one assertion excluded.",
+      "result": "CLOSED"
+    },
+    {
+      "category": "CONSTANT",
+      "check": "Identity edge norms equal exactly 1 for positive dimensions. No numerical or asymptotic constants change. Graph rank bound still uses the same r.",
+      "result": "CLOSED"
+    },
+    {
+      "category": "NORMALIZATION",
+      "check": "Target-row/source-column orientation uses the existing transpose bridges; Euclidean operator norm is invariant under real transpose. Signed unrestricted graph sums and fixed boundary entries retain their exact normalization.",
+      "result": "CLOSED"
+    }
+  ],
+  "source_interface_status": "VERIFIED",
+  "proof_layer_findings": [
+    {
+      "layer": "ADAPT",
+      "result": "PASS",
+      "reason": "Restrict unchanged Lean graph definitions and stronger arbitrary-Nat graph theorems to the explicit positive-coordinate domain. Existing conditional equality branch matches the revised I11 exactly, including every intermediate graph in a finite history."
+    },
+    {
+      "layer": "ROUTINE",
+      "result": "PASS",
+      "reason": "Finite coordinate-label reindexing, endpoint casts, transpose orientation, and boundary summation use the already elaborated bridges. No new proof, theorem scope or source attribution is asserted."
+    }
+  ],
+  "counterexamples_or_failed_attacks": [
+    "The historical I_0 norm-zero witness remains valid and refutes the old unqualified norm-one sentence; the new positive-dimension premise excludes it.",
+    "A later split cannot introduce a zero-dimensional identity: fiberSplitDim uses the original vertex dimension and rooted_history retains positivity at each induction step.",
+    "Rectangular orientation does not strengthen the result: the existing transpose bridge identifies the source boundary entries and preserves Euclidean operator norms."
+  ],
+  "dependents_to_reopen": [],
+  "proof_port_status": {
+    "status": "NOT_APPLICABLE",
+    "detail": "Bounded source-interface rebinding; this operation does not issue a new proof-port or publication verdict."
+  },
+  "exact_accepted_claim_version": null,
+  "promotion_record_id": null,
+  "pre_promotion_evidence_status": "UNASSESSED",
+  "artifact_hashes_or_commit": {
+    "new_paper_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+    "parent_paper_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "candidate_sha256": "2a2c0e6afdb617eb903a6a062e74232cf86158aaa9233b8fa5cef63baa15c0af",
+    "files": {
+      "candidate_crosswalk.json": "7c2f4a84da90193815c5d4860567c5bd1f2d789b14392dd605033a74377be6af",
+      "candidate_obligation.md": "2a2c0e6afdb617eb903a6a062e74232cf86158aaa9233b8fa5cef63baa15c0af",
+      "verification_packet.json": "5fd2196f86590b9002e50724316a1449efc423f568e09e3a9314b2066310688e",
+      "frozen_C_manifest.json": "6636d42f655cfd8271e5a6b54a9966e2b961283eaf23cd843f41899cfe9e5b26",
+      "revision_contract.json": "ba96e36e5481c77ece2b49c430321420d19be0a680ad8074977d62331fb18af7",
+      "paper_delta.patch": "fc361af3542a5ec746f37f4c79c175f0a35593f34fc4862df98b13c1a89bcc16",
+      "inventory_named_results.json": "60d721b472e5c03b7bd0410d4eed385093af6793b9e24ec4508c12f36c207b22",
+      "inventory_interfaces.json": "ac9ea5336d576fa6162ff8d3954afb76507a856394d88380729457b582484790",
+      "inventory_definitions.json": "eeab6108472b28eea08d311087b46e01bd918ee0328762b36a2e74b4c2e59f6c",
+      "reviewed_crosswalk.json": "898866de175fce289b442d122036f89074ea18b35f6949a7e7b63131e55038f6",
+      "../../combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+      "../../combined_actual_types.json": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+      "../../combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5",
+      "../../reviewed_type_lock.json": "37e446452f1c9bea9ef2346f317d647749624e09f4253f3d87322ae5d4aab135",
+      "../../reviewed_definition_lock.json": "026d9cce127ef96bc4eccb21ea73360af86aef06aa3a3dcdb7678c43504ffd9d",
+      "../../reviewed_correspondence_lock.json": "3135cb809c44f01ab6a0921384505079a16bc8dce48e4860af3e6b8a7ed598c5",
+      "../../three_way_crosswalk.json": "279b272d692cbebe4f80e3ae9d45f263596b95ae310ce2dee931776649045d81",
+      "../../frozen_C_manifest.json": "2d0adbc6ac5e5a47e3cb2fe3e20ccc649e0d05371d99da46cddf16530bab0dfd",
+      "../../scripts/verify_evidence.py": "97702a8f033f6a4f7ffced7355244f620f681055f0722b6f57e69b62b67e15c1",
+      "../../logs/combined_audit.execution.json": "b94c679338cade0d745f3420ac8ac3d9694375a09ae72c67f4518c2e5b47b754",
+      "../../reproduction/independent_final_source_cold_completion_6bb96aa-final.json": "6994d77fbc5cb7d9570ab3392e2c69155531964ab9787bf376c6f594b0299da9",
+      "../../cold_evidence_final/capture_manifest.json": "ecfab9d175c9913152b2989c6fdb3548ea4b5087fab52e925fe08ed2e25f9b36",
+      "snapshots/research/problem_5_6/paper/v6/figures/p7_contraction.tex": "9df62c726d52766be5996124d3257b751bcbc5116ff770f80f452d6089bddabe",
+      "snapshots/research/problem_5_6/paper/v6/main.tex": "778731145bc9f537e561579303eb644388733d485b483c90f82e62243971e8cc",
+      "../../snapshots/research/problem_5_6/paper/v6/figures/p7_contraction.tex": "9df62c726d52766be5996124d3257b751bcbc5116ff770f80f452d6089bddabe",
+      "../../snapshots/research/problem_5_6/paper/v6/main.tex": "3f140ac21cf98d07371ba81c307db1b272251fabe80fd58f7f290683e8d95286",
+      "../../logs/combined_audit.log.gz": "d7e9b4c42912d12028c37cc6d1b78572d5c3db5b2070ca566191a4f4bc248719",
+      "check_full_paper_scope.py": "cb2b45b50eb413627d400c6ee5183f53bbc8ee4c69e37d4f84892e6c61c6a9e6",
+      "inherited_mandatory_checks.json": "543691a4ed52e843c93b908196a11a1e84c76ff10650fb346ae537e6b8b146d2"
+    }
+  },
+  "next_controller_action_recommendation": "Return to my-academic-research-flow-6-0. Bind this PASS and reviewed lock to the controller revision scope verifier, independently checked new TeX, and unchanged final cold/proof evidence; preserve parent historical REPAIR records. No further manuscript or Lean mathematical repair is required by this source-interface check.",
+  "packet_sha256": "195eeff6d630dd82893701e18c6786f5d45b54a9ba317125052aec21080b8e87",
+  "verifier_verdict": null,
+  "packet_validation": {
+    "command": [
+      "python3",
+      "/Users/yuningyang/.codex/skills/my-academic-verification-kernel/scripts/validate_verification_packet.py",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/verification_packet.json"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"kernel_operation\": \"SOURCE_INTERFACE_CHECK\",\n  \"packet_id\": \"problem56_i11_positive_dimensions_rebinding_20260907\",\n  \"packet_sha256\": \"195eeff6d630dd82893701e18c6786f5d45b54a9ba317125052aec21080b8e87\",\n  \"semantic_sha256\": \"76fec8fc9182fb8912f3d3ae9d36836d3ba200a8e331962356630d55b8df6520\",\n  \"status\": \"PASS\",\n  \"verification_profile\": \"BASIC\"\n}\n",
+    "stderr": "",
+    "parsed_output": {
+      "kernel_operation": "SOURCE_INTERFACE_CHECK",
+      "packet_id": "problem56_i11_positive_dimensions_rebinding_20260907",
+      "packet_sha256": "195eeff6d630dd82893701e18c6786f5d45b54a9ba317125052aec21080b8e87",
+      "semantic_sha256": "76fec8fc9182fb8912f3d3ae9d36836d3ba200a8e331962356630d55b8df6520",
+      "status": "PASS",
+      "verification_profile": "BASIC"
+    }
+  },
+  "mechanical_recheck": {
+    "source_anchors": 96,
+    "inventory_counts": {
+      "named": 12,
+      "interfaces": 50,
+      "definitions": 34
+    },
+    "actual_row_bindings": 220,
+    "theorem_types": 359,
+    "definition_bodies": 134,
+    "lean_source_files": 159,
+    "unexpected_inventory_changes": [],
+    "exact_delta": {
+      "old_lines": [
+        855,
+        856
+      ],
+      "new_lines": [
+        855,
+        857
+      ],
+      "replacements": 1
+    },
+    "new_source_context_changed": [
+      "def:graph-contraction"
+    ]
+  },
+  "downstream_scope_review": [
+    {
+      "rows": [
+        "def:graph-contraction",
+        "def:boundary-matrix",
+        "def:input-output",
+        "I-V6-09",
+        "I-V6-10"
+      ],
+      "finding": "The boundary definition explicitly invokes the graph definition. Input-output topology is independent of dimension; unchanged graph_orientation, graph_boundary, graph_operator and general conversion proofs quantify arbitrary Nat dimensions and therefore cover their positive-dimensional restrictions. The modification history gives positivity of its output by rooted_history."
+    },
+    {
+      "rows": [
+        "I-V6-11",
+        "I-V6-12",
+        "I-V6-13",
+        "lem:graph"
+      ],
+      "finding": "Positive identities give norm-product equality. Weight loops have the existing vertex dimension. Rank factorization inserts dimension r>=1; all subsequent splits inherit a positive dimension. The general graph-rank theorem is already stronger in admitting arbitrary Nat dimensions."
+    },
+    {
+      "rows": [
+        "lem:cumulants",
+        "lem:counting",
+        "prop:trace"
+      ],
+      "finding": "Raw source uses graph contractions on Walsh coordinate sets K of size 2^m, hence positive. Quotient/partition operations identify graph vertices rather than reduce coordinate dimension to a possibly empty image. Distinct-label restrictions may leave no label assignments, but each vertex coordinate set remains K; this is not a zero-dimensional identity issue. Unchanged downstream statements and all row bindings remain valid."
+    }
+  ],
+  "changes_owned_by_verifier": [
+    "reviewed_crosswalk.json",
+    "independent_report.json",
+    "independent_report.md",
+    "reviewed_revision_lock.json"
+  ],
+  "limits": [
+    "This is a new source-interface PASS, with verifier_verdict null and frozen evidence axes preserved. It is not a CLAIM_VERIFICATION verdict.",
+    "Full scope refers to the frozen 12/50/34 inventory correspondence only. All proof/type/definition bindings are inherited from independently reviewed source-bound evidence; the controller separately rechecks kernel replay/cold evidence and the new build.",
+    "Historical parent I11 repair and the zero-dimensional witness are preserved. No publication, priority, workflow-authentication or novelty authority is inferred."
+  ],
+  "packet_file_sha256": "5fd2196f86590b9002e50724316a1449efc423f568e09e3a9314b2066310688e",
+  "report_validation_attempts": [
+    {
+      "returncode": 2,
+      "stdout": "{\n  \"errors\": [\n    \"packet_sha256 does not match packet\"\n  ],\n  \"status\": \"FAIL\"\n}\n",
+      "reason": "Report initially used raw file SHA256; kernel report schema requires canonical packet JSON SHA256. Corrected metadata only; frozen packet bytes unchanged."
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/yuningyang/.codex/skills/my-academic-verification-kernel/scripts/validate_verifier_report.py",
+        "independent_report.json",
+        "--packet",
+        "verification_packet.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"claim_id\": \"I-V6-11\",\n  \"exact_version\": \"f279b6fac180125dce81a82d824da971bb7ae715\",\n  \"kernel_operation\": \"SOURCE_INTERFACE_CHECK\",\n  \"operation_status\": \"PASS\",\n  \"packet_id\": \"problem56_i11_positive_dimensions_rebinding_20260907\",\n  \"status\": \"PASS\",\n  \"verifier_verdict\": null\n}\n",
+      "stderr": ""
+    }
+  ],
+  "tooling_review": {
+    "status": "PASS",
+    "scope": "Separate bounded read-only review of controller revision scope checker; source-interface PASS unchanged.",
+    "checker_sha256_at_failed_run": "358393203c8748e158c62579769673a5796e75c580eb814293f060c529eb2724",
+    "finding": "validate_mandatory(W, ...) validates historical cold receipts against the current workspace, but their cwd correctly identifies packages/cold-6bb96aa-final. The checker must validate receipts at their exact recorded cold root and separately compare every source binding to current proof bytes; historical receipts must remain unchanged.",
+    "reported_to_controller": true,
+    "initial_failed_run": {
+      "command": [
+        "python3",
+        "check_full_paper_scope.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "FAIL: wrong compiler workspace\n"
+    },
+    "resolution": "Controller added explicit historical receipt inheritance. Capture is hash-bound to the independent completion; exact original cwd, receipt bytes, command, timing fields and compressed/raw log hashes are checked; complete command-source closures and all recorded source hashes are compared with current W. Historical receipts are unchanged and the old unpack directory need not exist.",
+    "successful_run": {
+      "command": [
+        "python3",
+        "check_full_paper_scope.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"frozen_paper_commit\": \"f279b6fac180125dce81a82d824da971bb7ae715\",\n  \"main_sha256\": \"778731145bc9f537e561579303eb644388733d485b483c90f82e62243971e8cc\",\n  \"full_manuscript_scope\": \"COVERED\",\n  \"unresolved_source_items\": [],\n  \"named_results\": \"12/12\",\n  \"literal_interfaces\": \"50/50\",\n  \"definitions\": \"34/34\",\n  \"classification_counts\": {\n    \"WRAPPER_ONLY\": 25,\n    \"EXACT_REUSE\": 59,\n    \"NEW_FORMALIZATION\": 12\n  },\n  \"proof_targets\": 359,\n  \"dependency_nodes\": 63329,\n  \"primitive_definitions\": 134,\n  \"Lean_proof_sources_changed\": false,\n  \"current_graph_history_client\": \"PASS\",\n  \"current_combined_audit\": \"PASS\",\n  \"current_audit_elapsed_seconds\": 51.12466824997682,\n  \"cold_build_and_replay\": \"Inherited after exact source/hash/receipt revalidation; not rerun\",\n  \"inherited_tested_Lean_source_commit\": \"6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446\",\n  \"source_Git_objects_reused_in_inherited_run\": true,\n  \"compiled_cache_reused_in_inherited_run\": false,\n  \"author_comprehension_or_publication_approval\": \"NOT_ASSERTED\",\n  \"workflow_metadata\": \"Original lifecycle/authenticated-receipt limitations remain separate\"\n}\n",
+      "stderr": "",
+      "parsed_output": {
+        "status": "PASS",
+        "frozen_paper_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+        "main_sha256": "778731145bc9f537e561579303eb644388733d485b483c90f82e62243971e8cc",
+        "full_manuscript_scope": "COVERED",
+        "unresolved_source_items": [],
+        "named_results": "12/12",
+        "literal_interfaces": "50/50",
+        "definitions": "34/34",
+        "classification_counts": {
+          "WRAPPER_ONLY": 25,
+          "EXACT_REUSE": 59,
+          "NEW_FORMALIZATION": 12
+        },
+        "proof_targets": 359,
+        "dependency_nodes": 63329,
+        "primitive_definitions": 134,
+        "Lean_proof_sources_changed": false,
+        "current_graph_history_client": "PASS",
+        "current_combined_audit": "PASS",
+        "current_audit_elapsed_seconds": 51.12466824997682,
+        "cold_build_and_replay": "Inherited after exact source/hash/receipt revalidation; not rerun",
+        "inherited_tested_Lean_source_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+        "source_Git_objects_reused_in_inherited_run": true,
+        "compiled_cache_reused_in_inherited_run": false,
+        "author_comprehension_or_publication_approval": "NOT_ASSERTED",
+        "workflow_metadata": "Original lifecycle/authenticated-receipt limitations remain separate"
+      }
+    },
+    "reviewed_checker_sha256": "cb2b45b50eb413627d400c6ee5183f53bbc8ee4c69e37d4f84892e6c61c6a9e6"
+  },
+  "parent_combined_audit_uncompressed_sha256": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58"
+}

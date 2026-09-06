@@ -1,0 +1,69 @@
+import Problem56.Statements
+
+/-!
+Gate 2 dependency surface.
+
+This module deliberately proves nothing.  It makes the complete frozen
+declaration surface a single build target; the machine-readable edge relation
+is in `dependency_manifest.json`.  The 53 proof holes remain exactly the Gate 1
+obligations in `Statements.lean`.
+-/
+
+namespace Problem56
+
+#check I01_walsh_card
+#check I01_walsh_symmetry
+#check I01_walsh_involution
+#check I02_exact_gram_reduction
+#check I03_full_sample_exact
+#check I04_mingo_speicher_graph_operator_specialization
+#check I05_mingo_speicher_bridgeless_conversion
+#check I06_connected_even_multigraph_has_no_bridge
+#check I07_rank_edge_factorization_bound
+#check I08_moment_cumulant_inverse
+#check I09_product_cumulant_connected_partition_identity
+#check I10_independent_families_mixed_cumulant_vanish
+#check I11_projection_entry_expansion
+#check I12_occurrence_partitions_form_connected_even_graph
+#check I13_rademacher_cumulant_bound
+#check I14_walsh_translation_modulation
+#check I15_projection_mean_and_centering
+#check I16_selector_quotient_degree_excess
+#check I17_centered_bernoulli_moment_bound
+#check I18_exceptional_vertex_degree_budget
+#check I19_degree_four_classification_and_loop_bound
+#check I20_contracted_core_encoding_bound
+#check I21_euler_transition_count
+#check I22_xor_kernel_solution_count
+#check I23_pointwise_vanishing_pair_classification
+#check I24_large_block_and_support_rank_bound
+#check I25_large_block_partition_constant_bound
+#check I26_disjoint_pair_support_bound
+#check I27_loop_parallel_pairing_bound
+#check I28_aggregate_partition_cumulant_bound
+#check I29_exact_dimension_factor
+#check I30_trace_geometric_summation
+#check I31_two_projection_block_decomposition
+#check I32_quadratic_root_even_power_bound
+#check I33_bad_spectral_edge_large_root
+#check I34_bernoulli_failure_arithmetic
+#check I35_uniform_key_nested_coupling
+#check I36_sampling_sandwich_spectral_conversion
+#check I37_binomial_tail_bounds
+#check I38_finite_population_second_moment_identity
+#check I39_rademacher_vector_fourth_moment
+#check I40_operator_norm_le_frobenius
+#check I41_large_rank_cutoff_arithmetic
+#check I42_final_width_constant_assembly
+
+#check graph_rank_contraction
+#check joint_entry_cumulant_lemma
+#check selector_equality_graph_count
+#check signed_trace_proposition
+#check two_projection_spectral_transfer
+#check bernoulli_coordinate_sampling_corollary
+#check fixed_size_sampling_transfer
+#check small_rank_second_moment
+#check main_universal_ose
+
+end Problem56

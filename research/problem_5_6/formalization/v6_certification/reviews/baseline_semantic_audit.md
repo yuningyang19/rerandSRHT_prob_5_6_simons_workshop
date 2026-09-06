@@ -1,0 +1,49 @@
+# Independent baseline semantic audit
+
+Reviewer: `/root/baseline_audit`, a separate context from the historical B generators and from the current controller. This reviewer did not edit or generate B or any PaperV6 proof. Operation: `SOURCE_INTERFACE_CHECK`, BASIC; `VERIFIER_VERDICT: null`. Local status: `REPAIR` for missing certification bridges listed below, **not a mathematical rejection of B**. This is a bounded semantic audit, not the root's kernel/build/axiom audit and not whole-manuscript certification.
+
+## Binding and method
+
+Read the controlling `prompts/problem_5_6/20260906_final_v6_three_way_lean_certification.md`, installed `my-academic-verification-kernel/SKILL.md` and its scope, packet, operation, source-interface and report instructions. The root's bounded handoff provides the operation scope. The supplied controller `certification_packet.json` was run through the installed kernel validator: exit 2, because its preparation schema lacks the kernel packet fields. Raw failure is preserved in `baseline_packet_validation.json`. This metadata failure does not prevent the authorized read-only audit, but this report is not a schema-validated ACCEPT.
+
+Inputs are A commit `35cc5f146fcddc88d8375cc974ff93585099e220`, B proof commit `40f96935796e484ab4c03865bc93b47827f99980`, and frozen C commit `4551d08f3732a3ca06c2f576794e1d75790e1972`. A's inspected bytes hash to the requested `53efe688a3845cc6823d31504c04b471e83cee0371e327168e16742f87465c2c`. `git diff B -- research/problem_5_6/formalization/lean` returned empty at inspection. Reviewed-file hashes and execution HEAD are in `baseline_reviewed_hashes.json`. Definitions and theorem bodies were read directly; prior PASS labels were not used as mathematical evidence. Root handles builds and transitive closure.
+
+## Main OSE and probability primitives
+
+B `Definitions.lean:17–120` represents n=2^m using functions Fin m→ZMod 2. Bool sign assignments are uniform over all coordinates; the nested product type is the independent sign/sign/subset law. `FixedSubset` is the exact-cardinality subtype of Finset, so it is uniform sampling without replacement. The matrix product and sqrt(n/k) normalization match A and C. Matrix association preserves D1 H D2 H S, and `transformedFrame` is H D2 H D1 V, as required by transposition.
+
+`frameFailureProbability` is the literal event probability. `spectralFailureSup` is a real supremum of these probabilities over matrices with VᵀV=I. It does not encode the desired bound. `main_universal_ose` (Statements:1154 onward) has exists C, forall m,r,ε, exists k, then the supremum bound, so k is selected before V. Its extra equality C=explicitUniversalConstant strengthens the existential conclusion and does not restrict C's paper interpretation. No Gaussian, permutation, asymptotic, or simultaneous-all-subspaces assumption was found.
+
+Nonvacuity was checked mathematically: r≤n supplies coordinate frames, and k≤n supplies a k-subset. Here r≥1 implies k≥1, n=2^m≥1, and both sign spaces have positive cardinality. Thus probability denominators are positive. For example m=0,r=k=1 has a real frame and one full subset; Ω is a scalar sign and the Gram is exactly one. The full-sample branch correctly uses exact Gram identity. Empty-space conventions in the generic definitions do not make the stated main range vacuous.
+
+The custom norm is sqrt(sum of squares), and `GraphOperatorL2.lean:19–58` proves equality of its sphere supremum with Mathlib's genuine Euclidean operator norm, including zero-dimensional cases. Required additive work is a checked client deriving frame probability from the supremum with a bounded-above witness and the stated simultaneous squared-norm interpretation. These are mathematical consequences, but B does not by itself supply the requested new client declarations. Expectations are recorded independently in `baseline_expected_semantics.md`.
+
+## Graph contraction
+
+C `def:graph-contraction` (main.tex:849 onward) uses target-row/source-column matrices; B Definitions:569–586 uses source-row/target-column. Mapping paper M to B Mᵀ makes each entry identical. B boundary operator is the transpose of the C boundary matrix. This requires an explicit proved bridge before a declaration is advertised as exact C correspondence; it is a convention difference, not a counterexample.
+
+B's GraphConnected ignores orientations; graphDegree counts a loop twice; the edge type indexes occurrences, so parallel edges remain separate factors. GraphContraction is an unrestricted signed sum with all weights present, matching C. `HasRankProjectionEdge` supplies an actual orthonormal V and exact dependent equality of the selected edge with VVᵀ. This is the factorization stated in C, not a rank estimate smuggled into a definition. Its n and endpoint dimension equalities enforce compatible square projection dimensions.
+
+`graph_rank_contraction` has exactly connectedness, positive even degree, edge contractions, bounded vertex weights, and r≥1 with that projection factorization. `GraphRankEdgeSplit` builds two new Fin r vertices with three edges, handling a distinguished loop without losing multiplicity. `GraphBridgelessConversion` derives finite routing, exact sum equality, and edge-norm product inequality. `EndpointAwareRankCutStepFactorization` does carry intermediate energy and equality fields, but `RankCutStateFactorGeneral.endpointAwareRankCutStepFactorization_all` constructs those fields; the final graph-operator theorem does not ask its caller to assume them. Therefore the inspection found no assumed desired operator bound disguised as a primitive.
+
+The general C prose about all bridgeless graphs exceeds B's even-degree conversion theorem. This does not affect use in lem:graph, whose modified graph has even degrees. Do not label the broader external theorem statement as kernel-proved by B. C's boundary-entry-preservation prose also needs its own bridge: B's displayed conversion endpoint gives full-sum equality, which alone does not certify a statement about every boundary entry.
+
+## Weighted trace aggregation
+
+The historical correction report accurately warns about an old RHS-only I28 and an old prepackaged I42. The inspected current B has neither defect. Definitions:464–484 give the actual `AggregateEntryPartition`, literal weight `entryPartitionCumulantConstant`, and sum `aggregateEntryPartitionCumulantSum`. They match C's R_{d,h}(π), c(ρ), binary rank, no-singleton condition and two forbidden pair exclusions. There is no requirement that retained cumulants be nonzero.
+
+`aggregate_partition_cumulant_bound` (AggregatePartitionCumulant:2306 onward) constructs an injective code, bounds its cardinality, bounds each actual cumulant constant, and multiplies the two. Its stated extra d≤p−1 is justified on every nonempty class: there are positive-many blocks partitioning 2p>0 and block count p−d, hence d<p. Outside that range the class is empty, and a faithful all-d wrapper is possible. That wrapper and the empty cases must be proved rather than silently discarded.
+
+SignedTraceExpansion:800 onward bounds the sum over injective labels by the unrestricted XOR kernel count. The argument uses only necessity: nonzero contribution implies every XOR equation; it never claims XOR is sufficient. At :987 onward forbidden pair blocks and singleton blocks are shown zero before reindexing. At :1065 onward actual partition and label sums are reindexed injectively. At :1240 onward the exact dimension factor is derived with d≤p and s+h≤p, preventing invalid natural-number subtraction. At :1288 onward these ingredients reach the weighted class estimate and the t≤12d+4h restriction. At :2035 onward actual signed-trace expansion reaches the master geometric bound, and :2141 plugs this bound into final summation. `signed_trace_proposition` supplies the graph and selector principles with proved B theorems. Its absolute value is outside the signed expectation, exactly as C prop:trace.
+
+The separately callable C fixed-(d,h) absolute-contribution clause is not identical to B's public aggregate-count statement. Its ingredients are present in private helpers, but the requested separate public PaperV6 theorem remains to be exposed/proved without weakening its concrete finite sum. A bound on the already aggregated trace would be insufficient.
+
+## Source scope and historical evidence
+
+A itself introduces cumulants for scalar variables with the requisite moments (solution.tex after lem:graph); B's I08–I10 use nonempty finite uniform spaces. Thus the finite-uniform/general-moment gap is inherited from A-to-B correspondence and cannot be dismissed as just a new C wording issue. Likewise finite auxiliary Ω is narrower than C's arbitrary independent random frame. These do not invalidate the actual finite Walsh main chain, but they block whole-source/whole-C coverage until generalized. The old correction report's 53/53 correspondence label must retain its exact finite scope.
+
+## Return to controller
+
+No concrete mathematical defect or counterexample was found in the inspected meanings of main_universal_ose, spectralFailureSup, graph_rank_contraction, or the actual trace aggregation. No manuscript repair is established by this bounded audit. This does not independently approve the uninspected written-proof sentences, external Mingo source version, or all 53 theorem proofs.
+
+Open certification obligations: (1) nonempty/probability/squared-norm client; (2) graph transpose, rectangular boundary and relevant boundary-preservation bridges; (3) all-d,h and fixed-class contribution wrappers; (4) general cumulant and random-frame scopes, handled separately by the controller; (5) current machine packet/report validation and root's build, axiom, replay evidence. All findings preserve B and C bytes. Do not count this report as full semantic ACCEPT until the missing bridges and independent final implementation comparison close.

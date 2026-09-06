@@ -1,0 +1,62 @@
+{
+  "LEAN_OPERATION": "CERTIFICATION",
+  "operation_detail": "Source-binding revision with unchanged Lean proofs",
+  "status": "MATHEMATICAL_MANUSCRIPT_SCOPE_PASS",
+  "new_paper_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "previous_paper_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "main_sha256": "778731145bc9f537e561579303eb644388733d485b483c90f82e62243971e8cc",
+  "paper_input_manifest_sha256": "6636d42f655cfd8271e5a6b54a9966e2b961283eaf23cd843f41899cfe9e5b26",
+  "source_delta": "Only def:graph-contraction now explicitly states positive integer coordinate dimensions.",
+  "controller_fidelity_verdict": "ACCEPT",
+  "machine_exact_delta": "One 2-line to 3-line replacement, all other paper bytes and figure unchanged",
+  "Lean_core_proofs_changed": false,
+  "all_Lean_source_files_unchanged": 159,
+  "protected_baseline_inputs_unchanged": 88,
+  "baseline_53_kernel_closure": "PASS, preserved and revalidated",
+  "named_result_coverage": "12/12",
+  "literal_interface_coverage": "50/50",
+  "definition_correspondence": "34/34",
+  "I_V6_11": "PASS; EXACT_REUSE of existing positive-dimension branches",
+  "classification_counts": {
+    "WRAPPER_ONLY": 25,
+    "EXACT_REUSE": 59,
+    "NEW_FORMALIZATION": 12
+  },
+  "independent_source_interface_operation": "PASS",
+  "independent_context": "/root/positive_dimension_correspondence",
+  "independent_review_lock_sha256": "71d4eabc6ff36b91ff4432568f56acaae9f127f0de22ddf061e24d16c3752cbb",
+  "current_combined_audit": {
+    "status": "PASS",
+    "targets": 359,
+    "primitive_definitions": 134,
+    "dependency_nodes": 63329,
+    "elapsed_seconds": 51.12466824997682
+  },
+  "current_graph_history_client": "PASS",
+  "full_paper_scope_gate": {
+    "status": "PASS",
+    "unresolved_items": [],
+    "receipt_sha256": "723bfa8dfbae78ac93e7f0f525bc4f0bd56a3da4547fb2cc790c3d974d66cb1e"
+  },
+  "negative_fixtures": "5/5 rejected; unchanged valid control passes",
+  "cold_build_and_kernel_replay": {
+    "status": "INHERITED_PASS_AFTER_EXACT_BYTE_AND_RECEIPT_REVALIDATION",
+    "tested_Lean_source_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+    "new_cold_build_or_replay_claimed": false,
+    "original_source_Git_object_reuse": true,
+    "original_compiled_cache_reuse": false,
+    "trust_boundary": "Installed standard Lean toolchain/kernel, OS and hardware remain trusted"
+  },
+  "tex_validation": "41 pages compiled; 12 named label numbers unchanged; page 11 visually checked",
+  "remaining_mathematical_repairs": [],
+  "workflow_metadata_status": "Original lifecycle/authenticated-runtime-receipt limitations remain separate; no S9/S10 release promotion",
+  "AUTHOR_COMPREHENSION_OR_PUBLICATION_APPROVAL": "NOT_ASSERTED",
+  "paper_push": {
+    "status": "SUCCESS",
+    "branch": "codex/problem-5-6-paper",
+    "commit": "f279b6fac180125dce81a82d824da971bb7ae715"
+  },
+  "evidence_delivery_commit": "The commit containing this final record; exact hash and actual push result are returned in the task response.",
+  "historical_records": "Parent 4551d08 snapshot, I11 REPAIR, all prior proof/cold reports and checker bytes are preserved unchanged; only parent README/STATUS gain current-binding pointers.",
+  "completed_utc": "2026-09-06T16:41:15.205249+00:00"
+}

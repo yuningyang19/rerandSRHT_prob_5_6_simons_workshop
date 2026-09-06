@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-06T15:55:09.031467+00:00",
+  "checked_head": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "B_proof_commit": "40f96935796e484ab4c03865bc93b47827f99980",
+  "B_inputs_byte_identical": 88,
+  "C_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "C_snapshot_and_live_inputs_byte_identical": 2,
+  "paper_branch_head": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "combined_source_files_unchanged": 159,
+  "all_branch_change_paths_authorized": true,
+  "branch_changed_paths": 425,
+  "Lean_changes_since_tested_commit": false,
+  "new_changes_scope": "Final evidence only"
+}

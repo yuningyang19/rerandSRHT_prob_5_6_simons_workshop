@@ -1,0 +1,115 @@
+{
+  "schema": "independent_source_interface_review_custom_v1",
+  "operation": "SOURCE_INTERFACE_CHECK_AND_PROOF_PORT_AUDIT",
+  "reviewer_context": "/root/baseline_audit",
+  "independent_of_proof_authors": true,
+  "review_time_utc": "2026-09-06T12:26:57.171368+00:00",
+  "source_result": "lem:cumulant-identities",
+  "source_interface": "I-V6-14",
+  "source_context_sha256": "c6fb4f8e1dcb925e0810ad2a55904ed519510e417ed7d0de0fc8eeea2c90caec",
+  "frozen_C_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "six_source_sha256": {
+    "FormalLogExpected.lean": "695382ecee0656a1388765fbe8e5a5a5c987d5272415a2512f5b259b9e068814",
+    "FormalLogBasic.lean": "b586eee3e034990038dca5cabfbc9e38386f54d549e3f152aadb65c9de637976",
+    "FormalLogPartitions.lean": "40e27cf813f551c8e6ecae5a29f851fa9e2c8c89c8d8d83eb67da8a6ba00a37a",
+    "FormalLogPowers.lean": "238c1a36a93f8c5ebcfa041efcab2a9189943f916c130fcacb09112d6f3dcdce",
+    "FormalLogCoefficients.lean": "67714ee015e51a541d375def0c60f4ff8ed8c099579f4d3a647b907152a45502",
+    "FormalLogInverse.lean": "f40c1fb3dbd4ef982f37ef136a4fc0019d6db8f56fdf2d082c8dd2eeaf76438c"
+  },
+  "original_expected_approval_sha256": "f6089f0132b3d8b2282b45d924886511934082065ae22f42e57a60758329beb3",
+  "exports": [
+    {
+      "expected_prop": "SquarefreePowerCoefficientExpected",
+      "theorem": "Problem56.PaperV6.squarefreePowerCoefficient",
+      "file": "FormalLogPowers.lean",
+      "scope": "Arbitrary real coefficient function f with f(empty)=0; every finite occurrence set S and every j, including j=0; actual recursive convolution power equals j! times its j-block partition sum."
+    },
+    {
+      "expected_prop": "SquarefreePowerTruncationExpected",
+      "theorem": "Problem56.PaperV6.squarefreePowerTruncation",
+      "file": "FormalLogBasic.lean",
+      "scope": "For the same arbitrary coefficient function with zero empty coefficient, powers above card(S) have coefficient zero, including S=empty."
+    },
+    {
+      "expected_prop": "FormalLogMomentCoefficientExpected",
+      "theorem": "Problem56.PaperV6.formalLogMomentCoefficient",
+      "file": "FormalLogCoefficients.lean",
+      "scope": "For arbitrary real random variables on a probability space with finite requisite joint moments, every nonempty occurrence subset S has squarefree log coefficient equal to the joint cumulant on the subtype S."
+    },
+    {
+      "expected_prop": "FormalExpLogMomentExpected",
+      "theorem": "Problem56.PaperV6.formalExpLogMoment",
+      "file": "FormalLogInverse.lean",
+      "scope": "For the same probability moments, squarefreeExp(squarefreeLog(moment)) recovers the actual integral moment coefficient for every S, including empty."
+    },
+    {
+      "expected_prop": "FormalLogEmptyCoefficientsExpected",
+      "theorem": "Problem56.PaperV6.formalLogEmptyCoefficients",
+      "file": "FormalLogBasic.lean",
+      "scope": "Probability normalization implies moment(empty)=1, log moment(empty)=0 and exp(log moment)(empty)=1; no Fintype on the whole occurrence type or moment hypothesis is needed for this endpoint."
+    }
+  ],
+  "aggregate_theorem": "Problem56.PaperV6.formalLogMomentInterface",
+  "aggregate_type": "SquarefreePowerCoefficientExpected ∧ SquarefreePowerTruncationExpected ∧ FormalLogMomentCoefficientExpected ∧ FormalExpLogMomentExpected ∧ FormalLogEmptyCoefficientsExpected",
+  "operation_status": "LITERAL_COEFFICIENT_IMPLEMENTATION_ACCEPTED_FINAL_KERNEL_BINDING_PENDING",
+  "literal_I14_gap": "Source-level implementation and development module compilation close the prior absence of actual coefficient objects; final full graph, expected assignment compile, allowed-axiom traversal and clean replay binding remain required.",
+  "definitions_not_assumed_conclusion": true,
+  "probability_space_scope": "Arbitrary real finite joint moments on an arbitrary probability space; no exponential integrability; repeated variables at distinct occurrence positions permitted.",
+  "lineage": "squarefreePow_partition derives factorial multiplicity by actual subset convolution and pointed-partition bijection. squarefreeLog_partition and squarefreeExp_partition use the resulting actual coefficients. formalExpLogMoment uses the prior independently proved general partition-cancellation moment identity after those expansions. It does not retroactively make that earlier theorem a formal-log proof, and the import graph has no backward FormalLog dependency.",
+  "development_build": {
+    "log": "logs/inverse_selection_noties_iteration6.log",
+    "log_sha256": "6aa0d9869a33beac9541f75478ba71e32529616151585b05d8c262209c3fc1e5",
+    "receipt": "logs/inverse_selection_noties_iteration6.execution.json",
+    "receipt_sha256": "0550719bfd4e14922680fffcccd0292e198ad3b0a95ce7e9925b1e050b792901",
+    "command": [
+      "lake",
+      "build",
+      "Problem56.PaperV6.FormalLogInverse",
+      "Problem56.PaperV6.ContinuousCouplingSelection",
+      "Problem56.PaperV6.ContinuousCouplingNoTies"
+    ],
+    "overall_returncode": 1,
+    "formal_log_module_outcome": "Built Powers, Coefficients and Inverse successfully; all six reviewed proof source hashes match this receipt",
+    "other_target_errors": "ContinuousCouplingSelection and ContinuousCouplingNoTies; do not label the entire command PASS"
+  },
+  "expected_assignments": {
+    "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedFormalLogChecks.lean",
+    "sha256": "e58ab10dac96294831a991c491d260c721e77d673860439a0c9afff4238f11d6",
+    "expanded_assignments": 5,
+    "conjunction_assignments": 1,
+    "compiler_status": "BUILT_IN_ITERATION9; combined invocation failed on unrelated GeneralBridgelessOriginalEar",
+    "build_log": "logs/continuous_original_ear_audittools_iteration9.log",
+    "build_log_sha256": "74ea9958d93696cd14d85cee96935906a26283d56df52a41ea24d38beef345e4",
+    "build_receipt_sha256": "ad881f4cbe4274828087ba8a200948ff6d70c76a6f45216da3077190e21c6f79"
+  },
+  "four_tests": {
+    "deletion": "Removing actual convolution or ordered-block multiplicity would leave only the old moment-cumulant consequence; these are now derived by a proved pointed-partition bijection and recursion.",
+    "object_identity": "The coefficient functions are squarefree formal monomial coefficients, with S drawn from occurrence positions; arbitrary m log has empty coefficient one, and exp input has empty coefficient zero at the actual applications.",
+    "route_substitution": "The new coefficient statements are literal finite coefficient representations of the source route. The exp(log moment) identity is checked using the prior valid alternative partition proof; this dependency is preserved and is not a circular assumption.",
+    "endpoint": "Power zero, empty occurrence set, high powers, nonempty blocks, division by nonzero j and j!, probability normalization and nonempty cumulant subsets are handled explicitly."
+  },
+  "mathematical_defect_found": false,
+  "required_manuscript_repair": "NONE_FOR_THIS_DELTA",
+  "limits": [
+    "No final combined graph or raw actual-type manifest yet includes these unintegrated modules",
+    "No concurrent compilation was performed by this reviewer",
+    "Independent client assignments require controller compilation and final source binding",
+    "No claim of infinite formal-series library identity, analytic convergence, novelty, author comprehension or release approval"
+  ],
+  "final_binding": {
+    "combined_audit_log_sha256": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58",
+    "combined_source_manifest_sha256": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "combined_actual_types_sha256": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+    "combined_actual_definitions_sha256": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5",
+    "independent_correspondence_lock_sha256": "3135cb809c44f01ab6a0921384505079a16bc8dce48e4860af3e6b8a7ed598c5",
+    "target_count": 359,
+    "definition_count": 134,
+    "node_count": 63329,
+    "local_source_count": 159,
+    "expected_checks_build_receipt": "logs/combined_integration_final.execution.json",
+    "expected_checks_build_returncode": 0,
+    "final_status": "SOURCE_TYPE_PROOF_AND_FINAL_KERNEL_BINDING_ACCEPTED",
+    "full_manuscript_scope": "NOT_ESTABLISHED: I-V6-11 separately requires source clarification"
+  },
+  "status": "IMPLEMENTATION_ACCEPTED_AND_BOUND_TO_FINAL_CHECKED_ENVIRONMENT"
+}

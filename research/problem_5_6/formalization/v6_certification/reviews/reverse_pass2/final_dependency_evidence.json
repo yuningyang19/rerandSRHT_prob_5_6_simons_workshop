@@ -1,0 +1,210 @@
+{
+  "method": "Independent streaming parse of final actual graph; shortest paths use proof_constants edges only, not module imports or type-only reachability. Every audited actual type matches the raw log and every manifested source byte matches current files.",
+  "targets": 359,
+  "nodes": 63329,
+  "source_manifest_file_count": 159,
+  "paths": [
+    {
+      "candidate": "R1",
+      "proof_constant_path": [
+        "Problem56.PaperV6.fixed_frame_squared_norm_success",
+        "Problem56.PaperV6.squared_edges_iff_spectral_bound"
+      ]
+    },
+    {
+      "candidate": "R2",
+      "proof_constant_path": [
+        "Problem56.two_projection_spectral_transfer",
+        "Problem56.two_projection_spectral_transfer_proof",
+        "Problem56.exists_twoProjection_bad_block_trace_gt",
+        "Problem56.twoProjectionPairTransferMatrix_trace_even_power_gt_of_large_real_root",
+        "Problem56.real_matrix_fin_two_trace_pow_eq_root_power_sum_re"
+      ]
+    },
+    {
+      "candidate": "R3",
+      "proof_constant_path": [
+        "Problem56.signed_trace_proposition",
+        "Problem56.signedTrace_bound",
+        "Problem56.signedTrace_master_geometric_bound",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEqualityData_contribution_sum_le",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEntryContribution_abs_sum_le_aggregateBound",
+        "Problem56.aggregate_partition_cumulant_bound"
+      ]
+    },
+    {
+      "candidate": "R4",
+      "proof_constant_path": [
+        "Problem56.bernoulli_coordinate_sampling_corollary",
+        "Problem56.signed_trace_proposition"
+      ]
+    },
+    {
+      "candidate": "R5",
+      "proof_constant_path": [
+        "Problem56.PaperV6.graph_rank",
+        "Problem56.graph_rank_contraction"
+      ]
+    },
+    {
+      "candidate": "R6",
+      "proof_constant_path": [
+        "Problem56.PaperV6.graph_fiber_boundary",
+        "Problem56.fiberSplitConsistentEquiv"
+      ]
+    },
+    {
+      "candidate": "R7",
+      "proof_constant_path": [
+        "Problem56.PaperV6.graph_rank",
+        "Problem56.graph_rank_contraction",
+        "Problem56.I07_rank_edge_factorization_bound",
+        "Problem56.I05_mingo_speicher_bridgeless_conversion",
+        "Problem56.mingo_speicher_bridgeless_conversion"
+      ]
+    },
+    {
+      "candidate": "R8",
+      "proof_constant_path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMomentIdentity"
+      ]
+    },
+    {
+      "candidate": "R9",
+      "proof_constant_path": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMixedIndependence"
+      ]
+    },
+    {
+      "candidate": "R10",
+      "proof_constant_path": [
+        "Problem56.joint_entry_cumulant_lemma",
+        "Problem56.joint_entry_cumulant_assembly",
+        "Problem56.joint_entry_cumulant_assembly_of_occurrence_expansion",
+        "Problem56.joint_entry_cumulant_vanish",
+        "_private.Problem56.JointEntryCumulant.0.Problem56.joint_entry_cumulant_covariance",
+        "_private.Problem56.JointEntryCumulant.0.Problem56.randomProjection_walsh_transform_entry",
+        "Problem56.randomProjection_walsh_symmetry",
+        "Problem56.transformedFrame_walsh_symmetry",
+        "Problem56.signDiagonal_translate"
+      ]
+    },
+    {
+      "candidate": "R11",
+      "proof_constant_path": [
+        "Problem56.selector_equality_graph_count",
+        "Problem56.I20_contracted_core_encoding_bound"
+      ]
+    },
+    {
+      "candidate": "R12",
+      "proof_constant_path": [
+        "Problem56.PaperV6.binary_count",
+        "Problem56.entryXorConstraintSolutionCount"
+      ]
+    },
+    {
+      "candidate": "R13",
+      "proof_constant_path": [
+        "Problem56.PaperV6.entry_absolute_contribution",
+        "Problem56.PaperV6.paperEntry_fixed_class_sum_bound"
+      ]
+    },
+    {
+      "candidate": "R14",
+      "proof_constant_path": [
+        "Problem56.PaperV6.general_sampling_joint",
+        "Problem56.PaperV6.bernoulli_noise_failure_law",
+        "Problem56.PaperV6.finiteNoiseFailureLaw"
+      ]
+    },
+    {
+      "candidate": "R15",
+      "proof_constant_path": [
+        "Problem56.small_rank_second_moment",
+        "Problem56.small_rank_second_moment_of_gram_reduction",
+        "Problem56.small_rank_frobenius_expectation_bound"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+      "dependency": "Problem56.PaperV6.generalBridgeless_modification",
+      "proof_constant_path": [
+        "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+        "Problem56.PaperV6.generalBridgeless_modification"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+      "dependency": "Problem56.PaperV6.rooted_history",
+      "proof_constant_path": [
+        "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+        "Problem56.PaperV6.rooted_history_consequence",
+        "Problem56.PaperV6.rooted_history"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.formalLogMomentInterface",
+      "dependency": "Problem56.PaperV6.squarefreePow_partition",
+      "proof_constant_path": [
+        "Problem56.PaperV6.formalLogMomentInterface",
+        "Problem56.PaperV6.squarefreePowerCoefficient",
+        "Problem56.PaperV6.squarefreePow_partition"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.formalLogMomentInterface",
+      "dependency": "Problem56.PaperV6.measure_moment_cumulant_inverse_nonempty_index",
+      "proof_constant_path": [
+        "Problem56.PaperV6.formalLogMomentInterface",
+        "Problem56.PaperV6.formalExpLogMoment",
+        "Problem56.PaperV6.formalLog_ambient_moment_inverse",
+        "Problem56.PaperV6.measure_moment_cumulant_inverse_nonempty_index"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.continuousCoupling",
+      "dependency": "Problem56.PaperV6.continuousThreshold_law",
+      "proof_constant_path": [
+        "Problem56.PaperV6.continuousCoupling",
+        "Problem56.PaperV6.continuousThreshold_law"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.general_sampling_joint",
+      "dependency": "Problem56.PaperV6.finiteNoiseFailureLaw",
+      "proof_constant_path": [
+        "Problem56.PaperV6.general_sampling_joint",
+        "Problem56.PaperV6.bernoulli_noise_failure_law",
+        "Problem56.PaperV6.finiteNoiseFailureLaw"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.gram_centering",
+      "dependency": "Problem56.PaperV6.gram_centering",
+      "proof_constant_path": [
+        "Problem56.PaperV6.gram_centering"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.rectangular_trace_power",
+      "dependency": "Problem56.PaperV6.rectangular_trace_mul_pow",
+      "proof_constant_path": [
+        "Problem56.PaperV6.rectangular_trace_power",
+        "Problem56.PaperV6.rectangular_trace_mul_pow"
+      ]
+    }
+  ],
+  "hashes": {
+    "combined_actual_types.json": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+    "combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5",
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "combined_target_inventory.json": "854c7ba22848211ba08cff155b495058796e2d2a8c9bf7a52cd70bad4203e326",
+    "combined_graph_component_result.json": "4130ca915263218abc8f14f5f804b89e33a3975ba57abb967c06895276065f14",
+    "logs/combined_audit.log": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58",
+    "logs/combined_audit.execution.json": "f8ec222c37c5a80195740cb502820d7e01adb9f9228fb1e4b3cd994217bb170c"
+  },
+  "metadata_correction": "Metadata-only correction: the controller reports that fail-closed validate_manifest(complete=True) rejected the prior source manifest because lakefile.lean occurred twice (160 rows, 159 unique files). The generator was corrected and the manifest regenerated. This reviewer independently verified the replacement has 159 rows and 159 distinct paths, verified every current source hash, and rebound the report and dependency evidence to its current hash. The actual types, definitions, graph and mathematical source bytes are unchanged; no new mathematical review or promotion is asserted."
+}

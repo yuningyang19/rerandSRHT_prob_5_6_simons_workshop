@@ -1,0 +1,9 @@
+{
+  "unified_build": "research/problem_5_6/formalization/v6_certification/logs/final_unified_build.execution.json",
+  "dependency_environment": "research/problem_5_6/formalization/v6_certification/logs/final_dependency_environment.execution.json",
+  "expected_type_checks": "research/problem_5_6/formalization/v6_certification/logs/final_expected_type_checks.execution.json",
+  "semantic_witnesses": "research/problem_5_6/formalization/v6_certification/logs/final_semantic_witnesses.execution.json",
+  "structural_guards": "research/problem_5_6/formalization/v6_certification/logs/final_structural_guards.execution.json",
+  "negative_tests": "research/problem_5_6/formalization/v6_certification/logs/final_negative_tests.execution.json",
+  "kernel_replay": "research/problem_5_6/formalization/v6_certification/logs/final_kernel_replay.execution.json"
+}

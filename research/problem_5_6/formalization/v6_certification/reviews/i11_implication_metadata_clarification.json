@@ -1,0 +1,58 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "time_utc": "2026-09-06T13:55:37.229592+00:00",
+  "change_kind": "FINAL_METADATA_CLARIFICATION_AFTER_C030",
+  "scope": "Only I-V6-11 implication_direction wording changed in root crosswalk; corresponding independent lock/rendering refreshed. No proof/checker/source/type/definition change.",
+  "old_implication_direction": "Recorded actual Lean theorem(s), with explicit specialization/reindexing where stated, imply the frozen C item; no converse or enlargement from a narrower B theorem is used.",
+  "new_implication_direction": "For I-V6-11, the recorded Lean results imply boundary-entry and full-sum preservation, norm-product nonincrease for arbitrary natural-number dimensions, and norm-product equality when all coordinate dimensions are positive. They do not imply the frozen source unqualified generic identity-norm-one or norm-product-equality sentence; that literal claim remains SOURCE_OR_CORRESPONDENCE_REPAIR_REQUIRED.",
+  "before_hashes": {
+    "three_way_crosswalk.json": "f0e0702505d1a5fc25b0e3f2da0bf448f15378f37bc28ce24033288941382ca0",
+    "reviewed_correspondence_lock.json": "1c6cc30ebf72684c8e8a5b390272d6446cd06e174d1770c6d407f52db507abd0",
+    "reviewed_type_lock.json": "37e446452f1c9bea9ef2346f317d647749624e09f4253f3d87322ae5d4aab135",
+    "reviewed_definition_lock.json": "026d9cce127ef96bc4eccb21ea73360af86aef06aa3a3dcdb7678c43504ffd9d",
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "combined_actual_types.json": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+    "combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5"
+  },
+  "after_hashes": {
+    "three_way_crosswalk.json": "279b272d692cbebe4f80e3ae9d45f263596b95ae310ce2dee931776649045d81",
+    "reviewed_correspondence_lock.json": "3135cb809c44f01ab6a0921384505079a16bc8dce48e4860af3e6b8a7ed598c5",
+    "reviewed_type_lock.json": "37e446452f1c9bea9ef2346f317d647749624e09f4253f3d87322ae5d4aab135",
+    "reviewed_definition_lock.json": "026d9cce127ef96bc4eccb21ea73360af86aef06aa3a3dcdb7678c43504ffd9d",
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "combined_actual_types.json": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+    "combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5"
+  },
+  "tested_archive_commit": "c0303801ca01e9507a27ef4a47236807c9e39ab7",
+  "tested_archive_sha256": "15b07372fcf0e146347c447ec2aed1db0782f7a37499bd97037273460c41cfb6",
+  "running_cold_directory_untouched": true,
+  "no_new_archive_test_claim": true,
+  "actual_revalidation": {
+    "command": [
+      "python3",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py",
+      "--root",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification",
+      "--log",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/logs/final_combined_audit.log",
+      "--receipt",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/logs/final_combined_audit.execution.json",
+      "--inventory",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/combined_target_inventory.json",
+      "--manifest",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/combined_source_manifest.json",
+      "--expected-types",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reviewed_type_lock.json",
+      "--definition-lock",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reviewed_definition_lock.json",
+      "--mandatory-checks",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/mandatory_checks.json"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+    "returncode": 0,
+    "start_utc": "2026-09-06T13:55:37.412052+00:00",
+    "end_utc": "2026-09-06T13:55:48.463140+00:00",
+    "log_sha256": "e559f2f959451e4e54ce4a087104547241599d8f2de1e2a5d2c722ada6d035f5",
+    "log": "reviews/post_metadata_final_verifier.log"
+  }
+}

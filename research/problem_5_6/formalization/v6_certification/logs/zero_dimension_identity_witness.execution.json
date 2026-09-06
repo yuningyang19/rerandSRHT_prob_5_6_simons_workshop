@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../v6_certification/probes/ZeroDimensionIdentity.lean"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+  "start_utc": "2026-09-06T12:56:11.396802+00:00",
+  "end_utc": "2026-09-06T12:56:22.895051+00:00",
+  "elapsed_seconds": 11.498243874986656,
+  "returncode": 0,
+  "stdout_stderr": "logs/zero_dimension_identity_witness.log",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "local_lean_sources": {
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean": "3c6db375116f1364edaeafd484d10f14e20f3b7472efb6389bcd7a6e4772652e",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorRegression.lean": "b105b7edae08e44cd2f4a6da1dce84e89d00b53d69ae9eb877c2cb8bb92bcdd1",
+    "research/problem_5_6/formalization/lean/lake-manifest.json": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540",
+    "research/problem_5_6/formalization/lean/lakefile.lean": "d5e2b1d68953f7348d5ccca257d40afe9eb4d772d9680ae8d4c4512ebf052c29",
+    "research/problem_5_6/formalization/lean/lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "research/problem_5_6/formalization/v6_certification/probes/ZeroDimensionIdentity.lean": "4cf0c5c2e17a04b4b904442277af98a7d18ce23e8a9f21bf0bd86d9ed7968111",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_logged.py": "7204dd717c1e4f7b168cc52ed5df337673e55115f7cc87344e29a471ef3ee73c",
+    "research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py": "966379ab2a054fc84b827c5fcf3f2f6796bbbabd91177408fc5b8dc1fd587bb0"
+  },
+  "receipt_kind": "local subprocess execution record; not authenticated external attestation"
+}

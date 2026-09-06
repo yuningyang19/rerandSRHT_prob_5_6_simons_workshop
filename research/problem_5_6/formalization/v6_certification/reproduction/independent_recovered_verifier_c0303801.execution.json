@@ -1,0 +1,28 @@
+{
+  "command": [
+    "python3",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py",
+    "--root",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow",
+    "--log",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/logs/recovery_combined_audit.log",
+    "--receipt",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/logs/recovery_combined_audit.execution.json",
+    "--inventory",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/combined_target_inventory.json",
+    "--manifest",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/combined_source_manifest.json",
+    "--expected-types",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/reviewed_type_lock.json",
+    "--definition-lock",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/reviewed_definition_lock.json",
+    "--mandatory-checks",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_recovered_mandatory_checks_c0303801.json"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+  "started_utc": "2026-09-06T14:39:52.296161+00:00",
+  "ended_utc": "2026-09-06T14:40:01.631265+00:00",
+  "elapsed_seconds": 9.334752416005358,
+  "returncode": 0,
+  "log_sha256": "e559f2f959451e4e54ce4a087104547241599d8f2de1e2a5d2c722ada6d035f5"
+}

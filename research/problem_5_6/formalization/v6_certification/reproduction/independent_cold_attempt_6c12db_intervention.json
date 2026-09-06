@@ -1,0 +1,31 @@
+{
+  "time_utc": "2026-09-06T13:13:39.450379+00:00",
+  "action": "SIGTERM current cold lake build and its descendant source-fetch processes; leave supervising Python runners to record real failure",
+  "reason": "Controller found deterministic later orchestration failure: historical semantic_regressions.py requires one test ID but mandatory command supplied none. No mathematical source changed. Stop avoids completing an inevitably failing package attempt.",
+  "verification_commit": "6c12db598e56103309f7e41144f84b75246fa96b",
+  "archive_sha256": "23b3c187af9b3fd2ecb3ad3738395eaa2fb8005c8e4653cb380204deecc1d54b",
+  "killed_processes": [
+    {
+      "pid": 52093,
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git-remote-https origin https://github.com/leanprover-community/mathlib4.git"
+    },
+    {
+      "pid": 52092,
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git remote-https origin https://github.com/leanprover-community/mathlib4.git"
+    },
+    {
+      "pid": 52442,
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git index-pack --stdin --fix-thin --keep=fetch-pack 52091 on Mac-Studio.local --check-self-contained-and-connected"
+    },
+    {
+      "pid": 52091,
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/git clone https://github.com/leanprover-community/mathlib4.git /Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6c12db598e56/research/problem_5_6/formalization/lean/.lake/packages/mathlib"
+    },
+    {
+      "pid": 52075,
+      "command": "/Users/yuningyang/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake --no-cache build Problem56.PaperV6.Certification"
+    }
+  ],
+  "directory_preserved": "packages/cold-6c12db598e56",
+  "source_cache_copied": false
+}

@@ -1,0 +1,625 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-09-06T15:15:31.186007+00:00",
+  "verification_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "archive_sha256": "9e4dcf6c813914bf4d98f23a2fdf54d408ef71b811cedd169b4cd1c5b8fa12a7",
+  "archive": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/frozen-v6-companion-6bb96aa.tar.gz",
+  "destination": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final",
+  "destination_was_absent": false,
+  "destination_was_absent_in_initial_attempt": true,
+  "prior_source_acquisition_failure_report": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_final_source_cold_6bb96aa-final-resumed.json",
+  "prior_source_acquisition_failure_sha256": "2978ae1419c7709757c15568f7fd15f513eb44f67b825ecb711a7c1f0436b3c5",
+  "execution_method": "After two preserved pre-compilation official Mathlib transport failures, revalidate the same new archive directory and zero compiled objects; fetch exact SOURCE Git objects only from the independently verified official-source repositories in the c030 cold tree, without copying their working trees or compiled/build artifacts. Verify exact clean HEADs and zero compiled objects again, then invoke the corrected archive documented run_suite.py exactly once. This uses cached source Git objects and is not an unqualified cache-free run; every proof object is compiled from source in the new tree.",
+  "compiled_cache_reused": false,
+  "source_object_mirror_reused": true,
+  "global_git_config_modified": false,
+  "source_fetches": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "expected_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "actual_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/mathlib/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "expected_revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "actual_revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/plausible/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "expected_revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "actual_revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/LeanSearchClient/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "expected_revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "actual_revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/importGraph/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "expected_revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "actual_revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/proofwidgets/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "expected_revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "actual_revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/aesop/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "expected_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "actual_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/Qq/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "expected_revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "actual_revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/batteries/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "expected_revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "actual_revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/Cli/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    }
+  ],
+  "child_git_http_version": "HTTP/1.1",
+  "archive_members": 516,
+  "source_members_checked": 514,
+  "initial_compiled_objects": 0,
+  "archive_validation": "PASS",
+  "current_command": {
+    "command": [
+      "python3",
+      "research/problem_5_6/formalization/v6_certification/scripts/run_suite.py"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final",
+    "started_utc": "2026-09-06T15:15:34.805820+00:00",
+    "returncode": 0,
+    "elapsed_seconds": 3039.664888416999,
+    "ended_utc": "2026-09-06T16:06:14.533072+00:00"
+  },
+  "execution_commands": [
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/mathlib/.git",
+        "db584cd6d46c92f209a44c0f1c829460d327499d"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+      "started_utc": "2026-09-06T15:15:31.678791+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.3408472500159405,
+      "ended_utc": "2026-09-06T15:15:32.019886+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+      "started_utc": "2026-09-06T15:15:32.020164+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 1.0533794169896282,
+      "ended_utc": "2026-09-06T15:15:33.073664+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/plausible",
+      "started_utc": "2026-09-06T15:15:33.130026+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.018726083042565733,
+      "ended_utc": "2026-09-06T15:15:33.148869+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/plausible"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/plausible",
+      "started_utc": "2026-09-06T15:15:33.149098+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.014647666015662253,
+      "ended_utc": "2026-09-06T15:15:33.163864+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/plausible/.git",
+        "b7eb3304aeae834b12dda98993a37f6a41f6f0bb"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/plausible",
+      "started_utc": "2026-09-06T15:15:33.208014+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.06565179204335436,
+      "ended_utc": "2026-09-06T15:15:33.273963+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/plausible",
+      "started_utc": "2026-09-06T15:15:33.274314+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.02055833302438259,
+      "ended_utc": "2026-09-06T15:15:33.294997+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/LeanSearchClient",
+      "started_utc": "2026-09-06T15:15:33.325416+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.016716833983082324,
+      "ended_utc": "2026-09-06T15:15:33.342326+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/LeanSearchClient"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/LeanSearchClient",
+      "started_utc": "2026-09-06T15:15:33.342811+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.01385445799678564,
+      "ended_utc": "2026-09-06T15:15:33.356848+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/LeanSearchClient/.git",
+        "5f4d51b81cbd3f6b32b156bfad9056621a040404"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/LeanSearchClient",
+      "started_utc": "2026-09-06T15:15:33.397905+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.04911645903484896,
+      "ended_utc": "2026-09-06T15:15:33.447278+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/LeanSearchClient",
+      "started_utc": "2026-09-06T15:15:33.447573+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.017550165997818112,
+      "ended_utc": "2026-09-06T15:15:33.465255+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/importGraph",
+      "started_utc": "2026-09-06T15:15:33.494407+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.016467457986436784,
+      "ended_utc": "2026-09-06T15:15:33.511010+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/import-graph"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/importGraph",
+      "started_utc": "2026-09-06T15:15:33.511270+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.013497666048351675,
+      "ended_utc": "2026-09-06T15:15:33.524905+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/importGraph/.git",
+        "16f02aa7642864af59f1ff0e384a015994db9118"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/importGraph",
+      "started_utc": "2026-09-06T15:15:33.566736+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.07789837499149144,
+      "ended_utc": "2026-09-06T15:15:33.644928+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/importGraph",
+      "started_utc": "2026-09-06T15:15:33.645264+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.024699833011254668,
+      "ended_utc": "2026-09-06T15:15:33.670146+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/proofwidgets",
+      "started_utc": "2026-09-06T15:15:33.700451+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.016392833029385656,
+      "ended_utc": "2026-09-06T15:15:33.717032+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/ProofWidgets4"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/proofwidgets",
+      "started_utc": "2026-09-06T15:15:33.717334+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.014366874995175749,
+      "ended_utc": "2026-09-06T15:15:33.731872+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/proofwidgets/.git",
+        "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/proofwidgets",
+      "started_utc": "2026-09-06T15:15:33.775906+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.06765041599282995,
+      "ended_utc": "2026-09-06T15:15:33.843909+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/proofwidgets",
+      "started_utc": "2026-09-06T15:15:33.844236+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.06874062499264255,
+      "ended_utc": "2026-09-06T15:15:33.913148+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/aesop",
+      "started_utc": "2026-09-06T15:15:33.948910+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.017311542003881186,
+      "ended_utc": "2026-09-06T15:15:33.966426+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/aesop"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/aesop",
+      "started_utc": "2026-09-06T15:15:33.966768+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.014633041981142014,
+      "ended_utc": "2026-09-06T15:15:33.981574+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/aesop/.git",
+        "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/aesop",
+      "started_utc": "2026-09-06T15:15:34.028674+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.04283945797942579,
+      "ended_utc": "2026-09-06T15:15:34.071837+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/aesop",
+      "started_utc": "2026-09-06T15:15:34.072177+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.035844917001668364,
+      "ended_utc": "2026-09-06T15:15:34.108190+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Qq",
+      "started_utc": "2026-09-06T15:15:34.140454+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.017967249965295196,
+      "ended_utc": "2026-09-06T15:15:34.158603+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/quote4"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Qq",
+      "started_utc": "2026-09-06T15:15:34.158917+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.0141909159719944,
+      "ended_utc": "2026-09-06T15:15:34.173308+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/Qq/.git",
+        "92c15be17b7caf78c2ad767ec40f89052d908d81"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Qq",
+      "started_utc": "2026-09-06T15:15:34.215411+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.06215487502049655,
+      "ended_utc": "2026-09-06T15:15:34.277866+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Qq",
+      "started_utc": "2026-09-06T15:15:34.278459+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.019474332977551967,
+      "ended_utc": "2026-09-06T15:15:34.298118+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/batteries",
+      "started_utc": "2026-09-06T15:15:34.327721+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.01618316600797698,
+      "ended_utc": "2026-09-06T15:15:34.344073+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/batteries"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/batteries",
+      "started_utc": "2026-09-06T15:15:34.344341+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.013992207997944206,
+      "ended_utc": "2026-09-06T15:15:34.358702+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/batteries/.git",
+        "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/batteries",
+      "started_utc": "2026-09-06T15:15:34.403550+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.044043749978300184,
+      "ended_utc": "2026-09-06T15:15:34.447964+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/batteries",
+      "started_utc": "2026-09-06T15:15:34.448388+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.03915237501496449,
+      "ended_utc": "2026-09-06T15:15:34.487732+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Cli",
+      "started_utc": "2026-09-06T15:15:34.519708+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.01650504197459668,
+      "ended_utc": "2026-09-06T15:15:34.536423+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover/lean4-cli"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Cli",
+      "started_utc": "2026-09-06T15:15:34.536749+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.01396162499440834,
+      "ended_utc": "2026-09-06T15:15:34.550887+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/Cli/.git",
+        "6130a47896ce867c6a4a55373441e59e565bad0f"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Cli",
+      "started_utc": "2026-09-06T15:15:34.595425+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.04924870899412781,
+      "ended_utc": "2026-09-06T15:15:34.645037+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "checkout",
+        "--detach",
+        "FETCH_HEAD"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/Cli",
+      "started_utc": "2026-09-06T15:15:34.645430+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.01893666700925678,
+      "ended_utc": "2026-09-06T15:15:34.664554+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "research/problem_5_6/formalization/v6_certification/scripts/run_suite.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final",
+      "started_utc": "2026-09-06T15:15:34.805820+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 3039.664888416999,
+      "ended_utc": "2026-09-06T16:06:14.533072+00:00"
+    }
+  ],
+  "prebuild_compiled_objects": 0,
+  "source_acquisition_elapsed_seconds": 3.6186265840078704,
+  "returncode": 0,
+  "documented_run_suite_completed_without_recovery": true,
+  "changed_proof_or_build_inputs": [],
+  "ended_utc": "2026-09-06T16:06:14.538725+00:00",
+  "elapsed_seconds": 3043.2905420000316,
+  "raw_log": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_final_source_cold_6bb96aa-final-source-mirror.log",
+  "raw_log_sha256": "73a90827abbc479f595d0945f24d5784daaaf1946c51fc24d3ac8af7a481114f"
+}

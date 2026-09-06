@@ -1,0 +1,1331 @@
+{
+  "files": [
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/AggregatePartitionCumulant.lean",
+      "sha256": "7e0d263950ef767f7ef0e44e43403d5a41c4434cbeaf814d5637a06ea4fa758b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/BernoulliSamplingCorollary.lean",
+      "sha256": "ac550f6b516e602114f39823e2b9f90f4ec56f4e13a2ba4e10325caf2efe07e2"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/BinomialTail.lean",
+      "sha256": "1fd7dfd2e752eaf1d49bd7fea83e4f7cafe560096e0c7cb9759813a5e6670abc"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreAbstractCode.lean",
+      "sha256": "e01936ff44af4c85666061cc8facfa496f4c1cf8aa92568dc87f60f5ff657943"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonical.lean",
+      "sha256": "8ce9ecb14f960f35f0e0cb4c5873438f20710e66c13aaeeaed387d6091146caf"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCard.lean",
+      "sha256": "f8d060caa53084744b7fd0060019273db342b0cf15a31d4484a1e4266ac02f5f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCount.lean",
+      "sha256": "c946db2e2915072c8b33d0bdd6f5886edd8df59c35a4a32d65b02c8bb871498a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean",
+      "sha256": "44023ecd3e95914192ae875ba102205bf28342a31c96e496cae91bc2dbbbc3f3"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean",
+      "sha256": "41f19294046e281a07384c64a81a644dbd8da331b77006c9dbec36b5c5036e72"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean",
+      "sha256": "0610495bf796c22842d164d2c78d979c1f352d49e7ecc6556511080de5c3dbdf"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreComponents.lean",
+      "sha256": "f7ab6355a559c0f5521e7c17ef0815abef95e4efcedee9df8f7a970c164ee031"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCount.lean",
+      "sha256": "8f4cde05d37f29d0845d6db566d5869f8ed0d01465807a59972eb78a81d4a643"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreEncodingClosure.lean",
+      "sha256": "889896065795eb1d08273b4bd62697fca198b690f919f94b61a459f1b6e443a0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreEuler.lean",
+      "sha256": "a75b027bbaf8e697c0f788533d62d7d3db998c600036382022c13a0ed10cbfef"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreExtraction.lean",
+      "sha256": "40d989a38f201704565fbd27299c55771f5c88fc0ad3621bdebb85e4e3e3c03c"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCorePairingCode.lean",
+      "sha256": "f0385c9062ddcdd95cdc1ae5f2f5af8b824be2060616dcc942a237216255e310"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCorePathOrder.lean",
+      "sha256": "fc60d8962ca99eb56e3d9624ee31ac4c43c5e2b211ddfa0a019bf69ea7ff0fb0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCorePaths.lean",
+      "sha256": "859d7cd82fd3a82ea43b68509dac9fcca82b601e3ec44f0d3c33a2368df0e798"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreProfile.lean",
+      "sha256": "4a3a7b1c67655fc4790f329010eb09d2c8b0fb1238b26fb459a33e5dbffca1a4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreSerialization.lean",
+      "sha256": "3d3b5f4549e2786b20b599e30eaf96e8b30827a0ab6b976494704cbc2a884f00"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTerminalBudget.lean",
+      "sha256": "60f272932a86739db54f862532faa7afcde47612ee7f5476f1a431f632f12b02"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTopology.lean",
+      "sha256": "dffc9f44b3214a378058db417015e2b1ef82a26864883ad16d06611f9f89c149"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTransition.lean",
+      "sha256": "bdfc936e799bea2d52e92091253e5280f492bb0b3cf8b29ed0a2cd736014b367"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreWordReconstruction.lean",
+      "sha256": "fd34f08a2c39c5fc85953cf722656ad72ec5ce5b46e167151e60e9f8eeaf0681"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ContractedCoreZeroParameter.lean",
+      "sha256": "e32d1fa041aa6a99841ecd616108ac3ace70ef547ea1f5aa740de259cff5b0cb"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/CumulantMoment.lean",
+      "sha256": "82c7b3a4e9ab2b12511d6e4f337ce7b2b2925706d277d7dbbf1f167d39b32b40"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/Definitions.lean",
+      "sha256": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/DisjointPairCount.lean",
+      "sha256": "7c7562d18ee0d0e6584b9282cd9993f583d554fe97efef5b92642c4ad4eb94ce"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/EncodingCount.lean",
+      "sha256": "0700b3c634cca4329f6bbaa2c9b0e83aef5a4c66cdd6f9b5060c4b10f086dfc8"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/EqualityBudget.lean",
+      "sha256": "aa043075bff1d85b7ee42d9e508103960ffd489508c2f5e200e12a0b18ff1ce5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/EqualityDegreeFour.lean",
+      "sha256": "1da40e94057fac2811f27ee6fd7cf94d52b756c8f431b1b13b60e210dbb1708d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ExtractionRegression.lean",
+      "sha256": "bd2b3925aac7d974e2abbb6d0aeeab9f02515f817583b1aa3850dfffcc4c47be"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/FinalWidth.lean",
+      "sha256": "49333414a1820d5b8818191805c58a404f6a91bbcaa57f26a4563fbfcc8a3bd2"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/FinitePopulationMoment.lean",
+      "sha256": "bcc4f897dc04706fc496a6884c08a3299709994f3fa8c2bd309103278525d8a8"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/FixedSizeSamplingTransfer.lean",
+      "sha256": "4b35c0f6f665fc7bcfce74fe882f85d3e3bbc8b03a95ba712d2da080a788d20d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphBridgelessConversion.lean",
+      "sha256": "8703ff942b0e8ea724b378671e1abf0f2d73bc41ecf9dc93c7a25604ba5e09a6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphEven.lean",
+      "sha256": "69e426bf8b5a39ae4acd680bb7092958d9e5922836eaa9d02f89f46b3983f4aa"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphFiberSplit.lean",
+      "sha256": "a97451a00d60c63142ee53a108ba5370f24ffa4b27fa6bd90a5d78f65ed9545d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean",
+      "sha256": "3c6db375116f1364edaeafd484d10f14e20f3b7472efb6389bcd7a6e4772652e"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphOperatorRegression.lean",
+      "sha256": "b105b7edae08e44cd2f4a6da1dce84e89d00b53d69ae9eb877c2cb8bb92bcdd1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphOperatorUnequalRegression.lean",
+      "sha256": "6d4f1589ec84b2fe0e55be1673ad280634b9f40c2ce3fa6523659c93f6351aef"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphRankEdgeSplit.lean",
+      "sha256": "46fff34a3cce0997d856ebbede9ccd4cc29528c6e71d0ac5edf4664965cd5181"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphRankEndpoint.lean",
+      "sha256": "b2f229fee645ae0c14d4270f4779c1e8f5dde369ed6b04c6191b444dcee8b3e0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphVertexSplit.lean",
+      "sha256": "b3811b6dfd32bc17b5312cd85d9ec99266caedeea3d2f0945e85ec8472d9f363"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/GraphWeightLoops.lean",
+      "sha256": "e4bb08146e409447f4248286a297a66d5128c8aa303f380105f6f3a09d30b0f6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/IndexedEulerCircuit.lean",
+      "sha256": "9f2c22a12811a02af2acf6906a38dc0c71076207004377ff7f9a266e75bdf4df"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/JointEntryCumulant.lean",
+      "sha256": "e812218385967d9a89351200c5d0d06708ed0a462c1fff7c06e24a364f54b8a3"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/LargeBlockCount.lean",
+      "sha256": "43be8f33c6fc6b764e154851cf77f6b43d07c9a9e5b7b36e8a94528b8c9951ef"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/LargeBlockSupportRank.lean",
+      "sha256": "0d720b396bb84a67d0f3c51e3223f57e146516768d04a1cac1a1d3bb70aa2c57"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/LargeRankCutoff.lean",
+      "sha256": "c1b369edf679a31c0ebefe948b2632ee8bc24500d80efab271b1bbf7fc4f1cb1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/MixedCumulant.lean",
+      "sha256": "8ad8009aa23c93a27c41164270584abca3feb1daf3a7a09f46a200ede25f8dad"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/NestedCoupling.lean",
+      "sha256": "e78796625ffaec1137e160162d76fb9a1a0e287ffd7df84bce4f001050f15b20"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/OccurrenceGraph.lean",
+      "sha256": "f26f569d5b8cab4c5462d9db92d639aac74aac937a4ba3e18f35d129b7d11f5c"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PairingParallelBound.lean",
+      "sha256": "4019c5f0deb286963c614e618e360d8f3c8bf4703f9f44ea297bf03d097eaede"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/AuditTools.lean",
+      "sha256": "9ee6d1be4338010fce110c4ffd6d1075952fa59bd61c7f6608aabcb2b4bee842"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/BinaryBridges.lean",
+      "sha256": "0e786c35a6c9807e9970ab753818f987b8d31f75f5d9ca3958ac4ffb6ff6b6f4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/Certification.lean",
+      "sha256": "dbe659e88d68f49d6b6490ebb57d09d89e2e1450a75b2d752b9109a422476c73"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/CombinedAudit.lean",
+      "sha256": "14ec4038fca05edad203cddb6d3bd1afa3fabed47a7a553931229a01c8401cbc"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCoupling.lean",
+      "sha256": "fa573de308d63d2b4f7f8498544b4977f2b6f923e502f5e4977a1be660101f7f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingBasics.lean",
+      "sha256": "6152c491073252c927efe3cfe75025d0d852e86efdb5fd97ed9755c68bf02730"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingExpected.lean",
+      "sha256": "ddd5f2c19de0c4d96c67c1df277c09884b70941a192b00cac28b92484f344ace"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingNoTies.lean",
+      "sha256": "4ef424db7bdae7175fe5180c389c05d6566ca38452b37bc9613a3c3acbb8908d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingSelection.lean",
+      "sha256": "de4b25b5686db644a88a1e4161c7b2468fbf2ffbd739500ce771b89a5dcd28a9"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/EntryBridges.lean",
+      "sha256": "979f779200ae074b43639141a6326ad199b42426d2c902c241275feed599ffea"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedChecks.lean",
+      "sha256": "bb15378f6aaf15d39ba1b30c57ba1a9f03e8531b1a27f66e00d1c108b3e888cd"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedContinuousChecks.lean",
+      "sha256": "aa12b9f3cd9079cecc7294f780f475e435c3167113a61f2f6c0b10ff35f0846f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedFormalLogChecks.lean",
+      "sha256": "e58ab10dac96294831a991c491d260c721e77d673860439a0c9afff4238f11d6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedGraphHistoryChecks.lean",
+      "sha256": "e362424acac0e352274b8eb6999e21fcbf484d3fcdac02ce2b65908c73b9f0b4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedTraceChecks.lean",
+      "sha256": "63967bdcb06161f6ea08138b87ed126b3e2ec1385feea754b53b646b8f851a94"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FiniteNoiseLaw.lean",
+      "sha256": "15cf98e053c9d0556fd22692448c9a205eed10f827d09628a0c35578c6931399"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrame.lean",
+      "sha256": "55648df38dee945b09c29f8ad6688abb4ab50d313240bb4a920cdedd69c58431"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrameExpected.lean",
+      "sha256": "7a060c21c36812f6acfc0cb1f10e462605d81626f4ac2fbe6960b428c80deff1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogBasic.lean",
+      "sha256": "b586eee3e034990038dca5cabfbc9e38386f54d549e3f152aadb65c9de637976"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogCoefficients.lean",
+      "sha256": "67714ee015e51a541d375def0c60f4ff8ed8c099579f4d3a647b907152a45502"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogExpected.lean",
+      "sha256": "695382ecee0656a1388765fbe8e5a5a5c987d5272415a2512f5b259b9e068814"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogInverse.lean",
+      "sha256": "f40c1fb3dbd4ef982f37ef136a4fc0019d6db8f56fdf2d082c8dd2eeaf76438c"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogPartitions.lean",
+      "sha256": "40e27cf813f551c8e6ecae5a29f851fa9e2c8c89c8d8d83eb67da8a6ba00a37a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogPowers.lean",
+      "sha256": "238c1a36a93f8c5ebcfa041efcab2a9189943f916c130fcacb09112d6f3dcdce"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActivateEdge.lean",
+      "sha256": "b5d92f98947bbc6c63182c389bf94780ca6ab5f3066160077fa23d8b7a8f13c0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveGraph.lean",
+      "sha256": "d1865f3cd8f1af1af5d1f836dd4fba7ec85e3328c29e27f88e26424323d89b94"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveSplitDAG.lean",
+      "sha256": "4e0570a990f1b1b730b19398f0d092df9ebe5aeac5bf14719c25dd5d3075c9c1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveSplitData.lean",
+      "sha256": "cd39aff63608c6cbed3eb31491b0a59ba16b7ddc9c273f1b9db8830462962efb"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveSplitState.lean",
+      "sha256": "8e5d1c1e5509b8e452a605d0b77bcf2d2d1fbabffe8c0735bf48790f30ff6da4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessCompletion.lean",
+      "sha256": "f06d48779d0792b3ba8fff2bba5dfdb2e11e37701cbd8a9b9326d521934fc331"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessConversion.lean",
+      "sha256": "ee8501a8e6220fb70a362f7106df7741cdcd8dfefec4fa8f5c044b1d69bc1cd3"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessCurrentEar.lean",
+      "sha256": "9bd901a51a6426a9d1d4e4840fc600e9138dff54243cda8b13b60153ddba364b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessDAGSplit.lean",
+      "sha256": "102c6882d7525f738bc7d5fe63ca1da9d559d8e4411909a1e76d9f3e382cd922"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarActivation.lean",
+      "sha256": "699029390f03411ac76ddd467a6a96069eee2b718f8de53918cd180048a88214"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarInsertion.lean",
+      "sha256": "2b7db8985785f07b49a2dcccce0b3ce284a6a112724c2dee2efc86bc1ab88008"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarStateDAG.lean",
+      "sha256": "3f6dfcdba0808c4f71cdfef4aad1b3da7e8b358e78f057b4cfdbf9bfac4edd4b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarStateData.lean",
+      "sha256": "ece33429b8603d518c4e619a02f7e729536e0722fb68318819bb943a5c5c66cd"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEars.lean",
+      "sha256": "e6fb234a42eb559be9c98a5eca9153b7b8f9fce74c9b1d638e717a3f1507ad43"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessExpected.lean",
+      "sha256": "93306f6a975ff307b590b21ebd2df2b9c93ed7e1593bbd0d04614c497fb45ed3"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessIndexedPaths.lean",
+      "sha256": "f4dd1539656b3000f516fa95e76b1a5b06efc8e8d5766c3d5c5378f4e6cca84d"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessInitialState.lean",
+      "sha256": "7d5aa2f1f06de3895c211e7b8fd9381232f490c9a516089837ff400aafb4948a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessModifications.lean",
+      "sha256": "4818beeb12de0f2ff383bebdfb1e670f83aa76b61e6369b4256c4fe2f1b4210b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessOriginalEar.lean",
+      "sha256": "ab57cc97a19599a2c4bd505c39ca0bc32c115a7532596787a23c7981afb61210"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessPathOrientation.lean",
+      "sha256": "0875f123d31b9d09c30a5312c677251a9881d55d7c75c8ccfe4dc14cd33db663"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessPaths.lean",
+      "sha256": "b9da2ada1400c533d90eab86618bfcf9a312cadcac44d6466336a407b5b4857f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessProgressMeasure.lean",
+      "sha256": "516f408ac2d3c82d4cb1cc03b8ad3243772f9c345ddad0e81fa80c1ef8176fb9"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessReverseUnused.lean",
+      "sha256": "d530252926b261bbfaaa9645550f6423f1a131bc10bdf101bab5ba56c87b9ffa"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessSimplePaths.lean",
+      "sha256": "ec05854c9e9e22ab55bba69e91fd792cc642316195a89dbdf21dc81b53fe4039"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessSplitEar.lean",
+      "sha256": "947806ff8cd4d2e6cc0621d4302dd943e70f3c5b940f8cd27e4940802fcfd030"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessSplitEarRouting.lean",
+      "sha256": "727bd7985e2ad55a0705e7519b9c3cedbe9d44637dc99f905f657dae3e899532"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessState.lean",
+      "sha256": "bec214f664fa45b227be54002d74e75120c0fe7825a336659f8619511470e143"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessTotalRank.lean",
+      "sha256": "6a85fe6d1f032e138a0a93c076bb23b2c1923ac9b35f4f500961e7d161b336db"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessUnorientedEar.lean",
+      "sha256": "d3690311cd9481e38a8fb6fd4e5944e3e3cd2969e25161e928fb1a3e73715fb8"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulants.lean",
+      "sha256": "81ce23e18814626a0a0ba6eee08099ae26b5311cc225b1e7926d4fc781841c9f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsExpected.lean",
+      "sha256": "e455d314ba827a7be386fb256a5041c54e625435c95bd44fcce49dcd5e1fc1e0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMixed.lean",
+      "sha256": "8b9830de7a2e1462e044b4fca3681a2f6572db7a7bb2a063381e6e5cf91ece3f"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMoment.lean",
+      "sha256": "c2ea73be9546f02621b5dcfd044971633fe3c895634a402c6a70f0f9f51813e8"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMultilinear.lean",
+      "sha256": "563f0651115eb0e61959c8ba341996b67bdf8260643dd93a83ae90bb05160389"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsProduct.lean",
+      "sha256": "281964ca58b40f925c854077ba7cee208dc0a5c2ad18c9a36548fc769feedcde"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsShifts.lean",
+      "sha256": "edadc907daa54212e0d544330ad9b9542f0e156cadcb65c23daf1edee4815cac"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsSymmetry.lean",
+      "sha256": "9d4504ec73d139fea917173cd4c0e30d6fb96521e8e2f70d751284a4e7044bc9"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSampling.lean",
+      "sha256": "d95fb607a4c032ddd2bad8056927cc2ea57e91dc4d49df3ffad59f39ba57da18"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingExpected.lean",
+      "sha256": "f7cfcb4cb64fa8e1260b2754b536a76abfa66eb4acc61d4354990c9cb4aba8c6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingJoint.lean",
+      "sha256": "0f281a88c5feb13ff767a35f9eb8baf36b223a4dd874db27e1a1b881ba550165"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingJointExpected.lean",
+      "sha256": "a398279d2501b7b55d3923440000fe30ce7226b851ec3dcb2ece5ffefbf896f2"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphAndEntryExpected.lean",
+      "sha256": "1e0a265df84ba4d117cfc8212db8f7b75ecf5ae31e5efa07586ed7b6c25edfb9"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphBridges.lean",
+      "sha256": "016321e3426ac396d32fc352d6e69638aeaf5c36644c683ea0bb6f19d5e4f9f5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphModifications.lean",
+      "sha256": "9b7a9e511a814860e5c414c25b13457aa7139975f2a0ed7e4fc6fbb1b2e3d3d1"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphModificationsExpected.lean",
+      "sha256": "dd14ef25a551cb4bef21f6b2671160c78dc4d939bce2b1310f808344db67d6d6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/NamedResults.lean",
+      "sha256": "2c1a4767d56118ec5fc1f229808e6a44477c34423a273d6b45e670d2b2bcd9a5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistory.lean",
+      "sha256": "631273263d23c64cc980a23a2506145ecf4ebb91f4e9b5f7bfaa332f19f2b0ed"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistoryBoundary.lean",
+      "sha256": "3a9cc850c72eff829441032b4efe8e68d3011428cb43de06094583abe449ecb6"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistoryConversion.lean",
+      "sha256": "8e611a22f7f3ec5fd8079304040e57d7e981852e979171b51eb2e4d9b1a1bcd5"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistoryExpected.lean",
+      "sha256": "e3645969f8fe9f6bfeaa5ac6e89f1355b7ee600396552288e284ac73beb864ee"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/SamplingPointwise.lean",
+      "sha256": "71714786210b983d25f528ee2b5527e455934ce61b41cefcebe66035cdf6c2f2"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/SemanticWitnesses.lean",
+      "sha256": "d427010719c6dc4ee917432a4b6d2ebf3385cfe446daf8e30a04285e5aa2dc61"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/TracePower.lean",
+      "sha256": "d24b843216c0009199342d874b25311b2037c1d0e808e769adf84a25c162dd2e"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/TracePowerExpected.lean",
+      "sha256": "fb2e63c0fc07a1bc8934e1292430cbd9711ae650a69de49a55c062ad3bb2bb6b"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PointwiseVanishing.lean",
+      "sha256": "b27cbce52925064d8867d482b3ba163fec6e5104401f3203a9c9ab59c183a067"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ProbabilityFrobenius.lean",
+      "sha256": "7e2eacf99d2980a162a68eb2902df1a6aad18c4c4a87417d2789e05faf761ac4"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ProductCumulant.lean",
+      "sha256": "576d9c4020193fabd85432446e08b15aeea48a91ae40bb6e18e66c7bc5b6d7cc"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ProjectionMean.lean",
+      "sha256": "7f5827c2a57c0b0e0ef150f42348dfbc8f11c9a22704c15bf05182c14363e338"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RademacherCumulant.lean",
+      "sha256": "5c7da578d8d42a66e5fcbcf6b800493e46271fdebd0f92665eb8295f5fd884b0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RademacherFourthMoment.lean",
+      "sha256": "e35b2e1bf9cf401ccc7128b593973f31f92b66dd5b90821f2ca544c1dceac98e"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RankCutFactorization.lean",
+      "sha256": "5d7d5655b35349d2b597d1bbd63b6839b461cc1237bf4c542b421826f13d9bce"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/RankCutStateFactorGeneral.lean",
+      "sha256": "5b916b447e86e2f68aa472221b14ee77641dcbd3c4e3ad9b6318efe085cae076"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SamplingArithmetic.lean",
+      "sha256": "5b1c54e04b0f582c11a119ce2ba11a3f4156028cbdae699766110fdc4ab040bd"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SelectorQuotient.lean",
+      "sha256": "7c384aa63a635cb43e86be535a143d1ff0cc63f52e422cb68c9d0a73e4d9c579"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceEntryCumulant.lean",
+      "sha256": "fdafb82c9ed2e3095e1c60d417734ca039abd2197d2e0ff2ab859907156e10e9"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceExpansion.lean",
+      "sha256": "e7315c47790b083622ead4ef9d172734dbb12356837487f82cdcbdc66708b762"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceExpectationExpansion.lean",
+      "sha256": "bb20b6a7a48fa234545254303a86a6ff7af3aa122202f19ffdd476379abb2131"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SignedTraceSummation.lean",
+      "sha256": "1520d4adc28f90e158ae835d01b423c94b756c0e5e46b034d425846fb4176432"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SmallRankSecondMoment.lean",
+      "sha256": "1bb346eb7191d045b64783aa818cdf73e74ab01845a7d051ecd68f81aac1fc5a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/SpectralRoot.lean",
+      "sha256": "c0bb7f43adc4f84fc017e6b3635d45474150065bca0f03c8bae046952c9e11e0"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/Statements.lean",
+      "sha256": "92de0ac75f8162160d7d5e069ae747a00246954fde12dd79dbed6bd5455e9642"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/ThreeCategoryOrderCoupling.lean",
+      "sha256": "7e54564783fd3688e8620959f64895c2c474a83fb39ced14e688b0e063815ead"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TraceCyclicExpansion.lean",
+      "sha256": "f8c6789bbcd81b81e1c3cb6954985afb6faeb08a1d8466b20f01f6cf1ffa9a95"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TraceGeometric.lean",
+      "sha256": "ddd10cb6f7d6bcd9d7327880e714dae11562179e1424fe0e58ac2a2cf576470a"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TwoProjection.lean",
+      "sha256": "62a7df4ec93fb62a3fe49f16d884090a2dc813d9e10bec0692cbb268eb0e1e97"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/TwoProjectionTransfer.lean",
+      "sha256": "794824155e93c32f56d91b07e8403824231f655cd4c5939004da516ab1603cdb"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/WalshSymmetry.lean",
+      "sha256": "3b7e30ade32362ea77c57df9f858aaf282a33ce38e6c78c50b7c6d791ec036d9"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/Problem56/XorKernel.lean",
+      "sha256": "74dc3443b4d4d7be14deb43eddeb13a96540f4a52d0292e6fe37e137152db420"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/lakefile.lean",
+      "sha256": "d5e2b1d68953f7348d5ccca257d40afe9eb4d772d9680ae8d4c4512ebf052c29"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/lake-manifest.json",
+      "sha256": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540"
+    },
+    {
+      "path": "research/problem_5_6/formalization/lean/lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    }
+  ],
+  "module_imports": {
+    "research/problem_5_6/formalization/lean/Problem56/AggregatePartitionCumulant.lean": [
+      "Problem56.LargeBlockSupportRank",
+      "Problem56.LargeBlockCount",
+      "Problem56.DisjointPairCount",
+      "Problem56.PairingParallelBound",
+      "Problem56.EqualityDegreeFour"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/BernoulliSamplingCorollary.lean": [
+      "Problem56.TwoProjectionTransfer",
+      "Problem56.SmallRankSecondMoment",
+      "Problem56.BinomialTail"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/BinomialTail.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreAbstractCode.lean": [
+      "Problem56.ContractedCoreCount",
+      "Problem56.ContractedCoreTopology"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonical.lean": [
+      "Problem56.ContractedCoreTransition"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCard.lean": [
+      "Problem56.ContractedCoreCanonicalRealization",
+      "Problem56.ContractedCoreCanonicalCount"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCount.lean": [
+      "Problem56.ContractedCoreCanonical",
+      "Problem56.ContractedCoreAbstractCode"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean": [
+      "Problem56.ContractedCoreCanonicalCount",
+      "Problem56.ContractedCoreWordReconstruction"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean": [
+      "Problem56.ContractedCoreCanonicalSource",
+      "Problem56.ContractedCorePathOrder"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean": [
+      "Problem56.ContractedCoreCanonical"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreComponents.lean": [
+      "Problem56.ContractedCoreTerminalBudget",
+      "Mathlib.Combinatorics.SimpleGraph.Connectivity.Finite"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreCount.lean": [
+      "Problem56.EncodingCount",
+      "Problem56.EqualityDegreeFour"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreEncodingClosure.lean": [
+      "Problem56.ContractedCoreCanonicalCard",
+      "Problem56.ContractedCoreCanonicalEncoding",
+      "Problem56.ContractedCoreZeroParameter"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreEuler.lean": [
+      "Problem56.ContractedCoreCount",
+      "Problem56.IndexedEulerCircuit"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreExtraction.lean": [
+      "Problem56.ContractedCoreAbstractCode"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCorePairingCode.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCorePathOrder.lean": [
+      "Problem56.ContractedCoreComponents",
+      "Mathlib.Combinatorics.SimpleGraph.Hamiltonian",
+      "Mathlib.Combinatorics.SimpleGraph.Hasse"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCorePaths.lean": [
+      "Problem56.ContractedCoreEuler"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreProfile.lean": [
+      "Problem56.ContractedCoreSerialization"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreSerialization.lean": [
+      "Problem56.ContractedCoreComponents"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTerminalBudget.lean": [
+      "Problem56.ContractedCorePaths",
+      "Mathlib.Combinatorics.SimpleGraph.Acyclic",
+      "Mathlib.Combinatorics.SimpleGraph.DegreeSum"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTopology.lean": [
+      "Problem56.ContractedCoreProfile",
+      "Problem56.ContractedCorePairingCode"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreTransition.lean": [
+      "Problem56.ContractedCoreExtraction",
+      "Problem56.AggregatePartitionCumulant"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreWordReconstruction.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ContractedCoreZeroParameter.lean": [
+      "Problem56.ContractedCorePathOrder",
+      "Problem56.ContractedCoreTransition",
+      "Problem56.ContractedCoreWordReconstruction"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/CumulantMoment.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": [
+      "Mathlib"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/DisjointPairCount.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/EncodingCount.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/EqualityBudget.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/EqualityDegreeFour.lean": [
+      "Mathlib.Combinatorics.SimpleGraph.Acyclic",
+      "Mathlib.Combinatorics.SimpleGraph.DegreeSum",
+      "Problem56.SelectorQuotient",
+      "Problem56.EqualityBudget"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ExtractionRegression.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/FinalWidth.lean": [
+      "Problem56.LargeRankCutoff"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/FinitePopulationMoment.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/FixedSizeSamplingTransfer.lean": [
+      "Problem56.NestedCoupling",
+      "Problem56.SamplingArithmetic",
+      "Problem56.BinomialTail"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphBridgelessConversion.lean": [
+      "Problem56.GraphFiberSplit",
+      "Problem56.IndexedEulerCircuit"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphEven.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphFiberSplit.lean": [
+      "Problem56.GraphVertexSplit"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorRegression.lean": [
+      "Problem56.GraphOperatorL2"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorUnequalRegression.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphRankEdgeSplit.lean": [
+      "Problem56.GraphRankEndpoint"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphRankEndpoint.lean": [
+      "Problem56.GraphOperatorL2"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphVertexSplit.lean": [
+      "Problem56.GraphWeightLoops"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/GraphWeightLoops.lean": [
+      "Problem56.GraphOperatorL2"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/IndexedEulerCircuit.lean": [
+      "Problem56.GraphEven"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/JointEntryCumulant.lean": [
+      "Problem56.MixedCumulant",
+      "Problem56.OccurrenceGraph",
+      "Problem56.RademacherCumulant"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/LargeBlockCount.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/LargeBlockSupportRank.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/LargeRankCutoff.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/MixedCumulant.lean": [
+      "Problem56.ProductCumulant",
+      "Problem56.ProjectionMean"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/NestedCoupling.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/OccurrenceGraph.lean": [
+      "Problem56.GraphOperatorL2",
+      "Problem56.ProjectionMean"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PairingParallelBound.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/AuditTools.lean": [
+      "Lean",
+      "Mathlib.Util.PrintSorries"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/BinaryBridges.lean": [
+      "Problem56.PaperV6.GraphBridges"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/Certification.lean": [
+      "Problem56.Statements",
+      "Problem56.PaperV6.BinaryBridges",
+      "Problem56.PaperV6.ContinuousCoupling",
+      "Problem56.PaperV6.ContinuousCouplingBasics",
+      "Problem56.PaperV6.ContinuousCouplingExpected",
+      "Problem56.PaperV6.ContinuousCouplingNoTies",
+      "Problem56.PaperV6.ContinuousCouplingSelection",
+      "Problem56.PaperV6.EntryBridges",
+      "Problem56.PaperV6.ExpectedChecks",
+      "Problem56.PaperV6.ExpectedContinuousChecks",
+      "Problem56.PaperV6.ExpectedFormalLogChecks",
+      "Problem56.PaperV6.ExpectedGraphHistoryChecks",
+      "Problem56.PaperV6.ExpectedTraceChecks",
+      "Problem56.PaperV6.FiniteNoiseLaw",
+      "Problem56.PaperV6.FixedFrame",
+      "Problem56.PaperV6.FixedFrameExpected",
+      "Problem56.PaperV6.FormalLogBasic",
+      "Problem56.PaperV6.FormalLogCoefficients",
+      "Problem56.PaperV6.FormalLogExpected",
+      "Problem56.PaperV6.FormalLogInverse",
+      "Problem56.PaperV6.FormalLogPartitions",
+      "Problem56.PaperV6.FormalLogPowers",
+      "Problem56.PaperV6.GeneralBridgelessActivateEdge",
+      "Problem56.PaperV6.GeneralBridgelessActiveGraph",
+      "Problem56.PaperV6.GeneralBridgelessActiveSplitDAG",
+      "Problem56.PaperV6.GeneralBridgelessActiveSplitData",
+      "Problem56.PaperV6.GeneralBridgelessActiveSplitState",
+      "Problem56.PaperV6.GeneralBridgelessCompletion",
+      "Problem56.PaperV6.GeneralBridgelessConversion",
+      "Problem56.PaperV6.GeneralBridgelessCurrentEar",
+      "Problem56.PaperV6.GeneralBridgelessDAGSplit",
+      "Problem56.PaperV6.GeneralBridgelessEarActivation",
+      "Problem56.PaperV6.GeneralBridgelessEarInsertion",
+      "Problem56.PaperV6.GeneralBridgelessEarStateDAG",
+      "Problem56.PaperV6.GeneralBridgelessEarStateData",
+      "Problem56.PaperV6.GeneralBridgelessEars",
+      "Problem56.PaperV6.GeneralBridgelessExpected",
+      "Problem56.PaperV6.GeneralBridgelessIndexedPaths",
+      "Problem56.PaperV6.GeneralBridgelessInitialState",
+      "Problem56.PaperV6.GeneralBridgelessModifications",
+      "Problem56.PaperV6.GeneralBridgelessOriginalEar",
+      "Problem56.PaperV6.GeneralBridgelessPathOrientation",
+      "Problem56.PaperV6.GeneralBridgelessPaths",
+      "Problem56.PaperV6.GeneralBridgelessProgressMeasure",
+      "Problem56.PaperV6.GeneralBridgelessReverseUnused",
+      "Problem56.PaperV6.GeneralBridgelessSimplePaths",
+      "Problem56.PaperV6.GeneralBridgelessSplitEar",
+      "Problem56.PaperV6.GeneralBridgelessSplitEarRouting",
+      "Problem56.PaperV6.GeneralBridgelessState",
+      "Problem56.PaperV6.GeneralBridgelessTotalRank",
+      "Problem56.PaperV6.GeneralBridgelessUnorientedEar",
+      "Problem56.PaperV6.GeneralCumulants",
+      "Problem56.PaperV6.GeneralCumulantsExpected",
+      "Problem56.PaperV6.GeneralCumulantsMixed",
+      "Problem56.PaperV6.GeneralCumulantsMoment",
+      "Problem56.PaperV6.GeneralCumulantsMultilinear",
+      "Problem56.PaperV6.GeneralCumulantsProduct",
+      "Problem56.PaperV6.GeneralCumulantsShifts",
+      "Problem56.PaperV6.GeneralCumulantsSymmetry",
+      "Problem56.PaperV6.GeneralSampling",
+      "Problem56.PaperV6.GeneralSamplingExpected",
+      "Problem56.PaperV6.GeneralSamplingJoint",
+      "Problem56.PaperV6.GeneralSamplingJointExpected",
+      "Problem56.PaperV6.GraphAndEntryExpected",
+      "Problem56.PaperV6.GraphBridges",
+      "Problem56.PaperV6.GraphModifications",
+      "Problem56.PaperV6.GraphModificationsExpected",
+      "Problem56.PaperV6.NamedResults",
+      "Problem56.PaperV6.RootedHistory",
+      "Problem56.PaperV6.RootedHistoryBoundary",
+      "Problem56.PaperV6.RootedHistoryConversion",
+      "Problem56.PaperV6.RootedHistoryExpected",
+      "Problem56.PaperV6.SamplingPointwise",
+      "Problem56.PaperV6.SemanticWitnesses",
+      "Problem56.PaperV6.TracePower",
+      "Problem56.PaperV6.TracePowerExpected",
+      "Problem56.ExtractionRegression",
+      "Problem56.GraphOperatorRegression",
+      "Problem56.GraphOperatorUnequalRegression"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/CombinedAudit.lean": [
+      "Problem56.PaperV6.Certification",
+      "Problem56.PaperV6.AuditTools"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCoupling.lean": [
+      "Problem56.PaperV6.ContinuousCouplingNoTies",
+      "Problem56.PaperV6.ContinuousCouplingSelection",
+      "Mathlib.Logic.Equiv.Sum"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingBasics.lean": [
+      "Problem56.PaperV6.ContinuousCouplingExpected",
+      "Mathlib.MeasureTheory.Measure.Real"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingExpected.lean": [
+      "Problem56.Definitions",
+      "Mathlib.MeasureTheory.Constructions.Pi",
+      "Mathlib.MeasureTheory.Measure.Lebesgue.Basic",
+      "Mathlib.Probability.Independence.Basic"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingNoTies.lean": [
+      "Problem56.PaperV6.ContinuousCouplingBasics"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingSelection.lean": [
+      "Problem56.PaperV6.ContinuousCouplingExpected",
+      "Mathlib.Data.Finset.Max",
+      "Mathlib.MeasureTheory.MeasurableSpace.Constructions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/EntryBridges.lean": [
+      "Problem56.PaperV6.BinaryBridges"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedChecks.lean": [
+      "Problem56.PaperV6.ExpectedTraceChecks",
+      "Problem56.PaperV6.FixedFrame",
+      "Problem56.PaperV6.GeneralCumulants",
+      "Problem56.PaperV6.EntryBridges",
+      "Problem56.PaperV6.NamedResults",
+      "Problem56.PaperV6.GraphModifications",
+      "Problem56.PaperV6.GeneralSamplingJoint",
+      "Problem56.PaperV6.ExpectedFormalLogChecks",
+      "Problem56.PaperV6.ExpectedContinuousChecks",
+      "Problem56.PaperV6.ExpectedGraphHistoryChecks"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedContinuousChecks.lean": [
+      "Problem56.PaperV6.ContinuousCoupling"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedFormalLogChecks.lean": [
+      "Problem56.PaperV6.FormalLogInverse"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedGraphHistoryChecks.lean": [
+      "Problem56.PaperV6.RootedHistoryConversion"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ExpectedTraceChecks.lean": [
+      "Problem56.PaperV6.TracePower"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FiniteNoiseLaw.lean": [
+      "Problem56.PaperV6.GeneralSamplingExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrame.lean": [
+      "Problem56.Statements",
+      "Problem56.PaperV6.FixedFrameExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrameExpected.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogBasic.lean": [
+      "Problem56.PaperV6.FormalLogExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogCoefficients.lean": [
+      "Problem56.PaperV6.FormalLogPowers"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogExpected.lean": [
+      "Problem56.PaperV6.GeneralCumulants"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogInverse.lean": [
+      "Problem56.PaperV6.FormalLogCoefficients"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogPartitions.lean": [
+      "Problem56.PaperV6.FormalLogBasic"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/FormalLogPowers.lean": [
+      "Problem56.PaperV6.FormalLogPartitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActivateEdge.lean": [
+      "Problem56.PaperV6.GeneralBridgelessState"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveGraph.lean": [
+      "Problem56.PaperV6.GeneralBridgelessState"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveSplitDAG.lean": [
+      "Problem56.PaperV6.GeneralBridgelessActiveSplitData"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveSplitData.lean": [
+      "Problem56.PaperV6.GeneralBridgelessActiveGraph"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessActiveSplitState.lean": [
+      "Problem56.PaperV6.GeneralBridgelessActiveSplitDAG"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessCompletion.lean": [
+      "Problem56.PaperV6.GeneralBridgelessState"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessConversion.lean": [
+      "Problem56.PaperV6.GeneralBridgelessSplitEar",
+      "Problem56.PaperV6.GeneralBridgelessInitialState",
+      "Problem56.PaperV6.GeneralBridgelessCompletion"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessCurrentEar.lean": [
+      "Problem56.PaperV6.GeneralBridgelessOriginalEar"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessDAGSplit.lean": [
+      "Problem56.PaperV6.GeneralBridgelessModifications"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarActivation.lean": [
+      "Problem56.PaperV6.GeneralBridgelessEarStateDAG",
+      "Problem56.PaperV6.GeneralBridgelessProgressMeasure"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarInsertion.lean": [
+      "Problem56.PaperV6.GeneralBridgelessDAGSplit"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarStateDAG.lean": [
+      "Problem56.PaperV6.GeneralBridgelessEarStateData"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarStateData.lean": [
+      "Problem56.PaperV6.GeneralBridgelessActiveGraph",
+      "Problem56.PaperV6.GeneralBridgelessActivateEdge"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEars.lean": [
+      "Problem56.PaperV6.GeneralBridgelessSimplePaths"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessExpected.lean": [
+      "Problem56.GraphBridgelessConversion"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessIndexedPaths.lean": [
+      "Problem56.PaperV6.GeneralBridgelessEars"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessInitialState.lean": [
+      "Problem56.PaperV6.GeneralBridgelessState",
+      "Problem56.PaperV6.GeneralBridgelessPathOrientation"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessModifications.lean": [
+      "Problem56.PaperV6.GeneralBridgelessExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessOriginalEar.lean": [
+      "Problem56.PaperV6.GeneralBridgelessIndexedPaths",
+      "Problem56.PaperV6.GeneralBridgelessState"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessPathOrientation.lean": [
+      "Problem56.PaperV6.GeneralBridgelessIndexedPaths",
+      "Problem56.PaperV6.GeneralBridgelessDAGSplit"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessPaths.lean": [
+      "Problem56.PaperV6.GeneralBridgelessExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessProgressMeasure.lean": [
+      "Problem56.PaperV6.GeneralBridgelessState"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessReverseUnused.lean": [
+      "Problem56.PaperV6.GeneralBridgelessState"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessSimplePaths.lean": [
+      "Problem56.PaperV6.GeneralBridgelessPaths"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessSplitEar.lean": [
+      "Problem56.PaperV6.GeneralBridgelessSplitEarRouting",
+      "Problem56.PaperV6.GeneralBridgelessUnorientedEar"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessSplitEarRouting.lean": [
+      "Problem56.PaperV6.GeneralBridgelessCurrentEar",
+      "Problem56.PaperV6.GeneralBridgelessActiveSplitState"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessState.lean": [
+      "Problem56.PaperV6.GeneralBridgelessTotalRank"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessTotalRank.lean": [
+      "Problem56.PaperV6.GeneralBridgelessEarInsertion"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessUnorientedEar.lean": [
+      "Problem56.PaperV6.GeneralBridgelessEarActivation",
+      "Problem56.PaperV6.GeneralBridgelessReverseUnused"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulants.lean": [
+      "Problem56.PaperV6.GeneralCumulantsMoment",
+      "Problem56.PaperV6.GeneralCumulantsProduct",
+      "Problem56.PaperV6.GeneralCumulantsSymmetry",
+      "Problem56.PaperV6.GeneralCumulantsShifts"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsExpected.lean": [
+      "Problem56.ProductCumulant",
+      "Mathlib.Probability.IdentDistrib",
+      "Mathlib.Probability.Independence.Integration"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMixed.lean": [
+      "Problem56.PaperV6.GeneralCumulantsProduct",
+      "Problem56.MixedCumulant"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMoment.lean": [
+      "Problem56.PaperV6.GeneralCumulantsExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMultilinear.lean": [
+      "Problem56.PaperV6.GeneralCumulantsExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsProduct.lean": [
+      "Problem56.PaperV6.GeneralCumulantsMoment"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsShifts.lean": [
+      "Problem56.PaperV6.GeneralCumulantsMixed",
+      "Problem56.PaperV6.GeneralCumulantsMultilinear"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsSymmetry.lean": [
+      "Problem56.PaperV6.GeneralCumulantsExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSampling.lean": [
+      "Problem56.PaperV6.SamplingPointwise",
+      "Problem56.PaperV6.FixedFrame"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingExpected.lean": [
+      "Problem56.Definitions",
+      "Mathlib.Probability.Independence.Integration"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingJoint.lean": [
+      "Problem56.PaperV6.GeneralSampling",
+      "Problem56.PaperV6.FiniteNoiseLaw",
+      "Problem56.PaperV6.GeneralSamplingJointExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralSamplingJointExpected.lean": [
+      "Problem56.PaperV6.GeneralSamplingExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphAndEntryExpected.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphBridges.lean": [
+      "Problem56.Statements",
+      "Problem56.PaperV6.GraphAndEntryExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphModifications.lean": [
+      "Problem56.PaperV6.GraphBridges",
+      "Problem56.PaperV6.GraphModificationsExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphModificationsExpected.lean": [
+      "Problem56.GraphFiberSplit",
+      "Problem56.GraphBridgelessConversion"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/NamedResults.lean": [
+      "Problem56.PaperV6.BinaryBridges",
+      "Problem56.PaperV6.EntryBridges"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistory.lean": [
+      "Problem56.PaperV6.RootedHistoryBoundary"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistoryBoundary.lean": [
+      "Problem56.PaperV6.RootedHistoryExpected",
+      "Problem56.PaperV6.GraphModifications"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistoryConversion.lean": [
+      "Problem56.PaperV6.RootedHistory",
+      "Problem56.PaperV6.GeneralBridgelessConversion"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/RootedHistoryExpected.lean": [
+      "Problem56.PaperV6.GeneralBridgelessModifications"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/SamplingPointwise.lean": [
+      "Problem56.FixedSizeSamplingTransfer",
+      "Problem56.PaperV6.GeneralSamplingExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/SemanticWitnesses.lean": [
+      "Problem56.PaperV6.FixedFrameExpected",
+      "Problem56.PaperV6.GeneralCumulantsExpected",
+      "Problem56.PaperV6.GeneralSamplingJointExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/TracePower.lean": [
+      "Problem56.PaperV6.TracePowerExpected"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/TracePowerExpected.lean": [
+      "Problem56.Statements"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/PointwiseVanishing.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ProbabilityFrobenius.lean": [
+      "Problem56.GraphOperatorL2"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ProductCumulant.lean": [
+      "Problem56.CumulantMoment"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ProjectionMean.lean": [
+      "Problem56.WalshSymmetry",
+      "Problem56.CumulantMoment"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/RademacherCumulant.lean": [
+      "Problem56.CumulantMoment"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/RademacherFourthMoment.lean": [
+      "Problem56.ProjectionMean"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/RankCutFactorization.lean": [
+      "Problem56.GraphOperatorL2"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/RankCutStateFactorGeneral.lean": [
+      "Problem56.RankCutFactorization"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SamplingArithmetic.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SelectorQuotient.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SignedTraceEntryCumulant.lean": [
+      "Problem56.CumulantMoment",
+      "Problem56.JointEntryCumulant",
+      "Problem56.ProjectionMean"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SignedTraceExpansion.lean": [
+      "Problem56.AggregatePartitionCumulant",
+      "Problem56.CumulantMoment",
+      "Problem56.JointEntryCumulant",
+      "Problem56.PointwiseVanishing",
+      "Problem56.ProjectionMean",
+      "Problem56.SelectorQuotient",
+      "Problem56.SignedTraceExpectationExpansion",
+      "Problem56.SignedTraceSummation",
+      "Problem56.XorKernel"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SignedTraceExpectationExpansion.lean": [
+      "Problem56.SignedTraceEntryCumulant",
+      "Problem56.TraceCyclicExpansion"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SignedTraceSummation.lean": [
+      "Problem56.TraceGeometric"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SmallRankSecondMoment.lean": [
+      "Problem56.FinitePopulationMoment",
+      "Problem56.RademacherFourthMoment",
+      "Problem56.ProbabilityFrobenius"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/SpectralRoot.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/Statements.lean": [
+      "Problem56.ProbabilityFrobenius",
+      "Problem56.SpectralRoot",
+      "Problem56.GraphEven",
+      "Problem56.GraphRankEdgeSplit",
+      "Problem56.GraphWeightLoops",
+      "Problem56.GraphVertexSplit",
+      "Problem56.GraphFiberSplit",
+      "Problem56.GraphBridgelessConversion",
+      "Problem56.RankCutStateFactorGeneral",
+      "Problem56.EqualityBudget",
+      "Problem56.LargeRankCutoff",
+      "Problem56.SelectorQuotient",
+      "Problem56.WalshSymmetry",
+      "Problem56.XorKernel",
+      "Problem56.PointwiseVanishing",
+      "Problem56.TraceGeometric",
+      "Problem56.EncodingCount",
+      "Problem56.TwoProjection",
+      "Problem56.SamplingArithmetic",
+      "Problem56.CumulantMoment",
+      "Problem56.ProjectionMean",
+      "Problem56.BinomialTail",
+      "Problem56.TwoProjectionTransfer",
+      "Problem56.ProductCumulant",
+      "Problem56.RademacherCumulant",
+      "Problem56.RademacherFourthMoment",
+      "Problem56.MixedCumulant",
+      "Problem56.FinalWidth",
+      "Problem56.OccurrenceGraph",
+      "Problem56.JointEntryCumulant",
+      "Problem56.FinitePopulationMoment",
+      "Problem56.LargeBlockCount",
+      "Problem56.DisjointPairCount",
+      "Problem56.SmallRankSecondMoment",
+      "Problem56.NestedCoupling",
+      "Problem56.ThreeCategoryOrderCoupling",
+      "Problem56.PairingParallelBound",
+      "Problem56.EqualityDegreeFour",
+      "Problem56.FixedSizeSamplingTransfer",
+      "Problem56.LargeBlockSupportRank",
+      "Problem56.BernoulliSamplingCorollary",
+      "Problem56.AggregatePartitionCumulant",
+      "Problem56.SignedTraceExpansion",
+      "Problem56.ContractedCoreEncodingClosure"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/ThreeCategoryOrderCoupling.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/TraceCyclicExpansion.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/TraceGeometric.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/TwoProjection.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/TwoProjectionTransfer.lean": [
+      "Problem56.TwoProjection",
+      "Problem56.SpectralRoot",
+      "Problem56.GraphOperatorL2"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/WalshSymmetry.lean": [
+      "Problem56.Definitions"
+    ],
+    "research/problem_5_6/formalization/lean/Problem56/XorKernel.lean": [
+      "Problem56.Definitions"
+    ]
+  }
+}

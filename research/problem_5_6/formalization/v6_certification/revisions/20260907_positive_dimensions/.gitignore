@@ -1,0 +1,7 @@
+__pycache__/
+logs/*.log
+tex_build/*
+!tex_build/main.pdf
+!tex_build/main.aux
+!tex_build/main.log.gz
+!tex_build/definition-page-11.png

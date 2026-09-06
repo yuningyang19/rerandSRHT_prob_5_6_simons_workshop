@@ -1,0 +1,144 @@
+{
+  "FORMALIZATION_PACKET_ID": "problem56-frozen-v6-certification-preparation",
+  "PACKET_VERSION": "v2",
+  "LEAN_OPERATION": "CERTIFICATION",
+  "PROJECT_ROOT": ".",
+  "FROZEN_TARGET_ARTIFACT": {
+    "path": "research/problem_5_6/formalization/v6_certification/inventory_named_results.json",
+    "sha256": "fe3324f58e323d6fd878f52e692dbe02abf38f1cf622f300f58a0c222f8285ef"
+  },
+  "AUTHORITATIVE_MANUSCRIPT": {
+    "path": "research/problem_5_6/formalization/v6_certification/snapshots/research/problem_5_6/paper/v6/main.tex",
+    "sha256": "3f140ac21cf98d07371ba81c307db1b272251fabe80fd58f7f290683e8d95286"
+  },
+  "PUBLIC_RESULT_INVENTORY": {
+    "path": "research/problem_5_6/formalization/v6_certification/inventory_named_results.json",
+    "sha256": "fe3324f58e323d6fd878f52e692dbe02abf38f1cf622f300f58a0c222f8285ef"
+  },
+  "POST_TEX_PROOF_AUDIT": null,
+  "FORMALIZATION_READINESS_RECORD": null,
+  "TARGET_PUBLIC_RESULT_IDS": [
+    "thm:main",
+    "lem:transfer",
+    "prop:trace",
+    "cor:bernoulli",
+    "lem:graph",
+    "lem:cumulant-identities",
+    "lem:cumulants",
+    "lem:count",
+    "lem:binary-constraints",
+    "prop:entry-contribution",
+    "lem:sampling",
+    "lem:small"
+  ],
+  "TARGET_ACCEPTED_CLAIM_VERSIONS": [
+    "thm:main@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:transfer@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "prop:trace@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "cor:bernoulli@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:graph@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:cumulant-identities@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:cumulants@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:count@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:binary-constraints@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "prop:entry-contribution@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:sampling@4551d08f3732a3ca06c2f576794e1d75790e1972",
+    "lem:small@4551d08f3732a3ca06c2f576794e1d75790e1972"
+  ],
+  "TARGET_LEAN_DECLARATIONS": {
+    "thm:main": "Problem56.PaperV6.fixed_frame_squared_norm_success",
+    "lem:transfer": "Problem56.two_projection_spectral_transfer",
+    "prop:trace": "Problem56.signed_trace_proposition",
+    "cor:bernoulli": "Problem56.bernoulli_coordinate_sampling_corollary",
+    "lem:graph": "Problem56.PaperV6.graph_rank",
+    "lem:cumulant-identities": "Problem56.PaperV6.generalCumulantIdentities",
+    "lem:cumulants": "Problem56.joint_entry_cumulant_lemma",
+    "lem:count": "Problem56.selector_equality_graph_count",
+    "lem:binary-constraints": "Problem56.PaperV6.v6_binary_constraints",
+    "prop:entry-contribution": "Problem56.PaperV6.v6_entry_contribution",
+    "lem:sampling": "Problem56.PaperV6.general_sampling_joint",
+    "lem:small": "Problem56.small_rank_second_moment"
+  },
+  "EXPECTED_PUBLIC_SIGNATURES": {
+    "thm:main": [],
+    "lem:transfer": [],
+    "prop:trace": [],
+    "cor:bernoulli": [],
+    "lem:graph": [],
+    "lem:cumulant-identities": [],
+    "lem:cumulants": [],
+    "lem:count": [],
+    "lem:binary-constraints": [],
+    "prop:entry-contribution": [],
+    "lem:sampling": [],
+    "lem:small": []
+  },
+  "S8_VERIFIER_REPORTS": [],
+  "PRIMITIVE_PUBLIC_INPUTS": [],
+  "REQUIRED_DERIVED_INTERFACES": [],
+  "DERIVED_INTERFACE_LEAN_BINDINGS": {},
+  "FORBIDDEN_PUBLIC_DERIVED_HYPOTHESES": [],
+  "REQUIRED_TRANSITIVE_DEPENDENCIES": {
+    "thm:main": [],
+    "lem:transfer": [],
+    "prop:trace": [],
+    "cor:bernoulli": [],
+    "lem:graph": [],
+    "lem:cumulant-identities": [],
+    "lem:cumulants": [],
+    "lem:count": [],
+    "lem:binary-constraints": [],
+    "prop:entry-contribution": [],
+    "lem:sampling": [],
+    "lem:small": []
+  },
+  "SEMANTIC_REGRESSION_REQUIREMENTS": [],
+  "FROZEN_SEMANTIC_REGRESSIONS": [],
+  "DETERMINISTIC_CERTIFICATE_POLICY": {
+    "ALLOWED_SEMANTIC_CLASSES": [
+      "DETERMINISTIC_SELECTED_SET",
+      "EXACT_FACTORIZATION",
+      "REINDEX_MAP",
+      "MANUSCRIPT_ASSUMPTION",
+      "DETERMINISTIC_CONVENTION",
+      "CHECKABLE_RECURRENCE"
+    ],
+    "FORBIDDEN_SEMANTIC_CLASSES": [
+      "STOCHASTIC_LAW",
+      "SAMPLE_REPRESENTATION",
+      "ACTUAL_FORCED_STATE_EQUALITY",
+      "PIVOT_AGREEMENT",
+      "TARGET_EVENT_OR_PROBABILITY_BOUND",
+      "TARGET_CONCLUSION_OR_STRONGER_INTERFACE"
+    ]
+  },
+  "ALLOWED_AXIOMS": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "LEAN_VERSION_POLICY": "PINNED_EXACT",
+  "MATHLIB_VERSION_POLICY": "PINNED_COMMIT",
+  "FORMALIZATION_PROFILE": "SIGNATURE_CHAIN",
+  "OUTPUT_WORKSPACE_PATH": "research/problem_5_6/formalization/lean",
+  "ALLOWED_CHANGE_PATHS": [
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6",
+    "research/problem_5_6/formalization/v6_certification"
+  ],
+  "PROBE_OBJECTIVE": null,
+  "PROBE_SUCCESS_CRITERIA": [],
+  "PROBE_EXECUTION_EVIDENCE_REQUIRED": "NOT_APPLICABLE",
+  "GENERATOR_CONTEXT": "/root and recorded disjoint additive proof authors",
+  "SEMANTIC_AUDITOR_CONTEXT": "/root/v6_inventory and /root/baseline_audit",
+  "INDEPENDENT_CORRESPONDENCE_AUDITOR_REQUIRED": "YES",
+  "EVIDENCE_STATUS_AT_CALL": "PROVED",
+  "PARENT_FORMALIZATION_PACKET": null,
+  "PREVIOUS_SCOPE": "NONE",
+  "CURRENT_SCOPE": "SIGNATURE_CHAIN",
+  "SCOPE_ESCALATION_REASON": null,
+  "HISTORICAL_BINDINGS": {},
+  "CURRENT_BINDING": {
+    "path": "research/problem_5_6/formalization/v6_certification/certification_packet.json",
+    "sha256": "508c36e275973d63ecea7a5cc9fa9a437c82d9a254be5b86c104fad5da81ece9"
+  }
+}

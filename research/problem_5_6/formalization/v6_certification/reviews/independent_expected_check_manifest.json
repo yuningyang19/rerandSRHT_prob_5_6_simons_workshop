@@ -1,0 +1,20 @@
+{
+  "reviewer": "/root/v6_inventory",
+  "status": "EXPECTED_CHECKS_COMPILED_PASS",
+  "source": "independently frozen inventory and expected Props; not generated actual types",
+  "expected_files": {
+    "Problem56/PaperV6/FixedFrameExpected.lean": "7a060c21c36812f6acfc0cb1f10e462605d81626f4ac2fbe6960b428c80deff1",
+    "Problem56/PaperV6/GeneralCumulantsExpected.lean": "e455d314ba827a7be386fb256a5041c54e625435c95bd44fcce49dcd5e1fc1e0",
+    "Problem56/PaperV6/GraphAndEntryExpected.lean": "1e0a265df84ba4d117cfc8212db8f7b75ecf5ae31e5efa07586ed7b6c25edfb9",
+    "Problem56/PaperV6/GraphModificationsExpected.lean": "dd14ef25a551cb4bef21f6b2671160c78dc4d939bce2b1310f808344db67d6d6",
+    "Problem56/PaperV6/GeneralSamplingExpected.lean": "f7cfcb4cb64fa8e1260b2754b536a76abfa66eb4acc61d4354990c9cb4aba8c6",
+    "Problem56/PaperV6/GeneralSamplingJointExpected.lean": "a398279d2501b7b55d3923440000fe30ce7226b851ec3dcb2ece5ffefbf896f2"
+  },
+  "expected_checks_sha256": "32ff4ee4f109330ced2d5fb2bee0720661b40e653e41c9c1edeb1468dd79a127",
+  "example_count": 33,
+  "baseline_named_source_checks": 7,
+  "additive_or_client_checks": 26,
+  "execution_receipt": "logs/expected_and_graph_iteration5.execution.json",
+  "execution_receipt_sha256": "cb96afea391a2a03e5a149e434002e0d372bfde2c1f0ea84bc2e713a313374b9",
+  "returncode": 0
+}

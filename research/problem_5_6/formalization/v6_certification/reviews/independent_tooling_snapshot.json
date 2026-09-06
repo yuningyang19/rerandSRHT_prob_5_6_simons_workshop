@@ -1,0 +1,41 @@
+{
+  "reviewer": "/root/baseline_audit",
+  "at_utc": "2026-09-06T11:54:40.991854+00:00",
+  "hashes": {
+    "research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py": "37a9aa905af8a105efa885ad986b9941c2fce8a204df27ef68876af08217cff8",
+    "research/problem_5_6/formalization/v6_certification/scripts/test_verifier.py": "85752003d4e2f10ac91b4b8143a9ce530a81d5b0710e9ae36451ca52fe433fee",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_logged.py": "7204dd717c1e4f7b168cc52ed5df337673e55115f7cc87344e29a471ef3ee73c",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_suite.py": "9e8b80522943615e96356939f275e547f0144e92685e051211f136533ebed92f",
+    "research/problem_5_6/formalization/v6_certification/scripts/prepare_audit.py": "8a99fe6ec7fa313c0809e346d5e7d2f47848e9b8d9237a436c8976a6d37f73d7",
+    "research/problem_5_6/formalization/v6_certification/scripts/export_companion.py": "407af43cc26395a972ba650478e03692f7c5d84ba46f6dae931dafd8a6ae8873",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/AuditTools.lean": "d6fc77e092d9f9962d7a342245aafa537fa0ded8fc4b83d457f1e5ca98e88854"
+  },
+  "negative_fixture_command": [
+    "python3",
+    "research/problem_5_6/formalization/v6_certification/scripts/test_verifier.py"
+  ],
+  "negative_fixture_returncode": 0,
+  "negative_fixture_results": {
+    "missing_target": "REJECTED",
+    "forbidden_axiom_record": "REJECTED",
+    "changed_expected_type": "REJECTED",
+    "corrupted_manifest": "REJECTED",
+    "duplicate_inventory": "REJECTED",
+    "wrong_kind": "REJECTED",
+    "missing_dependency": "REJECTED",
+    "outside_namespace_axiom": "REJECTED",
+    "incomplete_graph_output": "REJECTED",
+    "duplicated_graph_end": "REJECTED",
+    "changed_primitive_definition": "REJECTED",
+    "skipped_mandatory_checks": "REJECTED",
+    "mandatory_command_substitution": "REJECTED",
+    "omitted_manifest_member": "REJECTED",
+    "deleted_execution_source_bindings": "REJECTED"
+  },
+  "notes": "Direct Python fixture run by independent reviewer; not a mandatory compiler receipt and not an authenticated external attestation.",
+  "postfinding_fix_hashes": {
+    "research/problem_5_6/formalization/v6_certification/scripts/prepare_audit.py": "8a99fe6ec7fa313c0809e346d5e7d2f47848e9b8d9237a436c8976a6d37f73d7",
+    "research/problem_5_6/formalization/v6_certification/scripts/export_companion.py": "407af43cc26395a972ba650478e03692f7c5d84ba46f6dae931dafd8a6ae8873"
+  },
+  "postfinding_fix_review": "Same-line attribute stripping and compiled/cache path export rejection read and accepted for the concrete findings; execution refresh still pending."
+}

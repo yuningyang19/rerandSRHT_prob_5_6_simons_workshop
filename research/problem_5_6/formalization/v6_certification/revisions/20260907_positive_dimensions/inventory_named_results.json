@@ -1,0 +1,550 @@
+{
+  "schema_version": 1,
+  "frozen_v6_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "main_sha256": "778731145bc9f537e561579303eb644388733d485b483c90f82e62243971e8cc",
+  "inventory_status": "SOURCE_SCOPE_FROZEN",
+  "method": "Full sequential human-model reading of all 3277 main lines and complete transitive input p7_contraction.tex; comment-stripping environment parser used for exact named spans; manually curated theorem-strength and definition spans reviewed against full source, including prose, inline figures, tables and examples. Regex is a locator only.",
+  "completion_semantics": "Entries freeze intended source scopes before additive proof generation; neither candidate declarations nor coverage acceptance inferred from old result names.",
+  "named_result_count": 12,
+  "conjunct_count": 30,
+  "entries": [
+    {
+      "id": "thm:main",
+      "kind": "theorem",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 109,
+      "line_end": 122,
+      "raw_context_sha256": "9879cb3114c7ec608a8c95617112a91270890252450230989432e0f075e192f7",
+      "exact_context_tex": "\\begin{theorem}\\label{thm:main}\nThere is a universal constant \\(C\\ge1\\) such that for every power of\ntwo \\(n\\), every \\(1\\le r\\le n\\), and every \\(0<\\varepsilon<1\\), one can\nchoose a deterministic integer\n\\[\n r\\le k\\le\\min\\{n,\\lceil Cr/\\varepsilon^2\\rceil\\}\n\\]\nindependently of \\(V\\), for which\n\\begin{equation}\\label{eq:main-bound}\n \\sup_{V^TV=I_r}\n \\Prob\\!\\left\\{\\norm{V^T\\Omega_{n,k}\\Omega_{n,k}^TV-I_r}\n                      >\\varepsilon\\right\\}\\le0.01.\n\\end{equation}\n\\end{theorem}\n",
+      "active_context_sha256": "9879cb3114c7ec608a8c95617112a91270890252450230989432e0f075e192f7",
+      "exact_active_statement_tex": "\\begin{theorem}\\label{thm:main}\nThere is a universal constant \\(C\\ge1\\) such that for every power of\ntwo \\(n\\), every \\(1\\le r\\le n\\), and every \\(0<\\varepsilon<1\\), one can\nchoose a deterministic integer\n\\[\n r\\le k\\le\\min\\{n,\\lceil Cr/\\varepsilon^2\\rceil\\}\n\\]\nindependently of \\(V\\), for which\n\\begin{equation}\\label{eq:main-bound}\n \\sup_{V^TV=I_r}\n \\Prob\\!\\left\\{\\norm{V^T\\Omega_{n,k}\\Omega_{n,k}^TV-I_r}\n                      >\\varepsilon\\right\\}\\le0.01.\n\\end{equation}\n\\end{theorem}",
+      "active_statement_sha256": "a6e85195b15d4a4d011d5cf9b63b1ed6a6a99d0156aa9fe0171be1db295baba4",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "thm:main#1",
+          "expected_statement": "One universal C≥1 precedes all n=2^m,m≥0; integers 1≤r≤n and 0<epsilon<1."
+        },
+        {
+          "id": "thm:main#2",
+          "expected_statement": "There exists deterministic integer k depending only on n,r,epsilon with r≤k≤min(n,ceil(Cr/epsilon²))."
+        },
+        {
+          "id": "thm:main#3",
+          "expected_statement": "For this same k the supremum over deterministic orthonormal real frames V, outside probability, of P(||VᵀΩΩᵀV−I||₂>epsilon) is ≤1/100. Ω has independent uniform sign layers and independent uniform k-subset without replacement."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.main_universal_ose"
+      ],
+      "initial_reuse_classification": "WRAPPER_ONLY",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 65,
+        "line_end": 83,
+        "context_sha256": "1b89d84724f29edb2fcfbf3c1ce73bb84bb8b2e2fd9793600daed9bef5c5058e",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 109,
+        "line_end": 122,
+        "raw_context_sha256": "9879cb3114c7ec608a8c95617112a91270890252450230989432e0f075e192f7"
+      }
+    },
+    {
+      "id": "lem:transfer",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 418,
+      "line_end": 432,
+      "raw_context_sha256": "184ee09c4395aafbccf4ba24370143396d78eebcf82a67e52d85bedecabc87f7",
+      "exact_context_tex": "\\begin{lemma}\\label{lem:transfer}\nLet \\(P=XX^T\\) and \\(E\\) be any real orthogonal projections,\n\\(X^TX=I_r\\). Let \\(0<\\delta,\\theta\\le1/2\\) and set\n\\[\n A=(P-\\delta I)(E-\\theta I),\\qquad\n a=\\sqrt{\\delta(1-\\delta)\\theta(1-\\theta)}.\n\\]\nFor every integer \\(p\\ge1\\), \\(\\tr A^{2p}\\ge-2r a^{2p}\\).\nIf \\(0<\\eta<1\\) and \\(\\delta\\le\\theta\\eta^2/64\\), then pointwise\n\\begin{equation}\\label{eq:spectral-transfer}\n 1_{\\{\\norm{\\theta^{-1}X^TEX-I_r}>\\eta\\}}\n          (\\theta\\eta/2)^{2p}\n                \\le\\tr A^{2p}+2r a^{2p}.\n\\end{equation}\n\\end{lemma}\n",
+      "active_context_sha256": "184ee09c4395aafbccf4ba24370143396d78eebcf82a67e52d85bedecabc87f7",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{lem:transfer}\nLet \\(P=XX^T\\) and \\(E\\) be any real orthogonal projections,\n\\(X^TX=I_r\\). Let \\(0<\\delta,\\theta\\le1/2\\) and set\n\\[\n A=(P-\\delta I)(E-\\theta I),\\qquad\n a=\\sqrt{\\delta(1-\\delta)\\theta(1-\\theta)}.\n\\]\nFor every integer \\(p\\ge1\\), \\(\\tr A^{2p}\\ge-2r a^{2p}\\).\nIf \\(0<\\eta<1\\) and \\(\\delta\\le\\theta\\eta^2/64\\), then pointwise\n\\begin{equation}\\label{eq:spectral-transfer}\n 1_{\\{\\norm{\\theta^{-1}X^TEX-I_r}>\\eta\\}}\n          (\\theta\\eta/2)^{2p}\n                \\le\\tr A^{2p}+2r a^{2p}.\n\\end{equation}\n\\end{lemma}",
+      "active_statement_sha256": "9b00364fe8e5a60d88a03867769af1394dd56c5fb16c54b8a333ca65b5c7f86b",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:transfer#1",
+          "expected_statement": "For every real orthonormal X, P=XXᵀ, real orthogonal projection E, independent scalar parameters 0<delta,theta≤1/2 and integer p≥1, tr A^(2p)≥−2r[delta(1−delta)theta(1−theta)]^p. Delta here need not equal r/n."
+        },
+        {
+          "id": "lem:transfer#2",
+          "expected_statement": "If also 0<eta<1 and delta≤theta eta²/64, indicator(||theta⁻¹XᵀEX−I||₂>eta)*(theta eta/2)^(2p)≤tr A^(2p)+2r[delta(1−delta)theta(1−theta)]^p pointwise."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.two_projection_spectral_transfer"
+      ],
+      "initial_reuse_classification": "EXACT_REUSE",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 505,
+        "line_end": 519,
+        "context_sha256": "141d67da3f8e4434deb52666e7fe1a48558ea75cc23690d1856fc633942d800e",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 418,
+        "line_end": 432,
+        "raw_context_sha256": "184ee09c4395aafbccf4ba24370143396d78eebcf82a67e52d85bedecabc87f7"
+      }
+    },
+    {
+      "id": "prop:trace",
+      "kind": "proposition",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 672,
+      "line_end": 683,
+      "raw_context_sha256": "227993124ffa6b3b87988f10c11a6e5327d450febaf0fb93eafc39d796085ac0",
+      "exact_context_tex": "\\begin{proposition}\\label{prop:trace}\nFor an integer \\(p\\ge2\\), suppose\n\\begin{equation}\\label{eq:trace-hypotheses}\n 0<\\theta\\le\\tfrac12,\\qquad \\kappa\\ge r,\\qquad\n                         r\\ge2(4p+1)^{1000}.\n\\end{equation}\nThen\n\\begin{equation}\\label{eq:trace-bound}\n                  \\left|\\E\\tr A^{2p}\\right|\n                           \\le K_0^p(\\delta\\theta)^p.\n\\end{equation}\n\\end{proposition}\n",
+      "active_context_sha256": "227993124ffa6b3b87988f10c11a6e5327d450febaf0fb93eafc39d796085ac0",
+      "exact_active_statement_tex": "\\begin{proposition}\\label{prop:trace}\nFor an integer \\(p\\ge2\\), suppose\n\\begin{equation}\\label{eq:trace-hypotheses}\n 0<\\theta\\le\\tfrac12,\\qquad \\kappa\\ge r,\\qquad\n                         r\\ge2(4p+1)^{1000}.\n\\end{equation}\nThen\n\\begin{equation}\\label{eq:trace-bound}\n                  \\left|\\E\\tr A^{2p}\\right|\n                           \\le K_0^p(\\delta\\theta)^p.\n\\end{equation}\n\\end{proposition}",
+      "active_statement_sha256": "f69398c32a4c9853800b22b8f1ebd07fedc03f90fadb3364761c0d75f026e50a",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "prop:trace#1",
+          "expected_statement": "For exact two-sign Walsh projection for deterministic V, independent Bernoulli E, integer p≥2, 0<theta≤1/2, kappa=n theta≥r, r≥2(4p+1)^1000: |E tr[(P−(r/n)I)(E−theta I)]^(2p)|≤K0^p((r/n)theta)^p, K0=576*4^24. Absolute value is outside expectation."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.signed_trace_proposition"
+      ],
+      "initial_reuse_classification": "EXACT_REUSE",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 241,
+        "line_end": 258,
+        "context_sha256": "26709886d2c0074c0e201e91b82bb6aeac53139bc9b88c034003270fef0c7235",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 672,
+        "line_end": 683,
+        "raw_context_sha256": "227993124ffa6b3b87988f10c11a6e5327d450febaf0fb93eafc39d796085ac0"
+      }
+    },
+    {
+      "id": "cor:bernoulli",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 699,
+      "line_end": 712,
+      "raw_context_sha256": "4bc1bec6e07b5246932a1b731468a5ba927e9f55fad82aae364fbccff7bf931b",
+      "exact_context_tex": "\\begin{lemma}\\label{cor:bernoulli}\nLet\n\\[\n p=\\lceil\\log_2(3000r)\\rceil,\n \\qquad\n r\\ge2(4p+1)^{1000}.\n\\]\nFor \\(0<\\eta<1\\), \\(0<\\theta\\le1/2\\), and\n\\(\\kappa=n\\theta\\ge64K_0r/\\eta^2\\), the exact random projection \\(P\\)\nand independent Bernoulli coordinate projection \\(E\\) satisfy\n\\begin{equation}\\label{eq:bernoulli-bound}\n \\Prob\\{\\norm{\\theta^{-1}X^TEX-I_r}>\\eta\\}\\le1/1000.\n\\end{equation}\n\\end{lemma}\n",
+      "active_context_sha256": "4bc1bec6e07b5246932a1b731468a5ba927e9f55fad82aae364fbccff7bf931b",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{cor:bernoulli}\nLet\n\\[\n p=\\lceil\\log_2(3000r)\\rceil,\n \\qquad\n r\\ge2(4p+1)^{1000}.\n\\]\nFor \\(0<\\eta<1\\), \\(0<\\theta\\le1/2\\), and\n\\(\\kappa=n\\theta\\ge64K_0r/\\eta^2\\), the exact random projection \\(P\\)\nand independent Bernoulli coordinate projection \\(E\\) satisfy\n\\begin{equation}\\label{eq:bernoulli-bound}\n \\Prob\\{\\norm{\\theta^{-1}X^TEX-I_r}>\\eta\\}\\le1/1000.\n\\end{equation}\n\\end{lemma}",
+      "active_statement_sha256": "17c9e757cd412a7904cc9e1bb3c06d13d20e941162571f4d34f0d9fb0991f563",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "cor:bernoulli#1",
+          "expected_statement": "With p=ceil(log₂(3000r)), r≥2(4p+1)^1000, 0<eta<1, 0<theta≤1/2 and n theta≥64K0r/eta², exact transformed fixed frame and independent Bernoulli selector satisfy P(||theta⁻¹XᵀEX−I||₂>eta)≤1/1000."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.bernoulli_coordinate_sampling_corollary"
+      ],
+      "initial_reuse_classification": "EXACT_REUSE",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 582,
+        "line_end": 593,
+        "context_sha256": "122cc1e493ed4bbad908ca083a010a9258da8a5ce0c933e4d8dd50414196e7aa",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 699,
+        "line_end": 712,
+        "raw_context_sha256": "4bc1bec6e07b5246932a1b731468a5ba927e9f55fad82aae364fbccff7bf931b"
+      }
+    },
+    {
+      "id": "lem:graph",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 976,
+      "line_end": 985,
+      "raw_context_sha256": "42989be9f1658ff4d703319afa8ee03f9d68f7db74129de0e3903a7c726bbdd0",
+      "exact_context_tex": "\\begin{lemma}\\label{lem:graph}\nLet a connected finite multigraph have positive even degrees. Assign\na matrix of operator norm at most one to each edge, with compatible\ncoordinate dimensions at its endpoints. Suppose one edge matrix is a\nreal rank-\\(r\\) orthogonal projection \\(P_0=VV^T\\), \\(r\\ge1\\).\nAt each vertex also allow a coordinate weight of absolute value at most\none. The contraction of Definition~\\ref{def:graph-contraction},\ngiven by \\eqref{eq:graph-contraction}, has absolute value\nat most \\(r\\).\n\\end{lemma}\n",
+      "active_context_sha256": "42989be9f1658ff4d703319afa8ee03f9d68f7db74129de0e3903a7c726bbdd0",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{lem:graph}\nLet a connected finite multigraph have positive even degrees. Assign\na matrix of operator norm at most one to each edge, with compatible\ncoordinate dimensions at its endpoints. Suppose one edge matrix is a\nreal rank-\\(r\\) orthogonal projection \\(P_0=VV^T\\), \\(r\\ge1\\).\nAt each vertex also allow a coordinate weight of absolute value at most\none. The contraction of Definition~\\ref{def:graph-contraction},\ngiven by \\eqref{eq:graph-contraction}, has absolute value\nat most \\(r\\).\n\\end{lemma}",
+      "active_statement_sha256": "20e190e7fdb87df4d4f70da8ea0bb876a73c0ece73c47014737dd029715b6c23",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:graph#1",
+          "expected_statement": "Any connected finite multigraph of positive even degrees, loops and parallel edge occurrences allowed, compatible rectangular real matrices with Euclidean operator norm≤1, optional real coordinate weights |w|≤1, at least one edge a rank-r≥1 orthogonal projection: absolute unrestricted signed contraction≤r."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.graph_rank_contraction"
+      ],
+      "initial_reuse_classification": "WRAPPER_ONLY",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 111,
+        "line_end": 119,
+        "context_sha256": "a7cbde950b6ac8c24f03816e6d94ea0e78d13a436399ce393a3d475ad4bfe343",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 975,
+        "line_end": 984,
+        "raw_context_sha256": "42989be9f1658ff4d703319afa8ee03f9d68f7db74129de0e3903a7c726bbdd0"
+      }
+    },
+    {
+      "id": "lem:cumulant-identities",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1140,
+      "line_end": 1172,
+      "raw_context_sha256": "b9d50b7686ab30a1c0b75daec224ccfcc5d60c1d1a2f10f341d91e585ca568f1",
+      "exact_context_tex": "\\begin{lemma}[Moment and product cumulant identities]\n\\label{lem:cumulant-identities}\nLet $q\\ge1$. All variables below are scalar random variables for\nwhich the joint moments in the stated formulas are finite.\nCumulants and joins are as in Definitions~\\ref{def:joint-cumulant}\nand~\\ref{def:partition-join}.\n\\begin{enumerate}\n\\item For $Y_1,\\ldots,Y_q$, the inverse, or moment-cumulant,\nidentity \\cite[Eq.~(I.c), p.~321]{leonov_shiryaev1959} is\n\\begin{equation}\\label{eq:moment-cumulant}\n \\E\\prod_{j=1}^qY_j\n    =\\sum_{\\pi\\in\\mathcal P([q])}\n       \\prod_{B\\in\\pi}\\cum(Y_j:j\\in B).\n\\end{equation}\n\\item For a partition $\\tau=\\{I_1,\\ldots,I_q\\}$ of the factor\npositions $\\mathcal I$ and variables $(Z_a)_{a\\in\\mathcal I}$,\nthe Leonov--Shiryaev formula\n\\cite[Eq.~(IV.d), p.~323]{leonov_shiryaev1959}\nreads\n\\begin{equation}\\label{eq:product-cumulant}\n \\cum\\left(\\prod_{a\\in I_1}Z_a,\\ldots,\n                 \\prod_{a\\in I_q}Z_a\\right)\n =\\sum_{\\substack{\\sigma\\in\\mathcal P(\\mathcal I)\\\\\n                    \\sigma\\vee\\tau=\\one_{\\mathcal I}}}\n       \\prod_{B\\in\\sigma}\\cum(Z_a:a\\in B).\n\\end{equation}\n\\item Joint cumulants are multilinear. A joint cumulant vanishes\nwhen its arguments split into two nonempty independent groups.\nAt order $q\\ge2$, adding deterministic constants to the arguments\ndoes not change the cumulant. An odd-order cumulant of a random\nvariable symmetric about zero is zero.\n\\end{enumerate}\n\\end{lemma}\n",
+      "active_context_sha256": "b9d50b7686ab30a1c0b75daec224ccfcc5d60c1d1a2f10f341d91e585ca568f1",
+      "exact_active_statement_tex": "\\begin{lemma}[Moment and product cumulant identities]\n\\label{lem:cumulant-identities}\nLet $q\\ge1$. All variables below are scalar random variables for\nwhich the joint moments in the stated formulas are finite.\nCumulants and joins are as in Definitions~\\ref{def:joint-cumulant}\nand~\\ref{def:partition-join}.\n\\begin{enumerate}\n\\item For $Y_1,\\ldots,Y_q$, the inverse, or moment-cumulant,\nidentity \\cite[Eq.~(I.c), p.~321]{leonov_shiryaev1959} is\n\\begin{equation}\\label{eq:moment-cumulant}\n \\E\\prod_{j=1}^qY_j\n    =\\sum_{\\pi\\in\\mathcal P([q])}\n       \\prod_{B\\in\\pi}\\cum(Y_j:j\\in B).\n\\end{equation}\n\\item For a partition $\\tau=\\{I_1,\\ldots,I_q\\}$ of the factor\npositions $\\mathcal I$ and variables $(Z_a)_{a\\in\\mathcal I}$,\nthe Leonov--Shiryaev formula\n\\cite[Eq.~(IV.d), p.~323]{leonov_shiryaev1959}\nreads\n\\begin{equation}\\label{eq:product-cumulant}\n \\cum\\left(\\prod_{a\\in I_1}Z_a,\\ldots,\n                 \\prod_{a\\in I_q}Z_a\\right)\n =\\sum_{\\substack{\\sigma\\in\\mathcal P(\\mathcal I)\\\\\n                    \\sigma\\vee\\tau=\\one_{\\mathcal I}}}\n       \\prod_{B\\in\\sigma}\\cum(Z_a:a\\in B).\n\\end{equation}\n\\item Joint cumulants are multilinear. A joint cumulant vanishes\nwhen its arguments split into two nonempty independent groups.\nAt order $q\\ge2$, adding deterministic constants to the arguments\ndoes not change the cumulant. An odd-order cumulant of a random\nvariable symmetric about zero is zero.\n\\end{enumerate}\n\\end{lemma}",
+      "active_statement_sha256": "3c866d5280739e3d7fc17b22e9bea094729cb6be9bb487c621fac6d2d1db4629",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:cumulant-identities#1",
+          "expected_statement": "For q≥1 arbitrary real scalar random variables on a probability space with every joint moment appearing finite: moment equals sum over partitions of products of block cumulants."
+        },
+        {
+          "id": "lem:cumulant-identities#2",
+          "expected_statement": "For a finite nonempty occurrence set I, partition tau into q≥1 nonempty prescribed product groups and arbitrary repeated real factors with requisite joint products integrable: cumulant of products equals the sum of factor cumulant products over sigma with sigma join tau one block."
+        },
+        {
+          "id": "lem:cumulant-identities#3",
+          "expected_statement": "Joint cumulant is additive and real-homogeneous in each argument, with all moments in each formula finite."
+        },
+        {
+          "id": "lem:cumulant-identities#4",
+          "expected_statement": "Cumulant vanishes if its arguments split into two nonempty independent groups (independence of vectors of arguments, not just pairwise independence)."
+        },
+        {
+          "id": "lem:cumulant-identities#5",
+          "expected_statement": "For q≥2 adding arbitrary deterministic real constants to each argument leaves cumulant unchanged."
+        },
+        {
+          "id": "lem:cumulant-identities#6",
+          "expected_statement": "For odd q≥1 and a real Z symmetric about zero with requisite moments finite, cum(Z,...,Z)=0."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.I08_moment_cumulant_inverse",
+        "Problem56.I09_product_cumulant_connected_partition_identity",
+        "Problem56.I10_independent_families_mixed_cumulant_vanish"
+      ],
+      "initial_reuse_classification": "NEW_FORMALIZATION",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 143,
+        "line_end": 181,
+        "context_sha256": "6aeab67f6b6c76256191729631ce981421917605931e0d23b9d507e9cd96b38c",
+        "relationship": "Named in C; corresponding A prose/proof interface rather than named result"
+      },
+      "parent_source_context": {
+        "line_start": 1139,
+        "line_end": 1171,
+        "raw_context_sha256": "b9d50b7686ab30a1c0b75daec224ccfcc5d60c1d1a2f10f341d91e585ca568f1"
+      }
+    },
+    {
+      "id": "lem:cumulants",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1379,
+      "line_end": 1392,
+      "raw_context_sha256": "e15affbba6babd4caecfd80a18cb2794aa22ce2d6e7d223fb5015ef44d6afd67",
+      "exact_context_tex": "\\begin{lemma}\\label{lem:cumulants}\nFor the projection \\(P=HD_2HD_1VV^TD_1HD_2H\\), every integer\n\\(q\\ge1\\), and arbitrary fixed pairs of indices\n\\((i_f,j_f)\\in K\\times K\\), $1\\le f\\le q$, with repetitions allowed,\n\\begin{equation}\\label{eq:cumulant-bound}\n \\left|\\cum(nP_{i_1j_1},\\ldots,nP_{i_qj_q})\\right|\n                      \\le (2q)^{12q}r.\n\\end{equation}\nThe cumulant is zero unless\n\\begin{equation}\\label{eq:xor-constraint}\n                 \\sum_{f=1}^q(i_f+j_f)=0\\quad\\hbox{in }K.\n\\end{equation}\nMoreover, \\(\\E P=\\delta I_n\\).\n\\end{lemma}\n",
+      "active_context_sha256": "e15affbba6babd4caecfd80a18cb2794aa22ce2d6e7d223fb5015ef44d6afd67",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{lem:cumulants}\nFor the projection \\(P=HD_2HD_1VV^TD_1HD_2H\\), every integer\n\\(q\\ge1\\), and arbitrary fixed pairs of indices\n\\((i_f,j_f)\\in K\\times K\\), $1\\le f\\le q$, with repetitions allowed,\n\\begin{equation}\\label{eq:cumulant-bound}\n \\left|\\cum(nP_{i_1j_1},\\ldots,nP_{i_qj_q})\\right|\n                      \\le (2q)^{12q}r.\n\\end{equation}\nThe cumulant is zero unless\n\\begin{equation}\\label{eq:xor-constraint}\n                 \\sum_{f=1}^q(i_f+j_f)=0\\quad\\hbox{in }K.\n\\end{equation}\nMoreover, \\(\\E P=\\delta I_n\\).\n\\end{lemma}",
+      "active_statement_sha256": "4d9b95a19b67364fe0e90fe523ed0dde10303e0e86264b21773de7f952527dcc",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:cumulants#1",
+          "expected_statement": "For every q≥1, fixed arbitrary endpoint pairs with repetitions, deterministic real orthonormal V, the exact two-sign Walsh projection satisfies |cum(nP_i1j1,...,nP_iqjq)|≤(2q)^(12q)r."
+        },
+        {
+          "id": "lem:cumulants#2",
+          "expected_statement": "That cumulant is zero if the XOR of all endpoints is nonzero; necessity only."
+        },
+        {
+          "id": "lem:cumulants#3",
+          "expected_statement": "E P=(r/n)I entrywise over both independent sign layers."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.joint_entry_cumulant_lemma"
+      ],
+      "initial_reuse_classification": "EXACT_REUSE",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 152,
+        "line_end": 164,
+        "context_sha256": "c9e1bc99c59095db94d8cf4a3cd29ff488441ea80f1ad5addacf53b453ff3b33",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 1378,
+        "line_end": 1391,
+        "raw_context_sha256": "e15affbba6babd4caecfd80a18cb2794aa22ce2d6e7d223fb5015ef44d6afd67"
+      }
+    },
+    {
+      "id": "lem:count",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1799,
+      "line_end": 1807,
+      "raw_context_sha256": "dd7c2fd18bbe52b1f2f39f4a65de6f15a461aa49bb57301ce3e16d2731e3a87b",
+      "exact_context_tex": "\\begin{lemma}\\label{lem:count}\nFor the class in Definition~\\ref{def:equality-class}, each\n$\\pi\\in\\mathcal Q_{p,s,t}$ obeys the\nfollowing loop bound, and the counting class obeys the size bound:\n\\begin{equation}\\label{eq:equality-count}\n \\ell\\le4t+12s+2,\\qquad\n                N_{p,s,t}\\le8p\\,3^p L^{74(s+t)}.\n\\end{equation}\n\\end{lemma}\n",
+      "active_context_sha256": "dd7c2fd18bbe52b1f2f39f4a65de6f15a461aa49bb57301ce3e16d2731e3a87b",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{lem:count}\nFor the class in Definition~\\ref{def:equality-class}, each\n$\\pi\\in\\mathcal Q_{p,s,t}$ obeys the\nfollowing loop bound, and the counting class obeys the size bound:\n\\begin{equation}\\label{eq:equality-count}\n \\ell\\le4t+12s+2,\\qquad\n                N_{p,s,t}\\le8p\\,3^p L^{74(s+t)}.\n\\end{equation}\n\\end{lemma}",
+      "active_statement_sha256": "350bb3b4afce02ec6beda88a954557914c49d72ddf96caf381ba05c4939e7768",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:count#1",
+          "expected_statement": "For p≥2, 0≤s≤p−1,0≤t≤p−s and each pi∈Q_pst, its loop occurrence count ell≤4t+12s+2."
+        },
+        {
+          "id": "lem:count#2",
+          "expected_statement": "The number of partitions of numbered cyclic positions before any row labeling satisfies N_pst≤8p*3^p*(4p+1)^(74(s+t)). No rotation/reversal quotient."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.selector_equality_graph_count"
+      ],
+      "initial_reuse_classification": "EXACT_REUSE",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 291,
+        "line_end": 298,
+        "context_sha256": "e6fb2fbbe04fc0f113d5996c10d6352ff5c223262b713ba84a00c84d0cfa4b41",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 1798,
+        "line_end": 1806,
+        "raw_context_sha256": "dd7c2fd18bbe52b1f2f39f4a65de6f15a461aa49bb57301ce3e16d2731e3a87b"
+      }
+    },
+    {
+      "id": "lem:binary-constraints",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2307,
+      "line_end": 2323,
+      "raw_context_sha256": "d155d1fecbeec3ede120205418a6a87808b16c96c40ec5562ca84c044fd36b92",
+      "exact_context_tex": "\\begin{lemma}\\label{lem:binary-constraints}\nFix $\\pi\\in\\mathcal Q_{p,s,t}$ and a partition $\\rho$ of its edge\noccurrences into $b=p-d$ blocks, all of size at least two. If a pair\nblock consists of adjacent nonparallel nonloop edges, or of a loop\nand a nonloop edge, its cumulant vanishes for every injective\nrow-label assignment.\n\nAfter excluding partitions with either kind of pair block, the XOR\nconditions have exactly $n^{v-h}$ unrestricted row-label assignments,\nand hence at most $n^{v-h}$ injective ones, where $v=p-s$ and $h$ is\nas in Definition~\\ref{def:binary-constraint}. Moreover,\n\\begin{equation}\\label{eq:odd-incidence}\n                              t\\le12d+4h.\n\\end{equation}\nThe XOR conditions are necessary for a nonzero cumulant product;\nno sufficiency is asserted.\n\\end{lemma}\n",
+      "active_context_sha256": "d155d1fecbeec3ede120205418a6a87808b16c96c40ec5562ca84c044fd36b92",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{lem:binary-constraints}\nFix $\\pi\\in\\mathcal Q_{p,s,t}$ and a partition $\\rho$ of its edge\noccurrences into $b=p-d$ blocks, all of size at least two. If a pair\nblock consists of adjacent nonparallel nonloop edges, or of a loop\nand a nonloop edge, its cumulant vanishes for every injective\nrow-label assignment.\n\nAfter excluding partitions with either kind of pair block, the XOR\nconditions have exactly $n^{v-h}$ unrestricted row-label assignments,\nand hence at most $n^{v-h}$ injective ones, where $v=p-s$ and $h$ is\nas in Definition~\\ref{def:binary-constraint}. Moreover,\n\\begin{equation}\\label{eq:odd-incidence}\n                              t\\le12d+4h.\n\\end{equation}\nThe XOR conditions are necessary for a nonzero cumulant product;\nno sufficiency is asserted.\n\\end{lemma}",
+      "active_statement_sha256": "53225d2b045a8c9af1255ef3d4237d943539021ebf9fec2760d1619c34c9be97",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:binary-constraints#1",
+          "expected_statement": "For fixed pi∈Q_pst and rho with b=p−d nonempty blocks each size≥2: each adjacent nonparallel nonloop pair block has zero entry cumulant under every injective full Walsh labeling."
+        },
+        {
+          "id": "lem:binary-constraints#2",
+          "expected_statement": "A pair block consisting of loop and nonloop likewise has zero cumulant for all injective labelings."
+        },
+        {
+          "id": "lem:binary-constraints#3",
+          "expected_statement": "For remaining partitions, all XOR conditions have exactly n^(v−h) unrestricted full Walsh labelings."
+        },
+        {
+          "id": "lem:binary-constraints#4",
+          "expected_statement": "The number of injective solutions is at most n^(v−h)."
+        },
+        {
+          "id": "lem:binary-constraints#5",
+          "expected_statement": "After removing forbidden pair types, t≤12d+4h. XOR equations are necessary only for a nonzero cumulant product."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.I23_pointwise_vanishing_pair_classification",
+        "Problem56.entryXorConstraintSolutionCount",
+        "Problem56.I24_large_block_and_support_rank_bound"
+      ],
+      "initial_reuse_classification": "WRAPPER_ONLY",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 383,
+        "line_end": 415,
+        "context_sha256": "45095c318653f1d0bb8f53c9c336392ccbbfeccd548533814fcbdf7ef322166b",
+        "relationship": "Named in C; corresponding A prose/proof interface rather than named result"
+      },
+      "parent_source_context": {
+        "line_start": 2306,
+        "line_end": 2322,
+        "raw_context_sha256": "d155d1fecbeec3ede120205418a6a87808b16c96c40ec5562ca84c044fd36b92"
+      }
+    },
+    {
+      "id": "prop:entry-contribution",
+      "kind": "proposition",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2433,
+      "line_end": 2451,
+      "raw_context_sha256": "2d2f3a6736aaceb0219fe3da386846863c9e1277a85258e462103e08cba1b5bc",
+      "exact_context_tex": "\\begin{proposition}\n\\label{prop:entry-contribution}\nFix $\\pi\\in\\mathcal Q_{p,s,t}$, and let $d,h$ be nonnegative\nintegers. With the notation above,\n\\begin{equation}\\label{eq:entry-partition-count}\n \\sum_{\\rho\\in\\mathcal R_{d,h}(\\pi)}c(\\rho)\n       \\le (3K_2)^p L^{84d+12h+9s+2t+1}.\n\\end{equation}\nThe contribution of these partitions to the trace expansion,\nafter summing absolute values over their injective row-label\nassignments and multiplying by the absolute selector coefficient,\nis at most\n\\begin{equation}\\label{eq:fixed-equality-contribution}\n (3K_2)^p L^{84d+12h+9s+2t+1}\n       (\\delta\\theta)^p\\kappa^{-s}r^{-d}n^{-h}.\n\\end{equation}\nIf $\\mathcal R_{d,h}(\\pi)$ is nonempty, its parameters satisfy\n$t\\le12d+4h$.\n\\end{proposition}\n",
+      "active_context_sha256": "2d2f3a6736aaceb0219fe3da386846863c9e1277a85258e462103e08cba1b5bc",
+      "exact_active_statement_tex": "\\begin{proposition}\n\\label{prop:entry-contribution}\nFix $\\pi\\in\\mathcal Q_{p,s,t}$, and let $d,h$ be nonnegative\nintegers. With the notation above,\n\\begin{equation}\\label{eq:entry-partition-count}\n \\sum_{\\rho\\in\\mathcal R_{d,h}(\\pi)}c(\\rho)\n       \\le (3K_2)^p L^{84d+12h+9s+2t+1}.\n\\end{equation}\nThe contribution of these partitions to the trace expansion,\nafter summing absolute values over their injective row-label\nassignments and multiplying by the absolute selector coefficient,\nis at most\n\\begin{equation}\\label{eq:fixed-equality-contribution}\n (3K_2)^p L^{84d+12h+9s+2t+1}\n       (\\delta\\theta)^p\\kappa^{-s}r^{-d}n^{-h}.\n\\end{equation}\nIf $\\mathcal R_{d,h}(\\pi)$ is nonempty, its parameters satisfy\n$t\\le12d+4h$.\n\\end{proposition}",
+      "active_statement_sha256": "5bec9fd05dce4ac13953034589bb53053ca3db3dd79a0dd7f47a74b80e39e4b1",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "prop:entry-contribution#1",
+          "expected_statement": "For every d,h≥0 and pi∈Q_pst, sum over exact R_dh(pi) of c(rho)=product_C(2|C|)^(12|C|) is ≤(3K2)^p L^(84d+12h+9s+2t+1)."
+        },
+        {
+          "id": "prop:entry-contribution#2",
+          "expected_statement": "For same class, sum over rho and injective row labels of absolute cumulant products, multiplied by absolute selector coefficient, is at most that same coefficient times (delta theta)^p kappa^(−s) r^(−d) n^(−h)."
+        },
+        {
+          "id": "prop:entry-contribution#3",
+          "expected_statement": "If the exact R_dh(pi) is nonempty then t≤12d+4h. No such constraint asserted for an empty class."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.I28_aggregate_partition_cumulant_bound",
+        "Problem56.I29_exact_dimension_factor",
+        "Problem56.selectorEntryContribution_abs_sum_le_aggregateBound"
+      ],
+      "initial_reuse_classification": "WRAPPER_ONLY",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 417,
+        "line_end": 477,
+        "context_sha256": "95aa957fae0465d55b3394bd577226040d816a4ac515a6603e895c09b37a8db9",
+        "relationship": "Named in C; corresponding A prose/proof interface rather than named result"
+      },
+      "parent_source_context": {
+        "line_start": 2432,
+        "line_end": 2450,
+        "raw_context_sha256": "2d2f3a6736aaceb0219fe3da386846863c9e1277a85258e462103e08cba1b5bc"
+      }
+    },
+    {
+      "id": "lem:sampling",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2740,
+      "line_end": 2768,
+      "raw_context_sha256": "11862ab02e91db108cecc37b6f8d525566a923326acb37d47876a1f0d1c306e6",
+      "exact_context_tex": "\\begin{lemma}\\label{lem:sampling}\nLet \\(X\\) be an orthonormal frame, possibly random and independent\nof sampling. For \\(0<\\varepsilon<1\\), an integer \\(1\\le k\\le n\\),\nand\n\\[\n \\alpha=\\varepsilon/4,\\qquad\n \\theta_\\pm=(1\\pm\\alpha)k/n\\le1,\n\\]\nsuppose each normalized Bernoulli Gram of density \\(\\theta_\\pm\\)\nhas error at most \\(\\varepsilon/4\\) except with probability\n\\(\\gamma\\). Explicitly, for Bernoulli diagonal projections $E_-$\nand $E_+$ of the respective densities, each independent of $X$,\nthe two hypotheses are\n\\begin{equation}\\label{eq:sampling-hypotheses}\n\\begin{aligned}\n \\Prob\\{\\norm{\\theta_-^{-1}X^TE_-X-I_r}>\\varepsilon/4\\}\n          &\\le\\gamma,\\\\\n \\Prob\\{\\norm{\\theta_+^{-1}X^TE_+X-I_r}>\\varepsilon/4\\}\n          &\\le\\gamma.\n\\end{aligned}\n\\end{equation}\nThese are marginal probability statements; $E_-$ and $E_+$ need\nnot be independent of one another. A uniform \\(k\\)-element sample\nthen satisfies\n\\begin{equation}\\label{eq:sampling-bound}\n \\Prob\\left\\{\\norm{\\frac nk X^TS_JS_J^TX-I_r}>\\varepsilon\\right\\}\n \\le2\\gamma+2\\exp(-\\varepsilon^2 k/48).\n\\end{equation}\n\\end{lemma}\n",
+      "active_context_sha256": "11862ab02e91db108cecc37b6f8d525566a923326acb37d47876a1f0d1c306e6",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{lem:sampling}\nLet \\(X\\) be an orthonormal frame, possibly random and independent\nof sampling. For \\(0<\\varepsilon<1\\), an integer \\(1\\le k\\le n\\),\nand\n\\[\n \\alpha=\\varepsilon/4,\\qquad\n \\theta_\\pm=(1\\pm\\alpha)k/n\\le1,\n\\]\nsuppose each normalized Bernoulli Gram of density \\(\\theta_\\pm\\)\nhas error at most \\(\\varepsilon/4\\) except with probability\n\\(\\gamma\\). Explicitly, for Bernoulli diagonal projections $E_-$\nand $E_+$ of the respective densities, each independent of $X$,\nthe two hypotheses are\n\\begin{equation}\\label{eq:sampling-hypotheses}\n\\begin{aligned}\n \\Prob\\{\\norm{\\theta_-^{-1}X^TE_-X-I_r}>\\varepsilon/4\\}\n          &\\le\\gamma,\\\\\n \\Prob\\{\\norm{\\theta_+^{-1}X^TE_+X-I_r}>\\varepsilon/4\\}\n          &\\le\\gamma.\n\\end{aligned}\n\\end{equation}\nThese are marginal probability statements; $E_-$ and $E_+$ need\nnot be independent of one another. A uniform \\(k\\)-element sample\nthen satisfies\n\\begin{equation}\\label{eq:sampling-bound}\n \\Prob\\left\\{\\norm{\\frac nk X^TS_JS_J^TX-I_r}>\\varepsilon\\right\\}\n \\le2\\gamma+2\\exp(-\\varepsilon^2 k/48).\n\\end{equation}\n\\end{lemma}",
+      "active_statement_sha256": "7cb1c3e3f6ce3e17652841f6a7eaf73dec3471efe6be4200b908fd61b4fef20a",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:sampling#1",
+          "expected_statement": "For an arbitrary possibly random real orthonormal frame X independent of sampling, 0<epsilon<1,1≤k≤n, alpha=epsilon/4, theta±=(1±alpha)k/n≤1: marginal Bernoulli failure probabilities each≤gamma imply uniform k-subset failure probability≤2gamma+2exp(−epsilon²k/48). Frame law need not be finite or uniform. Two Bernoulli marginals need not be independent of each other."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.fixed_size_sampling_transfer"
+      ],
+      "initial_reuse_classification": "NEW_FORMALIZATION",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 608,
+        "line_end": 623,
+        "context_sha256": "9e23e4c46e511ceddea14989d8b34246637a46de1d0a1830d46ab594cdd0e0e5",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 2739,
+        "line_end": 2767,
+        "raw_context_sha256": "11862ab02e91db108cecc37b6f8d525566a923326acb37d47876a1f0d1c306e6"
+      }
+    },
+    {
+      "id": "lem:small",
+      "kind": "lemma",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2888,
+      "line_end": 2898,
+      "raw_context_sha256": "d11e05552f258171aae1c8b2c9e4c38e3acee7f88c08e9dfacee4cf54c28643b",
+      "exact_context_tex": "\\begin{lemma}\\label{lem:small}\nFor every deterministic orthonormal frame \\(V\\), let \\(X=HD_2HD_1V\\)\nand let $1\\le k\\le n$ be an integer. Let \\(J\\) be an independent\nuniform \\(k\\)-element subset. Then\n\\begin{equation}\\label{eq:small-rank-moment}\n \\E_{D_1,D_2,J}\\left\\|\\frac nkX^TS_JS_J^TX-I_r\\right\\|_F^2\n                                      \\le\\frac{r(r+1)}k.\n\\end{equation}\nConsequently \\(k=\\min\\{n,\\lceil200r^2/\\varepsilon^2\\rceil\\}\\)\nhas failure probability at most \\(0.01\\).\n\\end{lemma}\n",
+      "active_context_sha256": "d11e05552f258171aae1c8b2c9e4c38e3acee7f88c08e9dfacee4cf54c28643b",
+      "exact_active_statement_tex": "\\begin{lemma}\\label{lem:small}\nFor every deterministic orthonormal frame \\(V\\), let \\(X=HD_2HD_1V\\)\nand let $1\\le k\\le n$ be an integer. Let \\(J\\) be an independent\nuniform \\(k\\)-element subset. Then\n\\begin{equation}\\label{eq:small-rank-moment}\n \\E_{D_1,D_2,J}\\left\\|\\frac nkX^TS_JS_J^TX-I_r\\right\\|_F^2\n                                      \\le\\frac{r(r+1)}k.\n\\end{equation}\nConsequently \\(k=\\min\\{n,\\lceil200r^2/\\varepsilon^2\\rceil\\}\\)\nhas failure probability at most \\(0.01\\).\n\\end{lemma}",
+      "active_statement_sha256": "ce3a0d556756d77426df2843c92cb53fc5734c0c48ec403d6880c24155343502",
+      "standing_context": "Real scalar/matrix convention; Section 1 Walsh and independent sampling model except where lemma explicitly quantifies arbitrary graphs, projections, scalar variables, or frames.",
+      "conjuncts": [
+        {
+          "id": "lem:small#1",
+          "expected_statement": "For deterministic real orthonormal V and 1≤k≤n, E over both independent sign layers and independent uniform k-subset of ||(n/k)XᵀE_JX−I||_F²≤r(r+1)/k."
+        },
+        {
+          "id": "lem:small#2",
+          "expected_statement": "For 0<epsilon<1 and rank≥1 in standing context, k=min(n,ceil(200r²/epsilon²)) gives spectral failure probability≤1/100; full sampling exact."
+        }
+      ],
+      "candidate_baseline_declarations": [
+        "Problem56.small_rank_second_moment"
+      ],
+      "initial_reuse_classification": "EXACT_REUSE",
+      "expected_scope_review": "APPROVED_AS_WRITTEN; candidate proof correspondence pending",
+      "kernel_coverage": "NOT_ASSERTED",
+      "original_source_A": {
+        "commit": "35cc5f146fcddc88d8375cc974ff93585099e220",
+        "file": "research/problem_5_6/LaTeX/solution.tex",
+        "line_start": 661,
+        "line_end": 670,
+        "context_sha256": "8379d525fa85deb7b96343726dfe5963f00d56ebef3f8549ecdfaa9bf121fcfd",
+        "relationship": "Same named result in A; statement/generalization comparison required"
+      },
+      "parent_source_context": {
+        "line_start": 2887,
+        "line_end": 2897,
+        "raw_context_sha256": "d11e05552f258171aae1c8b2c9e4c38e3acee7f88c08e9dfacee4cf54c28643b"
+      }
+    }
+  ],
+  "parent_inventory_sha256": "fe3324f58e323d6fd878f52e692dbe02abf38f1cf622f300f58a0c222f8285ef",
+  "inherited_inventory_reviewer_context": "/root/v6_inventory",
+  "revision_reanchor_context": "/root",
+  "revision_review_status": "PENDING_INDEPENDENT_REVIEW"
+}

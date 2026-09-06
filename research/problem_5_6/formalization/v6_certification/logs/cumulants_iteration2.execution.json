@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "Problem56.PaperV6.GeneralCumulantsProduct",
+    "Problem56.PaperV6.GeneralCumulantsSymmetry",
+    "Problem56.PaperV6.GeneralCumulantsMultilinear"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+  "start_utc": "2026-09-06T11:06:29.774164+00:00",
+  "end_utc": "2026-09-06T11:06:47.653735+00:00",
+  "elapsed_seconds": 17.879319124971516,
+  "returncode": 1,
+  "stdout_stderr": "logs/cumulants_iteration2.log",
+  "log_sha256": "0147b3fe776baa4439b1894ca240cc5265b462462794f71ba47a943d0088de0d",
+  "local_lean_sources": {
+    "research/problem_5_6/formalization/lean/Problem56/CumulantMoment.lean": "82c7b3a4e9ab2b12511d6e4f337ce7b2b2925706d277d7dbbf1f167d39b32b40",
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsExpected.lean": "e455d314ba827a7be386fb256a5041c54e625435c95bd44fcce49dcd5e1fc1e0",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMoment.lean": "c2ea73be9546f02621b5dcfd044971633fe3c895634a402c6a70f0f9f51813e8",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsMultilinear.lean": "361a5f48c2ce9d63451855d87f0a727a15df36993c270174c2bd311cb8af291c",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsProduct.lean": "281964ca58b40f925c854077ba7cee208dc0a5c2ad18c9a36548fc769feedcde",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralCumulantsSymmetry.lean": "9d4504ec73d139fea917173cd4c0e30d6fb96521e8e2f70d751284a4e7044bc9",
+    "research/problem_5_6/formalization/lean/Problem56/ProductCumulant.lean": "576d9c4020193fabd85432446e08b15aeea48a91ae40bb6e18e66c7bc5b6d7cc"
+  },
+  "receipt_kind": "local subprocess execution record; not authenticated external attestation"
+}

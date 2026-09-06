@@ -1,0 +1,231 @@
+⚠ [8706/8717] Replayed Problem56.Definitions
+warning: Problem56/Definitions.lean:270:10: Variable name `U` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _U
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Problem56/Definitions.lean:354:5: Variable name `D` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _D
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Problem56/Definitions.lean:356:6: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [8707/8717] Replayed Problem56.ExtractionRegression
+info: Problem56/ExtractionRegression.lean:168:0: 'Problem56.ExtractionRegression.i35_empty_upper_mass_and_guard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Problem56/ExtractionRegression.lean:169:0: 'Problem56.ExtractionRegression.i35_unconditional_support_conflict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Problem56/ExtractionRegression.lean:170:0: 'Problem56.ExtractionRegression.i16_empty_selector_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Problem56/ExtractionRegression.lean:171:0: 'Problem56.ExtractionRegression.i16_expected_rank_guard' depends on axioms: [propext, Quot.sound]
+info: Problem56/ExtractionRegression.lean:172:0: 'Problem56.ExtractionRegression.i19_two_loop_endpoint_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Problem56/ExtractionRegression.lean:173:0: 'Problem56.ExtractionRegression.i19_expected_rank_guard' depends on axioms: [propext, Quot.sound]
+info: Problem56/ExtractionRegression.lean:174:0: 'Problem56.ExtractionRegression.i08_empty_lhs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Problem56/ExtractionRegression.lean:175:0: 'Problem56.ExtractionRegression.i08_empty_rhs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Problem56/ExtractionRegression.lean:176:0: 'Problem56.ExtractionRegression.i08_empty_boundary_conflict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Problem56/ExtractionRegression.lean:177:0: 'Problem56.ExtractionRegression.i08_expected_nonempty_guard' depends on axioms: [propext]
+⚠ [8708/8717] Replayed Problem56.GraphOperatorL2
+warning: Problem56/GraphOperatorL2.lean:398:2: Unused tactic linter: `change
+  M (es.get i) (edgeListTupleFinEquiv srcDim es xs i) (edgeListTupleFinEquiv dstDim es y i) = _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Problem56/GraphOperatorL2.lean:1350:33: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Problem56/GraphOperatorL2.lean:1751:39: Variable name `hio` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hio
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [8709/8717] Replayed Problem56.GraphOperatorRegression
+info: Problem56/GraphOperatorRegression.lean:84:0: 'Problem56.GraphOperatorRegression.graphOperator_dim_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Problem56/GraphOperatorRegression.lean:85:0: 'Problem56.GraphOperatorRegression.exact_scalar_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Problem56/GraphOperatorRegression.lean:86:0: 'Problem56.GraphOperatorRegression.exact_scalar_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Problem56/GraphOperatorRegression.lean:87:0: 'Problem56.GraphOperatorRegression.exact_scalar_parallel_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Problem56/GraphOperatorRegression.lean:88:0: 'Problem56.GraphOperatorRegression.transpose_preserves_required_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Problem56/GraphOperatorRegression.lean:89:0: 'Problem56.GraphOperatorRegression.zero_dimensional_domain_has_zero_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8710/8717] Replayed Problem56.GraphOperatorUnequalRegression
+info: Problem56/GraphOperatorUnequalRegression.lean:102:0: 'Problem56.GraphOperatorUnequalRegression.exact_unequal_dimensional_chain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8712/8717] Replayed Problem56.CumulantMoment
+warning: Problem56/CumulantMoment.lean:45:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/CumulantMoment.lean:79:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/CumulantMoment.lean:104:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/CumulantMoment.lean:115:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/CumulantMoment.lean:231:6: Try `simp at hxb` instead of `simpa using hxb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Problem56/CumulantMoment.lean:840:10: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Problem56/CumulantMoment.lean:848:56: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Problem56/CumulantMoment.lean:945:56: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Problem56/CumulantMoment.lean:1234:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/CumulantMoment.lean:1317:13: This simp argument is unused:
+  Nat.add_sub_cancel
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_sub_one, pow_succ, Nat.factorial_succ, Nat.cast_mul, Nat.cast_add, Nat.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Problem56/CumulantMoment.lean:1421:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/CumulantMoment.lean:1543:6: Try `simp at hxU` instead of `simpa using hxU`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Problem56/CumulantMoment.lean:1640:6: Try `simp at hBG` instead of `simpa using hBG`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Problem56/CumulantMoment.lean:1791:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/CumulantMoment.lean:1941:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8713/8717] Replayed Problem56.ProductCumulant
+warning: Problem56/ProductCumulant.lean:418:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/ProductCumulant.lean:396:4: Unused tactic linter: `change
+  (∏ C ∈ P.parts, uniformExpectation (fun ω ↦ ∏ j ∈ C, Y j ω)) =
+    ∏ B ∈ (Finset.univ : Finset P.parts), uniformExpectation (fun ω ↦ ∏ j : B.1, Y j.1 ω)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Problem56/ProductCumulant.lean:729:12: Unused tactic linter: `change σ ≤ coarsenFromBlockPartition τ (blockPartitionOfCoarsening τ Pτ)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Problem56/ProductCumulant.lean:780:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/ProductCumulant.lean:797:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/ProductCumulant.lean:800:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/ProductCumulant.lean:836:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/ProductCumulant.lean:859:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem56/ProductCumulant.lean:868:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (8717 jobs).

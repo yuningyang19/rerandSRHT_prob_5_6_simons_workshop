@@ -1,0 +1,34 @@
+{
+  "source_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "compile_tool": "latex-compile skill, existing TeX Live 2024, latexmk -pdf -halt-on-error",
+  "observed_tool_exit_code": 0,
+  "evidence_source": "Actual exec_command tool result plus generated compiler log, aux and PDF",
+  "compiler_log": "tex_build/main.log.gz",
+  "compiler_log_raw_sha256": "1c4a669290d5054d0b8639b56100a5c998716314936b214e9a15f01315ee9772",
+  "pdf_sha256": "9acbff98f69fa799d5ac37a4c515bdd90cfab2dd714e41c17f4e4234d7903e80",
+  "aux_sha256": "ce6794cd8e1e97e1ab727a85a50993f7262d0d3a0c549bcd921d6d27ce7e670d",
+  "pages": 41,
+  "named_labels_and_numbering_unchanged": {
+    "thm:main": "1",
+    "lem:transfer": "2",
+    "prop:trace": "3",
+    "cor:bernoulli": "4",
+    "lem:graph": "5",
+    "lem:cumulant-identities": "6",
+    "lem:cumulants": "7",
+    "lem:count": "8",
+    "lem:binary-constraints": "9",
+    "prop:entry-contribution": "10",
+    "lem:sampling": "11",
+    "lem:small": "12"
+  },
+  "undefined_references_or_overfull_boxes": false,
+  "visual_inspection": {
+    "pages": [
+      11
+    ],
+    "image_sha256": "a7f165532357e03b21bbd9d879c2a157d8c88ee71ec6d2e5d76973c8b11684ae",
+    "result": "PASS: positive integer coordinate dimension wording is rendered clearly; no clipped or overlapping text; definition and boundary matrix remain legible",
+    "not_full_pdf_visual_review": true
+  }
+}

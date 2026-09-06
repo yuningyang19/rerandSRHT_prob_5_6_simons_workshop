@@ -1,0 +1,12 @@
+{
+  "verification_commit": "6c12db598e56103309f7e41144f84b75246fa96b",
+  "archive": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/frozen-v6-companion.tar.gz",
+  "sha256": "23b3c187af9b3fd2ecb3ad3738395eaa2fb8005c8e4653cb380204deecc1d54b",
+  "repeated_export_sha256": "23b3c187af9b3fd2ecb3ad3738395eaa2fb8005c8e4653cb380204deecc1d54b",
+  "deterministic_repeated_export": true,
+  "total_archive_members": 419,
+  "source_members": 417,
+  "initial_compiled_objects": false,
+  "fresh_unpack_validation": "reproduction/independent_cold_export.json",
+  "status": "ARCHIVE_SOURCE_VALIDATED_INDEPENDENT_BUILD_RUNNING"
+}

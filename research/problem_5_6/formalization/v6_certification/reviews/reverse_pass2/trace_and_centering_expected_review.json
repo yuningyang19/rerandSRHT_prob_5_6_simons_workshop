@@ -1,0 +1,16 @@
+{
+  "reviewer_context": "/root/reverse_pass2",
+  "source_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "source_locators": [
+    "main.tex:389-392",
+    "main.tex:393-397"
+  ],
+  "expected_module": "research/problem_5_6/formalization/lean/Problem56/PaperV6/TracePowerExpected.lean",
+  "sha256": "fb2e63c0fc07a1bc8934e1292430cbd9711ae650a69de49a55c062ad3bb2bb6b",
+  "operation_status": "PASS",
+  "decisions": {
+    "RectangularTracePowerExpected": "Exact source trace-power identity, stronger by omission of unnecessary frame/projection conditions; j>0 essential.",
+    "GramCenteringExpected": "Exact source inverse-scaled Gram centering equality. Nonzero theta and X transpose X=I explicitly inherited from C. Arbitrary E is stronger than Bernoulli projection."
+  },
+  "implementation_generation_order": "Gram expected reviewed before its proof; trace expected prior approval preserved in trace_power_expected_review.json."
+}

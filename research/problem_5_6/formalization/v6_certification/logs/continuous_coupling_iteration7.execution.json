@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "Problem56.PaperV6.ContinuousCoupling"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+  "start_utc": "2026-09-06T12:19:47.861047+00:00",
+  "end_utc": "2026-09-06T12:20:05.826862+00:00",
+  "elapsed_seconds": 17.965802249964327,
+  "returncode": 1,
+  "stdout_stderr": "logs/continuous_coupling_iteration7.log",
+  "log_sha256": "b6913d0a39bc5d2c25e7283b17169f3850d17846817641ebaa919af869b3a038",
+  "local_lean_sources": {
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCoupling.lean": "5719e896dada84d8c5b47fcf2b8c248b7ae910c7cee0b092df41ae85be4862bc",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingBasics.lean": "6152c491073252c927efe3cfe75025d0d852e86efdb5fd97ed9755c68bf02730",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingExpected.lean": "ddd5f2c19de0c4d96c67c1df277c09884b70941a192b00cac28b92484f344ace",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingNoTies.lean": "c0bce50da454bd6faf76a1d9d0dcf756db3706f9739a809c401b583f9fd4b2d2",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/ContinuousCouplingSelection.lean": "80e02174f24bd5d6e93fc3944b5903a7b38c782b46d0d7a85c8c4589388f5773",
+    "research/problem_5_6/formalization/lean/lake-manifest.json": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540",
+    "research/problem_5_6/formalization/lean/lakefile.lean": "d5e2b1d68953f7348d5ccca257d40afe9eb4d772d9680ae8d4c4512ebf052c29",
+    "research/problem_5_6/formalization/lean/lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_logged.py": "7204dd717c1e4f7b168cc52ed5df337673e55115f7cc87344e29a471ef3ee73c",
+    "research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py": "9b800cbe2c3de135c1309e7f882aa8dc4edfb2a7e296e72ff80e262eb93f9061"
+  },
+  "receipt_kind": "local subprocess execution record; not authenticated external attestation"
+}

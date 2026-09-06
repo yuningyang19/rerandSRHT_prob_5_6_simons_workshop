@@ -1,0 +1,16 @@
+{
+  "parent_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "files": [
+    {
+      "path": "research/problem_5_6/paper/v6/figures/p7_contraction.tex",
+      "sha256": "9df62c726d52766be5996124d3257b751bcbc5116ff770f80f452d6089bddabe",
+      "git_blob": "ae98c9bd19822396e61a100b23bd5ec8d99ff3ce"
+    },
+    {
+      "path": "research/problem_5_6/paper/v6/main.tex",
+      "sha256": "778731145bc9f537e561579303eb644388733d485b483c90f82e62243971e8cc",
+      "git_blob": "95ecc35d2f2d68c903a0e099c8129138c31744b4"
+    }
+  ]
+}

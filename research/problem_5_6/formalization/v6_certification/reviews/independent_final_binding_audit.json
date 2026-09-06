@@ -1,0 +1,132 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "time_utc": "2026-09-06T13:05:52.252745+00:00",
+  "status": "INDEPENDENT_FINAL_BINDINGS_PASS_FULL_SOURCE_SCOPE_REJECTED_I_V6_11",
+  "counts": {
+    "frozen_named": 12,
+    "frozen_interfaces": 50,
+    "frozen_definitions": 34,
+    "crosswalk_rows": 96,
+    "targets": 359,
+    "primitive_definitions": 134,
+    "nodes": 63329,
+    "source_files": 159,
+    "literal_source_interfaces_covered": 49
+  },
+  "hashes": {
+    "three_way_crosswalk.json": "279b272d692cbebe4f80e3ae9d45f263596b95ae310ce2dee931776649045d81",
+    "reviewed_type_lock.json": "37e446452f1c9bea9ef2346f317d647749624e09f4253f3d87322ae5d4aab135",
+    "reviewed_definition_lock.json": "026d9cce127ef96bc4eccb21ea73360af86aef06aa3a3dcdb7678c43504ffd9d",
+    "reviewed_correspondence_lock.json": "3135cb809c44f01ab6a0921384505079a16bc8dce48e4860af3e6b8a7ed598c5",
+    "combined_actual_types.json": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+    "combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5",
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "logs/combined_audit.log": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58",
+    "logs/combined_audit.execution.json": "b94c679338cade0d745f3420ac8ac3d9694375a09ae72c67f4518c2e5b47b754"
+  },
+  "all_source_hashes_and_exact_membership": "PASS",
+  "compiler_receipt_complete_source_binding": "PASS",
+  "raw_compiler_definitions_equal_independent_lock": "PASS",
+  "crosswalk_binding_checks": "PASS",
+  "full_source_scope": {
+    "full_manuscript_scope": "NOT_ESTABLISHED",
+    "unresolved_source_items": [
+      "I-V6-11"
+    ]
+  },
+  "full_source_gate_expected_rejection": "full manuscript coverage not established: I-V6-11",
+  "axiom_allowed_set": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "targets_with_structural_axiom_excess": {
+    "Problem56.PaperV6.VertexSimpleIndexedPath.edge_endpoints_mem": {
+      "collectAxioms": [],
+      "conservative_structural_axioms": [
+        "propext"
+      ],
+      "structural_excess": [
+        "propext"
+      ]
+    }
+  },
+  "actual_body_paths": [
+    {
+      "root": "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+      "dependency": "Problem56.PaperV6.generalBridgeless_modification",
+      "body_path": [
+        "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+        "Problem56.PaperV6.generalBridgeless_modification"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+      "dependency": "Problem56.PaperV6.rooted_history",
+      "body_path": [
+        "Problem56.PaperV6.general_bridgeless_matrix_conversion",
+        "Problem56.PaperV6.rooted_history_consequence",
+        "Problem56.PaperV6.rooted_history"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.generalBridgeless_modification",
+      "dependency": "Problem56.PaperV6.generalBridgeless_state_progress",
+      "body_path": [
+        "Problem56.PaperV6.generalBridgeless_modification",
+        "Problem56.PaperV6.generalBridgeless_state_progress"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.generalBridgeless_state_progress",
+      "dependency": "Problem56.PaperV6.exists_originalFreshEar",
+      "body_path": [
+        "Problem56.PaperV6.generalBridgeless_state_progress",
+        "Problem56.PaperV6.exists_originalFreshEar"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.formalLogMomentInterface",
+      "dependency": "Problem56.PaperV6.formalLogMomentCoefficient",
+      "body_path": [
+        "Problem56.PaperV6.formalLogMomentInterface",
+        "Problem56.PaperV6.formalLogMomentCoefficient"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.formalLogMomentInterface",
+      "dependency": "Problem56.PaperV6.formalExpLogMoment",
+      "body_path": [
+        "Problem56.PaperV6.formalLogMomentInterface",
+        "Problem56.PaperV6.formalExpLogMoment"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.continuousCoupling",
+      "dependency": "Problem56.PaperV6.keysOrdered_uniform",
+      "body_path": [
+        "Problem56.PaperV6.continuousCoupling",
+        "Problem56.PaperV6.keysOrdered_uniform"
+      ]
+    },
+    {
+      "root": "Problem56.PaperV6.rectangular_trace_power",
+      "dependency": "Problem56.PaperV6.rectangular_trace_mul_pow",
+      "body_path": [
+        "Problem56.PaperV6.rectangular_trace_power",
+        "Problem56.PaperV6.rectangular_trace_mul_pow"
+      ]
+    }
+  ],
+  "source_manifest_bounded_repair": "Controller complete-membership check rejected duplicated lakefile.lean record (160 rows/159 unique); generator now includes it exactly once and independent complete-manifest validation passed. No mathematics, target types, definitions or graph changed.",
+  "independence": "Reviewer did not author mathematical proof implementations. Authored expected check assignments and GeneralSamplingExpected definitions were independently source-reviewed before other-context proofs. Reverse pass2 is a separate context; this report does not self-certify pass2.",
+  "remaining_external_evidence": "Final mandatory-suite receipts, pinned fresh kernel replay and source-cold export reproduction are controller-owned and are not inferred from incremental compilation.",
+  "receipt_refresh_review": {
+    "time_utc": "2026-09-06T13:18:36.030501+00:00",
+    "raw_graph_unchanged": true,
+    "new_receipt_sha256": "b94c679338cade0d745f3420ac8ac3d9694375a09ae72c67f4518c2e5b47b754",
+    "complete_command_source_binding": "PASS",
+    "lifecycle": "run_suite now preserves reviewed combined_audit log/receipt and writes final_combined_audit for each actual execution."
+  },
+  "post_c030_metadata_clarification": "reviews/i11_implication_metadata_clarification.json; exact before/after record, tested archive unchanged"
+}

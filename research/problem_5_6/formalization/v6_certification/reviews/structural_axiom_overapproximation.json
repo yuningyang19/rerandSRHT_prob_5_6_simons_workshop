@@ -1,0 +1,40 @@
+{
+  "target": "Problem56.PaperV6.VertexSimpleIndexedPath.edge_endpoints_mem",
+  "collectAxioms": [],
+  "structural_closure_extra_axiom": "propext",
+  "shortest_dependency_path": [
+    {
+      "name": "Problem56.PaperV6.VertexSimpleIndexedPath.edge_endpoints_mem",
+      "kind": "theorem"
+    },
+    {
+      "name": "Problem56.PaperV6.VertexSimpleIndexedPath",
+      "kind": "inductive"
+    },
+    {
+      "name": "Problem56.PaperV6.VertexSimpleIndexedPath.mk",
+      "kind": "constructor"
+    },
+    {
+      "name": "Nat.instNeZeroSucc",
+      "kind": "theorem"
+    },
+    {
+      "name": "Nat.succ_ne_zero",
+      "kind": "theorem"
+    },
+    {
+      "name": "eq_false'",
+      "kind": "theorem"
+    },
+    {
+      "name": "eq_false",
+      "kind": "theorem"
+    },
+    {
+      "name": "propext",
+      "kind": "axiom"
+    }
+  ],
+  "source": "logs/combined_audit.log"
+}

@@ -1,0 +1,155 @@
+{
+  "roots": 53,
+  "nodes": 61701,
+  "end": [
+    61701
+  ],
+  "missing_references": [],
+  "nonallowed_axioms": [],
+  "results": {
+    "Problem56.main_universal_ose": {
+      "closure_size": 61531,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "targets": {
+        "Problem56.signed_trace_proposition": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.main_universal_ose",
+            "Problem56.bernoulli_coordinate_sampling_corollary",
+            "Problem56.signed_trace_proposition"
+          ]
+        },
+        "Problem56.fixed_size_sampling_transfer": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.main_universal_ose",
+            "Problem56.fixed_size_sampling_transfer"
+          ]
+        },
+        "Problem56.small_rank_second_moment": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.main_universal_ose",
+            "Problem56.small_rank_second_moment"
+          ]
+        },
+        "Problem56.spectralFailureSup": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.main_universal_ose",
+            "Problem56.spectralFailureSup"
+          ]
+        },
+        "Problem56.frameFailureProbability": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.main_universal_ose",
+            "Problem56.frameFailureProbability"
+          ]
+        }
+      }
+    },
+    "Problem56.graph_rank_contraction": {
+      "closure_size": 29789,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "targets": {
+        "Problem56.I07_rank_edge_factorization_bound": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.graph_rank_contraction",
+            "Problem56.I07_rank_edge_factorization_bound"
+          ]
+        },
+        "Problem56.mingo_speicher_graph_operator_specialization": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.graph_rank_contraction",
+            "Problem56.I07_rank_edge_factorization_bound",
+            "Problem56.mingo_speicher_graph_operator_specialization"
+          ]
+        },
+        "Problem56.endpointAwareRankCutStepFactorization_all": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.graph_rank_contraction",
+            "Problem56.I07_rank_edge_factorization_bound",
+            "Problem56.mingo_speicher_graph_operator_specialization",
+            "Problem56.endpointAwareRankCutStepFactorization_all"
+          ]
+        },
+        "Problem56.mingo_speicher_bridgeless_conversion": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.graph_rank_contraction",
+            "Problem56.I07_rank_edge_factorization_bound",
+            "Problem56.I05_mingo_speicher_bridgeless_conversion",
+            "Problem56.mingo_speicher_bridgeless_conversion"
+          ]
+        }
+      }
+    },
+    "Problem56.signed_trace_proposition": {
+      "closure_size": 38380,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "targets": {
+        "Problem56.signedTrace_master_geometric_bound": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.signed_trace_proposition",
+            "Problem56.signedTrace_bound",
+            "Problem56.signedTrace_master_geometric_bound"
+          ]
+        },
+        "Problem56.aggregate_partition_cumulant_bound": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.signed_trace_proposition",
+            "Problem56.signedTrace_bound",
+            "Problem56.signedTrace_master_geometric_bound",
+            "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEqualityData_contribution_sum_le",
+            "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEntryContribution_abs_sum_le_aggregateBound",
+            "Problem56.aggregate_partition_cumulant_bound"
+          ]
+        },
+        "Problem56.signBernoulliExpectation_trace_eq_partition_cumulant_sum": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.signed_trace_proposition",
+            "Problem56.signedTrace_bound",
+            "Problem56.signedTrace_master_geometric_bound",
+            "_private.Problem56.SignedTraceExpansion.0.Problem56.signedTrace_abs_le_boundedSelectorData",
+            "Problem56.signBernoulliExpectation_trace_eq_partition_cumulant_sum"
+          ]
+        },
+        "Problem56.selector_equality_graph_count": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.signed_trace_proposition",
+            "Problem56.selector_equality_graph_count"
+          ]
+        },
+        "Problem56.graph_rank_contraction": {
+          "in_full_closure": true,
+          "proof_only_path": [
+            "Problem56.signed_trace_proposition",
+            "Problem56.graph_rank_contraction"
+          ]
+        }
+      }
+    }
+  },
+  "log_sha256": "60f527edb87d3fcc633ec7dcf835ab108f9582b61724ca9370c0196a7e8192cd",
+  "actual_types_sha256": "c720ac200939bb3eecdf7adf6d098d266c6a455f1e22e39a0239e3da251fdffd"
+}

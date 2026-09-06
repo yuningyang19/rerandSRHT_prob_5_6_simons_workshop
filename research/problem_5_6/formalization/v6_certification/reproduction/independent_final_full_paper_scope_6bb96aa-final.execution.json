@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/v6_certification/scripts/check_full_paper_scope.py"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+  "started_utc": "2026-09-06T16:06:56.171000+00:00",
+  "ended_utc": "2026-09-06T16:06:56.721688+00:00",
+  "elapsed_seconds": 0.550482833001297,
+  "returncode": 1,
+  "log": "reproduction/independent_final_full_paper_scope_6bb96aa-final.log",
+  "log_sha256": "998bd285d3806db23f6b0ff78f6db013d434c03ac2a76f3d76cd638161f792f2",
+  "script_sha256": "1a99522cbeebf115d3dde0a94e21ff7749ab769cf8146a70a9fc54856f6d1d23",
+  "only_unresolved_item": "I-V6-11"
+}

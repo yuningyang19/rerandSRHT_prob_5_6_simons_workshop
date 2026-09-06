@@ -1,0 +1,25 @@
+{
+  "skills": [
+    {
+      "path": "/Users/yuningyang/.codex/skills/my-academic-research-flow-6-0/SKILL.md",
+      "sha256": "d65f9865400baccf8fd1e48eb4e51358a02c6edc5c5d4b65b29639c265b64028"
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/my-academic-verification-kernel/SKILL.md",
+      "sha256": "1cd6246cf54d01123f908f29252b508faf1812bc3d411b266e65abbe0d11c802"
+    },
+    {
+      "path": "/Users/yuningyang/.codex/plugins/cache/openai-bundled/latex/0.2.6/skills/latex-compile/SKILL.md",
+      "sha256": "7f75388cc330a4e6e63ad31c397bb5dad563e825abf9060f602e6dbeb2443d9d"
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/pdf/SKILL.md",
+      "sha256": "d108cf2b36355ab37eb5962933f4d09785ec002f3105c506129320209306b9d2"
+    }
+  ],
+  "controller_context": "/root",
+  "independent_kernel_context": "/root/positive_dimension_correspondence",
+  "kernel_operation": "SOURCE_INTERFACE_CHECK",
+  "packet_and_report_validators": "Actual outputs retained in independent_report.json",
+  "no_skill_installation_or_mutation": true
+}

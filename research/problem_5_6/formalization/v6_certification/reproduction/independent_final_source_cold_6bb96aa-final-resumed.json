@@ -1,0 +1,64 @@
+{
+  "status": "FAIL",
+  "started_utc": "2026-09-06T15:02:23.527403+00:00",
+  "verification_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "archive_sha256": "9e4dcf6c813914bf4d98f23a2fdf54d408ef71b811cedd169b4cd1c5b8fa12a7",
+  "archive": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/frozen-v6-companion-6bb96aa.tar.gz",
+  "destination": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final",
+  "destination_was_absent": false,
+  "destination_was_absent_in_initial_attempt": true,
+  "prior_source_acquisition_failure_report": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_final_source_cold_6bb96aa-final.json",
+  "prior_source_acquisition_failure_sha256": "c13da64d81fadb7b56b4f275b24427e4faf468cbd25a2b731acb73ac7cb0ab77",
+  "execution_method": "Resume the same new archive directory after one preserved pre-compilation Mathlib transport failure. Revalidate all archived bytes and zero compiled objects; retry the exact official shallow source fetch, acquire remaining exact official sources, then invoke the archive documented run_suite.py exactly once. The earlier source-acquisition failure remains FAIL and has no suite invocation.",
+  "compiled_cache_reused": false,
+  "global_git_config_modified": false,
+  "source_fetches": [],
+  "child_git_http_version": "HTTP/1.1",
+  "archive_members": 516,
+  "source_members_checked": 514,
+  "initial_compiled_objects": 0,
+  "archive_validation": "PASS",
+  "current_command": {
+    "command": [
+      "/usr/bin/git",
+      "-c",
+      "gc.auto=0",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "db584cd6d46c92f209a44c0f1c829460d327499d"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+    "started_utc": "2026-09-06T15:02:23.934438+00:00",
+    "returncode": 128,
+    "elapsed_seconds": 551.3285051250132,
+    "ended_utc": "2026-09-06T15:11:35.264773+00:00"
+  },
+  "execution_commands": [
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "origin",
+        "db584cd6d46c92f209a44c0f1c829460d327499d"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+      "started_utc": "2026-09-06T15:02:23.934438+00:00",
+      "returncode": 128,
+      "elapsed_seconds": 551.3285051250132,
+      "ended_utc": "2026-09-06T15:11:35.264773+00:00"
+    }
+  ],
+  "returncode": 128,
+  "error": "Command '['/usr/bin/git', '-c', 'gc.auto=0', 'fetch', '--depth', '1', 'origin', 'db584cd6d46c92f209a44c0f1c829460d327499d']' returned non-zero exit status 128.",
+  "changed_proof_or_build_inputs": [],
+  "ended_utc": "2026-09-06T15:11:35.278201+00:00",
+  "elapsed_seconds": 551.7492417079629,
+  "raw_log": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_final_source_cold_6bb96aa-final-resumed.log",
+  "raw_log_sha256": "e10711298887c0229046dff26199e96c7f6d3d6aaae70b4fb52f8b7ed06b11a2"
+}

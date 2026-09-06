@@ -1,0 +1,19 @@
+{
+  "source_manifest": "frozen_C_manifest.json",
+  "frozen_C_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "tex_build_log": "logs/tex_build.log.gz",
+  "compiled_pdf_sha256": "253ba33aeba8ae9f8931bab7754367bb37df7aa43972d1b0591dd257a96febaa",
+  "inspected_rendered_pages": [
+    4,
+    10,
+    11,
+    12,
+    25
+  ],
+  "visual_scope": "Dependency diagram, triangle orientation, boundary definitions, identity split and contraction illustration; not every page visually audited.",
+  "source_scope_review": "All transitive TeX source inputs, inline TikZ, definitions and bibliography examined by independent source reviewer.",
+  "manuscript_bytes_changed": false,
+  "technical_post_tex_status": "Independent source and correspondence reviews found a generic coordinate-dimension ambiguity in I-V6-11; general I10 graph construction is now proved. Frozen source unchanged.",
+  "workflow_status": "No full lifecycle-v2 PASS asserted; no authenticated runtime receipt tool available in enabled tool inventory.",
+  "author_comprehension_and_publication_approval": "NOT_ASSERTED"
+}

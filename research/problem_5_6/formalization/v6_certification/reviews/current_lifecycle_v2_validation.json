@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "/Users/yuningyang/.codex/skills/my-academic-lean-formalizer/scripts/validate_formal_verification_lifecycle_v2.py",
+    "packet-v2",
+    "--project-root",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification",
+    "--artifact",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/certification_packet.json"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification",
+  "returncode": 1,
+  "stdout": "VALIDATION_STATUS: REPAIR\nERROR: FORMALIZATION_PACKET_V2 schema mismatch; missing=['ALLOWED_AXIOMS', 'ALLOWED_CHANGE_PATHS', 'AUTHORITATIVE_MANUSCRIPT', 'CURRENT_BINDING', 'CURRENT_SCOPE', 'DERIVED_INTERFACE_LEAN_BINDINGS', 'DETERMINISTIC_CERTIFICATE_POLICY', 'EVIDENCE_STATUS_AT_CALL', 'EXPECTED_PUBLIC_SIGNATURES', 'FORBIDDEN_PUBLIC_DERIVED_HYPOTHESES', 'FORMALIZATION_PACKET_ID', 'FORMALIZATION_PROFILE', 'FORMALIZATION_READINESS_RECORD', 'FROZEN_SEMANTIC_REGRESSIONS', 'FROZEN_TARGET_ARTIFACT', 'GENERATOR_CONTEXT', 'HISTORICAL_BINDINGS', 'INDEPENDENT_CORRESPONDENCE_AUDITOR_REQUIRED', 'LEAN_VERSION_POLICY', 'MATHLIB_VERSION_POLICY', 'OUTPUT_WORKSPACE_PATH', 'PACKET_VERSION', 'PARENT_FORMALIZATION_PACKET', 'POST_TEX_PROOF_AUDIT', 'PREVIOUS_SCOPE', 'PRIMITIVE_PUBLIC_INPUTS', 'PROBE_EXECUTION_EVIDENCE_REQUIRED', 'PROBE_OBJECTIVE', 'PROBE_SUCCESS_CRITERIA', 'PROJECT_ROOT', 'PUBLIC_RESULT_INVENTORY', 'REQUIRED_DERIVED_INTERFACES', 'REQUIRED_TRANSITIVE_DEPENDENCIES', 'S8_VERIFIER_REPORTS', 'SCOPE_ESCALATION_REASON', 'SEMANTIC_AUDITOR_CONTEXT', 'SEMANTIC_REGRESSION_REQUIREMENTS', 'TARGET_ACCEPTED_CLAIM_VERSIONS', 'TARGET_LEAN_DECLARATIONS', 'TARGET_PUBLIC_RESULT_IDS'], extra=['A', 'B', 'C', 'actual_input_head', 'allowed_axioms', 'astra_official_review', 'author_comprehension_or_publication_approval', 'baseline_targets', 'branch', 'coverage_counts_are_independent_of_helper_count', 'current_additive_audit', 'historical_operation_B', 'protected_bytes_verified', 'skills', 'source_manifests', 'status', 'v6_denominators']\n",
+  "stderr": "",
+  "time_utc": "2026-09-06T11:52:45.680835+00:00",
+  "validator_sha256": "617a3d1f7885ddbfbb3251fc918d25125c016c97807b4b42d54ba9b04657f3ed",
+  "packet_sha256": "508c36e275973d63ecea7a5cc9fa9a437c82d9a254be5b86c104fad5da81ece9",
+  "meaning": "Task source-binding packet is not the installed full lifecycle-v2 schema; this is not a theorem failure or a passing workflow receipt."
+}

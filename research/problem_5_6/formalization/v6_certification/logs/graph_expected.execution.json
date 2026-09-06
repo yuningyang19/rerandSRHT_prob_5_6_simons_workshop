@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "Problem56.PaperV6.GraphModificationsExpected"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+  "start_utc": "2026-09-06T11:17:08.079347+00:00",
+  "end_utc": "2026-09-06T11:17:24.724886+00:00",
+  "elapsed_seconds": 16.645348458958324,
+  "returncode": 0,
+  "stdout_stderr": "logs/graph_expected.log",
+  "log_sha256": "d7c020c3c834df2610df1cf9dc9d2a26bd46d1a7c77c4bced6f00dba284ac884",
+  "local_lean_sources": {
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+    "research/problem_5_6/formalization/lean/Problem56/GraphBridgelessConversion.lean": "8703ff942b0e8ea724b378671e1abf0f2d73bc41ecf9dc93c7a25604ba5e09a6",
+    "research/problem_5_6/formalization/lean/Problem56/GraphEven.lean": "69e426bf8b5a39ae4acd680bb7092958d9e5922836eaa9d02f89f46b3983f4aa",
+    "research/problem_5_6/formalization/lean/Problem56/GraphFiberSplit.lean": "a97451a00d60c63142ee53a108ba5370f24ffa4b27fa6bd90a5d78f65ed9545d",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean": "3c6db375116f1364edaeafd484d10f14e20f3b7472efb6389bcd7a6e4772652e",
+    "research/problem_5_6/formalization/lean/Problem56/GraphVertexSplit.lean": "b3811b6dfd32bc17b5312cd85d9ec99266caedeea3d2f0945e85ec8472d9f363",
+    "research/problem_5_6/formalization/lean/Problem56/GraphWeightLoops.lean": "e4bb08146e409447f4248286a297a66d5128c8aa303f380105f6f3a09d30b0f6",
+    "research/problem_5_6/formalization/lean/Problem56/IndexedEulerCircuit.lean": "9f2c22a12811a02af2acf6906a38dc0c71076207004377ff7f9a266e75bdf4df",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GraphModificationsExpected.lean": "dd14ef25a551cb4bef21f6b2671160c78dc4d939bce2b1310f808344db67d6d6"
+  },
+  "receipt_kind": "local subprocess execution record; not authenticated external attestation"
+}

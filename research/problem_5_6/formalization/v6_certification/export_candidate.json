@@ -1,0 +1,30 @@
+{
+  "verification_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "archive": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/frozen-v6-companion-6bb96aa.tar.gz",
+  "sha256": "9e4dcf6c813914bf4d98f23a2fdf54d408ef71b811cedd169b4cd1c5b8fa12a7",
+  "repeated_export_sha256": "9e4dcf6c813914bf4d98f23a2fdf54d408ef71b811cedd169b4cd1c5b8fa12a7",
+  "deterministic_repeated_export": true,
+  "total_archive_members": 516,
+  "source_members": 514,
+  "compiled_objects_included": false,
+  "fresh_unpack_validation": "reproduction/independent_final_source_cold_completion_6bb96aa-final.json",
+  "status": "PASS: exact archived command, fresh proof compilation, independent completion audit",
+  "previous_archive": {
+    "commit": "c0303801ca01e9507a27ef4a47236807c9e39ab7",
+    "sha256": "15b07372fcf0e146347c447ec2aed1db0782f7a37499bd97037273460c41cfb6",
+    "original_suite": "FAIL_MISSING_AUDITTOOLS",
+    "recovered_checks": "PASS",
+    "evidence": "reproduction/independent_source_cold_completion_c0303801.json"
+  },
+  "mathematical_source_changes_from_previous_archive": false,
+  "source_acquisition_attempts": [
+    "reproduction/independent_final_source_cold_6bb96aa-final.json",
+    "reproduction/independent_final_source_cold_6bb96aa-final-resumed.json"
+  ],
+  "source_object_mirror_reused": true,
+  "compiled_cache_reused": false,
+  "reproduction_scope": "All project/dependency proof objects newly compiled from fixed sources. Source Git objects reused from previously verified official repositories after two transport failures; zero initial/prebuild compiled objects; no copied build or compiled artifacts.",
+  "single_documented_command_invocations": 1,
+  "single_documented_command_returncode": 0,
+  "single_documented_command_elapsed_seconds": 3039.664888416999
+}

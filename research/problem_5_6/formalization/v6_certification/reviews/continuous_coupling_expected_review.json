@@ -1,0 +1,21 @@
+{
+  "reviewer_context": "/root",
+  "proof_author_context": "/root/finite_noise_law",
+  "source_C_lines": [
+    2770,
+    2789
+  ],
+  "status": "APPROVED_EXPECTED_STATEMENT_BEFORE_PROOF",
+  "file": "Problem56/PaperV6/ContinuousCouplingExpected.lean",
+  "sha256": "ddd5f2c19de0c4d96c67c1df277c09884b70941a192b00cac28b92484f344ace",
+  "time_utc": "2026-09-06T12:09:10.998442+00:00",
+  "findings": [
+    "Actual Lebesgue uniform law on [0,1], canonical finite product; no finite-order surrogate.",
+    "Correct k-smallest cardinal/type and ordered cut, measurable tie selection; k=0 and k=n retained.",
+    "No ties, coordinate iid marginals, uniform fixed-size law and Bernoulli product weights are conclusions.",
+    "Count-bracketing inclusions conditional on both counts; valid even ties using ordering and cardinality.",
+    "Arbitrary measurable X on canonical product remains independent; finite codomain measurable-singleton structures are representation data.",
+    "No desired stochastic law, probability bound or target conclusion placed among source inputs."
+  ],
+  "followup": "Use exact product-projection marginal identity when relating lifted X to original \u03bc. Compilation and actual proof acceptance remain pending."
+}

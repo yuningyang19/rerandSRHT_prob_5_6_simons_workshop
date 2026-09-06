@@ -1,0 +1,36 @@
+{
+  "TASK_MODE": "REPAIR_AUTHORIZED",
+  "MUTATION_AUTHORITY": "NAMED_FILES_ONLY",
+  "VERSION_POLICY": "NEW_COMMIT_SNAPSHOT",
+  "AUTHORIZED_CHANGES": "Only make coordinate dimensions positive integers in def:graph-contraction, bind the new snapshot, and recheck I-V6-11 plus affected graph-definition uses; no Lean proof changes.",
+  "ALLOWED_CHANGED_PATHS": [
+    "research/problem_5_6/paper/v6/main.tex",
+    "research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions",
+    "research/problem_5_6/formalization/v6_certification/STATUS.md",
+    "research/problem_5_6/formalization/v6_certification/README.md"
+  ],
+  "parent_paper_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "new_paper_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "parent_certification_commit": "5b8d601b86ba15fe2e8863ce7343f86a358b30c2",
+  "tested_Lean_source_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "textual_delta": {
+    "replacements": 1,
+    "removed_lines": 2,
+    "added_lines": 3
+  },
+  "semantic_delta": "Generic coordinate dimensions are explicitly positive integers. Existing Lean positive-dimension theorems are candidate exact coverage.",
+  "frozen_surfaces": [
+    "All Lean source/build inputs",
+    "All original certification records",
+    "Other manuscript text and figures"
+  ],
+  "changed_inventory_contexts": [
+    "def:graph-contraction"
+  ],
+  "inherited_counts": {
+    "named": 12,
+    "interfaces": 50,
+    "definitions": 34
+  },
+  "review_status": "PENDING"
+}

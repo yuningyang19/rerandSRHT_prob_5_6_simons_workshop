@@ -1,0 +1,284 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "time_utc": "2026-09-06T14:40:02.149708+00:00",
+  "status": "RECOVERED_SOURCE_COLD_CHECKS_PASS_ORIGINAL_SUITE_FAIL_FULL_MANUSCRIPT_REPAIR",
+  "verification_commit": "c0303801ca01e9507a27ef4a47236807c9e39ab7",
+  "proof_source_freeze": "6c12db598e56103309f7e41144f84b75246fa96b",
+  "archive_sha256": "15b07372fcf0e146347c447ec2aed1db0782f7a37499bd97037273460c41cfb6",
+  "cold_directory": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow",
+  "recovery_scope": "After two recorded full-history Git transport failures, validate/unpack same frozen archive, shallow-fetch only exact official source revisions, then run unchanged documented suite. This is not a PASS of either failed test_export attempt. Original suite then failed because Certification does not build CombinedAudit-only AuditTools. Compiled the unchanged AuditTools source explicitly, re-ran only CombinedAudit, and verified the existing seven fresh mandatory receipts. This is not a PASS of the original unchanged run_suite command.",
+  "initial_compiled_objects": 0,
+  "prebuild_compiled_objects": 0,
+  "compiled_cache_reused": false,
+  "dependency_sources": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "expected_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "actual_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "expected_revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "actual_revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "expected_revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "actual_revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "expected_revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "actual_revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "expected_revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "actual_revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "expected_revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "actual_revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "expected_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "actual_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "expected_revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "actual_revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "expected_revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "actual_revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true
+    }
+  ],
+  "mandatory_checks": {
+    "expected_type_checks": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Problem56/PaperV6/ExpectedChecks.lean"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 19.72509183298098,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "start_utc": "2026-09-06T14:20:18.505002+00:00",
+      "end_utc": "2026-09-06T14:20:38.230321+00:00"
+    },
+    "semantic_witnesses": {
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "Problem56.ExtractionRegression",
+        "Problem56.GraphOperatorRegression",
+        "Problem56.GraphOperatorUnequalRegression",
+        "Problem56.PaperV6.SemanticWitnesses"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 4.714068041997962,
+      "log_sha256": "ca52fbfb70a80cfa92c719a87b41ba083d88aee5973e955533f58e6110eef1fb",
+      "start_utc": "2026-09-06T14:20:38.260777+00:00",
+      "end_utc": "2026-09-06T14:20:42.975010+00:00"
+    },
+    "structural_guards": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/run_structural_guards.py",
+        "../semantic_regressions.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 0.5213192909723148,
+      "log_sha256": "d039f4572aea9682a0da844ccae47a1a50e6ce61ce0d8ad4a22d974e161ee23b",
+      "start_utc": "2026-09-06T14:20:43.006591+00:00",
+      "end_utc": "2026-09-06T14:20:43.528105+00:00"
+    },
+    "negative_tests": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/test_verifier.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 0.11232308304170147,
+      "log_sha256": "74a4f17a11f9484d419bf6b8047d857b08e997045d1a7a7cbdf2ab9c55603b35",
+      "start_utc": "2026-09-06T14:20:43.558580+00:00",
+      "end_utc": "2026-09-06T14:20:43.671006+00:00"
+    },
+    "dependency_environment": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/record_environment.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 1.0228446669643745,
+      "log_sha256": "13164957f6d5f83b0be88f3fb330d22aee2c4e4bd3390281186d87e34a534a92",
+      "start_utc": "2026-09-06T14:20:17.451453+00:00",
+      "end_utc": "2026-09-06T14:20:18.474606+00:00"
+    },
+    "unified_build": {
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "Problem56.PaperV6.Certification"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 1982.7606227499782,
+      "log_sha256": "007d2da3e06d1adf9c4509c34605708e5a4ff566cd5b86e04d3ce661bf449fbd",
+      "start_utc": "2026-09-06T13:47:14.587130+00:00",
+      "end_utc": "2026-09-06T14:20:17.417212+00:00"
+    },
+    "kernel_replay": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "-v",
+        "Problem56.PaperV6.Certification"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 943.0530511249672,
+      "log_sha256": "d90ac4b8825593db94e2bacd3980be32d9f060dc5cc0af018ba6a5f97718bfc3",
+      "start_utc": "2026-09-06T14:20:43.700689+00:00",
+      "end_utc": "2026-09-06T14:36:26.722166+00:00"
+    }
+  },
+  "original_run_suite_status": "FAIL",
+  "original_failed_audit_receipt_sha256": "f2324b8cf379dc2c37d2fe6caf0ac1add647548a369aa984eb8ad52db1f3f249",
+  "additional_audit_tools_build": {
+    "command": [
+      "lake",
+      "--no-cache",
+      "build",
+      "Problem56.PaperV6.AuditTools"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+    "returncode": 0,
+    "elapsed_seconds": 5.078207916987594,
+    "log_sha256": "4f638867ac611bf0c34af1eef3c33735ed3b16335058a9a0a985c96aca20ca50",
+    "start_utc": "2026-09-06T14:38:13.367484+00:00",
+    "end_utc": "2026-09-06T14:38:18.445775+00:00"
+  },
+  "recovered_verifier": {
+    "command": [
+      "python3",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py",
+      "--root",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow",
+      "--log",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/logs/recovery_combined_audit.log",
+      "--receipt",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/logs/recovery_combined_audit.execution.json",
+      "--inventory",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/combined_target_inventory.json",
+      "--manifest",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/combined_source_manifest.json",
+      "--expected-types",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/reviewed_type_lock.json",
+      "--definition-lock",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/reviewed_definition_lock.json",
+      "--mandatory-checks",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_recovered_mandatory_checks_c0303801.json"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+    "started_utc": "2026-09-06T14:39:52.296161+00:00",
+    "ended_utc": "2026-09-06T14:40:01.631265+00:00",
+    "elapsed_seconds": 9.334752416005358,
+    "returncode": 0,
+    "log_sha256": "e559f2f959451e4e54ce4a087104547241599d8f2de1e2a5d2c722ada6d035f5"
+  },
+  "counts": {
+    "targets": 359,
+    "primitive_definitions": 134,
+    "graph_nodes": 63329,
+    "named_results": 12,
+    "source_interfaces": 50,
+    "literal_interfaces_covered": 49,
+    "frozen_definitions": 34
+  },
+  "encoded_declaration_status": "PASS",
+  "paper_coverage": {
+    "full_manuscript_scope": "NOT_ESTABLISHED",
+    "unresolved_source_items": [
+      "I-V6-11"
+    ]
+  },
+  "separate_full_paper_gate": {
+    "command": [
+      "python3",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/v6_certification/scripts/check_full_paper_scope.py"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean",
+    "started_utc": "2026-09-06T14:40:01.632204+00:00",
+    "ended_utc": "2026-09-06T14:40:02.149282+00:00",
+    "elapsed_seconds": 0.5170869579887949,
+    "returncode": 1,
+    "log": "reproduction/independent_cold_full_paper_scope_c0303801.log",
+    "log_sha256": "998bd285d3806db23f6b0ff78f6db013d434c03ac2a76f3d76cd638161f792f2",
+    "script_sha256": "1a99522cbeebf115d3dde0a94e21ff7749ab769cf8146a70a9fc54856f6d1d23",
+    "only_unresolved_item": "I-V6-11"
+  },
+  "archive_generated_files_changed": [
+    "research/problem_5_6/formalization/v6_certification/logs/final_dependency_environment.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_expected_type_checks.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_semantic_witnesses.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_structural_guards.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_unified_build.execution.json"
+  ],
+  "immutable_archive_members_unchanged": true,
+  "post_archive_metadata_distinction": {
+    "cold_crosswalk_sha256": "f0e0702505d1a5fc25b0e3f2da0bf448f15378f37bc28ce24033288941382ca0",
+    "current_root_crosswalk_sha256": "279b272d692cbebe4f80e3ae9d45f263596b95ae310ce2dee931776649045d81",
+    "clarification_record": "reviews/i11_implication_metadata_clarification.json",
+    "cold_archive_metadata_was_not_edited": true
+  },
+  "evidence_sha256": {
+    "logs/recovery_combined_audit.log": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58",
+    "logs/recovery_combined_audit.execution.json": "b998788630f8afb0422270888922583d42d17eb368d42ef91dd22f27cf0d6580",
+    "logs/final_combined_audit.log": "d5e68ae2e03a44ca2c88dd1233d6d6953bd0958e72dc61d242e2bf523e5b934f",
+    "logs/final_combined_audit.execution.json": "f2324b8cf379dc2c37d2fe6caf0ac1add647548a369aa984eb8ad52db1f3f249",
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8"
+  },
+  "runner_report_sha256": "7b4525537f69f3ef7991d9b88b5cb26cfd7a4784783fae44b571f795b3128ec6"
+}

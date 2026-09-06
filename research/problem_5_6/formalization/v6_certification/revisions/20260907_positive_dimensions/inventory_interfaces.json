@@ -1,0 +1,1063 @@
+{
+  "schema_version": 1,
+  "frozen_v6_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "main_sha256": "778731145bc9f537e561579303eb644388733d485b483c90f82e62243971e8cc",
+  "inventory_status": "SOURCE_SCOPE_FROZEN",
+  "method": "Full sequential human-model reading of all 3277 main lines and complete transitive input p7_contraction.tex; comment-stripping environment parser used for exact named spans; manually curated theorem-strength and definition spans reviewed against full source, including prose, inline figures, tables and examples. Regex is a locator only.",
+  "completion_semantics": "Entries freeze intended source scopes before additive proof generation; neither candidate declarations nor coverage acceptance inferred from old result names.",
+  "interface_count": 50,
+  "entries": [
+    {
+      "id": "I-V6-01",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 85,
+      "line_end": 108,
+      "raw_context_sha256": "f8aa9d58a3f1dbd6bcaec95c83462abeb639b4e3f84666ba5611647840d70263",
+      "exact_context_tex": "normalization and randomness used throughout the paper.\n\nLet \\(n=2^m\\), \\(m\\ge0\\), and identify the coordinate set with\n\\(K=(\\F_2)^m\\). The real normalized Walsh matrix is\n\\[\n H_{ab}=n^{-1/2}(-1)^{\\langle a,b\\rangle},\\qquad H^T=H,\\quad H^2=I_n.\n\\]\nLet \\(D_1,D_2\\) have mutually independent uniform Rademacher diagonal\nentries. Independently let \\(J\\) be a uniformly chosen \\(k\\)-element\nsubset of \\(K\\), and let \\(S_J\\) collect its coordinate vectors. Put\n\\[\n \\Omega_{n,k}=\\sqrt{\\frac nk}\\,D_1HD_2HS_J.\n\\]\nFor a deterministic \\(n\\times r\\) frame \\(V\\), \\(V^TV=I_r\\), write\n\\[\n X=HD_2HD_1V,\\qquad P=XX^T,\\qquad \\delta=\\frac rn.\n\\]\nThus \\(X^TX=I_r\\), and the Gram matrix in question is\n\\begin{equation}\\label{eq:sampled-gram}\n V^T\\Omega_{n,k}\\Omega_{n,k}^TV\n   =\\frac nk X^T S_JS_J^T X.\n\\end{equation}\nHere and below $\\norm{\\cdot}$ denotes the Euclidean operator norm.\n\n",
+      "active_context_sha256": "f8aa9d58a3f1dbd6bcaec95c83462abeb639b4e3f84666ba5611647840d70263",
+      "expected_statement": "Walsh orthogonality, transformed-frame orthonormality, and exact sampled Gram identity",
+      "assumptions": "m≥0; fixed VᵀV=I; exact sign diagonals and k>0; normalized Walsh",
+      "candidate_baseline_interface": "I01/I02",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 85,
+        "line_end": 108,
+        "raw_context_sha256": "f8aa9d58a3f1dbd6bcaec95c83462abeb639b4e3f84666ba5611647840d70263"
+      }
+    },
+    {
+      "id": "I-V6-02",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 124,
+      "line_end": 139,
+      "raw_context_sha256": "757d7c717bfeaa12ff87400757d4dddb4a9a5007c1ce5538ec8afa13ceb34a65",
+      "exact_context_tex": "For a fixed frame $V$, the event complementary to that in\n\\eqref{eq:main-bound} says precisely that\n\\[\n (1-\\varepsilon)\\|z\\|_2^2\n \\le \\|\\Omega_{n,k}^T Vz\\|_2^2\n \\le (1+\\varepsilon)\\|z\\|_2^2\n \\qquad\\text{for every }z\\in\\R^r.\n\\]\nThe supremum in \\eqref{eq:main-bound} is outside the probability:\nthe frame is fixed before both sign diagonals and the sample, while\nthe chosen width depends only on $n,r,\\varepsilon$. The theorem\nselects a width with the stated guarantee; it does not require\nmonotonicity of the normalized failure probability at every larger\nwidth. Full sampling gives the Gram matrix $I_r$ exactly.\nThe assumption $n=\\Omega(\\log r)$ printed in Problem~5.6 imposes no\nadditional restriction here because $\\log r\\le r\\le n$.\n",
+      "active_context_sha256": "757d7c717bfeaa12ff87400757d4dddb4a9a5007c1ce5538ec8afa13ceb34a65",
+      "expected_statement": "For each fixed frame, the spectral success event is equivalent to simultaneous squared-norm inequalities for all z∈R^r; universal width precedes frame; full sampling exact",
+      "assumptions": "Symmetric real Gram; epsilon>0; rank≥1; fixed independent frame",
+      "candidate_baseline_interface": "NEW fixed-frame and quadratic-form bridge; I03",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 124,
+        "line_end": 139,
+        "raw_context_sha256": "757d7c717bfeaa12ff87400757d4dddb4a9a5007c1ce5538ec8afa13ceb34a65"
+      }
+    },
+    {
+      "id": "I-V6-03",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 384,
+      "line_end": 411,
+      "raw_context_sha256": "8e6927016b763adc592b78326833a4d600492b67a0db61e965128398ab77d9a2",
+      "exact_context_tex": "We begin with Bernoulli sampling. Let $E$ be a diagonal projection\nwhose entries are independent Bernoulli variables of mean $\\theta$,\nindependent of the two sign diagonals. The matrix\n$\\theta^{-1}X^TEX$ is the corresponding normalized Gram matrix.\nSince $X^TX=I_r$, its deviation is\n\\begin{equation}\\label{eq:gram-centering}\n \\theta^{-1}X^TEX-I_r\n       =\\theta^{-1}X^T(E-\\theta I_n)X.\n\\end{equation}\nWriting $W=E-\\theta I_n$, cyclicity of the trace gives, for every\npositive integer $j$,\n\\[\n \\tr\\bigl(X^TWX\\bigr)^j=\\tr(PW)^j,\\qquad P=XX^T.\n\\]\nThus a direct moment expansion introduces entries of the\nuncentered projection $P$. We will prove in\nLemma~\\ref{lem:cumulants} that $\\E P=\\delta I_n$.\nSubtracting this mean removes every first-order entry cumulant,\nincluding those of diagonal entries. This is the reason for also\ncentering $P$: the entry-cumulant expansion will then contain only\nblocks of size at least two. The resulting product need not be\nsymmetric, so a signed trace estimate requires a separate passage\nback to the Gram eigenvalues.\nWrite $R=P-\\delta I_n$, $W=E-\\theta I_n$, and $A=RW$.\nThis section shows why controlling a signed even trace of $A$\nsuffices to bound deviations of that Gram matrix.\n\nThe first step is deterministic. For two orthogonal projections,\n",
+      "active_context_sha256": "8e6927016b763adc592b78326833a4d600492b67a0db61e965128398ab77d9a2",
+      "expected_statement": "Gram centering identity, cyclic power trace equality tr(XᵀWX)^j=tr(PW)^j, and need for zero first cumulants",
+      "assumptions": "XᵀX=I; j≥1; W=E−theta I; exact projection mean",
+      "candidate_baseline_interface": "I02/I15; trace cyclicity",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 384,
+        "line_end": 411,
+        "raw_context_sha256": "8e6927016b763adc592b78326833a4d600492b67a0db61e965128398ab77d9a2"
+      }
+    },
+    {
+      "id": "I-V6-04",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 443,
+      "line_end": 456,
+      "raw_context_sha256": "04eee8da8a3fe3d2c0fbc2d8f03a9d4214e4d22e16f5e5a12b422180233de407",
+      "exact_context_tex": "\\paragraph{Compressed spectrum.}\nThe compressed operator is \\(PEP\\) restricted to\n\\(\\operatorname{range}P\\). Since \\(X^TX=I_r\\) and \\(P=XX^T\\),\nthe map \\(v\\mapsto Xv\\) is an isometry onto that space, and\n\\[\n PEPX=X(X^TEX).\n\\]\nThus its eigenvalues \\(\\lambda_1,\\ldots,\\lambda_r\\) are precisely\nthose of \\(X^TEX\\). They lie in \\([0,1]\\), because\n\\(0\\le u^TEu\\le\\|u\\|^2\\). In particular,\n\\[\n \\norm{\\theta^{-1}X^TEX-I_r}\n       =\\theta^{-1}\\max_{1\\le i\\le r}|\\lambda_i-\\theta|.\n\\]\n",
+      "active_context_sha256": "04eee8da8a3fe3d2c0fbc2d8f03a9d4214e4d22e16f5e5a12b422180233de407",
+      "expected_statement": "Compressed isometry identifies eigenvalues, each in [0,1], and error norm equals theta⁻¹max|lambda−theta|",
+      "assumptions": "Real projections and orthonormal X; theta>0",
+      "candidate_baseline_interface": "I31; spectral norm interpretation",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 443,
+        "line_end": 456,
+        "raw_context_sha256": "04eee8da8a3fe3d2c0fbc2d8f03a9d4214e4d22e16f5e5a12b422180233de407"
+      }
+    },
+    {
+      "id": "I-V6-05",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 458,
+      "line_end": 532,
+      "raw_context_sha256": "16f40760e19854d28e41488944f786b1d9ad597625c47c975456f2d309e98c1b",
+      "exact_context_tex": "\\paragraph{Invariant blocks.}\nWe use the standard two-projection decomposition\n\\cite[Theorem~2]{halmos1969}, constructing it directly in finite\ndimensions to include the endpoint eigenspaces.\nDiagonalize \\(PEP\\) on \\(\\operatorname{range}P\\).\nFor a unit eigenvector \\(u\\) with eigenvalue \\(0<\\lambda<1\\), put\n\\[\n w=\\frac{Eu-\\lambda u}{\\sqrt{\\lambda(1-\\lambda)}}.\n\\]\nHere \\(\\lambda u=PEu\\), so \\(w\\) is the normalized component of\n\\(Eu\\) perpendicular to \\(\\operatorname{range}P\\).\nIndeed, \\(\\|Eu\\|^2=\\langle u,Eu\\rangle=\\lambda\\), and hence\n\\[\n P(Eu-\\lambda u)=0,\\qquad\n \\|Eu-\\lambda u\\|^2=\\lambda-2\\lambda^2+\\lambda^2\n                         =\\lambda(1-\\lambda).\n\\]\nIt follows that \\(Pw=0\\), \\(\\norm w=1\\), and \\(u,w\\) are orthonormal.\nThe definition of \\(w\\) and \\(E^2=E\\) give\n\\[\n Eu=\\lambda u+\\sqrt{\\lambda(1-\\lambda)}\\,w,\\qquad\n Ew=\\frac{(1-\\lambda)Eu}{\\sqrt{\\lambda(1-\\lambda)}}\n    =\\sqrt{\\lambda(1-\\lambda)}\\,u+(1-\\lambda)w.\n\\]\nThus their span is invariant under both projections, whose matrices\nin this basis are\n\\begin{equation}\\label{eq:two-projection-block}\n P=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix},\\qquad\n E=\\begin{pmatrix}\\lambda&\\sqrt{\\lambda(1-\\lambda)}\\\\\n                  \\sqrt{\\lambda(1-\\lambda)}&1-\\lambda\\end{pmatrix}.\n\\end{equation}\nDistinct eigenbasis vectors \\(u,u'\\) with eigenvalues\n\\(\\lambda,\\lambda'\\in(0,1)\\) give orthogonal pairs, even when\n\\(\\lambda=\\lambda'\\). To see this, use\n\\[\n \\langle u,Eu'\\rangle\n   =\\langle u,PEPu'\\rangle\n   =\\lambda'\\langle u,u'\\rangle=0,\\qquad\n \\langle Eu,Eu'\\rangle=\\langle u,Eu'\\rangle=0.\n\\]\nTogether with the definitions of \\(w,w'\\), these identities give\n\\(\\langle u,w'\\rangle=\\langle w,u'\\rangle=\\langle w,w'\\rangle=0\\).\n\nFor the endpoint eigenvalues \\(\\lambda=0,1\\), no second vector \\(w\\)\nis needed. In either case \\(Pu=u\\). If \\(\\lambda=0\\), then\n\\(\\|Eu\\|^2=\\lambda=0\\), so \\(Eu=0\\). If \\(\\lambda=1\\), then\n\\(\\|(I-E)u\\|^2=1-\\lambda=0\\), so \\(Eu=u\\).\nThe corresponding eigenspaces are therefore\n\\(\\operatorname{range}P\\cap\\ker E\\) and\n\\(\\operatorname{range}P\\cap\\operatorname{range}E\\), respectively.\nEach endpoint eigenvector in our orthonormal eigenbasis spans a\none-dimensional subspace invariant under both \\(P\\) and \\(E\\).\n\nWe have now placed every vector of the eigenbasis of\n\\(\\operatorname{range}P\\) in a one- or two-dimensional invariant block.\nIt remains to handle the orthogonal complement of all these blocks.\nBecause the blocks together contain \\(\\operatorname{range}P\\),\nthis complement lies in \\(\\ker P\\), so \\(P\\) is zero there.\nTo check that \\(E\\) preserves it, take a vector \\(v\\) in the complement\nand a vector \\(z\\) in any constructed block. Then\n\\[\n \\langle Ev,z\\rangle=\\langle v,Ez\\rangle=0,\n\\]\nwhere the first equality uses symmetry of \\(E\\), and the last\nfollows because \\(Ez\\) stays in the same block.\nThus the restriction of \\(E\\) to the complement is again an\northogonal projection. An orthonormal eigenbasis of this restriction\nsplits the complement into one-dimensional blocks on which \\(P=0\\)\nand \\(E=0\\) or \\(E=1\\). This completes the decomposition of the\nentire ambient space.\n\nFinally, a two-dimensional block is created only for an eigenbasis\nvector whose eigenvalue lies in \\((0,1)\\). There are \\(r\\) vectors\nin the eigenbasis of \\(\\operatorname{range}P\\), so the number of\ntwo-dimensional blocks is at most \\(r\\).\n",
+      "active_context_sha256": "16f40760e19854d28e41488944f786b1d9ad597625c47c975456f2d309e98c1b",
+      "expected_statement": "Full finite two-projection decomposition, orthogonality of distinct pairs, endpoints lambda=0,1 and complement in ker P; at most r two-dimensional blocks",
+      "assumptions": "Real orthogonal P,E; no omission of scalar endpoints/nonreal roots later",
+      "candidate_baseline_interface": "I31",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 458,
+        "line_end": 532,
+        "raw_context_sha256": "16f40760e19854d28e41488944f786b1d9ad597625c47c975456f2d309e98c1b"
+      }
+    },
+    {
+      "id": "I-V6-06",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 534,
+      "line_end": 560,
+      "raw_context_sha256": "63a0dead3bd7b5338c3101a877ada4bdfde10fbacfff36f6722c79e02ff8a7e5",
+      "exact_context_tex": "\\paragraph{Block polynomial.}\nOn \\eqref{eq:two-projection-block}, the restriction of \\(A\\) is\n\\[\n \\begin{pmatrix}\n (1-\\delta)(\\lambda-\\theta)&\n       (1-\\delta)\\sqrt{\\lambda(1-\\lambda)}\\\\\n -\\delta\\sqrt{\\lambda(1-\\lambda)}&\n       -\\delta(1-\\lambda-\\theta)\n \\end{pmatrix}.\n\\]\nIts trace is\n\\((1-\\delta)(\\lambda-\\theta)-\\delta(1-\\lambda-\\theta)\n=\\lambda-\\delta-\\theta+2\\delta\\theta\\).\nIts determinant is \\(a^2\\): the two centered factors have\ndeterminants \\(-\\delta(1-\\delta)\\) and \\(-\\theta(1-\\theta)\\).\nConsequently its characteristic polynomial is\n\\begin{equation}\\label{eq:block-polynomial}\n z^2-tz+a^2,\\qquad t=\\lambda-\\delta-\\theta+2\\delta\\theta.\n\\end{equation}\nWrite its roots as \\(z_1,z_2\\). The product and sum of the roots satisfy\n\\[\n z_1z_2=a^2,\\qquad\n z_1+z_2=t=(\\lambda-\\theta)-\\delta(1-2\\theta).\n\\]\nThus the product is independent of \\(\\lambda\\), while the sum records\nthe deviation \\(\\lambda-\\theta\\) up to the shift\n\\(-\\delta(1-2\\theta)\\).\n",
+      "active_context_sha256": "63a0dead3bd7b5338c3101a877ada4bdfde10fbacfff36f6722c79e02ff8a7e5",
+      "expected_statement": "Centered 2×2 block polynomial z²−tz+a² with fixed product a² and t=lambda−delta−theta+2delta theta",
+      "assumptions": "Two-projection block; real delta theta",
+      "candidate_baseline_interface": "I32",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 534,
+        "line_end": 560,
+        "raw_context_sha256": "63a0dead3bd7b5338c3101a877ada4bdfde10fbacfff36f6722c79e02ff8a7e5"
+      }
+    },
+    {
+      "id": "I-V6-07",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 562,
+      "line_end": 630,
+      "raw_context_sha256": "a6403a96629f3f204baea100f6db0008c7750f7d2c63473251c0d8e91dd1b5c2",
+      "exact_context_tex": "\\paragraph{Trace lower bound.}\nTo prove \\(\\tr A^{2p}\\ge-2ra^{2p}\\), consider a two-dimensional\nblock. Its contribution to \\(\\tr A^{2p}\\) equals\n\\(z_1^{2p}+z_2^{2p}\\), including when the block has a defective\nrepeated root. Indeed, Cayley--Hamilton gives the recurrence\n\\(S_j=tS_{j-1}-a^2S_{j-2}\\), \\(j\\ge2\\), for both the power traces\nand the root-power sums, with the same initial values\n\\(S_0=2\\), \\(S_1=t\\).\n\nIf the roots are nonreal, they\nare conjugates, and \\(z_1z_2=|z_1|^2=a^2\\) gives\n\\[\n z_1^{2p}+z_2^{2p}\n       =2\\operatorname{Re}(z_1^{2p})\\ge-2a^{2p}.\n\\]\nIf the roots are real, their even-power sum is nonnegative.\nThe remaining one-dimensional eigenvalues are among\n\\[\n -(1-\\delta)\\theta,\\quad (1-\\delta)(1-\\theta),\\quad\n                  -\\delta(1-\\theta),\\quad \\delta\\theta,\n\\]\ncorresponding to the four possibilities\n\\((P,E)=(1,0),(1,1),(0,1),(0,0)\\) on a common eigenvector.\nTheir even powers are nonnegative. Summing over at most \\(r\\)\ntwo-dimensional blocks proves \\(\\tr A^{2p}\\ge-2ra^{2p}\\).\n\n\\paragraph{Spectral deviation.}\nFor the second conclusion, assume \\(0<\\eta<1\\) and\n\\(\\delta\\le\\theta\\eta^2/64\\). Suppose the bad event in\n\\eqref{eq:spectral-transfer} occurs.\nSince the deviation norm equals\n$\\theta^{-1}\\max_i|\\lambda_i-\\theta|$, there is a compressed eigenvalue with\n\\(|\\lambda-\\theta|>\\theta\\eta\\). Set \\(b=\\theta\\eta\\).\nWe will find a block contributing more than \\((b/2)^{2p}\\).\n\nFor \\(0<\\lambda<1\\), the corresponding block has polynomial\n\\eqref{eq:block-polynomial}. The hypothesis and \\(0<\\eta<1\\) give\n\\(\\delta\\le b\\eta/64<b/64\\). Since \\(0\\le1-2\\theta\\le1\\),\n\\[\n \\begin{split}\n |t|&=|(\\lambda-\\theta)-\\delta(1-2\\theta)|\n       \\ge|\\lambda-\\theta|-\\delta(1-2\\theta)\n       >b-\\delta>63b/64,\\\\\n a^2&\\le\\delta\\theta\\le\\theta^2\\eta^2/64=b^2/64.\n \\end{split}\n\\]\nIn particular,\n\\[\n |t|>63b/64,\\qquad a\\le\\sqrt{\\delta\\theta}\\le b/8.\n\\]\nIt follows that \\(|t|>2a\\), so the discriminant \\(t^2-4a^2\\)\nis positive and both roots are real. They have the same sign\nbecause \\(z_1z_2=a^2>0\\). Also,\n\\[\n \\min\\{|z_1|,|z_2|\\}\\le\\sqrt{|z_1z_2|}=a,\\qquad\n |z_1|+|z_2|=|t|.\n\\]\nThus the larger absolute value is at least \\(|t|-a\\).\nSince \\(|t|-a>55b/64>b/2\\) and both even powers are nonnegative, this\nblock contributes more than \\((b/2)^{2p}\\).\n\nThe endpoint cases give the same conclusion in one dimension.\nFor \\(\\lambda=0\\), the eigenvalue of \\(A\\) is\n\\(-(1-\\delta)\\theta\\), with magnitude\n\\((1-\\delta)\\theta\\ge\\theta/2>b/2\\).\nFor \\(\\lambda=1\\), it is \\((1-\\delta)(1-\\theta)\\), with magnitude\nat least \\(1/4>b/2\\). Here we used\n\\(\\delta,\\theta\\le1/2\\) and \\(\\eta<1\\).\nThese cases also cover \\(E=0\\) and \\(E=I\\).\n",
+      "active_context_sha256": "a6403a96629f3f204baea100f6db0008c7750f7d2c63473251c0d8e91dd1b5c2",
+      "expected_statement": "Root power sums equal trace even for defective block; nonreal contribution≥−2a^(2p); spectral deviation produces block contribution>(theta eta/2)^(2p), including endpoints",
+      "assumptions": "p≥1; 0<delta,theta≤1/2; event part delta≤theta eta²/64,0<eta<1",
+      "candidate_baseline_interface": "I33/I34",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 562,
+        "line_end": 630,
+        "raw_context_sha256": "a6403a96629f3f204baea100f6db0008c7750f7d2c63473251c0d8e91dd1b5c2"
+      }
+    },
+    {
+      "id": "I-V6-08",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 716,
+      "line_end": 776,
+      "raw_context_sha256": "3f4159d185357a48bb7819d56b09ed40e7b7fb30f8aa945c91c7881b1de023b9",
+      "exact_context_tex": "$$\n \\mathcal B\n   =\\left\\{\n      \\norm{\\theta^{-1}X^TEX-I_r}>\\eta\n     \\right\\}.\n$$\nSince \\(\\kappa=n\\theta\\) and \\(\\delta=r/n\\), the assumption\n\\(\\kappa\\ge64K_0r/\\eta^2\\) implies\n$$\n \\kappa\\ge r,\n \\qquad\n \\delta=\\frac{r\\theta}{\\kappa}\n     \\le \\frac{\\theta\\eta^2}{64K_0}\n     \\le \\frac{\\theta\\eta^2}{64}.\n$$\nHence Proposition~\\ref{prop:trace} and\nLemma~\\ref{lem:transfer} both apply. \nTaking expectations in the pointwise inequality\n\\eqref{eq:spectral-transfer} gives\n$$\n \\Prob(\\mathcal B)\\left(\\frac{\\theta\\eta}{2}\\right)^{2p}\n \\le\n \\E\\tr A^{2p}+2r a^{2p}.\n$$\nUsing Proposition~\\ref{prop:trace},\n\\(a^2\\le\\delta\\theta\\), and\n\\(\\E\\tr A^{2p}\\le|\\E\\tr A^{2p}|\\), we obtain\n$$\n \\Prob(\\mathcal B)\\left(\\frac{\\theta\\eta}{2}\\right)^{2p}\n \\le\n (K_0^p+2r)(\\delta\\theta)^p.\n$$\nSince\n$\n \\delta\\theta=\\frac{r\\theta^2}{\\kappa}\n$, \ndivision by \\((\\theta\\eta/2)^{2p}\\) yields\n$$\n \\Prob(\\mathcal B)\n \\le\n (K_0^p+2r)\n \\left(\\frac{4r}{\\kappa\\eta^2}\\right)^p.\n$$\nThe width assumption gives\n$\n \\frac{4r}{\\kappa\\eta^2}\\le\\frac1{16K_0}\n$, \nand therefore, since \\(K_0\\ge1\\),\n$$\n \\Prob(\\mathcal B)\n \\le\n (1+2r)16^{-p}\n \\le\n 3r\\,2^{-p}.\n$$\nFinally,\n\\(p=\\lceil\\log_2(3000r)\\rceil\\) implies\n\\(2^{-p}\\le(3000r)^{-1}\\), so\n\n$$\n \\Prob(\\mathcal B)\\le 1/{1000}.\n",
+      "active_context_sha256": "3f4159d185357a48bb7819d56b09ed40e7b7fb30f8aa945c91c7881b1de023b9",
+      "expected_statement": "Taking expectations of compensated signed trace gives Bernoulli bound (K0^p+2r)(4r/(kappa eta²))^p and logarithmic-order probability arithmetic",
+      "assumptions": "Trace and transfer hypotheses; absolute expected signed trace only",
+      "candidate_baseline_interface": "bernoulli_coordinate_sampling_corollary_of_trace",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 716,
+        "line_end": 776,
+        "raw_context_sha256": "3f4159d185357a48bb7819d56b09ed40e7b7fb30f8aa945c91c7881b1de023b9"
+      }
+    },
+    {
+      "id": "I-V6-09",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 922,
+      "line_end": 930,
+      "raw_context_sha256": "67b084e4687812aa59e957af1f8b0c03aed57c8d76a13076e5d9779c9e2cba49",
+      "exact_context_tex": "\nFor an input-output graph in Definition~\\ref{def:input-output},\nMingo and Speicher's operator bound\n\\cite[Theorem~11(1), p.~2281]{mingo} states that the boundary matrix satisfies\n\\[\n \\|T\\|_2\\le\\prod_{e\\in\\mathcal E}\\|M_e\\|_2.\n\\]\nFor the triangle, the right-hand side is\n$\\|A\\|_2\\|B\\|_2\\|C\\|_2$; there is no factor $N_v$ from the\n",
+      "active_context_sha256": "67b084e4687812aa59e957af1f8b0c03aed57c8d76a13076e5d9779c9e2cba49",
+      "expected_statement": "Input-output boundary operator norm at most product of edge norms in compatible rectangular spaces",
+      "assumptions": "DAG with distinct sole input/output and every vertex on a directed path; positive finite coordinate dimensions",
+      "candidate_baseline_interface": "I04 plus transpose/boundary bridge",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 921,
+        "line_end": 929,
+        "raw_context_sha256": "67b084e4687812aa59e957af1f8b0c03aed57c8d76a13076e5d9779c9e2cba49"
+      }
+    },
+    {
+      "id": "I-V6-10",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 931,
+      "line_end": 937,
+      "raw_context_sha256": "ca5565a8c5ed0a702459a3cd18e9938829b79b157aec96bf1805f59ffcfcc845",
+      "exact_context_tex": "internal sum. The original graph need not already be in input-output\nform. A \\emph{bridge} is an edge whose deletion disconnects a\nconnected graph. Mingo and Speicher's graph conversion lemma\n\\cite[Lemma~16, p.~2286]{mingo} states that a connected graph without bridges can be modified\ninto input-output form with any two prescribed distinct vertices\nas its sole input and output. The coordinate dimensions may differ,\nand the edge matrices may be rectangular.\n",
+      "active_context_sha256": "ca5565a8c5ed0a702459a3cd18e9938829b79b157aec96bf1805f59ffcfcc845",
+      "expected_statement": "Every connected bridgeless finite graph may be modified to input-output form with any prescribed distinct boundary vertices",
+      "assumptions": "Only connected and bridgeless in written claim, not positive even degrees; rectangular dimensions",
+      "candidate_baseline_interface": "NEW_OR_EXTERNAL_SOURCE_INTERFACE; B I05 strictly narrower",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 930,
+        "line_end": 936,
+        "raw_context_sha256": "ca5565a8c5ed0a702459a3cd18e9938829b79b157aec96bf1805f59ffcfcc845"
+      }
+    },
+    {
+      "id": "I-V6-11",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 939,
+      "line_end": 971,
+      "raw_context_sha256": "88b47d896708ec93deb5cf6a732c08d98492ac73bec40b3543701fa95dea5e8f",
+      "exact_context_tex": "\\paragraph{Vertex splitting.}\nThe allowed modifications are described in\n\\cite[Definition~13 and Proposition~14, p.~2285]{mingo}. In the triangle\nexample, split the internal vertex $v$ into $v_1,v_2$, attach $A$\nto $v_1$ and $B$ to $v_2$, and join them by the identity $I_{N_v}$:\n\\begin{center}\n\\begin{tikzpicture}[>=stealth]\n\\node (u) at (0,0) {$u$};\n\\node (v1) at (1.8,0) {$v_1$};\n\\node (v2) at (3.6,0) {$v_2$};\n\\node (w) at (5.4,0) {$w$};\n\\draw[->] (u) -- node[above] {$A$} (v1);\n\\draw[->] (v1) -- node[above] {$I_{N_v}$} (v2);\n\\draw[->] (v2) -- node[above] {$B$} (w);\n\\draw[->] (u) to[bend right=25] node[below] {$C$} (w);\n\\end{tikzpicture}\n\\end{center}\nThe boundary entry is unchanged, because\n\\[\n \\sum_{j_1,j_2=1}^{N_v}\n C_{ki}B_{k j_2}(I_{N_v})_{j_2j_1}A_{j_1i}\n =\\sum_{j=1}^{N_v}C_{ki}B_{kj}A_{ji}=T_{ki}.\n\\]\nThe identity edge enforces equality of the two new labels. This\npreserves each boundary entry, not only the sum $S$, and adds a\nmatrix of norm one. More generally, the prescribed modifications\ndistribute incident edges between copies of a vertex and connect\nthe copies by identity edges. One may also reverse an edge and\ntranspose its matrix, preserving its entry and operator norm.\nWith the designated boundary labels held fixed, these operations\npreserve the boundary matrix, the full graph sum, and the product\nof edge norms.\n\n",
+      "active_context_sha256": "88b47d896708ec93deb5cf6a732c08d98492ac73bec40b3543701fa95dea5e8f",
+      "expected_statement": "Allowed identity-edge splits and edge reversal/transposition preserve each fixed boundary entry and full sum; identity edges have norm 1",
+      "assumptions": "Boundary labels held fixed; compatible dimensions; explicit modifications described",
+      "candidate_baseline_interface": "GraphVertexSplit/GraphFiberSplit; stronger than scalar-only I05 conclusion",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 938,
+        "line_end": 970,
+        "raw_context_sha256": "88b47d896708ec93deb5cf6a732c08d98492ac73bec40b3543701fa95dea5e8f"
+      }
+    },
+    {
+      "id": "I-V6-12",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1001,
+      "line_end": 1012,
+      "raw_context_sha256": "53357d640f428de0ca6722376413235f57e033bce392b4286c13bb0d62a9e680",
+      "exact_context_tex": "This is odd, whereas a sum of even degrees is even.\nRepresent a vertex weight $\\omega_v(i_v)$ by a loop carrying\n$\\diag(\\omega_v)$. Its entry at that vertex is exactly\n$\\omega_v(i_v)$ and its norm is $\\max_{i_v}|\\omega_v(i_v)|\\le1$.\nThus absorbing the weights preserves every summand of the\ncontraction. Each added loop contributes two to the degree, so\nthe graph remains connected with positive even degrees.\n\nThe projection factorization supplies a small coordinate space.\nChoose the columns of $V$ to be an orthonormal basis of\n$\\operatorname{range}P_0$. Then $V^TV=I_r$, so\n$\\|Vx\\|_2=\\|x\\|_2$ for $x\\in\\R^r$ and\n",
+      "active_context_sha256": "53357d640f428de0ca6722376413235f57e033bce392b4286c13bb0d62a9e680",
+      "expected_statement": "Connected positive-even graph is bridgeless; vertex weights absorb into norm≤1 loops preserving contraction and even degrees",
+      "assumptions": "Finite graph; |weight|≤1",
+      "candidate_baseline_interface": "I06; GraphWeightLoops",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1000,
+        "line_end": 1011,
+        "raw_context_sha256": "53357d640f428de0ca6722376413235f57e033bce392b4286c13bb0d62a9e680"
+      }
+    },
+    {
+      "id": "I-V6-13",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1014,
+      "line_end": 1065,
+      "raw_context_sha256": "63c763b6c3596b9a690e8efc59549feb6eea1e1d71dd22ce8ce51af6540efbfc",
+      "exact_context_tex": "Replace the distinguished edge entry by\n\\[\n (P_0)_{ij}=\\sum_{a=1}^r V_{ia}V_{ja}.\n\\]\nThis replaces the distinguished edge by a two-edge path through\na new degree-two vertex of dimension \\(r\\). Mingo and Speicher's\nLemma~16 requires two distinct vertices for the input and output,\nnot just this one.\nSplit it into two dimension-\\(r\\) vertices, put one incident edge\nat each, and join them by \\(I_r\\). In coordinates, the replacement is\n\\[\n (P_0)_{ij}\n   =\\sum_{a,b=1}^r V_{ia}(I_r)_{ab}V_{jb}.\n\\]\nIf the distinguished projection acts on $\\R^N$, the two rectangular\nmatrices are $V:\\R^r\\to\\R^N$ and $V^T:\\R^N\\to\\R^r$.\nCall the new vertices $s,t$, with labels $a,b$, respectively.\nBoth labels range over exactly $r$ coordinates. Since\n$(I_r)_{ab}$ is zero unless $a=b$, summing the new labels recovers\n$(P_0)_{ij}$ for every fixed pair of old endpoint labels $i,j$.\nAll other factors are unchanged, so the full signed sum is unchanged.\nThe resulting graph is still connected with even degrees: the old\nendpoint degrees are unchanged, and each new vertex has degree two.\nIf the original edge was a loop, the replacement is a three-edge\ncycle through the old vertex, so the same degree check applies.\nThus the modified graph still has no bridge.\n\nThe graph is now connected and has no bridge, and $s,t$ are\ndistinct. These are precisely the hypotheses of Mingo and\nSpeicher's Lemma~16 \\cite{mingo}, which gives a modification in\nthe input-output form of Definition~\\ref{def:input-output},\nwith $s$ as its sole input and $t$ as its sole\noutput. The modifications reverse edges and transpose their\nmatrices, or split vertices using identity edges. By their\nProposition~14 \\cite{mingo}, they preserve the full graph sum\nand the product of edge norms. Transposition does not change a\nnorm, and every inserted identity has norm one. Splitting copies\nthe coordinate space of a vertex, so both boundary dimensions remain $r$.\n\nIn this input-output graph, use Definition~\\ref{def:boundary-matrix}\nto define \\(T:\\R^r\\to\\R^r\\) by taking $T_{ba}$\nto be the sum over all other labels with $a,b$ fixed at $s,t$. Mingo and\nSpeicher's Theorem~11(1) \\cite{mingo} applies to these compatible\ncoordinate spaces and edge matrices. It gives\n$\\|T\\|_2\\le\\prod_e\\|M_e\\|_2\\le1$: the original edge matrices\nand weight loops have norm at most one, and the factors $V,V^T$\nand inserted identities have norm one.\nSumming $a,b$ therefore gives the original full signed contraction\n\\(\\one_r^T T\\one_r\\), where $\\one_r$ is the all-ones vector.\nCauchy--Schwarz and the definition of the operator norm give\n$|\\one_r^TT\\one_r|\\le\\|\\one_r\\|_2^2\\|T\\|_2\\le r$.\nHere $\\|\\one_r\\|_2^2=r$; no ambient-dimension factor is introduced.\n",
+      "active_context_sha256": "63c763b6c3596b9a690e8efc59549feb6eea1e1d71dd22ce8ce51af6540efbfc",
+      "expected_statement": "Projection factorization and split insert two distinct r-dimensional boundary vertices preserving signed contraction including loop case, then |1ᵀT1|≤r",
+      "assumptions": "Rank-r projection r≥1; exact equality of coordinate sums and norms",
+      "candidate_baseline_interface": "I07; GraphRankEdgeSplit; transpose bridge",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1013,
+        "line_end": 1064,
+        "raw_context_sha256": "63c763b6c3596b9a690e8efc59549feb6eea1e1d71dd22ce8ce51af6540efbfc"
+      }
+    },
+    {
+      "id": "I-V6-14",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1195,
+      "line_end": 1234,
+      "raw_context_sha256": "c6fb4f8e1dcb925e0810ad2a55904ed519510e417ed7d0de0fc8eeea2c90caec",
+      "exact_context_tex": "\\[\n M(t_1,\\ldots,t_q)\n    =\\E\\prod_{j=1}^q(1+t_jY_j)\n    =\\sum_{B\\subseteq[q]}\\left(\\E\\prod_{j\\in B}Y_j\\right)\n                         \\prod_{j\\in B}t_j,\n\\]\nwhere $t_1,\\ldots,t_q$ are formal variables and the empty product\nis one. Since $M$ has constant term one, its formal logarithm is\n\\[\n \\log M=\\sum_{j\\ge1}\\frac{(-1)^{j-1}}{j}(M-1)^j.\n\\]\nEvery monomial of $M-1$ has positive degree. Thus terms with\n$j>q$ cannot contribute to the coefficient of $t_1\\cdots t_q$.\nFor $1\\le j\\le q$, expanding $(M-1)^j$ amounts to choosing\nan ordered list of $j$ nonempty subsets of $[q]$, one from each\nfactor. To obtain $t_1\\cdots t_q$, each index must occur exactly\nonce in this list: the chosen subsets must be disjoint and their\nunion must be $[q]$. They therefore form an ordered partition.\nEach unordered partition into $j$ blocks has $j!$ such orderings,\nall contributing the same product of moments. If\n$[t_1\\cdots t_q]F$ denotes the coefficient of $t_1\\cdots t_q$\nin a formal series $F$, this gives\n\\[\n [t_1\\cdots t_q](M-1)^j\n   =j!\\sum_{\\substack{\\pi\\in\\mathcal P([q])\\\\|\\pi|=j}}\n          \\prod_{B\\in\\pi}\\E\\prod_{i\\in B}Y_i.\n\\]\nThe logarithm supplies the factor $(-1)^{j-1}/j$, so each\npartition receives the coefficient $(-1)^{j-1}(j-1)!$.\nSumming over $j$ shows that the coefficient of $t_1\\cdots t_q$\nin $\\log M$ is $\\cum(Y_1,\\ldots,Y_q)$ by\n\\eqref{eq:cumulant-definition}.\nThe same coefficient argument for any nonempty subset $B$ gives\n$\\cum(Y_j:j\\in B)$ as the coefficient of $\\prod_{j\\in B}t_j$\nin $\\log M$. Now compare the coefficient of $t_1\\cdots t_q$\nin $M=\\exp(\\log M)$. Only products of monomials on disjoint\nnonempty subsets can contribute. For a partition $\\pi$, its\n$|\\pi|!$ block orderings cancel the factorial denominator in\nthe exponential series. The resulting coefficient is the\nright-hand side of \\eqref{eq:moment-cumulant}, proving part~1.\n",
+      "active_context_sha256": "c6fb4f8e1dcb925e0810ad2a55904ed519510e417ed7d0de0fc8eeea2c90caec",
+      "expected_statement": "Formal logarithm squarefree coefficient is cumulant; exponential inverse gives moment identity",
+      "assumptions": "Arbitrary moment data with empty moment=1; q≥1; formal coefficients only",
+      "candidate_baseline_interface": "GENERAL algebraic coefficient interface",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1194,
+        "line_end": 1233,
+        "raw_context_sha256": "c6fb4f8e1dcb925e0810ad2a55904ed519510e417ed7d0de0fc8eeea2c90caec"
+      }
+    },
+    {
+      "id": "I-V6-15",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1236,
+      "line_end": 1322,
+      "raw_context_sha256": "232295c365ae6f154056e2667e22594320f2cdfe6880dabf023a2fb799499c33",
+      "exact_context_tex": "To verify the coefficient in\n\\eqref{eq:product-cumulant}, apply \\eqref{eq:cumulant-definition}\nto the products $Y_1,\\ldots,Y_q$, and expand each resulting joint\nmoment using \\eqref{eq:moment-cumulant} for the factors $Z_a$.\nFor an outer block $C\\subseteq[q]$, write $U_C$ for the union\n$\\bigcup_{f\\in C}I_f$ of its factor positions. Since the $I_f$\nare disjoint, $\\prod_{f\\in C}Y_f=\\prod_{a\\in U_C}Z_a$.\nThe two substitutions give\n\\[\n\\begin{aligned}\n \\cum(Y_1,\\ldots,Y_q)\n &=\\sum_{\\pi\\in\\mathcal P([q])}(-1)^{|\\pi|-1}(|\\pi|-1)!\n       \\prod_{C\\in\\pi}\\E\\prod_{a\\in U_C}Z_a\\\\\n &=\\sum_{\\pi\\in\\mathcal P([q])}(-1)^{|\\pi|-1}(|\\pi|-1)!\n       \\prod_{C\\in\\pi}\\left(\n          \\sum_{\\sigma_C\\in\\mathcal P(U_C)}\n             \\prod_{B\\in\\sigma_C}\\cum(Z_a:a\\in B)\\right).\n\\end{aligned}\n\\]\nFor fixed $\\pi$, the sets $U_C$, $C\\in\\pi$, partition\n$\\mathcal I$. Choosing one inner partition $\\sigma_C$ for each\n$C$ therefore gives a partition $\\sigma$ of $\\mathcal I$ by\ntaking all their blocks together. Conversely, a fixed $\\sigma$\narises this way exactly when every one of its blocks lies inside\none $U_C$. In that case the inner partitions are uniquely\ndetermined, so the product of inner sums contributes it once.\nKeeping occurrence labels distinct, fix a partition $\\sigma$ and\ncollect the terms with cumulant product\n$\\prod_{B\\in\\sigma}\\cum(Z_a:a\\in B)$.\nThe admissible outer partitions are therefore precisely those that\ndo not split a group of products already connected by $\\sigma$\nand $\\tau$.\n\nPut $b=|\\sigma\\vee\\tau|$. Each of these $b$ connected groups\ncontains whole product groups $I_f$, since the join includes all\nidentifications from $\\tau$. The admissible outer partitions are\ntherefore exactly the ways to partition these $b$ groups further.\nThere are $S(b,j)$ ways to obtain $j$ outer blocks, and each has\ncoefficient $(-1)^{j-1}(j-1)!$ in\n\\eqref{eq:cumulant-definition}. Hence the coefficient of the fixed\ncumulant product is\n\\[\n \\sum_{j=1}^b S(b,j)(-1)^{j-1}(j-1)!=\\boldsymbol{1}_{\\{b=1\\}},\n\\]\nwhere \\(S(b,j)\\) is the number of partitions of a $b$-element set\ninto \\(j\\) nonempty blocks. To see the cancellation explicitly, use\n\\[\n \\sum_{b\\ge j}S(b,j)\\frac{z^b}{b!}\n       =\\frac{(e^z-1)^j}{j!}.\n\\]\nIndeed, fix $j\\ge1$ and expand each factor as\n$e^z-1=\\sum_{k\\ge1}z^k/k!$. Multiplication and collection by\ntotal degree give\n\\[\n \\begin{split}\n (e^z-1)^j\n &=\\sum_{k_1,\\ldots,k_j\\ge1}\n       \\frac{z^{k_1+\\cdots+k_j}}{k_1!\\cdots k_j!}\\\\\n &=\\sum_{b\\ge j}\\left(\n       \\sum_{\\substack{k_1+\\cdots+k_j=b\\\\k_1,\\ldots,k_j\\ge1}}\n       \\frac{b!}{k_1!\\cdots k_j!}\\right)\\frac{z^b}{b!}.\n \\end{split}\n\\]\nFor fixed positive block sizes $k_1,\\ldots,k_j$ summing to $b$,\nthe factor $b!/(k_1!\\cdots k_j!)$ counts ways to assign $b$\ndistinct labels to $j$ ordered blocks of those sizes: choose the\nlabels of the first block, then the second, and so on.\nSumming over all positive size lists therefore counts all\npartitions of these labels into $j$ ordered nonempty blocks.\nEvery partition counted by $S(b,j)$ has exactly $j!$ block\norderings, even if some block sizes coincide, since its blocks\nare distinct subsets. Hence\n\\[\n \\sum_{\\substack{k_1+\\cdots+k_j=b\\\\k_1,\\ldots,k_j\\ge1}}\n       \\frac{b!}{k_1!\\cdots k_j!}=j!S(b,j).\n\\]\nThus the coefficient of $z^b/b!$ in $(e^z-1)^j$ is $j!S(b,j)$;\ndivision by $j!$ proves the stated generating-function identity.\nConsequently,\n\\[\n \\begin{split}\n \\sum_{b\\ge1}\\left[\\sum_{j=1}^b\n   S(b,j)(-1)^{j-1}(j-1)!\\right]\\frac{z^b}{b!}\n &=\\sum_{j\\ge1}\\frac{(-1)^{j-1}}{j}(e^z-1)^j\\\\\n &=\\log\\bigl(1+(e^z-1)\\bigr)=z.\n \\end{split}\n\\]\n",
+      "active_context_sha256": "232295c365ae6f154056e2667e22594320f2cdfe6880dabf023a2fb799499c33",
+      "expected_statement": "Expanding product cumulants groups by join; ordered partitions have j! orderings; Stirling coefficient sum is indicator(b=1)",
+      "assumptions": "Finite nonempty occurrence set; repeated variables retain distinct occurrences; no convergence assumption",
+      "candidate_baseline_interface": "I09 combinatorial cancellation plus general expectation bridge",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1235,
+        "line_end": 1321,
+        "raw_context_sha256": "232295c365ae6f154056e2667e22594320f2cdfe6880dabf023a2fb799499c33"
+      }
+    },
+    {
+      "id": "I-V6-16",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1324,
+      "line_end": 1354,
+      "raw_context_sha256": "6aeba4dbe06f29f58655fdad4725862cf1d2230abcfbd4fee029bf28d713bd79",
+      "exact_context_tex": "the coefficient is one when $b=1$ and zero when $b>1$.\nThus precisely the partitions with a connected join survive,\neach with coefficient one, proving part~2. The comparison is\nformal; each fixed coefficient involves only finitely many terms.\n\nFor part~3, multilinearity follows directly from\n\\eqref{eq:cumulant-definition}, since each argument occurs in\nexactly one moment factor in every summand.\nSuppose the arguments $Y_1,\\ldots,Y_q$ split into two\nindependent families indexed by nonempty disjoint sets $A_1,A_2$\nwith $A_1\\cup A_2=[q]$. The usual logarithm argument for the\nvanishing of mixed cumulants\n\\cite[\\S3.B, lemma on p.~324]{leonov_shiryaev1959}\nuses the same moment polynomial $M$. Independence gives\n\\[\n M=M_{A_1}M_{A_2},\\qquad\n M_{A_i}=\\E\\prod_{j\\in A_i}(1+t_jY_j),\\quad i=1,2,\n \\qquad \\log M=\\log M_{A_1}+\\log M_{A_2}.\n\\]\nEach logarithm on the right involves only the variables from its\nown family, so neither contains $t_1\\cdots t_q$. Its coefficient,\nand hence the mixed joint cumulant, is zero. Only terms through\ntotal degree $q$ are needed in these formal logarithms; no\nconvergence assumption on a moment-generating function is used.\n\nFor $q\\ge2$, a deterministic argument forms an independent group\nfrom all the other arguments, so the corresponding cumulant is\nzero. Multilinearity then proves invariance under adding constants.\nFinally, if $Z$ and $-Z$ have the same law, the order-$q$ cumulant\nof $Z$ equals $(-1)^q$ times itself by multilinearity. It is\ntherefore zero for odd $q$.\n",
+      "active_context_sha256": "6aeba4dbe06f29f58655fdad4725862cf1d2230abcfbd4fee029bf28d713bd79",
+      "expected_statement": "Moment polynomial factorization under independent families yields mixed vanishing; deterministic argument vanishes at order≥2; symmetry law gives odd vanishing",
+      "assumptions": "Arbitrary real probability law and finite joint products; vector independence",
+      "candidate_baseline_interface": "GENERAL expectation/law interface",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1323,
+        "line_end": 1353,
+        "raw_context_sha256": "6aeba4dbe06f29f58655fdad4725862cf1d2230abcfbd4fee029bf28d713bd79"
+      }
+    },
+    {
+      "id": "I-V6-17",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1400,
+      "line_end": 1416,
+      "raw_context_sha256": "16e43bef5b39e5c43afa0a790ce3788a39fecdaad3cf6ffbdf3b502eb2d921b3",
+      "exact_context_tex": "compute the mean.\nThe combination of cumulant expansions and graph-sum bounds also\noccurs in the trace-cumulant analysis of V\\'azquez-Becerra\n\\cite[Section~4]{vazquez_becerra}; the calculation below keeps the\nentry indices fixed and the dependence on $q$ and $r$ explicit.\nWrite \\(P_0=VV^T\\) and \\(\\chi_i(a)=(-1)^{\\langle i,a\\rangle}\\).\nFor $\\ell=1,2$ and $a\\in K$, denote the diagonal signs by\n$\\xi_{\\ell,a}=(D_\\ell)_{aa}$. The exact entry expansion is\n\\begin{equation}\\label{eq:entry-expansion}\n nP_{ij}=\\sum_{a,b,x,y\\in K}\n \\chi_i(a)\\chi_j(b)\\,\n \\xi_{2,a}\\xi_{2,b}\\xi_{1,x}\\xi_{1,y}\n                  H_{ax}(P_0)_{xy}H_{yb}.\n\\end{equation}\nThe factor \\(n\\) cancels the two outer Hadamard normalizations.\nBoth inner Hadamard matrices in \\eqref{eq:entry-expansion} remain normalized.\n\n",
+      "active_context_sha256": "16e43bef5b39e5c43afa0a790ce3788a39fecdaad3cf6ffbdf3b502eb2d921b3",
+      "expected_statement": "Exact four-index projection entry expansion with both inner Walsh matrices normalized",
+      "assumptions": "Fixed V; two independent sign layers; n scaling cancels only outer two Walsh entries",
+      "candidate_baseline_interface": "I11",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1399,
+        "line_end": 1415,
+        "raw_context_sha256": "16e43bef5b39e5c43afa0a790ce3788a39fecdaad3cf6ffbdf3b502eb2d921b3"
+      }
+    },
+    {
+      "id": "I-V6-18",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1418,
+      "line_end": 1465,
+      "raw_context_sha256": "83f378f366a9f4aa6312e394f00f201b5520e9e0fc4f8d8e05d3c215d4f28c88",
+      "exact_context_tex": "\\eqref{eq:entry-expansion}, let $\\mathcal I$ be the set of the\n$4q$ sign occurrence positions. Set $\\tau=\\{I_1,\\ldots,I_q\\}$,\nwhere $I_f$ contains the occurrences of\n$\\xi_{2,a_f},\\xi_{2,b_f},\\xi_{1,x_f},\\xi_{1,y_f}$ in the\n$f$th product. These are four positions even if some labels agree.\nBy multilinearity, we may expand the joint cumulant into a sum over\nthe $q$ copies of the four indices, taking their deterministic\ncoefficients outside the cumulant. Apply\nLemma~\\ref{lem:cumulant-identities}, in the form\n\\eqref{eq:product-cumulant}, and then sum the deterministic\nmatrix and character coefficients. A nonzero partition\nhas a partition \\(\\alpha\\) of its \\(2q\\) middle-sign ($D_2$) occurrences\nand a partition \\(\\beta\\) of its \\(2q\\) input-sign ($D_1$) occurrences,\nall blocks even. Equal-coordinate occurrences within a block are identified.\nIndeed, the vanishing rules in Lemma~\\ref{lem:cumulant-identities}\nforce each block to involve just one sign\ncoordinate in one layer, and symmetry of that sign makes every\nodd-order cumulant zero.\nDifferent blocks may receive equal labels; no inequality between\ntheir labels is imposed. For example, two different blocks can\nboth use $\\xi_{2,a}$; their factors are still two cumulants in\n\\eqref{eq:product-cumulant}. Thus block membership imposes equalities\nwithin a block but does not specify the full equality pattern of\nall labels.\n\nTo display the resulting sum, write\n$\\kappa_b=\\cum(\\xi,\\ldots,\\xi)$ with $b$ arguments, where $\\xi$\nis a single uniform Rademacher sign. For fixed $\\alpha,\\beta$, let\n\\[\n S_{\\alpha,\\beta}\n =\\sum_{\\substack{a_f,b_f,x_f,y_f\\in K\\\\1\\le f\\le q}}^{\\prime}\n   \\prod_{f=1}^q\n   \\chi_{i_f}(a_f)\\chi_{j_f}(b_f)\n   H_{a_fx_f}(P_0)_{x_fy_f}H_{y_fb_f}.\n\\]\nThe prime imposes equality of coordinate labels within each block\nof $\\alpha$ and of $\\beta$, and imposes no inequalities between\ndifferent blocks. Every block cumulant is then $\\kappa_b$, where\n$b$ is its size, independently of its coordinate label. Grouping\nthe finite sums by their partitions therefore gives\n\\[\n \\begin{aligned}\n \\cum(nP_{i_1j_1},\\ldots,nP_{i_qj_q})\n &=\\sum_{\\substack{\\alpha,\\beta\\ \\text{with even block sizes}\\\\\n             (\\alpha\\cup\\beta)\\vee\\tau=\\one_{\\mathcal I}}}\n   \\left(\\prod_{A\\in\\alpha}\\kappa_{|A|}\\right)\n   \\left(\\prod_{B\\in\\beta}\\kappa_{|B|}\\right)\n   S_{\\alpha,\\beta}.\n",
+      "active_context_sha256": "83f378f366a9f4aa6312e394f00f201b5520e9e0fc4f8d8e05d3c215d4f28c88",
+      "expected_statement": "Two-layer even occurrence partitions with connected join give exact cumulant sum; different blocks may share labels",
+      "assumptions": "4q labeled occurrences; each block in one layer/one coordinate; no injectivity across blocks",
+      "candidate_baseline_interface": "ProductCumulant; joint_entry_cumulant_assembly",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1417,
+        "line_end": 1464,
+        "raw_context_sha256": "83f378f366a9f4aa6312e394f00f201b5520e9e0fc4f8d8e05d3c215d4f28c88"
+      }
+    },
+    {
+      "id": "I-V6-19",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1467,
+      "line_end": 1499,
+      "raw_context_sha256": "2acdce6b761a384177db823a6ac2a8eb5d7eea9125c02cb7aca260eb4a87d8e2",
+      "exact_context_tex": "\\]\nHere $\\alpha\\cup\\beta$ is the partition of all $4q$ occurrence\npositions obtained by taking the blocks in both layers. We now\nbound the deterministic sum $S_{\\alpha,\\beta}$ for each partition\npair in this display.\n\nBefore the block identifications, the $f$th product of matrix\nentries describes the path\n\\[\n a_f\\ \\overset{H}{\\longleftrightarrow}\\ x_f\n \\ \\overset{P_0}{\\longleftrightarrow}\\ y_f\n \\ \\overset{H}{\\longleftrightarrow}\\ b_f.\n\\]\nThe connected-join condition in\nDefinition~\\ref{def:partition-join} connects all $q$ such paths.\nIndeed, the groups $I_f$ connect the occurrences\nalong each such path, and the blocks of $\\alpha,\\beta$ identify\nvertices between paths. Having one join block is exactly what\nmakes their union connected after these identifications.\n\nEach middle-sign position $a_f,b_f$ is incident to one edge, whereas\neach input-sign position $x_f,y_f$ is incident to two. Merging the\npositions in a block adds their degrees; an edge whose endpoints\nmerge becomes a loop and still contributes twice. Thus the resulting\ngraph has one vertex per middle-sign block, of degree equal to its\neven size, and one per input-sign block, of degree twice its size.\nIt is connected with positive even degrees. Its matrices are\nnormalized \\(H\\)'s and \\(P_0\\)'s, all of norm one, and it contains\na rank-$r$ projection edge $P_0$ from each original path.\nAt each middle-sign vertex the outer characters multiply to a\ncoordinate weight of modulus one; input-sign vertices have weight one.\nAfter the identifications, every block vertex has one freely summed\nlabel in $K$. Thus $S_{\\alpha,\\beta}$ is precisely an unrestricted\n",
+      "active_context_sha256": "2acdce6b761a384177db823a6ac2a8eb5d7eea9125c02cb7aca260eb4a87d8e2",
+      "expected_statement": "Connected join gives connected positive-even occurrence graph with unrestricted signed contraction, rank-r projection edge and character vertex weights",
+      "assumptions": "Surviving alpha,beta; q≥1; fixed V; loops and multiplicities retained",
+      "candidate_baseline_interface": "I12",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1466,
+        "line_end": 1498,
+        "raw_context_sha256": "2acdce6b761a384177db823a6ac2a8eb5d7eea9125c02cb7aca260eb4a87d8e2"
+      }
+    },
+    {
+      "id": "I-V6-20",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1501,
+      "line_end": 1534,
+      "raw_context_sha256": "e3ee016b113b02b470dea27b40e3c07e62b4361c390a09359951052972b08263",
+      "exact_context_tex": "and Lemma~\\ref{lem:graph} gives $|S_{\\alpha,\\beta}|\\le r$.\nAbsolute values have not been inserted into the matrix-entry products.\nThe graph bound applies to the full signed sum; it does not bound\nthe sum of the absolute values of its individual summands.\n\nThe order-\\(b\\) cumulant of a single Rademacher sign has absolute value\nat most \\(b^{2b}\\): Definition~\\ref{def:joint-cumulant}, in the\nform \\eqref{eq:cumulant-definition}, has at most \\(b^b\\) partitions, each\nfactorial coefficient is at most \\(b!\\le b^b\\), and each moment has\nabsolute value at most one. For one layer, this gives\n\\[\n \\prod_{A\\in\\alpha}|\\kappa_{|A|}|\n \\le\\prod_{A\\in\\alpha}|A|^{2|A|}\n \\le(2q)^{2\\sum_{A\\in\\alpha}|A|}\n =(2q)^{4q},\n\\]\nsince its block sizes sum to $2q$. The same bound holds for $\\beta$.\nA set of $2q$ positions has at most $(2q)^{2q}$ partitions: after\nnumbering the positions, assigning each position the least number\nin its block encodes the partition\nby a function from that set to itself. Hence there are at most\n$(2q)^{4q}$ partition pairs, even before the even-size and connected-join\nrestrictions. Applying the triangle inequality to the displayed\npartition sum gives\n\\[\n \\begin{aligned}\n \\left|\\cum(nP_{i_1j_1},\\ldots,nP_{i_qj_q})\\right|\n &\\le \\underbrace{(2q)^{4q}}_{\\text{partition pairs}}\n     \\quad\\underbrace{(2q)^{4q}(2q)^{4q}}_{\\text{two coefficient products}}\n     \\quad\\underbrace{r}_{\\text{graph sum}}\\\\\n &=(2q)^{12q}r,\n \\end{aligned}\n\\]\nwhich proves \\eqref{eq:cumulant-bound}.\n",
+      "active_context_sha256": "e3ee016b113b02b470dea27b40e3c07e62b4361c390a09359951052972b08263",
+      "expected_statement": "Rademacher cumulant≤b^(2b); each layer coefficient≤(2q)^(4q); pair partition count≤(2q)^(4q)",
+      "assumptions": "b≥1,q≥1; finite uniform sign",
+      "candidate_baseline_interface": "I13",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1500,
+        "line_end": 1533,
+        "raw_context_sha256": "e3ee016b113b02b470dea27b40e3c07e62b4361c390a09359951052972b08263"
+      }
+    },
+    {
+      "id": "I-V6-21",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1536,
+      "line_end": 1585,
+      "raw_context_sha256": "13c39413fcbee900af569888bababc87216f41246e79548323d1feb1d374eef4",
+      "exact_context_tex": "For \\eqref{eq:xor-constraint}, we use a symmetry that preserves the\nlaw of $P$ but can reverse the sign of the target cumulant whenever\nthe XOR sum is nonzero. For $s\\in K$, let\n\\(C_s=\\diag(\\chi_s(i):i\\in K)\\) and let $T_s$ translate coordinates:\n$(T_su)_a=u_{a+s}$ for $u\\in\\R^n$. In particular $T_s^2=I_n$.\nThe character identity\n$\\chi_i(a+s)=\\chi_i(a)\\chi_i(s)$ gives the first two Walsh identities\nbelow by comparing matrix entries:\n\\begin{equation}\\label{eq:walsh-conjugation}\n C_sH=HT_s,\\qquad T_sH=HC_s,\\qquad\n C_sHD_2HD_1V=H(T_sD_2T_s)H(C_sD_1)V.\n\\end{equation}\nFor the last identity, insert $T_s^2=I_n$ next to $D_2$ and use\nthe first two identities:\n\\[\n \\begin{aligned}\n C_sHD_2HD_1V\n &=HT_sD_2HD_1V\\\\\n &=H(T_sD_2T_s)T_sHD_1V\\\\\n &=H(T_sD_2T_s)H(C_sD_1)V.\n \\end{aligned}\n\\]\nThe diagonal entries of $T_sD_2T_s$ are those of $D_2$ permuted\nby $a\\mapsto a+s$. The entries of $C_sD_1$ are those of $D_1$\nmultiplied by fixed signs. Both operations preserve the independent\nuniform sign law within each diagonal, and the two new diagonals\nremain independent because each depends on a different original\ndiagonal. Thus\n\\(C_sPC_s\\) has the same law as \\(P\\) for the same fixed \\(V\\).\nEntrywise,\n\\[\n (C_sPC_s)_{ij}=\\chi_s(i)\\chi_s(j)P_{ij}\n              =\\chi_s(i+j)P_{ij}.\n\\]\nWrite $c=\\cum(nP_{i_1j_1},\\ldots,nP_{i_qj_q})$. Equality in law\nand multilinearity then give, for every $s\\in K$,\n\\[\n c=\\left(\\prod_{f=1}^q\\chi_s(i_f+j_f)\\right)c\n   =\\chi_s\\!\\left(\\sum_f(i_f+j_f)\\right)c.\n\\]\nIf\n$q_0=\\sum_f(i_f+j_f)\\ne0$, choose a nonzero coordinate of $q_0$\nand let $s$ be the corresponding binary basis vector. Then\n$\\chi_s(q_0)=-1$, so the cumulant equals its negative and is zero.\nThis proves \\eqref{eq:xor-constraint}.\n\nFinally set \\(B=HD_1P_0D_1H\\), so that $P=HD_2BD_2H$.\nCondition on $D_1$, which fixes $B$. The $(a,b)$ entry of $D_2BD_2$\nis $B_{ab}\\xi_{2,a}\\xi_{2,b}$. Its conditional expectation is\n$B_{aa}$ if $a=b$ and zero otherwise, by independence and centering\n",
+      "active_context_sha256": "13c39413fcbee900af569888bababc87216f41246e79548323d1feb1d374eef4",
+      "expected_statement": "Walsh modulation/translation identities preserve exact two-layer law for same fixed V; nonzero XOR separates by character sign",
+      "assumptions": "m≥0; exact mutually independent signs, no extra permutation law",
+      "candidate_baseline_interface": "I14",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1535,
+        "line_end": 1584,
+        "raw_context_sha256": "13c39413fcbee900af569888bababc87216f41246e79548323d1feb1d374eef4"
+      }
+    },
+    {
+      "id": "I-V6-22",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1587,
+      "line_end": 1621,
+      "raw_context_sha256": "e1a9e7b7a304928fd5a4be39c83dddcdaa831f7c28d240bd75c19095c49fc1a6",
+      "exact_context_tex": "\\[\n \\E_{D_2}[D_2BD_2\\mid D_1]\n      =\\diag(B_{aa}:a\\in K),\n\\]\nwhere the right side is the diagonal matrix with the indicated\nentries. To average these entries over $D_1$, expand\n\\[\n B_{aa}=\\sum_{x,y\\in K}\n        H_{ax}H_{ya}(P_0)_{xy}\\xi_{1,x}\\xi_{1,y}.\n\\]\nOnly $x=y$ survives in expectation. Since $H_{ax}^2=1/n$ and\n$\\sum_x(P_0)_{xx}=\\tr P_0=r$, this gives\n\\[\n \\E_{D_1}B_{aa}\n     =\\sum_x H_{ax}^2(P_0)_{xx}=\\frac rn.\n\\]\nTaking the two expectations in turn and using $H^2=I_n$ now yields\n\\[\n \\E P\n =H\\,\\diag(\\E_{D_1}B_{aa}:a\\in K)\\,H\n =H\\left(\\frac rn I_n\\right)H\n =\\delta I_n.\n\\]\n\\end{proof}\n\nRecall \\(R=P-\\delta I_n\\). Every entry of \\(R\\), including every diagonal\nentry, has mean zero. Cumulants of order at least two are unchanged\nby this centering, by Lemma~\\ref{lem:cumulant-identities}, so\n\\eqref{eq:cumulant-bound}--\\eqref{eq:xor-constraint} hold for \\(R\\) at those orders.\nThe zero diagonal mean will remove singleton loop blocks in\nthe trace expansion.\n\n\\begin{remark}[Trace cumulants and entry cumulants]\nThe bounded trace-cumulant theorem of V\\'azquez-Becerra\n\\cite[Lemma~6 and Theorem~7]{vazquez_becerra} uses simultaneous\n",
+      "active_context_sha256": "e1a9e7b7a304928fd5a4be39c83dddcdaa831f7c28d240bd75c19095c49fc1a6",
+      "expected_statement": "Conditional sign averages yield E P=delta I; centering gives zero all entries and unchanged cumulants order≥2",
+      "assumptions": "Deterministic V; normalized Walsh; q≥2 for shift invariance",
+      "candidate_baseline_interface": "I15",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1586,
+        "line_end": 1620,
+        "raw_context_sha256": "e1a9e7b7a304928fd5a4be39c83dddcdaa831f7c28d240bd75c19095c49fc1a6"
+      }
+    },
+    {
+      "id": "I-V6-23",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1657,
+      "line_end": 1675,
+      "raw_context_sha256": "06daf359e1b958bcd1d3180df3a3d7098325fefe156b3ea4032e6b2dbb47b483",
+      "exact_context_tex": "Recall that $R=P-\\delta I_n$, $W=E-\\theta I_n$, and\n$\\delta=r/n$. The entries $E_{ii}$ are independent\nBernoulli$(\\theta)$ variables, independent of $D_1,D_2$, and the row\nlabels lie in $K=(\\mathbb F_2)^m$, with $|K|=n$. Write\n$w_i=W_{ii}=E_{ii}-\\theta$. Matrix multiplication and cyclic\nreindexing of the diagonal factors give the original trace expansion\n\\begin{equation}\\label{eq:original-trace-expansion}\n\\begin{split}\n \\E\\tr(RW)^{2p}\n   &=\\sum_{i_1,\\ldots,i_{2p}\\in K}\n       \\E_{D_1,D_2}\\!\\left[\n                 \\prod_{j=1}^{2p}R_{i_j i_{j+1}}\\right]\n       \\E_E\\!\\left[\\prod_{j=1}^{2p}w_{i_j}\\right],\n \\qquad i_{2p+1}=i_1.\n\\end{split}\n\\end{equation}\nIn the direct matrix product the $j$th diagonal factor is\n$w_{i_{j+1}}$; its product is the same as the one displayed.\nThe two expectations separate because the selectors are independent\n",
+      "active_context_sha256": "06daf359e1b958bcd1d3180df3a3d7098325fefe156b3ea4032e6b2dbb47b483",
+      "expected_statement": "Exact signed trace expansion separates sign and selector expectations",
+      "assumptions": "p≥2; selectors independent of signs; cyclic w-index reindexing",
+      "candidate_baseline_interface": "TraceCyclicExpansion; SignedTraceExpansion",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1656,
+        "line_end": 1674,
+        "raw_context_sha256": "06daf359e1b958bcd1d3180df3a3d7098325fefe156b3ea4032e6b2dbb47b483"
+      }
+    },
+    {
+      "id": "I-V6-24",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1677,
+      "line_end": 1711,
+      "raw_context_sha256": "1b3fbcb56da8fd4b1f5531b7bfa1e85dd7e4606d0c7ca1f42f193721034d8e73",
+      "exact_context_tex": "\nEvery word $(i_1,\\ldots,i_{2p})$ determines one equality partition\n$\\pi$ of the position set $[2p]$: positions belong to the same\nblock if and only if their full row labels in $K$ coincide.\nFor a block $u\\in\\pi$, let $m_u=|u|$. Independence across distinct\nselector coordinates then gives\n\\[\n \\E_E\\prod_{j=1}^{2p}w_{i_j}\n      =\\prod_{u\\in\\pi}\\E w^{m_u},\n \\qquad w=\\zeta-\\theta,\\quad \\zeta\\sim\\operatorname{Bernoulli}(\\theta).\n\\]\nA singleton block contributes $\\E w=0$, so only partitions with\n\\(m_u\\ge2\\) remain. Let $v=|\\pi|$ be the number of blocks.\nSince $\\sum_u m_u=2p$, we have $1\\le v\\le p$. Write\n\\[\n v=p-s,\\quad 0\\le s\\le p-1.\n\\]\nThus $s$ counts the loss of blocks relative to a partition into $p$\npairs. To display the regrouping explicitly, let $u_j$ be the block\ncontaining position $j$, with $u_{2p+1}=u_1$. Choosing a word with\nequality partition $\\pi$ is equivalent to assigning distinct labels\nto its blocks, so \\eqref{eq:original-trace-expansion} becomes\n\\[\n \\E\\tr(RW)^{2p}\n =\\sum_{\\substack{\\pi\\in\\mathcal P([2p])\\\\ |u|\\ge2\\ (u\\in\\pi)}}\n   \\left(\\prod_{u\\in\\pi}\\E w^{m_u}\\right)\n   \\sum_{\\substack{\\iota:\\pi\\to K\\\\ \\iota\\ \\mathrm{injective}}}\n   \\E_{D_1,D_2}\\!\\left[\n      \\prod_{j=1}^{2p}R_{\\iota(u_j),\\iota(u_{j+1})}\\right].\n\\]\nHere $\\mathcal P([2p])$ denotes the set of all partitions of $[2p]$.\nThis is the standard decomposition of a graph sum into injective\nsums over quotient graphs; see Male\n\\cite[Definition~2.5 and Eq.~(2.2)]{male_traffic}.\nWe use this finite combinatorial identity without assumptions of\n",
+      "active_context_sha256": "1b3fbcb56da8fd4b1f5531b7bfa1e85dd7e4606d0c7ca1f42f193721034d8e73",
+      "expected_statement": "Regrouping words by exact equality partition is bijection to injective block labels; singleton selector blocks vanish",
+      "assumptions": "Numbered 2p positions; full K labels; unrestricted original words",
+      "candidate_baseline_interface": "signBernoulliExpectation_trace_eq_partition_cumulant_sum",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1676,
+        "line_end": 1710,
+        "raw_context_sha256": "1b3fbcb56da8fd4b1f5531b7bfa1e85dd7e4606d0c7ca1f42f193721034d8e73"
+      }
+    },
+    {
+      "id": "I-V6-25",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1713,
+      "line_end": 1739,
+      "raw_context_sha256": "a4344e333f397989f47e8127f75bc7ba4a2bd2bce9c6ae7c268500ea41a29eb6",
+      "exact_context_tex": "We will count the outer partitions in this subsection and estimate\nthe inner entry sum in the next.\n\nConstruct the quotient multigraph of $\\pi$ by taking its blocks as vertices\nand, for each $j\\in[2p]$, placing an edge occurrence between the\nblocks containing $j$ and $j+1$, with cyclic indexing.\nEdges are treated as undirected because $R$ is symmetric, but\ntheir occurrences remain distinct. A position contributes one\nincoming and one outgoing half-edge, including when these form a\nloop. The cyclic word visits every block and connects each block to\nthe next, so the quotient graph is connected. It has \\(2p\\) edge\noccurrences and degrees \\(2m_u\\ge4\\). Since\n$\\sum_u\\deg u=2\\sum_u m_u=4p$ and $v=p-s$, we obtain\n\\begin{equation}\\label{eq:degree-excess}\n                         \\sum_u(\\deg u-4)=4s.\n\\end{equation}\nUnlike the unrestricted contraction in\nDefinition~\\ref{def:graph-contraction}, the sum here is restricted\nto distinct full row labels for its \\(v\\) vertices.\nLet \\(t\\) count the vertices incident to a\n\\emph{nonloop} unordered edge of odd multiplicity, and let \\(\\ell\\)\ncount loop occurrences. In particular, $t$ counts vertices, not odd\nedges; a vertex is counted once even if several odd-multiplicity\nedges meet there. Since $t\\le v=p-s$, we have \\(s+t\\le p\\).\nFor a centered Bernoulli variable \\(w\\) and an integer \\(b\\ge2\\),\nits two possible values give\n\\[\n",
+      "active_context_sha256": "a4344e333f397989f47e8127f75bc7ba4a2bd2bce9c6ae7c268500ea41a29eb6",
+      "expected_statement": "Quotient graph connected, degrees 2m_u≥4, total excess 4s, and s+t≤p",
+      "assumptions": "pi has no singleton; t counts vertices not edges",
+      "candidate_baseline_interface": "I16",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1712,
+        "line_end": 1738,
+        "raw_context_sha256": "a4344e333f397989f47e8127f75bc7ba4a2bd2bce9c6ae7c268500ea41a29eb6"
+      }
+    },
+    {
+      "id": "I-V6-26",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1740,
+      "line_end": 1754,
+      "raw_context_sha256": "fe80b0f805f844b6e00c345e8ad187a0cda155028dd217467f43fbe222053098",
+      "exact_context_tex": " \\E w^b=\\theta(1-\\theta)^b+(1-\\theta)(-\\theta)^b.\n\\]\nTaking absolute values and factoring out $\\theta(1-\\theta)$ yields\n\\begin{equation}\\label{eq:selector-moment}\n |\\E w^b|\n \\le\\theta(1-\\theta)\\big((1-\\theta)^{b-1}+\\theta^{b-1}\\big)\n \\le\\theta.\n\\end{equation}\nFor the last inequality, use $(1-\\theta)^{b-1}\\le1-\\theta$ and\n$\\theta^{b-1}\\le\\theta$. Thus the selector coefficient satisfies\n\\[\n \\left|\\prod_{u\\in\\pi}\\E w^{m_u}\\right|\n \\le\\prod_{u\\in\\pi}\\theta=\\theta^v.\n\\]\nThese are ordinary moments of equality blocks, not selector cumulants.\n",
+      "active_context_sha256": "fe80b0f805f844b6e00c345e8ad187a0cda155028dd217467f43fbe222053098",
+      "expected_statement": "Centered Bernoulli moment formula and |Ew^b|≤theta give selector product≤theta^v",
+      "assumptions": "b≥2; 0<theta≤1/2 standing regime",
+      "candidate_baseline_interface": "I17",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1739,
+        "line_end": 1753,
+        "raw_context_sha256": "fe80b0f805f844b6e00c345e8ad187a0cda155028dd217467f43fbe222053098"
+      }
+    },
+    {
+      "id": "I-V6-27",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1815,
+      "line_end": 1895,
+      "raw_context_sha256": "e880294b15cea239e86e128cae7e427537d7ea2f1285868c6d3686b9c13a803b",
+      "exact_context_tex": "\\paragraph{The loop bound.}\nMark all odd-incident vertices and all vertices of degree greater\nthan four, and call their union \\(B\\). Every degree is even, so\neach vertex of degree greater than four contributes at least two\nto the total excess $4s$ in \\eqref{eq:degree-excess}. There are\ntherefore at most \\(2s\\) such vertices. Moreover,\n\\[\n \\sum_{u\\in B}\\deg u\n =4|B|+\\sum_{u\\in B}(\\deg u-4)\n \\le4(t+2s)+4s.\n\\]\nConsequently,\n\\begin{equation}\\label{eq:marked-degree}\n |B|\\le t+2s,\\qquad D_B:=\\sum_{u\\in B}\\deg u\\le4t+12s.\n\\end{equation}\nOutside \\(B\\), degree is four and all nonloop multiplicities are\neven. To list the possibilities, let $\\ell_u$ be the number of loops\nat such a vertex $u$, and let $a_{uz}$ count its edge occurrences\nto another vertex $z$. A loop contributes two to the degree. In a\ngraph with more than one vertex, connectivity gives\n\\[\n 4=2\\ell_u+\\sum_{z\\ne u}a_{uz},\\qquad\n a_{uz}\\in2\\mathbb Z_{\\ge0},\\qquad\n \\sum_{z\\ne u}a_{uz}>0.\n\\]\nHence $\\ell_u$ is zero or one. If it is zero, the positive\nnonloop multiplicities sum to four; if it is one, they sum to two.\nThe possibilities are exactly\n\\[\n\\begin{array}{c|c|c}\n \\text{type} & \\ell_u & \\text{positive nonloop multiplicities}\\\\ \\hline\n \\text{internal} &0&(2,2)\\\\\n \\text{loop terminal} &1&(2)\\\\\n \\text{four-edge terminal} &0&(4)\n\\end{array}\n\\]\nThe internal type has two distinct neighbors. Each terminal type\nhas one neighbor.\n\nSuppose first that \\(B\\ne\\varnothing\\). A four-edge terminal is directly adjacent\nto \\(B\\). Otherwise its neighbor would also have degree four,\nwith all four edges returning to the terminal, giving an isolated\ntwo-vertex component.\n\nStarting instead at a loop terminal, follow\nits doubled edge. At each internal vertex there is just one other\nneighbor, so this doubled path continues without branching. If it\nended at another loop terminal, the path would be an entire\ncomponent disjoint from $B$; it cannot close into a cycle through\ninternal vertices, each of which already has its two neighbors.\nIt must therefore reach $B$.\n\nTwo terminal paths cannot merge at an internal vertex and then\ncontinue to $B$: that would require a third neighbor. They therefore\nuse disjoint half-edges at $B$, at least two per terminal. Let $T$\nbe the number of terminal vertices and $\\ell_B$ the number of\noriginal loops at vertices in $B$. Each of these loops also uses\ntwo half-edges at $B$, distinct from the terminal attachments. Thus\n\\[\n 2T+2\\ell_B\\le D_B,\\qquad T\\le D_B/2.\n\\]\nEvery loop outside $B$ is the single loop of a loop terminal.\nConsequently,\n\\[\n \\ell=\\ell_B+\\#\\{\\text{loop terminals}\\}\n \\le\\ell_B+T\\le D_B.\n\\]\n\nIf \\(B=\\varnothing\\), a four-edge terminal forces the whole graph\nto be the two-vertex graph with four parallel edges, by the same\ndegree argument. Otherwise, in a graph with more than one vertex,\nevery nonloop edge group is doubled. Replace each such group by a\nsingle edge and delete the loops. The resulting graph is connected,\nwith degree two at internal vertices and degree one at loop terminals.\nFollowing edges can only close into a cycle or end in a path, since\nthere is no vertex at which to branch. Restoring the doubled edges\nand loops gives a doubled cycle or a doubled path with one loop at\neach endpoint. In the one-vertex case, degree four forces exactly\ntwo loops. In all cases $\\ell\\le2$ when $B=\\varnothing$.\nTogether with \\eqref{eq:marked-degree}, this proves\nthe loop bound in \\eqref{eq:equality-count}.\n",
+      "active_context_sha256": "e880294b15cea239e86e128cae7e427537d7ea2f1285868c6d3686b9c13a803b",
+      "expected_statement": "Marked vertices/degree budgets; complete local degree-four classification; terminal paths reach B without merging; B-empty graph classification",
+      "assumptions": "Connected quotient, no singleton selector blocks; original loops distinguished",
+      "candidate_baseline_interface": "I18/I19",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1814,
+        "line_end": 1894,
+        "raw_context_sha256": "e880294b15cea239e86e128cae7e427537d7ea2f1285868c6d3686b9c13a803b"
+      }
+    },
+    {
+      "id": "I-V6-28",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1897,
+      "line_end": 1931,
+      "raw_context_sha256": "71b74c56fd60bad6361d84e73d7eb0048555800351423e6ea461fb24d94fbbe9",
+      "exact_context_tex": "\\paragraph{Counting the retained graphs.}\nFor the count, put $a=s+t$ and first suppose $a\\ge1$.\nThen $B\\ne\\varnothing$: either $t>0$ or the degree excess $4s$\nis positive.\nWe first count the possible retained graphs and their expansions.\nFor each expanded graph, we then count the Euler transition systems\nthat recover the partition of the cyclic positions. These encode\nclosed traversals by pairing the incident half-edges at each vertex;\nsee Fleischner, Genest, and Jackson\n\\cite[Section~1]{fleischner_genest_jackson}.\n\nRetain \\(B\\) and all terminal vertices, and contract maximal chains\nof internal doubled-path vertices into distinguished doubled links.\nOnly their lengths can vary along these chains; each removed vertex\nhas degree four and the same two-neighbor structure.\nA link may return to the same retained vertex or be parallel to\nanother edge; its paired half-edge ports must be retained.\nDirect doubled edges may be given length zero. An isolated cycle\nof removed vertices would be a component disjoint from the nonempty\nset $B$, so connectivity excludes it.\n\nHere a half-edge is an incidence of one edge at one endpoint;\na loop has two half-edges at its vertex. A port is the pair of\nhalf-edges belonging to the two copies of a doubled path at one\nretained endpoint. A returning path has two distinct ports at the\nsame vertex. Its two contracted edges are loops, but each loop\njoins one half-edge of one port to one half-edge of the other.\nThese loops created by contraction are distinct from the original\nloop occurrences counted by $\\ell$.\nThe length records the number of removed internal vertices,\nnot the number of edges. Expanding a link of length $j$ therefore\nreplaces its two edges by $j+1$ doubled path segments.\n\nThe $p=2$ words above illustrate the simplest equality graphs.\nThe following example includes both a returning link and a link\n",
+      "active_context_sha256": "71b74c56fd60bad6361d84e73d7eb0048555800351423e6ea461fb24d94fbbe9",
+      "expected_statement": "Maximal internal doubled chains contract with returning/parallel port identity and zero length allowed; no isolated internal cycle when B nonempty",
+      "assumptions": "a=s+t≥1; preserve half-edge identity",
+      "candidate_baseline_interface": "ContractedCore* topology and realization",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1896,
+        "line_end": 1930,
+        "raw_context_sha256": "71b74c56fd60bad6361d84e73d7eb0048555800351423e6ea461fb24d94fbbe9"
+      }
+    },
+    {
+      "id": "I-V6-29",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 1957,
+      "line_end": 2056,
+      "raw_context_sha256": "aafed97e81c0294188c7efdf5198d49cf0daf27c26cdcf36fbbcfb9132eefe2d",
+      "exact_context_tex": "\n\\begin{samepage}\nWe now return to the arbitrary graph with $a=s+t\\ge1$.\nAll $T$ terminal vertices are retained, and we have already shown\nthat $T\\le D_B/2$. Contraction preserves the degree of every retained\nvertex: the two incidences of a doubled path at each endpoint are\nreplaced by the two incidences of its link. This also holds at a\nreturning link, whose two ports remain distinct. Each terminal has\ndegree four.\nThe retained graph has \\(q\\) vertices and total degree \\(D\\), with\n\\begin{equation}\\label{eq:retained-graph}\n q\\le |B|+D_B/2\\le8a,\\qquad\n D=D_B+4T\\le3D_B\\le36a,\\qquad q\\le p,\\quad D\\le4p.\n\\end{equation}\n\\end{samepage}\nThe bounds $q\\le p$ and $D\\le4p$ hold because only vertices were\nremoved, while all retained degrees were preserved.\nTemporarily label its \\(q\\) vertices and distinguish their half-edges.\nThe following data give a surjective encoding of its possible\nexpansions: every original graph has a code. A graph may have\nseveral codes, which is harmless for an upper bound.\n\n\\begin{enumerate}\n\\item Choose the number of retained vertices and their degrees.\nSince $1\\le q\\le p$, $q\\le8a$, and every degree is at most $4p$,\n\\[\n \\#\\{\\text{choices of }q\\}\\le p\\le L^a,\\qquad\n \\#\\{\\text{degree vectors for fixed }q\\}\\le(4p+1)^q\\le L^{8a}.\n\\]\nRetain only even degrees at least four and totals obeying the\nbounds on $D$ above. The degree vector determines $D$ and a list\nof $D$ distinct half-edges, grouped by vertex.\n\n\\item Pair the half-edges to specify the edges of the retained\nmultigraph. Pairing the first unpaired half-edge leaves $D-1$\nchoices, then $D-3$, and so on. Therefore\n\\[\n \\#\\{\\text{edge pairings}\\}=(D-1)!!\n =\\prod_{j=1}^{D/2}(2j-1)\\le D^{D/2}\\le L^{18a}.\n\\]\nThe last inequality uses $D\\le4p<L$ and $D/2\\le18a$.\nPairing two half-edges at the same vertex is allowed and produces a loop.\n\n\\item Designate disjoint pairs of half-edges at each vertex as ports.\nFor an upper bound, give each half-edge either no mate or one of\nthe $D$ half-edge names as a mate. This gives\n\\[\n \\#\\{\\text{port choices}\\}\\le(D+1)^D\\le L^{36a},\n\\]\nusing $D+1\\le L$ and $D\\le36a$. Retain only mutual pairings of\ndistinct half-edges at the same vertex, and require each port to\nbe edge-paired to one other whole port. Explicitly, after naming\nthe half-edges of the two ports, the link has the form\n\\[\n \\underbrace{\\{h_1,h_2\\},\\ \\{k_1,k_2\\}}_{\\text{two ports}},\n \\qquad\n \\underbrace{\\{h_1,k_1\\},\\ \\{h_2,k_2\\}}_{\\text{two edge pairs}}.\n\\]\nThe four half-edges remain distinct even if the ports are at the\nsame vertex. The ports identify the link even when other edges\nhave the same endpoints.\n\n\\item Choose the length of each link and expand its internal\nvertices in path order. A link uses four half-edges, so there are\nat most $D/4\\le9a$ links. A length counts removed vertices and is\nat most $p$, since the original graph has $v\\le p$ vertices. Hence\n\\[\n \\#\\{\\text{length assignments}\\}\\le(p+1)^{D/4}\\le L^{9a}.\n\\]\nKeep only expansions with the prescribed vertex and edge counts.\n\\end{enumerate}\nMultiplying the five upper bounds gives\n\\[\n \\underbrace{L^a}_{\\text{vertex count}}\\,\n \\underbrace{L^{8a}}_{\\text{degrees}}\\,\n \\underbrace{L^{18a}}_{\\text{edges}}\\,\n \\underbrace{L^{36a}}_{\\text{ports}}\\,\n \\underbrace{L^{9a}}_{\\text{lengths}}\n =L^{72a}\n\\]\nas a bound on the number of graph encodings.\n\nFor decoding, give the retained vertices the names $1,\\ldots,q$\nand number their incident half-edges in the order of the degree\nvector. The edge and port pairings above then specify every retained\nedge and every link, including returning links.\n\nTo make the expansion deterministic, order the links by their\nsmallest half-edge labels. On each link, start at the port with\nthe smaller label and insert the prescribed number of internal\nvertices in path order. Give the new vertices and half-edges fresh\nnames in this order. Thus the code fixes their names; no further\nlabeling choice is needed. Undesignated half-edges keep their original\nedge pairings, even when they share endpoints with a designated link.\n\nEvery original graph yields such data by its specified contractions.\nConversely, valid data reconstruct its graph with distinguished\nhalf-edges. Invalid and duplicate codes enlarge the count. Core\nlabels are auxiliary; no separately labeled set of original vertices\nis chosen.\n",
+      "active_context_sha256": "aafed97e81c0294188c7efdf5198d49cf0daf27c26cdcf36fbbcfb9132eefe2d",
+      "expected_statement": "Retained q≤8a,D≤36a,q≤p,D≤4p; degree/edge/port/length encoding ≤L^(72a); deterministic expansion surjects all original graphs",
+      "assumptions": "a≥1; 2p numbered occurrences; port-paired loops distinct from original loops",
+      "candidate_baseline_interface": "I20; ContractedCoreEncodingClosure",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 1956,
+        "line_end": 2055,
+        "raw_context_sha256": "aafed97e81c0294188c7efdf5198d49cf0daf27c26cdcf36fbbcfb9132eefe2d"
+      }
+    },
+    {
+      "id": "I-V6-30",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2058,
+      "line_end": 2134,
+      "raw_context_sha256": "219cc78706edba1d4fb190bbff025301b4a473c941d5dc69edf363128da56dee",
+      "exact_context_tex": "\\paragraph{Recovering the cyclic positions.}\nNow fix one expanded graph reconstructed by these data.\nIts edges do not yet specify the equality partition: different\ntraversals of the same graph can place its vertices at different\ncyclic positions. An Euler circuit, meaning a closed traversal\nusing every edge occurrence once, pairs arriving and departing\nhalf-edges at each vertex. These local transition pairs specify\nhow the traversal continues through a vertex; the earlier edge\npairing specified how it passes between vertices.\nFor degree \\(2m_u\\), pairing the first half-edge has $2m_u-1$\nchoices, the next unpaired half-edge has $2m_u-3$, and so on.\nThus the number of local transition pairings is\n\\[\n (2m_u-1)!!=3\\prod_{j=3}^{m_u}(2j-1)\n                                  \\le3(4p)^{m_u-2}.\n\\]\nHere $m_u\\ge2$ and each factor $2j-1$ is at most $4p$;\nwhen $m_u=2$, the product on the right is empty and equals one.\nMultiplying over the $v$ vertices gives\n\\[\n \\prod_u(2m_u-1)!!\n \\le3^v(4p)^{\\sum_u(m_u-2)}\n =3^v(4p)^{2s}\\le3^pL^{2s},\n\\]\nwhere $\\sum_u(m_u-2)=2p-2v=2s$ and $v\\le p$.\n\nChoose a starting directed edge in at most\n\\(4p\\) ways: there are $2p$ edge occurrences and two directions\nfor each, including the two choices of departure half-edge for a\nloop. To decode, write $h_j$ for the departing half-edge at step $j$\nand $\\bar h_j$ for the other half-edge of that edge occurrence.\nThe rule for continuing the traversal is\n\\[\n h_j\\ \\xrightarrow{\\ \\text{edge pairing}\\ }\\ \\bar h_j\n     \\ \\xrightarrow{\\ \\text{local pairing}\\ }\\ h_{j+1}.\n\\]\nBoth pairings are fixed, so the initial directed edge determines\nevery subsequent step. Local pairings can divide the edge occurrences\namong several circuits; retain only systems that traverse all $2p$\nedge occurrences in one circuit.\n\nFor such a system, let $u_j$ be the vertex at which $h_j$ departs.\nThe recovered equality partition is exactly\n\\[\n \\bigl\\{\\{j\\in[2p]:u_j=u\\}:u\\text{ is a vertex of the expanded graph}\\bigr\\}.\n\\]\nEvery original equality partition produces one of these systems:\nits cyclic positions specify the successive edge occurrences, and\neach visit pairs its arriving half-edge with its departing half-edge.\nThe edge at position 1 supplies the starting direction. Transferring\nthese pairs to an isomorphic decoded graph therefore recovers the\noriginal partition.\n\nRenaming the auxiliary vertices preserves every equality $u_j=u_k$,\nso it does not change this partition. Their names and their positions\nin the cyclic word are already fixed by the code and traversal; no\nadditional vertex permutation or placement factor is required.\nCombining the graph and traversal counts gives\n\\[\n L^{72a}\\,3^pL^{2s}\\,(4p)\n \\le4p\\,3^pL^{74a},\\qquad s\\le a.\n\\]\n\nFor \\(a=0\\), the underlying graph is a doubled cycle or a doubled\npath with a loop at each endpoint, as in the $B=\\varnothing$\ncase of the loop bound. Since $s=0$, there are $v=p\\ge2$ vertices,\nso the one-vertex case does not arise. With $p$ vertices fixed,\nthere are at most these two graphs. Each vertex has exactly three\nlocal transition pairings, giving\n\\[\n N_{p,0,0}\\le\n \\underbrace{2}_{\\text{graphs}}\\,\n \\underbrace{4p}_{\\text{starting directions}}\\,\n \\underbrace{3^p}_{\\text{local pairings}}\n =8p\\,3^p.\n\\]\nThis proves \\eqref{eq:equality-count}.\n",
+      "active_context_sha256": "219cc78706edba1d4fb190bbff025301b4a473c941d5dc69edf363128da56dee",
+      "expected_statement": "Euler local pairings≤3^p L^(2s); starting edge≤4p; decoding recovers exact numbered partition without extra vertex permutation; a=0 count≤8p3^p",
+      "assumptions": "Single Euler circuit only; loops have two directions; p≥2",
+      "candidate_baseline_interface": "I21",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2057,
+        "line_end": 2133,
+        "raw_context_sha256": "219cc78706edba1d4fb190bbff025301b4a473c941d5dc69edf363128da56dee"
+      }
+    },
+    {
+      "id": "I-V6-31",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2246,
+      "line_end": 2276,
+      "raw_context_sha256": "439264835df8ad8e18ce0948d1bdbe33e498c0c863ad193745e39c0d948d16ef",
+      "exact_context_tex": "Fix $\\pi\\in\\mathcal Q_{p,s,t}$ as in\nDefinition~\\ref{def:equality-class}, with vertex set $\\mathcal V=\\pi$.\nRecall that $v=|\\mathcal V|=p-s$, that $t$ counts vertices incident\nto odd-multiplicity nonloop edges, and that $\\ell$ counts loop\noccurrences. We continue to use $L=4p+1$.\nLet $u_j$ be the vertex containing position $j$, with $u_{2p+1}=u_1$.\nThe row labels lie in $K=(\\F_2)^m$, where $n=2^m$; an injective\nassignment $\\iota:\\mathcal V\\to K$ gives distinct labels to distinct\nvertices. Applying the moment formula \\eqref{eq:moment-cumulant}\nin Lemma~\\ref{lem:cumulant-identities} gives\n\\begin{equation}\\label{eq:entry-moment-expansion}\n \\E_{D_1,D_2}\\prod_{j=1}^{2p}R_{\\iota(u_j),\\iota(u_{j+1})}\n   =\\sum_{\\rho\\in\\mathcal P([2p])}\n      \\prod_{C\\in\\rho}\n        \\cum\\bigl(R_{\\iota(u_j),\\iota(u_{j+1})}:j\\in C\\bigr).\n\\end{equation}\nThe partition $\\pi$ groups vertex positions and fixes which row\nlabels coincide; $\\rho$ groups edge occurrences to form cumulants.\nIt does not identify the graph's vertices. Recall that\n$R=P-\\delta I_n$ has centered entries, including its diagonal\nentries. Hence singleton blocks of $\\rho$ vanish, including singleton\nloops.\n\n\\begin{samepage}\nA partition with no singleton blocks has\n\\[\n                         b=p-d,\\qquad 0\\le d\\le p-1\n\\]\nblocks. Here $d$ measures the loss of cumulant blocks from the\npartition into $p$ pairs, whereas $s$ measures the loss of vertex\nblocks in $\\pi$.\n",
+      "active_context_sha256": "439264835df8ad8e18ce0948d1bdbe33e498c0c863ad193745e39c0d948d16ef",
+      "expected_statement": "Entry moments expand by rho distinct from equality pi; singleton entry blocks including loops vanish; b=p−d with 0≤d≤p−1",
+      "assumptions": "Exact centered projection; fixed injective labels; p≥2",
+      "candidate_baseline_interface": "SignedTraceEntryCumulant",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2245,
+        "line_end": 2275,
+        "raw_context_sha256": "439264835df8ad8e18ce0948d1bdbe33e498c0c863ad193745e39c0d948d16ef"
+      }
+    },
+    {
+      "id": "I-V6-32",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2324,
+      "line_end": 2347,
+      "raw_context_sha256": "706c2e9f1a1f8cb5c864a67437914999863c6e3839f51a955fabfa34b14137fb",
+      "exact_context_tex": "\\begin{proof}\nFor adjacent nonparallel edges $\\{u,v\\}$ and $\\{u,w\\}$, the\nvertices $v,w$ are distinct. Their binary row is\n\\[\n (\\mathbf e_u+\\mathbf e_v)+(\\mathbf e_u+\\mathbf e_w)\n       =\\mathbf e_v+\\mathbf e_w.\n\\]\nIts XOR condition is $\\iota(v)+\\iota(w)=0$, or\n$\\iota(v)=\\iota(w)$, which contradicts injectivity. A loop\ncontributes zero, so pairing it with a nonloop edge $\\{v,w\\}$\ngives the same row and the same contradiction. In both cases\nLemma~\\ref{lem:cumulants} makes the pair cumulant zero.\n\nThe remaining pair types are parallel nonloop occurrences,\ndisjoint nonloop edges, and two loops. The first and third types\nhave zero binary row. For disjoint edges $\\{u,v\\}$ and\n$\\{w,z\\}$ the four endpoints are distinct, and the row is\n\\[\n                  \\mathbf e_u+\\mathbf e_v+\\mathbf e_w+\\mathbf e_z.\n\\]\nThus every nonzero pair row has weight four, meaning four nonzero\ncoordinates.\n\nMultiplying the row of a general block by the vertex labels gives\n",
+      "active_context_sha256": "706c2e9f1a1f8cb5c864a67437914999863c6e3839f51a955fabfa34b14137fb",
+      "expected_statement": "Forbidden pair XOR contradicts injectivity; surviving pair types are parallel, disjoint, two loops; nonzero pair rows have weight four",
+      "assumptions": "Two distinct edge occurrences; full labels injective",
+      "candidate_baseline_interface": "I23; PointwiseVanishing",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2323,
+        "line_end": 2346,
+        "raw_context_sha256": "706c2e9f1a1f8cb5c864a67437914999863c6e3839f51a955fabfa34b14137fb"
+      }
+    },
+    {
+      "id": "I-V6-33",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2349,
+      "line_end": 2360,
+      "raw_context_sha256": "f65202ea43fd628ac1dd1ea6dd3860ee3fab1af3d3c65a3988d70117ec9229af",
+      "exact_context_tex": "the $m$ binary coordinates of $K=(\\F_2)^m$, the matrix has rank\n$h$ and its homogeneous system in $v$ unknowns has $2^{v-h}$\nsolutions. The coordinates can be chosen independently, giving\n\\[\n                         (2^{v-h})^m=n^{v-h}.\n\\]\nImposing injectivity can only reduce this number.\n\nTo prove \\eqref{eq:odd-incidence}, let $M$ count edge occurrences\nin blocks of size at least three. Since there are $b=p-d$ blocks,\n\\[\n \\sum_{C\\in\\rho}(|C|-2)=2p-2b=2d.\n",
+      "active_context_sha256": "f65202ea43fd628ac1dd1ea6dd3860ee3fab1af3d3c65a3988d70117ec9229af",
+      "expected_statement": "Binary-coordinate kernels give exactly n^(v−h) unrestricted labelings; injective subset count bound",
+      "assumptions": "Actual constraint rank h≤v; m≥0",
+      "candidate_baseline_interface": "entryXorConstraintSolutionCount",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2348,
+        "line_end": 2359,
+        "raw_context_sha256": "f65202ea43fd628ac1dd1ea6dd3860ee3fab1af3d3c65a3988d70117ec9229af"
+      }
+    },
+    {
+      "id": "I-V6-34",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2362,
+      "line_end": 2400,
+      "raw_context_sha256": "48eeb9ff4ddaaf6074b66ff929c52e0b54004f38a17e0928230b8df26f43e398",
+      "exact_context_tex": "Pair blocks contribute zero to this sum. For $j\\ge3$,\n$j\\le3(j-2)$, so\n\\[\n M=\\sum_{\\substack{C\\in\\rho\\\\|C|\\ge3}}|C|\n   \\le3\\sum_{\\substack{C\\in\\rho\\\\|C|\\ge3}}(|C|-2)=6d.\n\\]\nAt most $2M\\le12d$ vertices touch these occurrences.\n\nNow consider an odd-incident vertex that touches no large-block\noccurrence. Choose an incident nonloop edge of odd multiplicity.\nAll occurrences of that edge belong to pair blocks. They cannot\nall be paired with parallel copies, because their number is odd.\nAt least one is paired with a different edge. The two forbidden\npair types have already been excluded, so that pair is disjoint.\nOur vertex therefore belongs to the support of a weight-four row.\n\nLet $U$ be the union of the supports of these disjoint-pair rows.\nChoose a basis from the rows themselves. It has at most $h$ rows,\nsince their span is contained in the full constraint row space.\nAny coordinate that is zero in every basis row is zero in every\nlinear combination. Hence all disjoint-pair rows are supported\non the union of the basis supports, and\n\\[\n                              |U|\\le4h.\n\\]\nEvery odd-incident vertex either touches a large block or belongs\nto $U$. This gives $t\\le12d+4h$.\n\\end{proof}\n\nThe variables introduced so far record distinct reductions in the\nnumber of free choices. Recall that $\\kappa=n\\theta$ is the mean\nsample size and $\\delta=r/n$. The following table summarizes the\nroles of the four parameters; the exact factorization appears in\n\\eqref{eq:dimension-factor}.\n\\begin{center}\n\\begin{tabular}{c|p{0.43\\textwidth}|p{0.36\\textwidth}}\nParameter & What it counts & Factor or constraint used below\\\\ \\hline\n$s=p-v$ & Loss of selector equality blocks from the $p$-pair case\n         & $\\kappa^{-s}$\\\\\n",
+      "active_context_sha256": "48eeb9ff4ddaaf6074b66ff929c52e0b54004f38a17e0928230b8df26f43e398",
+      "expected_statement": "Large occurrences≤6d/touched≤12d; odd vertices outside large blocks lie in support of disjoint pair rows; basis supports union≤4h",
+      "assumptions": "Forbidden pairs excluded first; actual row rank, all blocks≥2",
+      "candidate_baseline_interface": "I24",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2361,
+        "line_end": 2399,
+        "raw_context_sha256": "48eeb9ff4ddaaf6074b66ff929c52e0b54004f38a17e0928230b8df26f43e398"
+      }
+    },
+    {
+      "id": "I-V6-35",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2459,
+      "line_end": 2479,
+      "raw_context_sha256": "7d9fb901ac677d51b5f5eb925b85e6a780315288670af936a1f6b2d24f045d01",
+      "exact_context_tex": "\\paragraph{Large blocks.}\nAs in the preceding proof, at most $M\\le6d$ occurrences lie in\nblocks of size at least three. A subset of at most $6d$ positions\ncan be recorded as its increasing list padded with zeros to length\n$6d$, giving at most $(2p+1)^{6d}$ choices. A partition of the\nchosen positions can be encoded by assigning each position a block\nlabel from $[2p]$, giving at most $(2p)^{6d}$ choices. Thus there\nare at most\n\\[\n                 (2p+1)^{6d}(2p)^{6d}\\le L^{12d}\n\\]\nways to choose and partition the large-block occurrences. These codes\nmay overcount; we retain only blocks of size at least three with the\nrequired total excess. Their cumulant constants obey\n\\[\n \\prod_{\\substack{C\\in\\rho\\\\|C|\\ge3}}(2|C|)^{12|C|}\n       \\le(4p)^{12M}\\le L^{72d}.\n\\]\nThere are at most $p$ pair blocks, whose constants together are at\nmost $K_2^p$. When $d=0$ the large-block set is empty, and both\nlarge-block counting factors equal one.\n",
+      "active_context_sha256": "7d9fb901ac677d51b5f5eb925b85e6a780315288670af936a1f6b2d24f045d01",
+      "expected_statement": "Large-block selection/partition count≤L^(12d), weight≤L^(72d), pair weights≤K2^p including d=0",
+      "assumptions": "Numbered occurrences; excess 2d; exact c(rho)",
+      "candidate_baseline_interface": "I25 plus actual weighted aggregation",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2458,
+        "line_end": 2478,
+        "raw_context_sha256": "7d9fb901ac677d51b5f5eb925b85e6a780315288670af936a1f6b2d24f045d01"
+      }
+    },
+    {
+      "id": "I-V6-36",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2481,
+      "line_end": 2507,
+      "raw_context_sha256": "7c1782b820289dc401f20b6f7035d2b4eeba3d32fed8ed507ce77d9a70557a3c",
+      "exact_context_tex": "\\paragraph{Disjoint pairs.}\nLet $U$ again be the union of the supports of the disjoint-pair\nrows. The preceding proof gives $|U|\\le4h$. Listing these vertices\nin a fixed order and padding the list gives at most\n$(v+1)^{4h}\\le L^{4h}$ choices for $U$.\nEvery occurrence in a disjoint pair has both endpoints in $U$.\nEach such occurrence uses two incidences there, so the number\navailable is at most\n\\[\n \\frac12\\sum_{u\\in U}\\deg u\n =2|U|+\\frac12\\sum_{u\\in U}(\\deg u-4)\n \\le2|U|+2s\\le8h+2s.\n\\]\nHere all degree excesses are nonnegative, and their sum over the\nwhole graph is $4s$ by \\eqref{eq:degree-excess}.\nChoosing a subset of the available occurrences costs at most\n$2^{8h+2s}$. If the chosen subset has $2j$ occurrences, pairing it\ncosts $(2j-1)!!\\le(2p)^j\\le(2p)^{4h+s}$; the empty subset\nhas one pairing. Therefore\n\\[\n 2^{8h+2s}(2p)^{4h+s}\\le L^{8h+2s}.\n\\]\nThe last inequality uses $2\\sqrt{2p}\\le4p+1=L$.\nIncluding the choice of $U$ gives\n$L^{12h+2s}$. We discard pairings that are not disjoint, whose\nsupport is not the chosen $U$, or whose resulting full binary\nrank is not $h$.\n",
+      "active_context_sha256": "7c1782b820289dc401f20b6f7035d2b4eeba3d32fed8ed507ce77d9a70557a3c",
+      "expected_statement": "Disjoint support choices≤L^(4h), available occurrences≤8h+2s, subset/pair count≤L^(8h+2s)",
+      "assumptions": "Support U of pair rows; degree excess nonnegative",
+      "candidate_baseline_interface": "I26",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2480,
+        "line_end": 2506,
+        "raw_context_sha256": "7c1782b820289dc401f20b6f7035d2b4eeba3d32fed8ed507ce77d9a70557a3c"
+      }
+    },
+    {
+      "id": "I-V6-37",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2509,
+      "line_end": 2553,
+      "raw_context_sha256": "1805cf31559131552e2be6c32cff990045e8e3142733abe72eede0ba7fd9bd04",
+      "exact_context_tex": "\\paragraph{Loop pairs and parallel pairs.}\nOnce the large blocks and disjoint pairs have been chosen, every\nremaining loop must be paired with another loop. If their number\nis odd there is no such partition. Otherwise their pairing count\nis at most $(2p)^{\\ell/2}$, since their number is at most the\noriginal loop count $\\ell$. The loop bound\n$\\ell\\le4t+12s+2$ from Lemma~\\ref{lem:count} gives\n\\begin{equation}\\label{eq:loop-pair-count}\n                  (2p)^{\\ell/2}\\le L^{2t+6s+1}.\n\\end{equation}\n\nThe remaining nonloop occurrences can only pair with parallel\ncopies. For each unordered nonloop edge $e$, write $a_e$ for its\nremaining multiplicity. An odd $a_e$ gives no valid pairing.\nFor positive even $a_e$, the number of pairings is $(a_e-1)!!$.\nIt equals one for $a_e=2$ and three for $a_e=4$; for $a_e\\ge6$,\n\\[\n (a_e-1)!!=3\\cdot5\\cdot7\\cdots(a_e-1)\n       \\le3(4p)^{(a_e-4)/2}.\n\\]\nThus the uniform bound is $3(4p)^{(a_e-4)_+/2}$, where\n$(x)_+=\\max\\{x,0\\}$. There are at most $p$ positive groups,\nbecause each contains at least two of the $2p$ occurrences.\n\nWe use the original degree excess to control the exponents, even\nthough some occurrences have already been removed. At a vertex\n$u$, if no remaining group has multiplicity above four, the sum\nof $(a_e-4)_+$ over incident groups is zero. Otherwise their total\nmultiplicity is at most $\\deg u$, and subtracting four for each\nsuch group subtracts at least four. In either case,\n\\[\n \\sum_{e\\ni u}(a_e-4)_+\\le\\deg u-4.\n\\]\nEvery nonloop edge has two endpoints. Summing this inequality over\nvertices and using \\eqref{eq:degree-excess} gives\n\\[\n 2\\sum_e(a_e-4)_+\\le\\sum_u(\\deg u-4)=4s,\n \\qquad \\sum_e(a_e-4)_+\\le2s.\n\\]\nAll parallel-pair choices therefore cost at most\n\\[\n \\prod_{e:a_e>0}(a_e-1)!!\n       \\le3^p(4p)^{\\frac12\\sum_e(a_e-4)_+}\\le3^pL^s.\n\\]\nCombining the large-block count, cumulant constants, and the three\n",
+      "active_context_sha256": "1805cf31559131552e2be6c32cff990045e8e3142733abe72eede0ba7fd9bd04",
+      "expected_statement": "Loop pairing≤L^(2t+6s+1); parallel pairing≤3^p L^s using remaining multiplicities and original degree excess",
+      "assumptions": "Odd residual multiplicities give zero choices; empty groups product=1",
+      "candidate_baseline_interface": "I27; PairingParallelBound",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2508,
+        "line_end": 2552,
+        "raw_context_sha256": "1805cf31559131552e2be6c32cff990045e8e3142733abe72eede0ba7fd9bd04"
+      }
+    },
+    {
+      "id": "I-V6-38",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2555,
+      "line_end": 2563,
+      "raw_context_sha256": "c95806da969dcd8c64bd0f14589897f1c2024f50f48e326f21ae86ead6bb629b",
+      "exact_context_tex": "\\[\n L^{12d}\\,L^{72d}K_2^p\\,L^{12h+2s}\\,\n L^{2t+6s+1}\\,3^pL^s\n       =(3K_2)^pL^{84d+12h+9s+2t+1},\n\\]\nwhich proves \\eqref{eq:entry-partition-count}. The counts permit\nincompatible choices, but every partition in\n$\\mathcal R_{d,h}(\\pi)$ is covered. No common sign is assumed\nfor cumulant terms.\n",
+      "active_context_sha256": "c95806da969dcd8c64bd0f14589897f1c2024f50f48e326f21ae86ead6bb629b",
+      "expected_statement": "All exact admissible partitions covered by product of counts and exact c(rho) weighting",
+      "assumptions": "No sign coherence assumed; count may overcount but cannot omit partitions",
+      "candidate_baseline_interface": "I28",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2554,
+        "line_end": 2562,
+        "raw_context_sha256": "c95806da969dcd8c64bd0f14589897f1c2024f50f48e326f21ae86ead6bb629b"
+      }
+    },
+    {
+      "id": "I-V6-39",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2565,
+      "line_end": 2594,
+      "raw_context_sha256": "968446aa9a289094b8887a40cc7211c41a6e7b5d48561b52f35d1248b7a94693",
+      "exact_context_tex": "\\paragraph{Row labels and dimension factors.}\nFor a block of size $q\\ge2$, centering and multilinearity transfer\n\\eqref{eq:cumulant-bound} to the entries of $R$ as\n\\[\n \\left|\\cum(R_{i_1j_1},\\ldots,R_{i_qj_q})\\right|\n       \\le(2q)^{12q}r\\,n^{-q}.\n\\]\nThere are $b=p-d$ blocks and $2p$ occurrences in total. Their\ncumulant product is therefore bounded in absolute value by\n$c(\\rho)r^{p-d}n^{-2p}$, and vanishes unless every XOR condition\nholds. After the forbidden pair\ntypes have been removed, Lemma~\\ref{lem:binary-constraints} allows\nus to relax injectivity in this absolute upper bound and use at\nmost $n^{v-h}$ labels. The selector coefficient from\n\\eqref{eq:selector-moment} is at most $\\theta^v$.\nTheir combined dimension factor is exactly\n\\begin{equation}\\label{eq:dimension-factor}\n \\theta^v r^{p-d}n^{-2p}n^{v-h}\n            =(\\delta\\theta)^p\\kappa^{-s}r^{-d}n^{-h}.\n\\end{equation}\nTo see the substitutions, use $v=p-s$, $\\delta=r/n$, and\n$\\kappa=n\\theta$:\n\\[\n \\theta^{p-s}r^{p-d}n^{-p-s-h}\n       =\\left(\\frac{r\\theta}{n}\\right)^p\n          (n\\theta)^{-s}r^{-d}n^{-h}.\n\\]\nMultiplying \\eqref{eq:entry-partition-count} by this factor proves\n\\eqref{eq:fixed-equality-contribution}. The parameter constraint is\n\\eqref{eq:odd-incidence} in Lemma~\\ref{lem:binary-constraints}.\n",
+      "active_context_sha256": "968446aa9a289094b8887a40cc7211c41a6e7b5d48561b52f35d1248b7a94693",
+      "expected_statement": "Block cumulant bound scales as (2q)^(12q)r n^(−q), products as c(rho)r^(p−d)n^(−2p); XOR supports dimension identity",
+      "assumptions": "q≥2; r,n,theta>0; nonempty class ensures d<p,h≤p−s; empty class handled separately",
+      "candidate_baseline_interface": "I29; centeredProjection_partitionCumulantProduct_bound",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2564,
+        "line_end": 2593,
+        "raw_context_sha256": "968446aa9a289094b8887a40cc7211c41a6e7b5d48561b52f35d1248b7a94693"
+      }
+    },
+    {
+      "id": "I-V6-40",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2612,
+      "line_end": 2658,
+      "raw_context_sha256": "f100cc79d6b9d9890d0bc7c75dd7c835069f2e26762a63dacf8172f10cd0a33d",
+      "exact_context_tex": "\\begin{proof}[Completion of the proof of Proposition~\\ref{prop:trace}]\nRecall that $A=RW$, $\\delta=r/n$, and\n\\[\n L=4p+1,\\qquad \\kappa=n\\theta,\\qquad\n K_2=4^{24},\\qquad K_0=576K_2.\n\\]\nHere $s=p-v$ and $d=p-b$ measure the losses of vertex blocks\nand cumulant blocks, respectively; $h$ is the binary constraint\nrank, and $t$ counts the odd-incident vertices.\n\nFor each $\\pi\\in\\mathcal Q_{p,s,t}$, apply\nProposition~\\ref{prop:entry-contribution}, whose bound\n\\eqref{eq:fixed-equality-contribution} combines\n\\eqref{eq:entry-partition-count} with \\eqref{eq:dimension-factor}.\nMultiply this by the equality-partition count \\eqref{eq:equality-count}\nfrom Lemma~\\ref{lem:count}. The powers of $L$ and the remaining\ncombinatorial factors combine as follows:\n\\[\n \\begin{aligned}\n 74(s+t)+(84d+12h+9s+2t+1)\n       &=83s+76t+84d+12h+1,\\\\\n 8p\\,3^p(3K_2)^p&=8p(9K_2)^p.\n \\end{aligned}\n\\]\nTaking the last factor $L$ outside the sum, the finite expansion\nand the triangle inequalities in Proposition~\\ref{prop:entry-contribution}\nbound \\(|\\E\\tr A^{2p}|\\) by\n\\begin{equation}\\label{eq:trace-sum}\n 8pL(9K_2)^p(\\delta\\theta)^p\n  \\sum_{s,t,d,h}L^{83s+76t+84d+12h}\\kappa^{-s}r^{-d}n^{-h},\n\\end{equation}\nwhere the sum runs over the feasible equality-partition parameters\n$s,t$ and cumulant-partition parameters $d,h$. Since $v=p-s$\nand $b=p-d$ lie between one and $p$, the block losses lie between\nzero and $p-1$. Also, $t\\le v$, and the binary matrix has $b$ rows\nand $v$ columns, so $h\\le\\min\\{v,b\\}$. Together with\nLemma~\\ref{lem:binary-constraints}, these observations give\n\\[\n \\begin{gathered}\n  0\\le s,d\\le p-1,\\qquad 0\\le t\\le p-s,\\\\\n  0\\le h\\le\\min\\{p-s,p-d\\},\\qquad t\\le12d+4h.\n \\end{gathered}\n\\]\n\nFor fixed $s,d,h$, we may enlarge the feasible $t$-range to all\nintegers from zero to $T=12d+4h$, because every term in the upper\nbound is nonnegative. To sum these powers, factor out the largest\n",
+      "active_context_sha256": "f100cc79d6b9d9890d0bc7c75dd7c835069f2e26762a63dacf8172f10cd0a33d",
+      "expected_statement": "Triangle inequalities and equality count give finite trace majorization with full feasible parameter ranges",
+      "assumptions": "s,d≤p−1,h≤min(v,b),t≤v and t≤12d+4h; absolute expectation outside",
+      "candidate_baseline_interface": "SignedTraceExpansion; signedTrace_master_geometric_bound",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2611,
+        "line_end": 2657,
+        "raw_context_sha256": "f100cc79d6b9d9890d0bc7c75dd7c835069f2e26762a63dacf8172f10cd0a33d"
+      }
+    },
+    {
+      "id": "I-V6-41",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2660,
+      "line_end": 2710,
+      "raw_context_sha256": "2828c76bde3c5aa951763cfccf1a0f08073eeb20c49835bba197234e2895cc2b",
+      "exact_context_tex": "\\[\n \\sum_{t=0}^{T}L^{76t}\n   =L^{76T}\\sum_{j=0}^{T}L^{-76j}\n   \\le\\frac{L^{76T}}{1-L^{-76}}\n   \\le2L^{76T}.\n\\]\nSince $76T=912d+304h$, this gives\n\\[\n \\sum_{t=0}^{12d+4h}L^{76t}\\le2L^{912d+304h}.\n\\]\nThus the factor $8pL$ in \\eqref{eq:trace-sum} becomes $16pL$,\nand the remaining powers of $L$ have exponents\n$83s+(84+912)d+(12+304)h=83s+996d+316h$.\n\nThe hypotheses give $\\kappa\\ge r$, and $n\\ge r$ because the\nframe has $r$ orthonormal columns in $\\R^n$. Since $s,d,h$ are\nnonnegative and each of $83,996,316$ is at most $1000$,\n\\[\n \\frac{L^{83s+996d+316h}}{\\kappa^s r^d n^h}\n   \\le\\frac{L^{83s+996d+316h}}{r^{s+d+h}}\n   \\le\\left(\\frac{L^{1000}}r\\right)^{s+d+h}.\n\\]\nWe can now extend all three parameter ranges to nonnegative\nintegers, again only increasing the upper bound. Consequently\n\\eqref{eq:trace-sum} is at most\n\\[\n 16pL(9K_2)^p(\\delta\\theta)^p\n          \\sum_{s,d,h\\ge0}\\left(\\frac{L^{1000}}r\\right)^{s+d+h}.\n\\]\nUnder \\eqref{eq:trace-hypotheses}, $r\\ge2L^{1000}$, so the common\nratio is at most $1/2$. The enlarged sum factors into three\nconvergent geometric series:\n\\[\n \\sum_{s,d,h\\ge0}\\left(\\frac{L^{1000}}r\\right)^{s+d+h}\n   =\\left(\\sum_{j\\ge0}\\left(\\frac{L^{1000}}r\\right)^j\\right)^3\n   =\\left(1-\\frac{L^{1000}}r\\right)^{-3}\\le8.\n\\]\nFinally\n\\[\n 128pL\\le640p^2\\le64^p\\qquad(p\\ge2);\n\\]\nthe first inequality uses $L=4p+1\\le5p$. The last holds at $p=2$,\nwhere $640p^2=2560\\le4096=64^p$; when $p$ increases by one,\nthe quantity $640p^2$ grows by a factor $((p+1)/p)^2\\le9/4<64$.\nTherefore\n\\[\n \\bigl|\\E\\tr A^{2p}\\bigr|\n    \\le128pL(9K_2)^p(\\delta\\theta)^p\n    \\le(64\\cdot9K_2)^p(\\delta\\theta)^p\n    =K_0^p(\\delta\\theta)^p,\n\\]\n",
+      "active_context_sha256": "2828c76bde3c5aa951763cfccf1a0f08073eeb20c49835bba197234e2895cc2b",
+      "expected_statement": "Geometric t sum≤2L^(912d+304h), triple sum≤8,128pL≤64^p give K0=576K2",
+      "assumptions": "p≥2,L=4p+1,r≥2L^1000,kappa≥r,n≥r",
+      "candidate_baseline_interface": "I30; TraceGeometric",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2659,
+        "line_end": 2709,
+        "raw_context_sha256": "2828c76bde3c5aa951763cfccf1a0f08073eeb20c49835bba197234e2895cc2b"
+      }
+    },
+    {
+      "id": "I-V6-42",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2771,
+      "line_end": 2790,
+      "raw_context_sha256": "725d0b2464049c2397bb15dc14a8337673562f2b02922fb0619c284c3b671560",
+      "exact_context_tex": "Bernoulli and fixed-size uniform samples described by H\\'ajek\n\\cite[Section~2, pp.~362--363]{hajek_sampling}.\nTwo thresholds give the upper and lower samples needed for the\nmatrix comparison.\nTake independent uniform \\(U_i\\) on \\([0,1]\\), independent of \\(X\\).\nLet \\(J\\) index the \\(k\\) smallest values, and put\n\\(B_\\pm=\\{i:U_i\\le\\theta_\\pm\\}\\), \\(N_\\pm=|B_\\pm|\\).\nThere are almost surely no ties. Exchangeability makes every\n$k$-element set equally likely to be $J$, and $J$ is independent\nof $X$ because it depends only on the $U_i$. For each threshold,\nthe indicators are independent Bernoulli variables with the required\nmean $\\theta_\\pm$.\n\nOn $N_-\\le k\\le N_+$, every value below the lower threshold is\namong the first $k$, and all first $k$ values are below the upper\nthreshold. Hence\n\\[\n B_-\\subseteq J\\subseteq B_+,\n \\qquad E_{B_-}\\preceq E_J\\preceq E_{B_+}.\n\\]\n",
+      "active_context_sha256": "725d0b2464049c2397bb15dc14a8337673562f2b02922fb0619c284c3b671560",
+      "expected_statement": "Independent continuous uniforms give uniform k-smallest subset, correct Bernoulli marginals and count-bracketing inclusions",
+      "assumptions": "X arbitrary independent random frame; ties null; fixed k",
+      "candidate_baseline_interface": "WRITTEN_CONTINUOUS_COUPLING; B finite alternative",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2770,
+        "line_end": 2789,
+        "raw_context_sha256": "725d0b2464049c2397bb15dc14a8337673562f2b02922fb0619c284c3b671560"
+      }
+    },
+    {
+      "id": "I-V6-43",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2791,
+      "line_end": 2812,
+      "raw_context_sha256": "8c75347e497276a52333d118472bef56806b65180d360a419321ff0b8f235323",
+      "exact_context_tex": "Multiplying on the left and right by $X^T$ and $X$ preserves the\norder. Since $(1\\pm\\alpha)\\theta_\\pm^{-1}=n/k$, this gives\n\\[\n (1-\\alpha)\\theta_-^{-1}X^TE_{B_-}X\n \\preceq \\frac nkX^TE_JX\n \\preceq (1+\\alpha)\\theta_+^{-1}X^TE_{B_+}X.\n\\]\nOn the two Gram success events in \\eqref{eq:sampling-hypotheses},\neach normalized Bernoulli Gram lies between\n$(1-\\alpha)I_r$ and $(1+\\alpha)I_r$. The sandwich therefore puts\nthe spectrum of $(n/k)X^TE_JX$ between\n\\((1-\\alpha)^2\\) and \\((1+\\alpha)^2\\). These endpoints are within\n$1\\pm\\varepsilon$, because $\\alpha=\\varepsilon/4$ and\n$0<\\varepsilon<1$ give\n\\[\n (1-\\alpha)^2\\ge1-2\\alpha\\ge1-\\varepsilon,\n \\qquad\n (1+\\alpha)^2=1+\\frac\\varepsilon2+\\frac{\\varepsilon^2}{16}\n                   \\le1+\\frac{9\\varepsilon}{16}\\le1+\\varepsilon.\n\\]\nIt remains to bound the probability that the two sample counts\nfail to bracket $k$.\n",
+      "active_context_sha256": "8c75347e497276a52333d118472bef56806b65180d360a419321ff0b8f235323",
+      "expected_statement": "Loewner sandwich plus marginal Gram successes imply fixed Gram eigenvalues between (1±epsilon/4)^2⊂[1−epsilon,1+epsilon]",
+      "assumptions": "Count bracket; XᵀX=I;0<epsilon<1",
+      "candidate_baseline_interface": "I36; SamplingArithmetic",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2790,
+        "line_end": 2811,
+        "raw_context_sha256": "8c75347e497276a52333d118472bef56806b65180d360a419321ff0b8f235323"
+      }
+    },
+    {
+      "id": "I-V6-44",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2814,
+      "line_end": 2851,
+      "raw_context_sha256": "4db038571c4a31f74c78ae30608e3b66d65e4a337e1f086e019c893cc41f1b35",
+      "exact_context_tex": "For a binomial \\(N\\) of positive mean \\(\\mu\\) and $a>0$, we use\n\\begin{equation}\\label{eq:binomial-tails}\n \\Prob(N-\\mu\\ge a)\\le e^{-a^2/(2\\mu+2a/3)},\\qquad\n \\Prob(N-\\mu\\le-a)\\le e^{-a^2/(2\\mu)}.\n\\end{equation}\nHere is the exponential-moment calculation. If\n$N\\sim\\operatorname{Bin}(n,\\beta)$, so $\\mu=n\\beta$, independence\nand $1+u\\le e^u$ give\n\\[\n \\E e^{t(N-\\mu)}\n   =e^{-t\\mu}(1-\\beta+\\beta e^t)^n\n   \\le\\exp\\bigl(\\mu(e^t-1-t)\\bigr).\n\\]\nFor $0<t<3$, the factorial bound $j!\\ge2\\cdot3^{j-2}$,\n$j\\ge2$, gives the termwise estimate\n\\[\n e^t-1-t=\\sum_{j\\ge2}\\frac{t^j}{j!}\n       \\le\\frac{t^2}{2}\\sum_{j\\ge0}(t/3)^j\n       =\\frac{t^2}{2(1-t/3)}.\n\\]\nMarkov's inequality consequently yields\n\\[\n \\Prob(N-\\mu\\ge a)\n   \\le\\exp\\left(-ta+\\frac{\\mu t^2}{2(1-t/3)}\\right).\n\\]\nChoose $t=a/(\\mu+a/3)$, which lies in $(0,3)$. Substitution makes\nthe exponent $-a^2/(2\\mu+2a/3)$, proving the upper-tail bound.\nFor the lower tail, apply the same moment bound with $-t$ and use\n\\[\n e^{-t}-1+t=\\int_0^t(1-e^{-u})\\,du\n          \\le\\int_0^t u\\,du=\\frac{t^2}{2}\\qquad(t\\ge0).\n\\]\nThus\n\\[\n \\Prob(N-\\mu\\le-a)\\le\\exp(-ta+\\mu t^2/2).\n\\]\nTaking $t=a/\\mu$ gives the lower-tail bound in\n\\eqref{eq:binomial-tails}.\n",
+      "active_context_sha256": "4db038571c4a31f74c78ae30608e3b66d65e4a337e1f086e019c893cc41f1b35",
+      "expected_statement": "Two binomial tail bounds derived by exponential Markov and explicit mgf/factorial estimates",
+      "assumptions": "Positive mean, a>0; upper optimization t<3; lower t=a/mu",
+      "candidate_baseline_interface": "I37; BinomialTail",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2813,
+        "line_end": 2850,
+        "raw_context_sha256": "4db038571c4a31f74c78ae30608e3b66d65e4a337e1f086e019c893cc41f1b35"
+      }
+    },
+    {
+      "id": "I-V6-45",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2853,
+      "line_end": 2874,
+      "raw_context_sha256": "a826bc1a77e9a339de86e5a68b5bcfb031863156e145bcb2c5fb04182fe9465f",
+      "exact_context_tex": "For $N_-$, use $\\mu=(1-\\alpha)k$ and $a=\\alpha k$; for\n$N_+$, use $\\mu=(1+\\alpha)k$ and the same $a$. The two bounds give\n\\[\n \\begin{aligned}\n \\Prob(N_->k)\n   &\\le\\exp\\left(-\\frac{\\alpha^2k}{2(1-\\alpha)+2\\alpha/3}\\right)\n      \\le e^{-\\alpha^2k/2},\\\\\n \\Prob(N_+<k)\n   &\\le\\exp\\left(-\\frac{\\alpha^2k}{2(1+\\alpha)}\\right)\n      \\le e^{-\\alpha^2k/3},\n \\end{aligned}\n\\]\nsince $\\alpha<1/4$. The count failures therefore sum to at most\n$2e^{-\\alpha^2k/3}$. Union bounding these failures and the two\nGram failures gives\n\\[\n \\Prob\\left\\{\\norm{\\frac nkX^TE_JX-I_r}>\\varepsilon\\right\\}\n       \\le2\\gamma+2e^{-\\alpha^2k/3}\n       =2\\gamma+2e^{-\\varepsilon^2k/48},\n\\]\nwhich is \\eqref{eq:sampling-bound}. This union bound uses only the\ntwo marginal Gram guarantees, as required by the statement.\n",
+      "active_context_sha256": "a826bc1a77e9a339de86e5a68b5bcfb031863156e145bcb2c5fb04182fe9465f",
+      "expected_statement": "Count tail union bound plus two marginal Gram failures gives 2gamma+2exp(−epsilon²k/48)",
+      "assumptions": "No independence between the two Gram events needed; arbitrary X law",
+      "candidate_baseline_interface": "I35-I37 plus general averaging bridge",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2852,
+        "line_end": 2873,
+        "raw_context_sha256": "a826bc1a77e9a339de86e5a68b5bcfb031863156e145bcb2c5fb04182fe9465f"
+      }
+    },
+    {
+      "id": "I-V6-46",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2900,
+      "line_end": 2942,
+      "raw_context_sha256": "f9a100a5700ee88c9894fdc876ef8604a2e567906e8b7c4a283efdd41a85964d",
+      "exact_context_tex": "The case \\(n=1\\), and every case \\(k=n\\), is exact.\nFor \\(n>1\\), let \\(x_i^T\\) be the rows of \\(X\\), and write\n\\(G=(n/k)X^TS_JS_J^TX\\). We first average over $J$ with $X$\nfixed, then bound the fourth moments of the rows by averaging over\nthe sign diagonals.\n\nA uniform $k$-element sample has inclusion probabilities\n\\[\n \\Prob(i\\in J)=\\frac kn,\\qquad\n \\Prob(i,j\\in J)=\\frac{k(k-1)}{n(n-1)}\\quad(i\\ne j).\n\\]\nSince $G=(n/k)\\sum_{i\\in J}x_ix_i^T$ and\n$\\sum_i x_ix_i^T=X^TX=I_r$, the first identity gives\n$\\E[G\\mid X]=I_r$. Also,\n\\[\n \\sum_{i\\ne j}(x_ix_i^T)(x_jx_j^T)\n       =I_r-\\sum_i\\|x_i\\|^2x_ix_i^T.\n\\]\nThis follows by expanding $(\\sum_i x_ix_i^T)^2$ and removing the\nterms with $i=j$. Taking traces, the diagonal terms sum to\n$\\sum_i\\|x_i\\|^4$, while the off-diagonal terms sum to\n$r-\\sum_i\\|x_i\\|^4$. Applying the two inclusion probabilities to\n$\\tr G^2$ therefore yields\n\\[\n \\begin{aligned}\n \\E[\\|G-I_r\\|_F^2\\mid X]\n   &=\\E[\\tr G^2\\mid X]-r\\\\\n   &=\\left(\\frac nk\\right)^2\n     \\left[\\frac kn\\sum_i\\|x_i\\|^4\n       +\\frac{k(k-1)}{n(n-1)}\n          \\left(r-\\sum_i\\|x_i\\|^4\\right)\\right]-r.\n \\end{aligned}\n\\]\nThe first equality uses symmetry of $G$ and $\\E[G\\mid X]=I_r$.\nCollecting the row-moment and constant terms gives\n\\begin{equation}\\label{eq:conditional-sampling-moment}\n \\E\\!\\left[\\|G-I_r\\|_F^2\\mid X\\right]\n  =\\frac{n-k}{k(n-1)}\n                \\left(n\\sum_i\\|x_i\\|^4-r\\right).\n\\end{equation}\n\nCondition on $D_1$, which fixes $U=HD_1V$, with rows $u_j^T$.\nWe have $U^TU=I_r$ and $X=HD_2U$. Recalling\n",
+      "active_context_sha256": "f9a100a5700ee88c9894fdc876ef8604a2e567906e8b7c4a283efdd41a85964d",
+      "expected_statement": "Fixed-size inclusion probabilities, conditional mean I and exact finite-population Frobenius second moment",
+      "assumptions": "n>1,1≤k≤n; X fixed orthonormal; n=1/full sampling treated exactly",
+      "candidate_baseline_interface": "I38",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2899,
+        "line_end": 2941,
+        "raw_context_sha256": "f9a100a5700ee88c9894fdc876ef8604a2e567906e8b7c4a283efdd41a85964d"
+      }
+    },
+    {
+      "id": "I-V6-47",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2944,
+      "line_end": 2987,
+      "raw_context_sha256": "a23576e3c0fe39069ca25d684fb1f2bc7628eb884cddaba94c4fefc9c07f6748",
+      "exact_context_tex": "\\[\n \\sqrt n\\,x_i=\\sum_j(\\sqrt n H_{ij})\\xi_{2,j}u_j.\n\\]\nFor fixed $i$, the factors $\\sqrt n H_{ij}$ are deterministic\nsigns, so multiplying by them preserves the independent Rademacher\nlaw. Thus each $\\sqrt n\\,x_i$ has the law of $\\sum_j\\xi_j u_j$,\nwhere the $\\xi_j$ are independent uniform signs.\n\nTo compute its fourth moment, expand\n\\[\n \\left\\|\\sum_j\\xi_j u_j\\right\\|^4\n   =\\sum_{a,b,c,d}\\xi_a\\xi_b\\xi_c\\xi_d\n                    \\langle u_a,u_b\\rangle\\langle u_c,u_d\\rangle.\n\\]\nA sign product has zero expectation unless each index occurs an\neven number of times. The three pairings account for all such\npatterns, but count the all-equal pattern three times. Subtracting\nit twice gives the exact identity\n\\[\n \\E[\\xi_a\\xi_b\\xi_c\\xi_d]\n   =\\one_{\\{a=b\\}}\\one_{\\{c=d\\}}\n     +\\one_{\\{a=c\\}}\\one_{\\{b=d\\}}\n     +\\one_{\\{a=d\\}}\\one_{\\{b=c\\}}\n     -2\\one_{\\{a=b=c=d\\}}.\n\\]\nThe first pairing contributes $(\\sum_j\\|u_j\\|^2)^2=r^2$.\nEach of the other two contributes\n\\[\n \\sum_{a,b}\\langle u_a,u_b\\rangle^2\n    =\\tr\\bigl((U^TU)^2\\bigr)=r.\n\\]\nThe all-equal term contributes $\\sum_j\\|u_j\\|^4$. Consequently\n\\[\n \\E_{\\xi}\\left\\|\\sum_j\\xi_j u_j\\right\\|^4\n             =r^2+2r-2\\sum_j\\|u_j\\|^4\\le r^2+2r.\n\\]\nEach row has conditional fourth moment at most $(r^2+2r)/n^2$.\nThus the row-moment\nterm in \\eqref{eq:conditional-sampling-moment} satisfies\n\\[\n \\E_{D_2}\\!\\left[n\\sum_i\\|x_i\\|^4\\,\\middle|\\,D_1\\right]\n       \\le r^2+2r.\n\\]\nAverage \\eqref{eq:conditional-sampling-moment} over $D_2$ using\n",
+      "active_context_sha256": "a23576e3c0fe39069ca25d684fb1f2bc7628eb884cddaba94c4fefc9c07f6748",
+      "expected_statement": "Conditional row Rademacher law and exact vector fourth moment r²+2r−2sum rownorm⁴; row average bound",
+      "assumptions": "Condition on D1; UᵀU=I; independent uniform signs",
+      "candidate_baseline_interface": "I39",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2943,
+        "line_end": 2986,
+        "raw_context_sha256": "a23576e3c0fe39069ca25d684fb1f2bc7628eb884cddaba94c4fefc9c07f6748"
+      }
+    },
+    {
+      "id": "I-V6-48",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 2989,
+      "line_end": 3003,
+      "raw_context_sha256": "fe71fbe91ff48acf3ac58b3e6faa57b5faef27ff26cf6249b64f9de868b86a74",
+      "exact_context_tex": "\\[\n \\E\\|G-I_r\\|_F^2\n    \\le\\frac{n-k}{k(n-1)}(r^2+2r-r)\n    \\le\\frac{r(r+1)}k,\n\\]\nwhich proves \\eqref{eq:small-rank-moment}.\n\nFinally, norm domination and Markov's inequality give\n\\[\n \\Prob\\{\\norm{G-I_r}>\\varepsilon\\}\n    \\le\\frac{\\E\\|G-I_r\\|_F^2}{\\varepsilon^2}\n    \\le\\frac{r(r+1)}{k\\varepsilon^2}.\n\\]\nAt the stated nonfull width this is at most\n\\((r+1)/(200r)\\le0.01\\); full width is exact.\n",
+      "active_context_sha256": "fe71fbe91ff48acf3ac58b3e6faa57b5faef27ff26cf6249b64f9de868b86a74",
+      "expected_statement": "Average finite-population identity, operator norm domination and Markov imply small-rank width success",
+      "assumptions": "epsilon>0; r≥1; full width exact",
+      "candidate_baseline_interface": "I40; small_rank_second_moment",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 2988,
+        "line_end": 3002,
+        "raw_context_sha256": "fe71fbe91ff48acf3ac58b3e6faa57b5faef27ff26cf6249b64f9de868b86a74"
+      }
+    },
+    {
+      "id": "I-V6-49",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 3023,
+      "line_end": 3053,
+      "raw_context_sha256": "3893365ab43bf4428976c896b5771ae83f01c7b396757732c09b2bcdd2fbbbd4",
+      "exact_context_tex": "Suppose first that $r<R_0$. Choose the width in\nLemma~\\ref{lem:small}. Its failure probability is at most $0.01$,\nand $r^2\\le R_0r$ gives\n\\[\n k\\le\\min\\{n,\\lceil200R_0r/\\varepsilon^2\\rceil\\}.\n\\]\nThis is within the asserted width bound because $C\\ge200R_0$.\n\nNow suppose $r\\ge R_0$. We first verify that the\ninteger \\(p=\\lceil\\log_2(3000r)\\rceil\\) satisfies the rank condition\nof Lemma~\\ref{cor:bernoulli}. Set $x=\\log_2r\\ge20000$.\nSince $3000<2^{12}$ and taking the ceiling increases a number by\nless than one, $p\\le x+13$, so $4p+1\\le4x+53$.\nThe desired comparison follows if the function\n\\[\n f(x)=x-1-1000\\log_2(4x+53)\n\\]\nis positive. At $x=20000$, the inequality $80053<2^{17}$ gives\n\\[\n f(20000)>20000-1-1000\\cdot17=2999>0.\n\\]\nFor all $x\\ge20000$ it is increasing:\n\\[\n f'(x)=1-\\frac{4000}{(4x+53)\\log2}>0,\n\\]\nbecause $\\log2>1/2$ makes the denominator greater than\n$80053/2>4000$. Exponentiating the inequality $f(x)>0$ now gives\n\\[\n r=2^x>2(4x+53)^{1000}\\ge2(4p+1)^{1000}.\n\\]\nThus the rank condition holds throughout this regime.\n",
+      "active_context_sha256": "3893365ab43bf4428976c896b5771ae83f01c7b396757732c09b2bcdd2fbbbd4",
+      "expected_statement": "Threshold R0=2^20000 ensures logarithmic p rank condition using monotonic f",
+      "assumptions": "r≥R0; p=ceil(log₂(3000r)); exact real inequalities",
+      "candidate_baseline_interface": "I41",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 3022,
+        "line_end": 3052,
+        "raw_context_sha256": "3893365ab43bf4428976c896b5771ae83f01c7b396757732c09b2bcdd2fbbbd4"
+      }
+    },
+    {
+      "id": "I-V6-50",
+      "file": "research/problem_5_6/paper/v6/main.tex",
+      "line_start": 3055,
+      "line_end": 3110,
+      "raw_context_sha256": "6cf65048efbfca6da31c9b25ae197fe667f273b1660296e2e0a876f37f50fb8a",
+      "exact_context_tex": "Put\n\\begin{equation}\\label{eq:large-rank-width}\n                    k_0=\\left\\lceil\n                            \\frac{2048K_0r}{\\varepsilon^2}\n                          \\right\\rceil.\n\\end{equation}\nThis width provides the Bernoulli sample sizes needed below. The\ncomparison of $n$ with $4k_0$ determines whether there is room for\nthe two sampling densities in Lemma~\\ref{lem:sampling}.\nIf \\(n\\le4k_0\\), choose \\(k=n\\). Its Gram is exact, and\n\\begin{equation}\\label{eq:full-width-bound}\n k=n\\le4k_0\\le(8192K_0+4)r/\\varepsilon^2\n                         \\le8196K_0r/\\varepsilon^2.\n\\end{equation}\nIndeed, $\\lceil a\\rceil\\le a+1$ gives\n$4k_0\\le8192K_0r/\\varepsilon^2+4$, after which\n$r/\\varepsilon^2\\ge1$ and $K_0\\ge1$ give the two displayed bounds.\nThis case satisfies the theorem since $C\\ge8196K_0$.\n\nIt remains to consider $n>4k_0$. Choose $k=k_0$, and take\n\\(\\theta_\\pm=(1\\pm\\varepsilon/4)k_0/n\\).\nBoth densities are positive, and $k_0/n<1/4$ gives\n$\\theta_\\pm\\le5/16<1/2$. Their effective widths satisfy\n\\begin{equation}\\label{eq:bernoulli-widths}\n n\\theta_\\pm\\ge\\frac34 k_0\n \\ge\\frac{1536K_0r}{\\varepsilon^2}\n \\ge\\frac{64K_0r}{(\\varepsilon/4)^2}.\n\\end{equation}\nThe last threshold is $1024K_0r/\\varepsilon^2$. Thus the moment\norder, rank condition, density range, and effective-width condition\nof Lemma~\\ref{cor:bernoulli} all hold with $\\eta=\\varepsilon/4$.\nBoth Bernoulli failure probabilities are at most $1/1000$.\nLemma~\\ref{lem:sampling} therefore applies with $\\gamma=1/1000$\nand bounds the fixed-size failure by\n\\begin{equation}\\label{eq:final-failure}\n             \\frac2{1000}+2e^{-\\varepsilon^2k_0/48}<0.01.\n\\end{equation}\nIndeed \\(\\varepsilon^2k_0/48\\ge2048K_0r/48>42\\), and\n\\(e^{42}\\ge1+42+42^2/2=925>250\\), which suffices for \\eqref{eq:final-failure}\nbecause $2/1000+2/250=0.01$. Here $k_0<n$ and\n$k_0\\le\\lceil Cr/\\varepsilon^2\\rceil$, since $C\\ge2048K_0$.\n\nAll three choices of $k$ are deterministic functions of\n$n,r,\\varepsilon$, independent of $V$. They satisfy $k\\le n$\nand the upper width bound with the single constant $C$ in\n\\eqref{eq:universal-constants}. They also satisfy $k\\ge r$:\nthis is immediate for $k=n$, while each nonfull choice rounds up\na quantity at least $r$. Hence in every case\n\\[\n r\\le k\\le\\min\\{n,\\lceil Cr/\\varepsilon^2\\rceil\\}.\n\\]\nFor this same choice of $k$, the failure probability is at most\n$0.01$ for every deterministic orthonormal frame $V$. Taking the\nsupremum over these fixed frames preserves the bound. Finally,\n\\eqref{eq:sampled-gram} identifies the Gram error with that in\n\\eqref{eq:main-bound}, completing the proof.\n",
+      "active_context_sha256": "6cf65048efbfca6da31c9b25ae197fe667f273b1660296e2e0a876f37f50fb8a",
+      "expected_statement": "Three deterministic width branches, both Bernoulli densities and effective widths, final probability and universal width arithmetic",
+      "assumptions": "C=200R0+8196K0; all n=2^m,1≤r≤n,0<epsilon<1; same k for every fixed V",
+      "candidate_baseline_interface": "I42; main_universal_ose",
+      "scope_review": "APPROVED_AS_SOURCE_OBLIGATION",
+      "kernel_coverage": "NOT_ASSERTED",
+      "parent_source_context": {
+        "line_start": 3054,
+        "line_end": 3109,
+        "raw_context_sha256": "6cf65048efbfca6da31c9b25ae197fe667f273b1660296e2e0a876f37f50fb8a"
+      }
+    }
+  ],
+  "non_kernel_exposition_register": [
+    {
+      "line_start": 36,
+      "line_end": 51,
+      "classification": "ABSTRACT_SUMMARY",
+      "treatment": "Covered by named theorem and proof inventories, no separate mathematical denominator."
+    },
+    {
+      "line_start": 56,
+      "line_end": 84,
+      "classification": "LITERATURE_AND_COMPLEXITY_BACKGROUND",
+      "treatment": "Source claims and fast-transform/dense cost comparison; not claimed kernel-certified."
+    },
+    {
+      "line_start": 141,
+      "line_end": 280,
+      "classification": "PROOF_OVERVIEW_AND_DEPENDENCY_FIGURE",
+      "treatment": "Repeated claims assigned to named/interface entries; dependency arrows require expository consistency check, not formal theorem targets."
+    },
+    {
+      "line_start": 282,
+      "line_end": 379,
+      "classification": "LITERATURE_BACKGROUND",
+      "treatment": "External contextual comparisons excluded from kernel coverage; no novelty inference."
+    },
+    {
+      "line_start": 650,
+      "line_end": 664,
+      "classification": "LITERATURE_METHOD_COMPARISON",
+      "treatment": "Separate source audit, no kernel coverage."
+    },
+    {
+      "line_start": 818,
+      "line_end": 848,
+      "classification": "ILLUSTRATIVE_TRIANGLE",
+      "treatment": "Matrix-index example checked algebraically; graph definitions require orientation bridge."
+    },
+    {
+      "line_start": 874,
+      "line_end": 889,
+      "classification": "ILLUSTRATIVE_BOUNDARY_EXAMPLE",
+      "treatment": "T=C entrywise BA; scalar sum=onesᵀTones, consistency checked."
+    },
+    {
+      "line_start": 1102,
+      "line_end": 1109,
+      "classification": "CUMULANT_EXAMPLE",
+      "treatment": "Order-two covariance is direct specialization of definition."
+    },
+    {
+      "line_start": 1175,
+      "line_end": 1191,
+      "classification": "JOIN_EXAMPLE",
+      "treatment": "Occurrence partitions and displayed term consistent with join definition."
+    },
+    {
+      "line_start": 1622,
+      "line_end": 1632,
+      "classification": "LITERATURE_METHOD_COMPARISON",
+      "treatment": "Not independent research conclusion or kernel coverage."
+    },
+    {
+      "line_start": 1755,
+      "line_end": 1762,
+      "classification": "P2_EQUALITY_EXAMPLES",
+      "treatment": "Both words have s=t=0; loop counts 0 and 2 and degree four, checked directly."
+    },
+    {
+      "line_start": 1932,
+      "line_end": 1954,
+      "classification": "P7_CONTRACTION_EXAMPLE",
+      "treatment": "Word counts b=5,c=3,x=y=z=2;14 edges;2p=14,v=5,s=2,t=0; returning/parallel link description checked."
+    },
+    {
+      "line_start": 2136,
+      "line_end": 2232,
+      "classification": "P7_DECODING_EXAMPLE",
+      "treatment": "Code, transitions and displayed equality classes checked against word. TeX figure read; visual render is separate operation."
+    },
+    {
+      "line_start": 2401,
+      "line_end": 2415,
+      "classification": "PARAMETER_TABLE",
+      "treatment": "Summarizes interface I-V6-39; no extra theorem count."
+    },
+    {
+      "line_start": 3112,
+      "line_end": 3121,
+      "classification": "FUTURE_WORK",
+      "treatment": "Open/practical questions, no kernel coverage."
+    },
+    {
+      "line_start": 3123,
+      "line_end": 3275,
+      "classification": "BIBLIOGRAPHY",
+      "treatment": "Exact embedded bibliography included in source read; priority/release approval not asserted."
+    }
+  ],
+  "parent_inventory_sha256": "6ac8641a027876cc13de6d5ab50850c8add7370abd774671bcf847ebc2a6c0e0",
+  "inherited_inventory_reviewer_context": "/root/v6_inventory",
+  "revision_reanchor_context": "/root",
+  "revision_review_status": "PENDING_INDEPENDENT_REVIEW"
+}

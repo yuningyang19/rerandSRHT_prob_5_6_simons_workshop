@@ -1,0 +1,60 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "reviewed_at_utc": "2026-09-06T13:15:37.566197+00:00",
+  "status": "BOUNDED_ORCHESTRATION_CORRECTION_ACCEPTED",
+  "defect": "Historical structural source-marker script requires exactly one test ID; initial mandatory argv omitted it, deterministically exiting 1. This is not a mathematical failure.",
+  "correction": "Wrapper parses the unchanged historical top-level tests dictionary using AST, requires exactly the frozen ordered 19-ID inventory, then runs the historical script once per ID with subprocess check=True. It neither bypasses failed guards nor changes their marker logic.",
+  "actual_independent_command": [
+    "python3",
+    "../v6_certification/scripts/run_structural_guards.py",
+    "../semantic_regressions.py"
+  ],
+  "actual_independent_cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+  "returncode": 0,
+  "executed_unique_test_ids": [
+    "R-MAIN-QUANTIFIERS",
+    "R-EXACT-RANDOM-LAW",
+    "R-MATRIX-ORDER",
+    "R-BOTH-SPECTRAL-EDGES",
+    "R-SIGNED-TRACE",
+    "R-I35-CONDITIONAL-COUPLING",
+    "R-I16-I19-MOMENT-SCOPE",
+    "R-I08-NONEMPTY",
+    "R-L2-NORM-SCOPE",
+    "R-GRAPH-ORIENTATION",
+    "R-I04-ADJACENT-RANK-CUT",
+    "R-I35-THREE-CATEGORY-ORDER",
+    "R-I07-RANK-EDGE-SPLIT",
+    "R-I05-BRIDGELESS-DAG",
+    "R-JOINT-ENTRY-REINDEX",
+    "R-SIGNED-TRACE-SUMMATION",
+    "R-TRACE-CYCLIC-EXPANSION",
+    "R-SIGNED-TRACE-EXPANSION",
+    "R-I20-CONTRACTED-CORE-CLOSURE"
+  ],
+  "guard_scope": "Historical source-marker guards only, not proof of mathematical or semantic correspondence.",
+  "receipt_binding": "Mandatory argv names both wrapper and historical script; independent command_source_paths inspection confirms both plus their complete local proof closure are hashed.",
+  "historical_script_baseline_commit": "40f96935796e484ab4c03865bc93b47827f99980",
+  "protected_historical_script_sha256": "a00de6c6cf6105da0f324ca48b69e03089e649e7e77f1e15948f6c57974793a0",
+  "wrapper_sha256": "431983c2b718bb1dd1d1fed1373d9870443200280ff6ea3a8b4a9caab9359f61",
+  "verifier_sha256": "97702a8f033f6a4f7ffced7355244f620f681055f0722b6f57e69b62b67e15c1",
+  "review_log_sha256": "d039f4572aea9682a0da844ccae47a1a50e6ce61ce0d8ad4a22d974e161ee23b",
+  "preserved_math_bindings": {
+    "combined_actual_types.json": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+    "combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5",
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "reviewed_type_lock.json": "37e446452f1c9bea9ef2346f317d647749624e09f4253f3d87322ae5d4aab135",
+    "reviewed_definition_lock.json": "026d9cce127ef96bc4eccb21ea73360af86aef06aa3a3dcdb7678c43504ffd9d",
+    "reviewed_correspondence_lock.json": "1c6cc30ebf72684c8e8a5b390272d6446cd06e174d1770c6d407f52db507abd0"
+  },
+  "first_cold_attempt": "Real archive validation succeeded and source fetch began. Controller-authorized early termination is recorded in reproduction/independent_cold_attempt_6c12db_intervention.json; supervising runners recorded FAIL exit1 with no changed proof/build inputs. No success claim.",
+  "next_attempt": "New committed orchestration, new archive SHA, and genuinely absent destination required. No cache or source build outputs copied from the stopped first attempt.",
+  "log_lifecycle_correction": {
+    "review": "Accepted: final suite uses final_combined_audit.log/.execution.json and corresponding verifier argv; actual Lean command unchanged. Reviewed combined_audit evidence is no longer overwritten by later runs.",
+    "run_suite_sha256": "f4ffaf59fcd2f81193ea406af6fb10bc76d99405e715c17c9aba161409ea42f9",
+    "raw_reviewed_graph_sha256": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58",
+    "refreshed_reviewed_receipt_sha256": "b94c679338cade0d745f3420ac8ac3d9694375a09ae72c67f4518c2e5b47b754",
+    "complete_reviewed_compiler_source_binding": "PASS"
+  },
+  "receipt_metadata_only_lock_refresh": "Correspondence lock metadata follows refreshed execution receipt; all raw theorem types, definition values, mathematical source bytes and source manifest remain unchanged."
+}

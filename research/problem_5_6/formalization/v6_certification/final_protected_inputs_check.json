@@ -1,0 +1,12 @@
+{
+  "time_utc": "2026-09-06T13:41:32.268554+00:00",
+  "status": "PASS",
+  "baseline_B_inputs_checked": 88,
+  "baseline_commit": "40f96935796e484ab4c03865bc93b47827f99980",
+  "frozen_C_inputs_checked": 2,
+  "frozen_C_commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "combined_Lean_build_changes_from_verification_commit": false,
+  "mismatches": [],
+  "paper_branch_head": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "remote_certification_head": "c0303801ca01e9507a27ef4a47236807c9e39ab7"
+}

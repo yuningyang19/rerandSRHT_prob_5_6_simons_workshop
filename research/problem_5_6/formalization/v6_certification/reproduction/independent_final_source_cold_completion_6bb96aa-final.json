@@ -1,0 +1,289 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "time_utc": "2026-09-06T16:06:56.722169+00:00",
+  "status": "CORRECTED_PACKAGE_SOURCE_COLD_SUITE_PASS_FULL_MANUSCRIPT_REPAIR",
+  "verification_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "proof_source_freeze": "6c12db598e56103309f7e41144f84b75246fa96b",
+  "archive_sha256": "9e4dcf6c813914bf4d98f23a2fdf54d408ef71b811cedd169b4cd1c5b8fa12a7",
+  "archive_members": 516,
+  "cold_directory": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final",
+  "execution_method": "After two preserved pre-compilation official Mathlib transport failures, revalidate the same new archive directory and zero compiled objects; fetch exact SOURCE Git objects only from the independently verified official-source repositories in the c030 cold tree, without copying their working trees or compiled/build artifacts. Verify exact clean HEADs and zero compiled objects again, then invoke the corrected archive documented run_suite.py exactly once. This uses cached source Git objects and is not an unqualified cache-free run; every proof object is compiled from source in the new tree.",
+  "initial_compiled_objects": 0,
+  "prebuild_compiled_objects": 0,
+  "compiled_cache_reused": false,
+  "source_object_mirror_reused": true,
+  "prior_source_acquisition_failure_report": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_final_source_cold_6bb96aa-final-resumed.json",
+  "prior_source_acquisition_failure_sha256": "2978ae1419c7709757c15568f7fd15f513eb44f67b825ecb711a7c1f0436b3c5",
+  "documented_run_suite_invocations": 1,
+  "documented_run_suite_returncode": 0,
+  "additional_recovery_commands_after_suite_start": false,
+  "dependency_sources": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "expected_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "actual_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/mathlib/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "expected_revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "actual_revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/plausible/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "expected_revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "actual_revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/LeanSearchClient/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "expected_revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "actual_revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/importGraph/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "expected_revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "actual_revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/proofwidgets/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "expected_revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "actual_revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/aesop/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "expected_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "actual_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/Qq/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "expected_revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "actual_revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/batteries/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "expected_revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "actual_revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "tracked_source_clean": true,
+      "source_only_shallow_fetch": true,
+      "source_mirror_git_dir": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-shallow/research/problem_5_6/formalization/lean/.lake/packages/Cli/.git",
+      "source_mirror_official_origin_verified": true,
+      "no_working_tree_or_build_copy": true
+    }
+  ],
+  "audit_tool_prerequisite": {
+    "command": [
+      "lake",
+      "--no-cache",
+      "build",
+      "Problem56.PaperV6.AuditTools"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+    "returncode": 0,
+    "elapsed_seconds": 7.285832374996971,
+    "log_sha256": "5c3496c28c39f7f92f9f4ec41fab100f9da3c14b34014793a4bf9ac00840c025",
+    "start_utc": "2026-09-06T15:15:34.866138+00:00",
+    "end_utc": "2026-09-06T15:15:42.152052+00:00"
+  },
+  "mandatory_checks": {
+    "unified_build": {
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "Problem56.PaperV6.Certification"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 1999.3941927090054,
+      "log_sha256": "a54e304d076b2f6ec82eef48a49881ab87b41d4a32cc81b9aa54684cfcd1809e",
+      "start_utc": "2026-09-06T15:15:42.181681+00:00",
+      "end_utc": "2026-09-06T15:49:01.657671+00:00"
+    },
+    "dependency_environment": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/record_environment.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 0.5167687499779277,
+      "log_sha256": "13164957f6d5f83b0be88f3fb330d22aee2c4e4bd3390281186d87e34a534a92",
+      "start_utc": "2026-09-06T15:49:01.691311+00:00",
+      "end_utc": "2026-09-06T15:49:02.208218+00:00"
+    },
+    "expected_type_checks": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Problem56/PaperV6/ExpectedChecks.lean"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 19.181890375039075,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "start_utc": "2026-09-06T15:49:02.238725+00:00",
+      "end_utc": "2026-09-06T15:49:21.420961+00:00"
+    },
+    "semantic_witnesses": {
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "Problem56.ExtractionRegression",
+        "Problem56.GraphOperatorRegression",
+        "Problem56.GraphOperatorUnequalRegression",
+        "Problem56.PaperV6.SemanticWitnesses"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 4.614814541011583,
+      "log_sha256": "ca52fbfb70a80cfa92c719a87b41ba083d88aee5973e955533f58e6110eef1fb",
+      "start_utc": "2026-09-06T15:49:21.450250+00:00",
+      "end_utc": "2026-09-06T15:49:26.065217+00:00"
+    },
+    "structural_guards": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/run_structural_guards.py",
+        "../semantic_regressions.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 0.517080666963011,
+      "log_sha256": "d039f4572aea9682a0da844ccae47a1a50e6ce61ce0d8ad4a22d974e161ee23b",
+      "start_utc": "2026-09-06T15:49:26.098336+00:00",
+      "end_utc": "2026-09-06T15:49:26.615562+00:00"
+    },
+    "negative_tests": {
+      "command": [
+        "python3",
+        "../v6_certification/scripts/test_verifier.py"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 0.1119758749846369,
+      "log_sha256": "74a4f17a11f9484d419bf6b8047d857b08e997045d1a7a7cbdf2ab9c55603b35",
+      "start_utc": "2026-09-06T15:49:26.646096+00:00",
+      "end_utc": "2026-09-06T15:49:26.758179+00:00"
+    },
+    "kernel_replay": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "-v",
+        "Problem56.PaperV6.Certification"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+      "returncode": 0,
+      "elapsed_seconds": 965.2003508749767,
+      "log_sha256": "d90ac4b8825593db94e2bacd3980be32d9f060dc5cc0af018ba6a5f97718bfc3",
+      "start_utc": "2026-09-06T15:49:26.788484+00:00",
+      "end_utc": "2026-09-06T16:05:31.968793+00:00"
+    }
+  },
+  "counts": {
+    "targets": 359,
+    "primitive_definitions": 134,
+    "graph_nodes": 63329,
+    "named_results": 12,
+    "source_interfaces": 50,
+    "literal_interfaces_covered": 49,
+    "frozen_definitions": 34
+  },
+  "encoded_declaration_status": "PASS",
+  "paper_coverage": {
+    "full_manuscript_scope": "NOT_ESTABLISHED",
+    "unresolved_source_items": [
+      "I-V6-11"
+    ]
+  },
+  "separate_full_paper_gate": {
+    "command": [
+      "python3",
+      "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/v6_certification/scripts/check_full_paper_scope.py"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean",
+    "started_utc": "2026-09-06T16:06:56.171000+00:00",
+    "ended_utc": "2026-09-06T16:06:56.721688+00:00",
+    "elapsed_seconds": 0.550482833001297,
+    "returncode": 1,
+    "log": "reproduction/independent_final_full_paper_scope_6bb96aa-final.log",
+    "log_sha256": "998bd285d3806db23f6b0ff78f6db013d434c03ac2a76f3d76cd638161f792f2",
+    "script_sha256": "1a99522cbeebf115d3dde0a94e21ff7749ab769cf8146a70a9fc54856f6d1d23",
+    "only_unresolved_item": "I-V6-11"
+  },
+  "archive_generated_files_changed": [
+    "research/problem_5_6/formalization/v6_certification/logs/final_audit_tool_build.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_combined_audit.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_dependency_environment.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_expected_type_checks.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_kernel_replay.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_negative_tests.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_semantic_witnesses.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_structural_guards.execution.json",
+    "research/problem_5_6/formalization/v6_certification/logs/final_unified_build.execution.json"
+  ],
+  "immutable_archive_members_unchanged": true,
+  "historical_c030_evidence": "Preserved original suite failure and recovered cold checks remain separate; this PASS belongs only to the new corrected package.",
+  "evidence_sha256": {
+    "logs/final_combined_audit.log": "317f9c49a0d3fdc3eaebf7f2edc3c54d1090b931b6a4473b4545ddf50f50ee58",
+    "logs/final_combined_audit.execution.json": "774192bd8c35d148ee87aab04c8d8d14ba39c5a632fa172ee5f17e6a86b758bb",
+    "logs/final_verifier.log": "e559f2f959451e4e54ce4a087104547241599d8f2de1e2a5d2c722ada6d035f5",
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "mandatory_checks.json": "a6ba18685f98f4797364817f7bc9db7a1403a7e32406214814884b7720a90d58",
+    "three_way_crosswalk.json": "279b272d692cbebe4f80e3ae9d45f263596b95ae310ce2dee931776649045d81",
+    "reviewed_correspondence_lock.json": "3135cb809c44f01ab6a0921384505079a16bc8dce48e4860af3e6b8a7ed598c5"
+  },
+  "runner_report_sha256": "b491029232dfdd2fb2388ef429e7d58af8ff8390c617a0683259b906ae3f17a2"
+}

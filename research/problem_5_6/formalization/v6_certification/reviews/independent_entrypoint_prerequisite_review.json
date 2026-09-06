@@ -1,0 +1,46 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "time_utc": "2026-09-06T14:44:00.072206+00:00",
+  "status": "ENTRYPOINT_PREREQUISITE_CORRECTION_ACCEPTED_PENDING_NEW_COLD_EXECUTION",
+  "diagnosis": "CombinedAudit directly imports AuditTools, but Certification does not; a clean Certification build therefore did not create AuditTools.olean.",
+  "accepted_change": "One explicit no-cache AuditTools build before the existing seven mandatory checks, using unchanged run_logged and check=True; README states this order and preserves c030 failure history.",
+  "before_after_hashes": {
+    "scripts/run_suite.py": {
+      "c030": "f4ffaf59fcd2f81193ea406af6fb10bc76d99405e715c17c9aba161409ea42f9",
+      "reviewed_current": "85220ee9f821baac955d8ded96f2325db1779f76803d16cf137b837cdf5ecca4"
+    },
+    "README.md": {
+      "c030": "514ea68eee1b6434b967505e81123007a8fa44b0e09c7b3fd1533483b348b48a",
+      "reviewed_current": "9a00cb5eca842927d862d4c36fcec3539f9828b3918af80617fe213cfdc773b4"
+    }
+  },
+  "all_archived_lean_build_inputs_unchanged": 167,
+  "unchanged_binding_hashes": {
+    "combined_source_manifest.json": "8b211a5a73c03a11b79486b5c4371142c4c749523b5aaf319d03eb9a752cc7f8",
+    "reviewed_type_lock.json": "37e446452f1c9bea9ef2346f317d647749624e09f4253f3d87322ae5d4aab135",
+    "reviewed_definition_lock.json": "026d9cce127ef96bc4eccb21ea73360af86aef06aa3a3dcdb7678c43504ffd9d",
+    "combined_actual_types.json": "4968ecd2390ac16a1c45aeb577c3bb49bdc3faf0501b2dfbc278c1c034aae84b",
+    "combined_actual_definitions.json": "b6c401cab7583c97b55a505d38fe01af10a1b1ca55316509dd7aba37cc87f6f5",
+    "scripts/verify_evidence.py": "97702a8f033f6a4f7ffced7355244f620f681055f0722b6f57e69b62b67e15c1"
+  },
+  "prior_successful_receipt_binding_review": {
+    "final_unified_build": {
+      "source_bindings_match_current_root": true,
+      "receipt_sha256": "5ab556b7ba525a18d5a452b39a4d622235c428ca59b5853ee23349638c67e4f6"
+    },
+    "final_kernel_replay": {
+      "source_bindings_match_current_root": true,
+      "receipt_sha256": "a6aabcefa610dd631383915439133e1719811f1089bce43f12f38747bed7572a"
+    },
+    "recovery_combined_audit": {
+      "source_bindings_match_current_root": true,
+      "receipt_sha256": "b998788630f8afb0422270888922583d42d17eb368d42ef91dd22f27cf0d6580"
+    }
+  },
+  "execution_exit_semantics": "run_logged returns the actual child returncode, and run_suite invokes it with subprocess.run(check=True); a failed prerequisite aborts before mandatory checks.",
+  "mandatory_command_definitions_unchanged": true,
+  "mandatory_check_set_unchanged": true,
+  "mathematical_certification_root_unchanged": true,
+  "new_cold_execution": "NOT_STARTED; awaiting exact new committed archive identity.",
+  "no_claim_of_original_c030_one_command_pass": true
+}

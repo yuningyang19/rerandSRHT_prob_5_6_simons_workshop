@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-06T13:27:11.460842+00:00",
+  "scope": "Bounded retry of observed HTTP/2 GitHub source-clone transport failure; fixed archive and proof inputs unchanged",
+  "prior_attempt": "independent_cold_export_c0303801.json",
+  "archive_sha256": "15b07372fcf0e146347c447ec2aed1db0782f7a37499bd97037273460c41cfb6",
+  "destination_was_absent": true,
+  "child_git_http_version": "HTTP/1.1",
+  "global_git_config_modified": false,
+  "source_or_compiled_cache_reused": false,
+  "command": [
+    "python3",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/scripts/test_export.py",
+    "--archive",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/frozen-v6-companion-c0303801.tar.gz",
+    "--destination",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-http11",
+    "--report",
+    "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_cold_export_c0303801_http11.json"
+  ],
+  "observed_source_fetch_processes": [
+    "54992 54982       02:21 /Applications/Xcode.app/Contents/Developer/usr/bin/git clone https://github.com/leanprover-community/mathlib4.git /Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-c0303801ca01-http11/research/problem_5_6/formalization/lean/.lake/packages/mathlib"
+  ],
+  "fetch_observed_at_utc": "2026-09-06T13:29:33.277640+00:00"
+}

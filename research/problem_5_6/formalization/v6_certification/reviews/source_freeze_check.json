@@ -1,0 +1,21 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification",
+  "returncode": 2,
+  "stdout_stderr": "logs/source_freeze_diff_check.log",
+  "log_sha256": "07dbe3c113949103d5294aa148727596b0d981807f8fd3214b89d86a492e68d3",
+  "timestamp_utc": "2026-09-06T13:08:18.650371+00:00",
+  "interpretation": "Seven trailing-whitespace findings only: three already independently frozen additive Lean lines, three immutable C snapshot lines, one generated TeX aux line. No mathematical bytes altered for cosmetic cleanup.",
+  "other_checks": {
+    "protected_B_and_C_bytes": "PASS",
+    "complete_unique_source_manifest_159": "PASS",
+    "local_holes_or_proof_escapes": "NONE_FOUND",
+    "independent_crosswalk_bindings": "PASS",
+    "staged_path_scope": "PASS"
+  }
+}

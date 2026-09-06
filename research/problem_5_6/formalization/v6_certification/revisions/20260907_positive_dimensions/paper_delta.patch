@@ -1,0 +1,16 @@
+diff --git a/research/problem_5_6/paper/v6/main.tex b/research/problem_5_6/paper/v6/main.tex
+index 29cedea..95ecc35 100644
+--- a/research/problem_5_6/paper/v6/main.tex
++++ b/research/problem_5_6/paper/v6/main.tex
+@@ -852,8 +852,9 @@ Mingo and Speicher \cite[Definition~8 and Eq.~(9), pp.~2279--2280]{mingo},
+ with optional scalar vertex weights included as diagonal factors.
+ Let $\mathcal V$ be the vertex set
+ and $\mathcal E$ the list of edge occurrences of a finite multigraph,
+-allowing parallel edges and loops. Each vertex $u$ has a coordinate
+-range $\{1,\ldots,N_u\}$ from which its label $i_u$ is chosen,
++allowing parallel edges and loops. Each vertex $u$ has a positive integer
++coordinate dimension $N_u$ and a range $\{1,\ldots,N_u\}$ from which
++its label $i_u$ is chosen,
+ and each oriented edge $e=(u,v)$ carries
+ a fixed matrix $M_e:\R^{N_u}\to\R^{N_v}$. A \emph{vertex weight}
+ is an optional fixed scalar function $\omega_u$ contributing the

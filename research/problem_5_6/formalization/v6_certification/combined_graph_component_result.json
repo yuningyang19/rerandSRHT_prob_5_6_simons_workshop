@@ -1,0 +1,4613 @@
+{
+  "target_count": 359,
+  "graph_nodes": 63329,
+  "status": "PASS",
+  "scope": "encoded declarations only",
+  "axiom_closures": {
+    "Problem56.I01_walsh_card": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I01_walsh_symmetry": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I01_walsh_involution": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I02_exact_gram_reduction": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I03_full_sample_exact": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I04_mingo_speicher_graph_operator_specialization": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I05_mingo_speicher_bridgeless_conversion": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I06_connected_even_multigraph_has_no_bridge": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I07_rank_edge_factorization_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I08_moment_cumulant_inverse": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I09_product_cumulant_connected_partition_identity": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I10_independent_families_mixed_cumulant_vanish": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I11_projection_entry_expansion": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I12_occurrence_partitions_form_connected_even_graph": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I13_rademacher_cumulant_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I14_walsh_translation_modulation": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I15_projection_mean_and_centering": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I16_selector_quotient_degree_excess": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I17_centered_bernoulli_moment_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I18_exceptional_vertex_degree_budget": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I19_degree_four_classification_and_loop_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I20_contracted_core_encoding_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I21_euler_transition_count": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I22_xor_kernel_solution_count": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I23_pointwise_vanishing_pair_classification": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I24_large_block_and_support_rank_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I25_large_block_partition_constant_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I26_disjoint_pair_support_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I27_loop_parallel_pairing_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I28_aggregate_partition_cumulant_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I29_exact_dimension_factor": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I30_trace_geometric_summation": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I31_two_projection_block_decomposition": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I32_quadratic_root_even_power_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I33_bad_spectral_edge_large_root": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I34_bernoulli_failure_arithmetic": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I35_uniform_key_nested_coupling": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I36_sampling_sandwich_spectral_conversion": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I37_binomial_tail_bounds": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I38_finite_population_second_moment_identity": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I39_rademacher_vector_fourth_moment": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I40_operator_norm_le_frobenius": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I41_large_rank_cutoff_arithmetic": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.I42_final_width_constant_assembly": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.graph_rank_contraction": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.joint_entry_cumulant_lemma": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.selector_equality_graph_count": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.signed_trace_proposition": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.two_projection_spectral_transfer": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.bernoulli_coordinate_sampling_corollary": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.fixed_size_sampling_transfer": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.small_rank_second_moment": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.main_universal_ose": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.bernoulli_coordinate_sampling_corollary_of_trace": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.signBernoulliExpectation_trace_centered_product_pow_expansion": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.trace_centeredSelector_product_pow_expansion": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.signBernoulliExpectation_trace_eq_partition_cumulant_sum": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.signedTrace_master_geometric_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "_private.Problem56.SignedTraceExpansion.0.Problem56.signedTrace_abs_le_boundedSelectorData": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEqualityData_contribution_sum_le": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.pair_eq_iff": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.not_forbidden_iff_surviving": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.binary_count": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.entry_parts_card_pos": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.binary_odd_incidence": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paperBlock_xor_sum": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.binary_forbidden_pair": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_perm_fixedSubsets": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.keysOrdered_relabel": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.keysOrdered_equal_probability": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.keysOrdered_uniform": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousCoupling": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousKey_eval_law": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousKey_independent": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousUnitUniform_Iic": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousUnitUniform_Ioi": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousThreshold_fiber": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousThreshold_measurable": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousThreshold_law": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousKey_frame_marginal": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousKey_frame_independent": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousUnitUniform_diagonal_null": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousKey_pair_no_tie": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousKey_no_ties": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuousKey_permutation_invariant": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_keysOrdered": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.keysOrdered_measurableSet": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_measurable_keysOrdered": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.keysOrdered_unique": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.keysOrdered_count_sandwich": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.aggregate_parameters": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.entry_weighted_count": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paperSelectorCoefficient_abs_le": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paper_sum_le_of_injective": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paper_product_xor_of_ne_zero": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paper_sum_injective_labels_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paper_dimension_factor": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paperEntry_fixed_class_sum_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.entry_absolute_contribution": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.finiteNoiseFailureLaw": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.uniformProbability_bounds": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.frameFailureProbability_le_sup": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.fixed_frame_ose": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.gram_quadraticForm": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.frame_isometry": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.compressedGram_quadraticForm": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.spectral_bound_implies_squared_edges": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.compressedGram_isHermitian": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squared_edges_iff_spectral_bound": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.fixedSubset_nonempty": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.uniformProbability_true": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.uniformProbability_complement": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.fixed_frame_squared_norm_success": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreePow_above_card": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreePowerTruncation": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreeLog_empty": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreeExp_empty": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreeMoment_empty": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogEmptyCoefficients": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLog_factorial_coefficient": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreeLog_partition": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreeExp_partition": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLog_cumulant_ambient_partition": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogMomentCoefficient": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLog_lift_cumulant_product": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLog_ambient_moment_inverse": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalExpLogMoment": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogMomentInterface": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLog_avoid_parts": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogInsertBlock_parts": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogInsertBlock_notMem": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogInsertBlock_avoid": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogPointedOfSplit_injective": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLogPointedOfSplit_surjective": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLog_sum_nonempty_subsets": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.formalLog_convolution_partition_sum": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreePow_partition_zero": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreePow_partition": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.squarefreePowerCoefficient": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.constructionAdjacent_mono": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.transGen_rank_lt_of_rel": {
+      "collectAxioms": [],
+      "conservative_structural_axioms": [],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.activateEdge_remaining_lt": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.active_edge_endpoints": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.active_adjacency_iff": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.activeRetract_coe": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.activeRetract_step": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.activeGraph_dag": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEdgeEmbed_src": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEdgeEmbed_dst": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEdgeEmbed_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEdgeEmbed_surjective_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEmbed_step": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitRetract_step": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEmbed_input": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEmbed_output": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_partial_acyclic": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_partial_from_input": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_partial_to_output": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_inl_active_iff": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_inr_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_proper_is_true": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_proper_is_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitRetract_embed": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitEmbed_retract": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitCopy_eq_root_of_inactive": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplit_outside_fiber_unique": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.splitActive_used": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.splitActive_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.splitActive_remaining": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.all_vertices_active_of_all_used": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.adjacency_eq_of_all_used": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.dag_of_all_used": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.endpoints_distinct": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.completed_modification": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalBridgeless_state_progress": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalBridgeless_modification": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.currentTail_projection": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.currentHead_projection": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.currentPoint_castSucc": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.currentPoint_last": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.currentPoint_projection": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.currentPoint_succ": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.point_eq_or_endpoints": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.incomingOutgoing_identity_step": {
+      "collectAxioms": [
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.transGen_strict_rank": {
+      "collectAxioms": [],
+      "conservative_structural_axioms": [],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.incomingOutgoing_edge_rank_lt": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.incomingOutgoing_lift_false": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.incomingOutgoing_lift_true": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.incomingOutgoing_mingoAdmissibleDAG": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.original_endpoints_new_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.activateEar_used": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.activateEar_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.activateEar_remaining_lt": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEarPoint_zero": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEarPoint_last": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEarPoint_internal": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEar_step": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEar_from_start": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEar_to_end": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEarPoint_rank_before_last": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEar_edge_rank_lt": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEar_lift_old_walk": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.adjoinedEar_mingoAdmissibleDAG": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.vertexEmbed_step": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.vertexRetract_step": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.adjoined_dag": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.partial_acyclic": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.partial_from_input": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.partial_to_output": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.vertexEmbed_injective": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.vertexEmbed_point": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.vertexEmbed_surjective_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.vertexRetract_embed": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.vertexEmbed_retract": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.edgeEmbed_src": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.edgeEmbed_dst": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.edgeEmbed_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateFreshEar.edgeEmbed_surjective_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_unused_edge_at_old_vertex": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_fresh_ear_path": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.VertexSimpleIndexedPath.edge_injective": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_vertexSimpleIndexedPath": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.initial_state_adjacency": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_initial_generalBridgelessState": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_originalFreshEar": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.VertexSimpleIndexedPath.globalReversal_edge": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.VertexSimpleIndexedPath.pointRank_point": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.VertexSimpleIndexedPath.path_acyclic": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.VertexSimpleIndexedPath.path_from_start": {
+      "collectAxioms": [
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.VertexSimpleIndexedPath.path_to_end": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.VertexSimpleIndexedPath.edge_endpoints_mem": {
+      "collectAxioms": [],
+      "conservative_structural_axioms": [
+        "propext"
+      ],
+      "structural_excess": [
+        "propext"
+      ]
+    },
+    "Problem56.PaperV6.exists_first_hit_walk": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_unused_return_walk": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.remaining_lt_of_used_subset": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.remaining_eq_zero_iff": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_completed_state_of_strict_progress": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.reverseState_active_iff": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.reverseState_adjacency": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.GeneralBridgelessState.reverseUnused_remaining": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_simple_chain_of_walk": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.exists_simple_unused_return_path": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.activeSplitVertex_ext": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.splitPoint_fst": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.splitPoint_side": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.splitPoint_projection": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.splitPoint_injective": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.split_tail": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.split_head": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.exists_progress": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.edge_not_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.last_source_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.last_target_active": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.splitRouting_source": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.OriginalFreshEar.splitRouting_target": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.distinctDAGRank_injective": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.distinctDAGRank_edge_lt": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.distinctDAGRank_orders_endpoints": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateUnorientedEar.reversal_edge": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateUnorientedEar.reversal_fixed": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateUnorientedEar.oriented_ordered": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.StateUnorientedEar.exists_progress": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalCumulantIdentities": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_two_factors_zero": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_twoFamily_blockProducts_zero": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.finiteJointMoments_subtype": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_indep_family_products": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_subtype_univ": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_independent_families_mixed_cumulant_vanish": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalMixedIndependence": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_product_jointCumulant_expansion": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_blockMomentProduct_liftBlockPartition": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_nested_blockMomentProduct_eq_global": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_product_jointCumulant_expansion_global": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_sum_globalRefinementExpansionSum_reindex": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_sum_globalRefinementExpansionSum_eq_indiscrete": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_partitionMomentProduct_indiscrete": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_moment_cumulant_inverse_nonempty_index": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalMomentIdentity": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_blockProduct_update_of_mem": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_blockProduct_update_of_notMem": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_blockMoment_linear_update": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_partitionMoment_linear_update": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalMultilinearity": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulantOn_equiv": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_partitionMomentProduct_eq_sum_refinement_cumulant": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulantOn_blockProducts_eq_outerCoarseningSum": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_outerCumulantCoarseningSum_reindex": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_product_cumulant_connected_identity_nonempty": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalProductIdentity": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.finiteJointMoments_update_constant": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.finiteJointMoments_update_add_constant": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_constant_argument_zero": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_add_constant_one": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_shift_finite_set": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalShiftInvariance": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_integral_const_family_mul": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_const_family_mul": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measure_jointCumulant_identDistrib_repeat": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.generalOddSymmetry": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.continuous_operatorNorm_coordinates": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measurable_fixed_failure": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.measurable_bernoulli_failure": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.integrable_finite_event_sum": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.integrable_fixed_failure": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.integrable_bernoulli_failure": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.general_sampling": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.uniform_event_weight_formula": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.fixed_noise_failure_law": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.bernoulli_noise_failure_law": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.general_sampling_joint": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paperInputOutput_iff": {
+      "collectAxioms": [
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.graph_orientation": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.graph_boundary": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.graph_operator": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.transpose_heq_of_dims": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.graph_rank": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.sum_guard_eq_subtype": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.fiberSplit_equiv_apply": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.graph_fiber_boundary": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.graph_reversal_boundary": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.paper_identity_norm": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.graph_fiber_norm_product": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.v6_binary_constraints": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.v6_entry_contribution": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.boundaryEntriesPreserved_refl": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.boundaryEntriesPreserved_trans": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rooted_elementary": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rooted_history": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rooted_history_consequence": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rooted_graph_boundary": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rooted_graph_norm_product": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.general_bridgeless_matrix_conversion": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.sampling_pointwise": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.l2_two_coordinates_squared": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.bool_uniform_half": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.singleton_uniform_mass": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.real_sample_domain_finite_moments": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.dirac_real_probability_normalization": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rectangular_mul_pow_succ": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rectangular_trace_mul_pow": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.rectangular_trace_power": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.PaperV6.gram_centering": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i35_empty_upper_mass_and_guard": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i35_unconditional_support_conflict": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i16_empty_selector_counterexample": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i16_expected_rank_guard": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i19_two_loop_endpoint_counterexample": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i19_expected_rank_guard": {
+      "collectAxioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i08_empty_lhs": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i08_empty_rhs": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i08_empty_boundary_conflict": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.ExtractionRegression.i08_expected_nonempty_guard": {
+      "collectAxioms": [
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.GraphOperatorRegression.graphOperator_dim_one": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.GraphOperatorRegression.exact_scalar_chain": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.GraphOperatorRegression.exact_scalar_diamond": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.GraphOperatorRegression.exact_scalar_parallel_edges": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.GraphOperatorRegression.transpose_preserves_required_norm": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.GraphOperatorRegression.zero_dimensional_domain_has_zero_norm": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    },
+    "Problem56.GraphOperatorUnequalRegression.exact_unequal_dimensional_chain": {
+      "collectAxioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "conservative_structural_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "structural_excess": []
+    }
+  }
+}

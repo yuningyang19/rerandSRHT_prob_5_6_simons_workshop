@@ -1,0 +1,776 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{microtype}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\F}{\mathbb F}
+\newcommand{\R}{\mathbb R}
+\newcommand{\one}{\mathbf 1}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\cum}{cum}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert_2}
+\title{A linear-width subspace embedding bound\\for the rerandomized SRHT}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For the normalized real Walsh transform with two independent sign
+diagonals and uniform sampling without replacement, a universal
+multiple of \(r/\varepsilon^2\) sampled columns suffices to embed every
+fixed \(r\)-dimensional subspace with squared-norm distortion
+\(1\pm\varepsilon\) and failure probability at most \(0.01\).
+The proof bounds joint entry cumulants by connected graph contractions,
+then bounds signed traces of a product of centered projections.
+An explicit two-projection calculation converts these traces into
+control of both spectral edges. All ranks and ambient Walsh dimensions
+are included; the numerical constant is not optimized.
+\end{abstract}
+
+\section{Statement and notation}
+
+Let \(n=2^m\), \(m\ge0\), and identify the coordinate set with
+\(K=(\F_2)^m\). The real normalized Walsh matrix is
+\[
+ H_{ab}=n^{-1/2}(-1)^{\langle a,b\rangle},\qquad H^T=H,\quad H^2=I_n.
+\]
+Let \(D_1,D_2\) have mutually independent uniform Rademacher diagonal
+entries. Independently let \(J\) be a uniformly chosen \(k\)-element
+subset of \(K\), and let \(S_J\) collect its coordinate vectors. Put
+\[
+ \Omega_{n,k}=\sqrt{\frac nk}\,D_1HD_2HS_J.
+\]
+For a deterministic \(n\times r\) frame \(V\), \(V^TV=I_r\), write
+\[
+ X=HD_2HD_1V,\qquad P=XX^T,\qquad \delta=\frac rn.
+\]
+Thus \(X^TX=I_r\), and the Gram matrix in question is
+\[
+ V^T\Omega_{n,k}\Omega_{n,k}^TV
+   =\frac nk X^T S_JS_J^T X.                                    \tag{1}
+\]
+
+\begin{theorem}\label{thm:main}
+There is a universal constant \(C\ge1\) such that for every power of
+two \(n\), every \(1\le r\le n\), and every \(0<\varepsilon<1\), one can
+choose a deterministic integer
+\[
+ r\le k\le\min\{n,\lceil Cr/\varepsilon^2\rceil\}
+\]
+independently of \(V\), for which
+\[
+ \sup_{V^TV=I_r}
+ \Prob\!\left\{\norm{V^T\Omega_{n,k}\Omega_{n,k}^TV-I_r}
+                      >\varepsilon\right\}\le0.01.             \tag{2}
+\]
+For example, the proof permits
+\[
+ K_0=576\cdot4^{24},\qquad R_0=2^{20000},\qquad
+ C=200R_0+8196K_0.                                               \tag{3}
+\]
+\end{theorem}
+
+The supremum in (2) is outside the probability. The target frame is
+fixed before both sign diagonals and the sample. No input permutation,
+additional transform, or modified sampling law occurs in (1).
+When \(k=n\), the Gram is exactly \(I_r\).
+The printed assumption \(n=\Omega(\log r)\) in Problem~5.6 of
+\cite{workshop} requires no additional restriction here, since
+\(\log r\le r\le n\). Throughout, unadorned logarithms are natural,
+and \(\log_2\) is the binary logarithm.
+
+\section{Graph contractions and joint entry cumulants}
+
+We use the following graph-operator result from Mingo and Speicher
+\cite[Theorem~11 and Lemma~15]{mingo}.
+A directed acyclic graph with prescribed source inputs and sink outputs,
+every vertex on an input-to-output path, defines an operator by summing
+its internal coordinate labels. Its norm is at most the product of the
+edge-matrix norms. A connected graph without bridges can be modified
+to have this form with any two prescribed distinct vertices as its
+sole input and output. The modifications transpose reversed edges and
+split vertices using identity edges; they preserve the graph sum and
+the product of edge norms. Vertex-dependent dimensions and rectangular
+edge matrices are allowed.
+
+The following rank refinement makes the use of that result explicit.
+A loop counts twice toward a vertex degree.
+
+\begin{lemma}\label{lem:graph}
+Let a connected finite multigraph have positive even degrees. Assign
+a matrix of operator norm at most one to each edge, with compatible
+coordinate dimensions at its endpoints. Suppose one edge matrix is a
+real rank-\(r\) orthogonal projection \(P_0=VV^T\), \(r\ge1\).
+At each vertex also allow a coordinate weight of absolute value at most
+one. The unrestricted signed sum of the products of all these entries
+and weights over the vertex labels has absolute value at most \(r\).
+\end{lemma}
+\begin{proof}
+A connected even-degree graph has no bridge: a one-edge cut would give
+an odd degree sum on one side. Represent each vertex weight as a
+diagonal loop of norm at most one. Replace the distinguished edge
+entry by
+\[
+ (P_0)_{ij}=\sum_{a=1}^r V_{ia}V_{ja}.
+\]
+This inserts a degree-two vertex of dimension \(r\). Split that vertex
+into two dimension-\(r\) vertices, put one incident edge at each, and
+join them by \(I_r\). The signed sum is unchanged. The resulting graph
+is still connected with even degrees, also when the original edge was
+a loop.
+
+Take the two new vertices as the input and output in the cited
+graph-operator result. The resulting operator \(T:\R^r\to\R^r\) has
+norm at most one, since both rectangular factors and every inserted
+identity have norm one. The full signed sum is
+\(\one_r^T T\one_r\), of absolute value at most \(r\).
+This uses actual dimension-\(r\) vertices; it does not replace an
+ambient dimension by rank without a factorization.
+\end{proof}
+
+For scalar variables with the requisite moments, define
+\[
+ \cum(Y_1,\ldots,Y_q)=
+ \sum_{\pi\in\mathcal P([q])}(-1)^{|\pi|-1}(|\pi|-1)!
+                       \prod_{B\in\pi}\E\prod_{j\in B}Y_j.       \tag{4}
+\]
+The moment-cumulant formula is the inverse identity.
+We will use both only as finite polynomial identities.
+
+\begin{lemma}\label{lem:cumulants}
+For the projection \(P=HD_2HD_1VV^TD_1HD_2H\), arbitrary deterministic
+row pairs \((i_f,j_f)\), and every integer \(q\ge1\),
+\[
+ \left|\cum(nP_{i_1j_1},\ldots,nP_{i_qj_q})\right|
+                      \le (2q)^{12q}r.                         \tag{5}
+\]
+The cumulant is zero unless
+\[
+                 \sum_{f=1}^q(i_f+j_f)=0\quad\hbox{in }K.        \tag{6}
+\]
+Moreover, \(\E P=\delta I_n\).
+\end{lemma}
+\begin{proof}
+We first recall the finite cumulant formula for products. If each
+\(Y_f\) is a product of underlying variable occurrences, let \(\tau\)
+group the occurrences into those products. Expand (4) by the
+moment-cumulant formula for the underlying variables. A partition
+\(\sigma\) of their occurrences survives exactly when
+\(\sigma\vee\tau\) has one block, with coefficient one. Indeed, if its
+induced partition of the \(q\) products has \(b\) blocks, the remaining
+coefficient is
+\[
+ \sum_{j=1}^b S(b,j)(-1)^{j-1}(j-1)!=1_{\{b=1\}},
+\]
+where \(S(b,j)\) is the number of partitions into \(j\) blocks.
+This identity follows by comparing coefficients in
+\(\log(\exp z)=z\). Joint cumulants crossing independent families
+vanish, as follows by taking the logarithm of the factorized formal
+moment series.
+
+Write \(P_0=VV^T\) and \(\chi_i(a)=(-1)^{\langle i,a\rangle}\).
+The exact entry expansion is
+\[
+ nP_{ij}=\sum_{a,b,x,y}
+ \chi_i(a)\chi_j(b)\,
+ \xi_{2,a}\xi_{2,b}\xi_{1,x}\xi_{1,y}
+                  H_{ax}(P_0)_{xy}H_{yb}.                       \tag{7}
+\]
+The factor \(n\) cancels the two outer Hadamard normalizations.
+Both inner Hadamard matrices in (7) remain normalized.
+
+Apply the product formula to \(q\) copies of (7). A nonzero partition
+has a partition \(\alpha\) of its \(2q\) middle-sign occurrences and
+a partition \(\beta\) of its \(2q\) input-sign occurrences, all blocks
+even. Equal-coordinate occurrences within a block are identified.
+Different blocks may receive equal labels; no inequality between
+their labels is imposed. The connected-join condition connects all
+\(q\) matrix paths \(H\)--\(P_0\)--\(H\).
+
+The resulting graph has one vertex per middle-sign block, of degree
+equal to its even size, and one per input-sign block, of degree twice
+its size. It is connected with positive even degrees. Its matrices
+are normalized \(H\)'s and \(P_0\)'s, all of norm one. The outer
+characters become vertex weights of modulus one.
+Lemma~\ref{lem:graph} bounds its unrestricted signed label sum by \(r\).
+Absolute values have not been inserted into the matrix-entry products.
+
+The order-\(b\) cumulant of a single Rademacher sign has absolute value
+at most \(b^{2b}\): in (4) there are at most \(b^b\) partitions, each
+factorial coefficient is at most \(b!\le b^b\), and each moment has
+absolute value at most one. There are at most \((2q)^{4q}\) pairs of
+layer partitions. On each layer, the product of cumulant coefficients
+is at most \((2q)^{4q}\), since the block sizes sum to \(2q\).
+Both layers and their count prove (5).
+
+For (6), let \(C_s=\diag(\chi_s(i))\) and let \(T_s\) translate
+coordinates by \(s\). The Walsh identities give
+\[
+ C_sH=HT_s,\qquad T_sH=HC_s,\qquad
+ C_sHD_2HD_1V=H(T_sD_2T_s)H(C_sD_1)V.                           \tag{8}
+\]
+The two new diagonals remain independent iid sign diagonals. Thus
+\(C_sPC_s\) has the same law as \(P\) for the same fixed \(V\).
+Multilinearity multiplies the indicated cumulant by
+\(\chi_s(\sum_f(i_f+j_f))\). Character separation proves (6).
+
+Finally set \(B=HD_1P_0D_1H\). Averaging \(D_2\) retains only
+\(\diag(B)\) between the outer \(H\)'s, and averaging \(D_1\) makes
+each of those diagonal entries \(r/n\). Hence \(\E P=\delta I_n\).
+\end{proof}
+
+Set \(R=P-\delta I_n\). Every entry of \(R\), including every diagonal
+entry, has mean zero. Cumulants of order at least two are unchanged
+by this centering, so (5)--(6) hold for \(R\) at those orders.
+The zero diagonal mean will be used in the next proof.
+
+\section{A signed trace bound for centered projections}
+
+\begin{proposition}\label{prop:trace}
+Let \(E\) be a diagonal projection with independent Bernoulli entries
+of mean \(\theta\), independent of \(P\). Put
+\[
+ W=E-\theta I_n,\quad A=RW,\quad \kappa=n\theta,\quad
+ K_2=4^{24},\quad K_0=576K_2.
+\]
+For an integer \(p\ge2\), suppose
+\[
+ 0<\theta\le\tfrac12,\qquad \kappa\ge r,\qquad
+                         r\ge2(4p+1)^{1000}.                    \tag{9}
+\]
+Then
+\[
+                  \left|\E\tr A^{2p}\right|
+                           \le K_0^p(\delta\theta)^p.            \tag{10}
+\]
+\end{proposition}
+
+The absolute value in (10) is outside the expectation. In particular,
+(10) is not a norm moment of the generally nonsymmetric matrix \(A\).
+
+\subsection{Selector equality graphs}
+
+Expand the cyclic trace and first average the independent selectors.
+A partition of its \(2p\) cyclic positions specifies the equal row
+labels. Singleton blocks vanish. For a surviving partition, write
+\(m_u\ge2\) for its block sizes and
+\[
+ v=p-s,\quad 0\le s\le p-1.
+\]
+Its quotient multigraph is connected, with \(2p\) edge occurrences
+and degrees \(2m_u\ge4\), so
+\[
+                         \sum_u(\deg u-4)=4s.                   \tag{11}
+\]
+The graph contraction sums over distinct full row labels for its
+\(v\) vertices. Let \(t\) count the vertices incident to a
+\emph{nonloop} unordered edge of odd multiplicity, and let \(\ell\)
+count loop occurrences. Thus \(s+t\le p\).
+For a centered Bernoulli variable \(w\) and \(b\ge2\),
+\[
+ |\E w^b|
+ \le\theta(1-\theta)\big((1-\theta)^{b-1}+\theta^{b-1}\big)
+ \le\theta.                                                     \tag{12}
+\]
+The absolute selector coefficient of a graph is therefore at most
+\(\theta^v\). These are ordinary moments of equality blocks, not
+selector cumulants.
+
+\begin{lemma}\label{lem:count}
+Let \(N_{p,s,t}\) count these equality partitions, and put \(L=4p+1\).
+Then
+\[
+ \ell\le4t+12s+2,\qquad
+                N_{p,s,t}\le8p\,3^p L^{74(s+t)}.                 \tag{13}
+\]
+\end{lemma}
+\begin{proof}
+Mark all odd-incident vertices and all vertices of degree greater
+than four, and call their union \(B\). There are at most \(2s\)
+vertices of the latter kind. By (11),
+\[
+ |B|\le t+2s,\qquad D_B:=\sum_{u\in B}\deg u\le4t+12s.            \tag{14}
+\]
+Outside \(B\), degree is four and all nonloop multiplicities are
+even. In a graph with more than one vertex, the possible types are:
+two distinct neighbors joined by doubled edges and no loop;
+one neighbor joined by a doubled edge and one loop; or one neighbor
+joined by four edges and no loop. Call the first type internal and
+the last two terminal.
+
+When \(B\ne\varnothing\), a four-edge terminal is directly adjacent
+to \(B\); otherwise it would form an isolated two-vertex component.
+Every loop terminal joins \(B\) by a doubled path of internal
+vertices. Different terminal attachments consume distinct pairs
+of half-edges at \(B\). Loops in \(B\) themselves consume two
+half-edges each. In particular the total number of loops is at most
+\(D_B\). When \(B=\varnothing\), the graph is a doubled cycle
+(including four parallel edges on two vertices) or a doubled path
+with a loop at each endpoint. The one-vertex possibility has two
+loops. This proves the loop bound in (13).
+
+For the count, first suppose \(a=s+t\ge1\), so \(B\ne\varnothing\).
+Retain \(B\) and all terminal vertices, and contract maximal chains
+of internal doubled-path vertices into distinguished doubled links.
+A link may return to the same retained vertex or be parallel to
+another edge; its paired half-edge ports must be retained.
+Direct doubled edges may be given length zero. Connectivity excludes
+an isolated cycle of removed vertices.
+
+If \(T\) terminal vertices are retained, then \(T\le D_B/2\).
+The retained graph has \(q\) vertices and total degree \(D\), with
+\[
+ q\le |B|+D_B/2\le8a,\qquad
+ D=D_B+4T\le3D_B\le36a,\qquad q\le p,\quad D\le4p.                \tag{15}
+\]
+Temporarily label its \(q\) vertices and distinguish their half-edges.
+The following data give a surjective encoding of its possible
+expansions.
+
+First choose \(q\) and its degree vector. This costs at most
+\(L^aL^{8a}\). Pair its \(D\) half-edges to specify the retained
+multigraph, allowing loops, in at most \(D^{D/2}\le L^{18a}\)
+ways. At each vertex designate disjoint pairs of half-edges as
+doubled-link ports. Giving each half-edge either no mate or a named
+mate costs at most \((D+1)^D\le L^{36a}\); retain only compatible
+choices. The edge pairing then identifies each doubled link through
+its ports, even when it is parallel to an odd edge or returns to one
+vertex through two different ports. There are at most \(D/4\le9a\)
+links. Assign each a length between zero and \(p\), costing at most
+\(L^{9a}\), and expand its internal vertices in path order.
+Keep only expansions with the prescribed vertex and edge counts.
+These choices give at most \(L^{72a}\) graph encodings.
+
+Every original graph yields such data by its specified contractions.
+Conversely, valid data reconstruct its graph with distinguished
+half-edges. Invalid and duplicate codes enlarge the count. Core
+labels are auxiliary; no separately labeled set of original vertices
+is chosen.
+
+An Euler circuit pairs arriving and departing half-edges at each
+vertex. For degree \(2m_u\), the number of transitions is bounded by
+\[
+ (2m_u-1)!!=3\prod_{j=3}^{m_u}(2j-1)
+                                  \le3(4p)^{m_u-2}.
+\]
+Their product is at most \(3^p L^{2s}\), because
+\(\sum_u(m_u-2)=2s\). Choose a starting directed edge in at most
+\(4p\) ways. A transition system producing one circuit determines
+the cyclic word, hence its equality partition after vertex names
+are discarded. Every original partition is produced. No additional
+choice of the positions of retained vertices is needed.
+The result is at most \(4p\,3^p L^{74a}\).
+
+For \(a=0\), there are at most the two underlying graphs described
+above. All degrees are four, so the same circuit encoding costs
+at most \(8p\,3^p\). This proves (13).
+\end{proof}
+
+\subsection{Entry-cumulant partitions and their counts}
+
+Fix one equality graph. Expand the expectation of its \(2p\) entries
+of \(R\) by entry cumulants. Singleton blocks vanish, including
+singleton loops. Let a surviving edge partition have
+\[
+                         b=p-d,\qquad 0\le d\le p-1
+\]
+blocks. Its binary constraint matrix has one row per block: the
+sum of that block's endpoint incidence vectors over \(\F_2\).
+Write \(h\) for its rank. By Lemma~\ref{lem:cumulants}, a summand
+can be nonzero only on its XOR constraints, which have
+\(n^{v-h}\) unrestricted solutions.
+
+Two kinds of pair block vanish on every injective labeling:
+adjacent nonparallel nonloop edges force equality of their other
+endpoints, and a loop paired with a nonloop edge forces equality
+of that edge's endpoints. Delete these partitions before relaxing
+injectivity. A remaining pair consists of parallel nonloop
+occurrences, disjoint nonloop edges, or two loops. Only a disjoint
+nonloop pair has a nonzero binary row, of weight four.
+
+Let \(M\) count occurrences in blocks of size at least three.
+Their total excess over size two is \(2d\), whence
+\[
+ M\le6d.
+\]
+At most \(12d\) vertices touch such occurrences. Any other odd-incident
+vertex must occur in a disjoint-pair row: an odd number of its chosen
+edge's occurrences cannot all pair among themselves, and the forbidden
+pair types have been removed. The supports of the disjoint-pair rows
+lie in the union of the supports of a basis chosen from those
+weight-four rows. Their rank is at most \(h\). Consequently
+\[
+                              t\le12d+4h.                       \tag{16}
+\]
+
+We count the possible entry partitions with fixed \(d,h\), keeping
+the degree-excess budget. Choose the at most \(6d\) large-block
+occurrences and partition them in at most
+\[
+                 (2p+1)^{6d}(2p)^{6d}\le L^{12d}
+\]
+ways. Their cumulant constants from (5) are at most
+\((4p)^{12M}\le L^{72d}\). Pair blocks use \(K_2=4^{24}\), so
+their constants together are at most \(K_2^p\).
+
+Let \(U\) be the union of the supports of disjoint-pair rows.
+It has at most \(4h\) vertices and can be chosen in at most
+\(L^{4h}\) ways. Every occurrence in such a pair has both endpoints
+in \(U\). The number available is at most
+\[
+ \frac12\sum_{u\in U}\deg u\le2|U|+2s\le8h+2s.
+\]
+Choosing those occurrences and pairing them costs at most
+\[
+ 2^{8h+2s}(2p)^{4h+s}\le L^{8h+2s}.
+\]
+Including \(U\), this is \(L^{12h+2s}\).
+
+All remaining loop occurrences pair with each other, at a cost
+bounded by
+\[
+                  (2p)^{\ell/2}\le L^{2t+6s+1}.                 \tag{17}
+\]
+For a nonloop unordered edge with positive even remaining
+multiplicity \(a_e\), its parallel-pair choices are at most
+\(3(4p)^{(a_e-4)_+/2}\). There are at most \(p\) such groups.
+At each vertex, the sum of \((a_e-4)_+\) over incident groups is
+at most \(\deg u-4\): if there is any such group, its total
+multiplicity is bounded by that degree, and at least one four
+has been subtracted. Summing over endpoints and using (11) gives
+\(\sum_e(a_e-4)_+\le2s\). All parallel-pair choices therefore
+cost at most \(3^pL^s\).
+
+The total partition count and cumulant constants for fixed \(d,h\)
+are thus bounded by
+\[
+                         (3K_2)^p L^{84d+12h+9s+2t+1}.           \tag{18}
+\]
+These counts permit incompatible choices but cover every admissible
+partition. No common sign is assumed for cumulant terms.
+
+Each cumulant block contributes one factor \(r\), and the entry
+normalizations contribute \(n^{-2p}\). After deleting the
+pointwise-vanishing partitions, relax injectivity in the absolute
+upper bound and use \(n^{v-h}\) labels. The selector coefficient
+from (12) is at most \(\theta^v\). Their combined dimension factor
+is exactly
+\[
+ \theta^v r^{p-d}n^{-2p}n^{v-h}
+            =(\delta\theta)^p\kappa^{-s}r^{-d}n^{-h}.             \tag{19}
+\]
+The factor \(\kappa^{-s}\) is essential and has not yet been discarded.
+
+\subsection{Summation and proof of Proposition~\ref{prop:trace}}
+
+Multiply (18)--(19) by (13). Finite expansion followed by the stated
+triangle inequalities bounds \(|\E\tr A^{2p}|\) by
+\[
+ 8pL(9K_2)^p(\delta\theta)^p
+  \sum_{s,t,d,h}L^{83s+76t+84d+12h}\kappa^{-s}r^{-d}n^{-h},       \tag{20}
+\]
+where (16) holds. For fixed \(s,d,h\),
+\[
+ \sum_{t=0}^{12d+4h}L^{76t}\le2L^{912d+304h}.
+\]
+Use \(\kappa\ge r\), \(n\ge r\), and extend the other parameter
+ranges to nonnegative integers. Since the resulting exponents
+are \(83s+996d+316h\), (20) is at most
+\[
+ 16pL(9K_2)^p(\delta\theta)^p
+          \sum_{s,d,h\ge0}\left(\frac{L^{1000}}r\right)^{s+d+h}.
+\]
+Under (9) the three geometric series have product at most eight.
+Finally
+\[
+ 128pL\le640p^2\le64^p\qquad(p\ge2);
+\]
+the last inequality holds at \(p=2\), and its successive left-hand
+ratio is smaller than \(64\). This proves (10).
+
+\section{From signed traces to both spectral edges}
+
+\begin{lemma}\label{lem:transfer}
+Let \(P=XX^T\) and \(E\) be any real orthogonal projections,
+\(X^TX=I_r\). Let \(0<\delta,\theta\le1/2\) and set
+\[
+ A=(P-\delta I)(E-\theta I),\qquad
+ a^2=\delta(1-\delta)\theta(1-\theta).
+\]
+For every integer \(p\ge1\), \(\tr A^{2p}\ge-2r a^{2p}\).
+If \(0<\eta<1\) and \(\delta\le\theta\eta^2/64\), then pointwise
+\[
+ 1_{\{\norm{\theta^{-1}X^TEX-I_r}>\eta\}}
+          (\theta\eta/2)^{2p}
+                \le\tr A^{2p}+2r a^{2p}.                        \tag{21}
+\]
+\end{lemma}
+\begin{proof}
+Diagonalize \(PEP\) on \(\operatorname{range}P\).
+For a unit eigenvector \(u\) with eigenvalue \(0<\lambda<1\), put
+\[
+ w=\frac{Eu-\lambda u}{\sqrt{\lambda(1-\lambda)}}.
+\]
+Then \(Pw=0\), \(\norm w=1\), and the matrices on the orthonormal
+basis \(u,w\) are
+\[
+ P=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+ E=\begin{pmatrix}\lambda&\sqrt{\lambda(1-\lambda)}\\
+                  \sqrt{\lambda(1-\lambda)}&1-\lambda\end{pmatrix}.
+                                                                  \tag{22}
+\]
+Indeed \(PEu=\lambda u\), \(\|Eu\|^2=\lambda\), and \(E^2=E\)
+give these assertions directly. Distinct eigenvectors from an
+orthonormal eigenbasis give orthogonal pairs, since the relevant
+cross inner products reduce to \(\langle u,Eu'\rangle=0\),
+also in repeated eigenspaces. The displayed spaces are invariant.
+
+Eigenvalues \(\lambda=0,1\) give the intersections of
+\(\operatorname{range}P\) with \(\ker E,\operatorname{range}E\),
+respectively. The remaining orthogonal complement lies in \(\ker P\),
+is invariant under \(E\), and can be diagonalized there.
+This constructs the entire decomposition directly.
+
+On (22), the characteristic polynomial of \(A\) is
+\[
+ z^2-tz+a^2,\qquad t=\lambda-\delta-\theta+2\delta\theta.           \tag{23}
+\]
+If its roots are nonreal, they are conjugates of modulus \(a\),
+and their even-power sum is at least \(-2a^{2p}\).
+If they are real, that sum is nonnegative.
+Power traces equal the sums of root powers even at a defective
+repeated root, by the Cayley--Hamilton recurrence.
+The remaining one-dimensional eigenvalues are among
+\[
+ -(1-\delta)\theta,\quad (1-\delta)(1-\theta),\quad
+                  -\delta(1-\theta),\quad \delta\theta,
+\]
+whose even powers are nonnegative. There are at most \(r\)
+two-dimensional blocks. This proves the lower trace bound.
+
+On the bad event in (21), some compressed eigenvalue satisfies
+\(|\lambda-\theta|>\theta\eta\). For an interior \(\lambda\), set
+\(b=\theta\eta\). The stated hypothesis gives
+\[
+ |t|>63b/64,\qquad a\le\sqrt{\delta\theta}\le b/8.
+\]
+Both roots in (23) are therefore real and have the same sign.
+Their smaller absolute value is at most \(a\), so the larger one
+exceeds \(|t|-a>55b/64>b/2\). This block contributes more than
+\((b/2)^{2p}\), while all other blocks together contribute at
+least \(-2r a^{2p}\).
+For \(\lambda=0\), the real eigenvalue has magnitude
+\((1-\delta)\theta\ge\theta/2>b/2\).
+For \(\lambda=1\), its magnitude is at least \(1/4>b/2\).
+These include \(E=0\) and \(E=I\).
+On the complementary event the lower trace bound makes the right
+side of (21) nonnegative, proving the pointwise inequality.
+\end{proof}
+
+\begin{corollary}\label{cor:bernoulli}
+Suppose
+\[
+ p=\lceil\log_2(3000r)\rceil,\qquad r\ge2(4p+1)^{1000}.
+\]
+For \(0<\eta<1\), \(0<\theta\le1/2\), and
+\(\kappa=n\theta\ge64K_0r/\eta^2\), the exact random projection \(P\)
+and independent Bernoulli coordinate projection \(E\) satisfy
+\[
+ \Prob\{\norm{\theta^{-1}X^TEX-I_r}>\eta\}\le1/1000.              \tag{24}
+\]
+\end{corollary}
+\begin{proof}
+The width hypothesis implies \(\kappa\ge r\) and
+\(\delta\le\theta\eta^2/64\), so both preceding results apply.
+Taking expectations in (21) and using \(a^2\le\delta\theta\) gives
+\[
+ \Prob(\text{bad})
+ \le(K_0^p+2r)\left(\frac{4r}{\kappa\eta^2}\right)^p
+ \le(1+2r)16^{-p}\le3r\,2^{-p}\le1/1000.
+\]
+No positivity of the unshifted signed trace was assumed.
+\end{proof}
+
+\section{Fixed-size sampling and the remaining dimensions}
+
+\begin{lemma}\label{lem:sampling}
+Let \(X\) be an orthonormal frame, possibly random and independent
+of sampling. For \(0<\varepsilon<1\), an integer \(1\le k\le n\),
+and
+\[
+ \alpha=\varepsilon/4,\qquad
+ \theta_\pm=(1\pm\alpha)k/n\le1,
+\]
+suppose each normalized Bernoulli Gram of density \(\theta_\pm\)
+has error at most \(\varepsilon/4\) except with probability
+\(\gamma\). A uniform \(k\)-element sample then satisfies
+\[
+ \Prob\left\{\norm{\frac nk X^TS_JS_J^TX-I_r}>\varepsilon\right\}
+ \le2\gamma+2\exp(-\varepsilon^2 k/48).                           \tag{25}
+\]
+\end{lemma}
+\begin{proof}
+Take independent uniform \(U_i\) on \([0,1]\), independent of \(X\).
+Let \(J\) index the \(k\) smallest values, and put
+\(B_\pm=\{i:U_i\le\theta_\pm\}\), \(N_\pm=|B_\pm|\).
+Their indicators have the required Bernoulli marginal laws.
+On \(N_-\le k\le N_+\), set inclusion and positivity give
+\[
+ (1-\alpha)\theta_-^{-1}X^TE_{B_-}X
+ \preceq \frac nkX^TE_JX
+ \preceq (1+\alpha)\theta_+^{-1}X^TE_{B_+}X.
+\]
+On the two Gram success events its spectrum lies between
+\((1-\alpha)^2\) and \((1+\alpha)^2\), which are within
+\(1\pm\varepsilon\).
+
+For a binomial \(N\) of mean \(\mu\), its exponential moment gives
+\[
+ \Prob(N-\mu\ge a)\le e^{-a^2/(2\mu+2a/3)},\qquad
+ \Prob(N-\mu\le-a)\le e^{-a^2/(2\mu)}.                            \tag{26}
+\]
+For completeness,
+\(\E e^{t(N-\mu)}\le\exp(\mu(e^t-1-t))\).
+The bound \(e^t-1-t\le t^2/(2(1-t/3))\), \(0<t<3\),
+follows termwise from \(j!\ge2\cdot3^{j-2}\), \(j\ge2\).
+Choose \(t=a/(\mu+a/3)\) for the upper tail.
+For the lower tail use \(e^{-t}-1+t\le t^2/2\) and \(t=a/\mu\).
+This proves (26).
+
+For \(N_-\), use \(\mu=(1-\alpha)k\), \(a=\alpha k\), giving
+an exponent at least \(\alpha^2k/2\). For \(N_+\), the lower-tail
+exponent is at least \(\alpha^2k/3\), since \(\alpha<1/4\).
+The two count failures sum to at most
+\(2e^{-\alpha^2k/3}\). Union bounding proves (25).
+This argument does not assume monotonicity of normalized failure
+probabilities as a function of \(k\).
+\end{proof}
+
+\begin{lemma}\label{lem:small}
+For every deterministic orthonormal frame \(V\), let \(X=HD_2HD_1V\)
+and let \(J\) be an independent uniform \(k\)-element subset. Then
+\[
+ \E_{D_1,D_2,J}\left\|\frac nkX^TS_JS_J^TX-I_r\right\|_F^2
+                                      \le\frac{r(r+1)}k.         \tag{27}
+\]
+Consequently \(k=\min\{n,\lceil200r^2/\varepsilon^2\rceil\}\)
+has failure probability at most \(0.01\).
+\end{lemma}
+\begin{proof}
+The case \(n=1\), and every case \(k=n\), is exact.
+For \(n>1\), let \(x_i^T\) be the rows of \(X\).
+The one- and two-coordinate inclusion probabilities of a uniform
+sample, together with \(\sum_i x_ix_i^T=I_r\), give
+\[
+ \E\!\left[\|G-I_r\|_F^2\mid X\right]
+  =\frac{n-k}{k(n-1)}
+                \left(n\sum_i\|x_i\|^4-r\right).                \tag{28}
+\]
+This follows by expanding the ordered products, using
+\(\sum_{i\ne j}(x_ix_i^T)(x_jx_j^T)
+=I_r-\sum_i\|x_i\|^2x_ix_i^T\), and taking the trace.
+
+Condition on \(U=HD_1V\), with rows \(u_j^T\).
+Every \(\sqrt n\,x_i\) is a Rademacher sum of these rows.
+The three fourth-moment pairings, subtracting twice the all-equal
+pattern, give
+\[
+ \E_{\xi}\left\|\sum_j\xi_j u_j\right\|^4
+             =r^2+2r-2\sum_j\|u_j\|^4\le r^2+2r.
+\]
+Average (28) over \(D_2\) using this bound, and then over \(D_1\).
+Since \((n-k)/(n-1)\le1\), this gives (27).
+Markov's inequality and the domination of operator norm by
+Frobenius norm give failure at most
+\(r(r+1)/(k\varepsilon^2)\).
+At the stated nonfull width this is at most
+\((r+1)/(200r)\le0.01\); full width is exact.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{thm:main}}
+
+We use the constants in (3). First, for every \(r\ge R_0\), the
+integer \(p=\lceil\log_2(3000r)\rceil\) satisfies the rank condition
+of Corollary~\ref{cor:bernoulli}. To check this explicitly, set
+\(x=\log_2r\ge20000\). Then \(p\le x+13\), so \(4p+1\le4x+53\).
+The function
+\[
+ f(x)=x-1-1000\log_2(4x+53)
+\]
+is positive at \(x=20000\), since \(80053<2^{17}\), and is
+increasing thereon:
+\(f'(x)=1-4000/((4x+53)\log 2)>0\).
+For the last inequality, \(\log2>1/2\) already suffices.
+Thus \(r\ge2(4p+1)^{1000}\).
+
+If \(r<R_0\), choose the width in Lemma~\ref{lem:small}.
+It obeys the desired probability and
+\[
+ k\le\min\{n,\lceil200R_0r/\varepsilon^2\rceil\}.
+\]
+
+For \(r\ge R_0\), put
+\[
+                    k_0=\left\lceil
+                            \frac{2048K_0r}{\varepsilon^2}
+                          \right\rceil.                         \tag{29}
+\]
+If \(n\le4k_0\), choose \(k=n\). Its Gram is exact, and
+\[
+ k=n\le4k_0\le(8192K_0+4)r/\varepsilon^2
+                         \le8196K_0r/\varepsilon^2.             \tag{30}
+\]
+Here \(r/\varepsilon^2\ge1\) and \(K_0\ge1\).
+
+Otherwise choose \(k=k_0\), and take
+\(\theta_\pm=(1\pm\varepsilon/4)k_0/n\).
+Because \(n>4k_0\), both are at most \(5/16<1/2\).
+Their effective widths satisfy
+\[
+ n\theta_\pm\ge\frac34 k_0
+ \ge\frac{1536K_0r}{\varepsilon^2}
+ \ge\frac{64K_0r}{(\varepsilon/4)^2}.                             \tag{31}
+\]
+Apply Corollary~\ref{cor:bernoulli} with \(\eta=\varepsilon/4\).
+Both Bernoulli failure probabilities are at most \(1/1000\).
+Lemma~\ref{lem:sampling} bounds the fixed-size failure by
+\[
+             \frac2{1000}+2e^{-\varepsilon^2k_0/48}<0.01.        \tag{32}
+\]
+Indeed \(\varepsilon^2k_0/48\ge2048K_0r/48>42\), and
+\(e^{42}\ge1+42+42^2/2=925>250\), which suffices for (32).
+
+All choices are deterministic functions of \(n,r,\varepsilon\).
+They satisfy \(k\ge r\), \(k\le n\), and the upper width bound with
+the single constant \(C\) in (3). Every preceding probability estimate
+is uniform in the deterministic orthonormal frame \(V\).
+Equation (1) therefore gives the supremum bound (2), completing
+the positive resolution. \qed
+
+\begin{thebibliography}{9}
+\bibitem{mingo}
+J.~A. Mingo and R.~Speicher,
+\emph{Sharp Bounds for Sums Associated to Graphs of Matrices},
+arXiv:0909.4277 (2009).
+\url{https://arxiv.org/abs/0909.4277}.
+
+\bibitem{workshop}
+Amsel et al.,
+\emph{Linear Systems and Eigenvalue Problems:
+Open Questions from a Simons Workshop},
+arXiv:2602.05394v3 (2026), Definitions~5.1 and~5.3 and Problem~5.6.
+\url{https://arxiv.org/abs/2602.05394v3}.
+\end{thebibliography}
+\end{document}

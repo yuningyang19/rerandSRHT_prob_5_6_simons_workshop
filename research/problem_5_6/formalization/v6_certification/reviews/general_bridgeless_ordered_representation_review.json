@@ -1,0 +1,12 @@
+{
+  "scope": "Internal StateFreshEar.Ordered rank transport; no public expected target change",
+  "reviewer_context": "/root",
+  "author_context": "/root/general_bridgeless",
+  "status": "APPROVED_INTERNAL_REPRESENTATION_CHANGE",
+  "before_file_sha256": "7e4eb4fe2190b896e15386c7f592d9ef5833f8f3940c2278a16606a7828e8f9d",
+  "after_file_sha256": "3f6dfcdba0808c4f71cdfef4aad1b3da7e8b358e78f057b4cfdbf9bfac4edd4b",
+  "before": "Ordering of endpoints by fixed canonical distinctDAGRank",
+  "after": "Existence of a natural rank strictly increasing on all active edges and ordering the two endpoints",
+  "reason": "Already constructed active DAG is unchanged under unused-edge reversal; the proved rank witness transports without depending on the arbitrary choice of canonical rank.",
+  "public_boundary": "Final conversion theorem must construct both state and rank from primitive connected bridgeless graph data; no additional caller hypothesis."
+}

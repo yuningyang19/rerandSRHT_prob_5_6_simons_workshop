@@ -1,0 +1,10 @@
+# Independent formal-log expected review
+
+Reviewer `/root/v6_inventory`, before proof generation.
+Reviewed expected-file SHA-256: `695382ecee0656a1388765fbe8e5a5a5c987d5272415a2512f5b259b9e068814`.
+
+APPROVED_AS_SOURCE_SCOPE for I-V6-14. The primitive coefficient multiplication is the actual subset convolution: a squarefree monomial on S is split into T and S minus T. Recursive powers use that multiplication and a genuine unit coefficient. The log and exponential are the ordinary coefficient series truncated at cardinality S, not definitions in terms of the desired cumulant. The power-partition formula and high-degree truncation correctly require f(empty)=0 and include zero powers and empty S. The log coefficient target uses actual integrals and every nonempty subset of the occurrence set; exp(log moment)=moment covers every S including empty. The separate empty-coefficient target derives moment empty=1, log empty=0 and exp empty=1 from probability normalization.
+
+The finite squarefree quotient retains exactly the ordinary formal series coefficients used by C: a nonsquarefree term cannot contribute to a squarefree monomial under multiplication. Formal interpretation of log(m) requires m(empty)=1; interpretation of exp(f) by these finite coefficients requires f(empty)=0. The public expected applications satisfy these conditions through probability normalization and the empty log coefficient. No analytic moment-generating convergence is assumed. Repeated random variables remain permitted at distinct occurrence positions, and finite joint moments retain arbitrary probability spaces.
+
+A future proof must establish these actual coefficient identities. If it uses the existing general moment theorem to verify exp(log moment), that dependency must remain explicit: the earlier general theorem was independently proved by partition cancellation and is not retroactively described as obtained from this new logarithm module. No actual proof or compiled coverage is pre-accepted here.

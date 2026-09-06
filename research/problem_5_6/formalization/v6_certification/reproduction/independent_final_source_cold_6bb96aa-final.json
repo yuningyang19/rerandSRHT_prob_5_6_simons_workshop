@@ -1,0 +1,86 @@
+{
+  "status": "FAIL",
+  "started_utc": "2026-09-06T14:48:53.941062+00:00",
+  "verification_commit": "6bb96aa844c9c54dbf0d31a1cf5d4777f3fb0446",
+  "archive_sha256": "9e4dcf6c813914bf4d98f23a2fdf54d408ef71b811cedd169b4cd1c5b8fa12a7",
+  "archive": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/frozen-v6-companion-6bb96aa.tar.gz",
+  "destination": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final",
+  "destination_was_absent": true,
+  "execution_method": "Validate the exact new archive, unpack into a previously absent directory, shallow-fetch only exact official dependency source revisions, verify zero compiled objects, then invoke the archive documented run_suite.py exactly once. This is a new corrected-entrypoint test; prior c030 failures and recovery remain separate.",
+  "compiled_cache_reused": false,
+  "global_git_config_modified": false,
+  "source_fetches": [],
+  "child_git_http_version": "HTTP/1.1",
+  "archive_members": 516,
+  "source_members_checked": 514,
+  "initial_compiled_objects": 0,
+  "archive_validation": "PASS",
+  "current_command": {
+    "command": [
+      "/usr/bin/git",
+      "-c",
+      "gc.auto=0",
+      "fetch",
+      "--depth",
+      "1",
+      "origin",
+      "db584cd6d46c92f209a44c0f1c829460d327499d"
+    ],
+    "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+    "started_utc": "2026-09-06T14:48:54.389742+00:00",
+    "returncode": 128,
+    "elapsed_seconds": 647.731437792012,
+    "ended_utc": "2026-09-06T14:59:42.123164+00:00"
+  },
+  "execution_commands": [
+    {
+      "command": [
+        "/usr/bin/git",
+        "init"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+      "started_utc": "2026-09-06T14:48:54.359577+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.01724004204152152,
+      "ended_utc": "2026-09-06T14:48:54.376920+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/mathlib4.git"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+      "started_utc": "2026-09-06T14:48:54.377121+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.012058916967362165,
+      "ended_utc": "2026-09-06T14:48:54.389309+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/git",
+        "-c",
+        "gc.auto=0",
+        "fetch",
+        "--depth",
+        "1",
+        "origin",
+        "db584cd6d46c92f209a44c0f1c829460d327499d"
+      ],
+      "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6bb96aa-final/research/problem_5_6/formalization/lean/.lake/packages/mathlib",
+      "started_utc": "2026-09-06T14:48:54.389742+00:00",
+      "returncode": 128,
+      "elapsed_seconds": 647.731437792012,
+      "ended_utc": "2026-09-06T14:59:42.123164+00:00"
+    }
+  ],
+  "returncode": 128,
+  "error": "Command '['/usr/bin/git', '-c', 'gc.auto=0', 'fetch', '--depth', '1', 'origin', 'db584cd6d46c92f209a44c0f1c829460d327499d']' returned non-zero exit status 128.",
+  "changed_proof_or_build_inputs": [],
+  "ended_utc": "2026-09-06T14:59:42.136398+00:00",
+  "elapsed_seconds": 648.1935196249979,
+  "raw_log": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/reproduction/independent_final_source_cold_6bb96aa-final.log",
+  "raw_log_sha256": "29f80ad98b3fdf128f500c717fb5082c5f9d9479933730967e61e9dd4843aec1"
+}

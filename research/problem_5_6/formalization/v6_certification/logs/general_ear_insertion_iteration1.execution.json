@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "Problem56.PaperV6.GeneralBridgelessEarInsertion"
+  ],
+  "cwd": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean",
+  "start_utc": "2026-09-06T11:42:24.744141+00:00",
+  "end_utc": "2026-09-06T11:42:40.187725+00:00",
+  "elapsed_seconds": 15.443185833049938,
+  "returncode": 1,
+  "stdout_stderr": "logs/general_ear_insertion_iteration1.log",
+  "log_sha256": "da489a8cf149b8e925678d665ba7986317c4f0150cabb90e52c516e10a8e2c48",
+  "local_lean_sources": {
+    "research/problem_5_6/formalization/lean/Problem56/Definitions.lean": "7d251ffbdb0fd28fba0a85cd9c23e6ffda1a573f2e622fa951c6cbb3193e315b",
+    "research/problem_5_6/formalization/lean/Problem56/GraphBridgelessConversion.lean": "8703ff942b0e8ea724b378671e1abf0f2d73bc41ecf9dc93c7a25604ba5e09a6",
+    "research/problem_5_6/formalization/lean/Problem56/GraphEven.lean": "69e426bf8b5a39ae4acd680bb7092958d9e5922836eaa9d02f89f46b3983f4aa",
+    "research/problem_5_6/formalization/lean/Problem56/GraphFiberSplit.lean": "a97451a00d60c63142ee53a108ba5370f24ffa4b27fa6bd90a5d78f65ed9545d",
+    "research/problem_5_6/formalization/lean/Problem56/GraphOperatorL2.lean": "3c6db375116f1364edaeafd484d10f14e20f3b7472efb6389bcd7a6e4772652e",
+    "research/problem_5_6/formalization/lean/Problem56/GraphVertexSplit.lean": "b3811b6dfd32bc17b5312cd85d9ec99266caedeea3d2f0945e85ec8472d9f363",
+    "research/problem_5_6/formalization/lean/Problem56/GraphWeightLoops.lean": "e4bb08146e409447f4248286a297a66d5128c8aa303f380105f6f3a09d30b0f6",
+    "research/problem_5_6/formalization/lean/Problem56/IndexedEulerCircuit.lean": "9f2c22a12811a02af2acf6906a38dc0c71076207004377ff7f9a266e75bdf4df",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessDAGSplit.lean": "102c6882d7525f738bc7d5fe63ca1da9d559d8e4411909a1e76d9f3e382cd922",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessEarInsertion.lean": "a932f701022a4a18942c9f9659c096f2c8b971798b9b3eb568ab4375357c17cd",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessExpected.lean": "93306f6a975ff307b590b21ebd2df2b9c93ed7e1593bbd0d04614c497fb45ed3",
+    "research/problem_5_6/formalization/lean/Problem56/PaperV6/GeneralBridgelessModifications.lean": "4818beeb12de0f2ff383bebdfb1e670f83aa76b61e6369b4256c4fe2f1b4210b"
+  },
+  "receipt_kind": "local subprocess execution record; not authenticated external attestation"
+}

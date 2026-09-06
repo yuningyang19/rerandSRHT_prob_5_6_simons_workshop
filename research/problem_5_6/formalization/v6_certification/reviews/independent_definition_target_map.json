@@ -1,0 +1,184 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "scope": "All 34 frozen definition entries; exact definition bodies to record, plus inline expressions checked in associated theorem raw types. This list does not create new source obligations.",
+  "inventory_count": 34,
+  "definition_map": {
+    "def:graph-contraction": [
+      "Problem56.PaperV6.paperGraphContraction"
+    ],
+    "def:boundary-matrix": [
+      "Problem56.PaperV6.paperBoundaryMatrix"
+    ],
+    "def:input-output": [
+      "Problem56.PaperV6.PaperInputOutput"
+    ],
+    "def:joint-cumulant": [
+      "Problem56.PaperV6.FiniteJointMoments",
+      "Problem56.PaperV6.measureJointCumulant"
+    ],
+    "def:partition-join": [
+      "Problem56.ProductPartitionConnected",
+      "Problem56.productJoinRelated"
+    ],
+    "def:equality-class": [
+      "Problem56.SelectorEqualityData",
+      "Problem56.selectorEqualityCount"
+    ],
+    "def:binary-constraint": [
+      "Problem56.entryConstraintMatrix",
+      "Problem56.PaperV6.PaperXorConstraints"
+    ],
+    "D-V6-08": [
+      "Problem56.WalshIndex",
+      "Problem56.normalizedWalsh",
+      "Problem56.SignLayer",
+      "Problem56.FixedSubset",
+      "Problem56.sampleMatrix",
+      "Problem56.rerandomizedSRHT",
+      "Problem56.transformedFrame",
+      "Problem56.randomProjection"
+    ],
+    "D-V6-09": [
+      "Problem56.euclideanOperatorNorm"
+    ],
+    "D-V6-10": [
+      "Problem56.frobeniusNormSq"
+    ],
+    "D-V6-11": [
+      "Problem56.bernoulliProjection",
+      "Problem56.bernoulliWeight",
+      "Problem56.signBernoulliExpectation"
+    ],
+    "D-V6-12": [
+      "Problem56.K₂",
+      "Problem56.K₀"
+    ],
+    "D-V6-13": [
+      "Problem56.GraphConnected",
+      "Problem56.PaperV6.EveryEdgeDeletionConnected"
+    ],
+    "D-V6-14": [
+      "Problem56.ProductPartitionConnected",
+      "Problem56.ProductOccurrence",
+      "Problem56.OccurrencePartitionData.middle",
+      "Problem56.OccurrencePartitionData.input"
+    ],
+    "D-V6-15": [
+      "Problem56.walshCharacter",
+      "Problem56.signValue"
+    ],
+    "D-V6-16": [
+      "Problem56.rademacherCumulant",
+      "Problem56.OccurrencePartitionData.middle",
+      "Problem56.OccurrencePartitionData.input",
+      "Problem56.occurrenceContraction"
+    ],
+    "D-V6-17": [
+      "Problem56.walshTranslation",
+      "Problem56.walshModulation"
+    ],
+    "D-V6-18": [
+      "Problem56.cyclicSucc",
+      "Problem56.centeredSelector"
+    ],
+    "D-V6-19": [
+      "Problem56.SelectorEqualityData"
+    ],
+    "D-V6-20": [
+      "Problem56.equalityEdgeMultiplicity",
+      "Problem56.equalityLoopOccurrences",
+      "Problem56.equalityOddIncidentVertices"
+    ],
+    "D-V6-21": [
+      "Problem56.equalityExceptionalVertices",
+      "Problem56.equalityExceptionalDegree"
+    ],
+    "D-V6-22": [
+      "Problem56.IsEqualityInternal",
+      "Problem56.IsEqualityLoopTerminal",
+      "Problem56.IsEqualityFourEdgeTerminal"
+    ],
+    "D-V6-23": [
+      "Problem56.EqualityRetainedVertex",
+      "Problem56.EqualityHalfEdge",
+      "Problem56.EqualityRetainedPorts",
+      "Problem56.ContractedCorePort",
+      "Problem56.ContractedCoreLinkPortIndex",
+      "Problem56.ContractedCoreLinkData.linkCount",
+      "Problem56.ContractedCoreLinkData.linkPorts",
+      "Problem56.ContractedCoreLinkData.linkLength",
+      "Problem56.ContractedCoreTopology.portPairing",
+      "Problem56.ContractedCoreTopology.links",
+      "Problem56.equalityRemovedComponentLengthCode"
+    ],
+    "D-V6-24": [
+      "Problem56.EulerTransitions",
+      "Problem56.CanonicalLocalTransitionSystem",
+      "Problem56.canonicalLocalTransitionMate",
+      "Problem56.canonicalExpandedEdgeMate",
+      "Problem56.canonicalEulerStep"
+    ],
+    "D-V6-25": [
+      "Problem56.EntryCumulantPartitionData.selector",
+      "Problem56.EntryCumulantPartitionData.entry",
+      "Problem56.PaperV6.paperBlockCumulant",
+      "Problem56.PaperV6.paperEntryCumulantProduct"
+    ],
+    "D-V6-26": [
+      "Problem56.AggregateEntryPartition",
+      "Problem56.entryPartitionCumulantConstant",
+      "Problem56.aggregateEntryPartitionCumulantSum",
+      "Problem56.PaperV6.paperEntryAbsoluteContribution"
+    ],
+    "D-V6-27": [
+      "Problem56.disjointConstraintSupport",
+      "Problem56.disjointPairRows",
+      "_private.Problem56.AggregatePartitionCumulant.0.Problem56.IsDisjointEntryPart",
+      "_private.Problem56.AggregatePartitionCumulant.0.Problem56.blockEndpointSupport"
+    ],
+    "D-V6-28": [
+      "Problem56.equalityEdgeMultiplicity"
+    ],
+    "D-V6-29": [
+      "Problem56.coordinateProjection",
+      "Problem56.bernoulliProjection"
+    ],
+    "D-V6-30": [
+      "Problem56.PaperV6.GeneralSamplingExpected",
+      "Problem56.PaperV6.GeneralSamplingJointExpected",
+      "Problem56.PaperV6.averagedBernoulliFailureProbability",
+      "Problem56.PaperV6.averagedFixedFailureProbability"
+    ],
+    "D-V6-31": [
+      "Problem56.PaperV6.continuousUnitUniform",
+      "Problem56.PaperV6.continuousKeyLaw",
+      "Problem56.PaperV6.continuousThreshold",
+      "Problem56.PaperV6.continuousThresholdSet",
+      "Problem56.PaperV6.KeysOrdered",
+      "Problem56.PaperV6.ContinuousCouplingExpected"
+    ],
+    "D-V6-32": [
+      "Problem56.fixedSampleGram"
+    ],
+    "D-V6-33": [
+      "Problem56.R₀",
+      "Problem56.explicitUniversalConstant"
+    ],
+    "D-V6-34": [
+      "Problem56.K₀"
+    ]
+  },
+  "inline_expression_scope": {
+    "D-V6-10": "Real.log and Real.logb 2 are pinned Mathlib operations appearing literally in raw theorem types; Frobenius square has explicit local definition.",
+    "D-V6-14": "Product groups tau are arbitrary Finpartition binders, and product variables are literal finite products in the general product theorem. The occurrence-data projection definitions retain repeated positions separately.",
+    "D-V6-23": "Rooted half-edge port labels and removed-component lengths are semantic data; generated structure projection definitions record their actual dependent domains.",
+    "D-V6-28": "Remaining multiplicities are a quantified function a : Fin g -> Nat in I30 and its parallelMultiplicityProductBound helper; (x)+ is truncated Nat subtraction, not a missing independent constant.",
+    "D-V6-30": "alpha=sqrt(4/k), theta±=(1±alpha)k/n occur literally in GeneralSamplingExpected and JointExpected; no extra standalone constant required.",
+    "D-V6-31": "J is existentially quantified with measurable ordering property; N± are literal card of continuousThresholdSet.",
+    "D-V6-34": "k0 is a let-bound Nat.ceil((2048*K0)*r/epsilon^2) in I42 and its callers; K0 is the independent coefficient definition."
+  },
+  "graph_kind_checks": {
+    "all_names_present_as_definition": true,
+    "exceptions": {}
+  }
+}

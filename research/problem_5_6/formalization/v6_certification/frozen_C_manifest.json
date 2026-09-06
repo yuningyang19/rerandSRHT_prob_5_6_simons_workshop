@@ -1,0 +1,16 @@
+{
+  "commit": "4551d08f3732a3ca06c2f576794e1d75790e1972",
+  "files": [
+    {
+      "path": "research/problem_5_6/paper/v6/figures/p7_contraction.tex",
+      "sha256": "9df62c726d52766be5996124d3257b751bcbc5116ff770f80f452d6089bddabe",
+      "git_blob": "ae98c9bd19822396e61a100b23bd5ec8d99ff3ce"
+    },
+    {
+      "path": "research/problem_5_6/paper/v6/main.tex",
+      "sha256": "3f140ac21cf98d07371ba81c307db1b272251fabe80fd58f7f290683e8d95286",
+      "git_blob": "29cedead0714e560d6b1ca8f789a2183c2c1e241"
+    }
+  ],
+  "input_closure_review": "main.tex inputs figures/p7_contraction.tex; inline TikZ and bibliography reside in main.tex"
+}

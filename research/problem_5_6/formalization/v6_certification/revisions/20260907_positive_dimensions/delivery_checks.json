@@ -1,0 +1,22 @@
+{
+  "status": "PASS_WITH_EXPLICIT_IMMUTABLE_BYTE_WHITESPACE_EXCEPTIONS",
+  "raw_diff_check_exit_code": 2,
+  "raw_diff_check_output": "research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/snapshots/research/problem_5_6/paper/v6/main.tex:732: trailing whitespace.\n+Lemma~\\ref{lem:transfer} both apply. \nresearch/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/snapshots/research/problem_5_6/paper/v6/main.tex:751: trailing whitespace.\n+$, \nresearch/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/snapshots/research/problem_5_6/paper/v6/main.tex:762: trailing whitespace.\n+$, \nresearch/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/tex_build/main.aux:1: trailing whitespace.\n+\\relax \n",
+  "unchanged_manuscript_whitespace_lines": [
+    732,
+    751,
+    762
+  ],
+  "source_identity": "Verified byte-identical to corresponding lines in old 4551d08 and complete new f279b6f snapshot",
+  "generated_aux_whitespace": "Compiler-produced first line is retained byte-for-byte for the recorded aux hash",
+  "excluded_paths_for_remaining_whitespace_check": [
+    "research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/snapshots/research/problem_5_6/paper/v6/main.tex",
+    "research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/tex_build/main.aux"
+  ],
+  "remaining_diff_check_exit_code": 0,
+  "no_snapshot_or_compiler_output_normalization": true,
+  "staged_scope": "New revision evidence plus current README/STATUS pointers only",
+  "preserved_intervening_remote_commit": "03fe3a9f73ce284a35bae54bd1b2dbbb147fb424",
+  "intervening_change": "One new export prompt file; fast-forwarded unchanged, not executed in this task",
+  "no_Lean_changes": true
+}

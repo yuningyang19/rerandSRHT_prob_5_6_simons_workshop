@@ -1,0 +1,63 @@
+{
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "lake_version": "Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0)",
+  "python_version": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "source_url": "https://github.com/leanprover-community/mathlib4.git",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "plausible",
+      "revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "source_url": "https://github.com/leanprover-community/plausible",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "source_url": "https://github.com/leanprover-community/LeanSearchClient",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "source_url": "https://github.com/leanprover-community/import-graph",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "source_url": "https://github.com/leanprover-community/ProofWidgets4",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "aesop",
+      "revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "source_url": "https://github.com/leanprover-community/aesop",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "Qq",
+      "revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "source_url": "https://github.com/leanprover-community/quote4",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "batteries",
+      "revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "source_url": "https://github.com/leanprover-community/batteries",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "Cli",
+      "revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "source_url": "https://github.com/leanprover/lean4-cli",
+      "tracked_source_clean": true
+    }
+  ],
+  "toolchain_trust_boundary": "Standard installed Lean distribution; not rebuilt from source by this task."
+}

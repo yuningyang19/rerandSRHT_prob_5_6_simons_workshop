@@ -1,0 +1,54 @@
+{
+  "records": [
+    {
+      "path": "/Users/yuningyang/.codex/skills/my-academic-research-flow-6-0/SKILL.md",
+      "resolved_path": "/Users/yuningyang/.codex/skills/my-academic-research-flow-6-0/SKILL.md",
+      "sha256": "d65f9865400baccf8fd1e48eb4e51358a02c6edc5c5d4b65b29639c265b64028",
+      "use": "controller documentation read by root",
+      "invocation_class": "documentation-guided local work, not authenticated lifecycle runtime dispatch",
+      "source_repository_commit": null
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/my-academic-lean-formalizer/SKILL.md",
+      "resolved_path": "/Users/yuningyang/.codex/skills/my-academic-lean-formalizer/SKILL.md",
+      "sha256": "57f40f74b1712688c6edc5a160d88932c73c1c7b2d8924e4f1a686b614200821",
+      "use": "formalizer documentation read by root; additive Lean implementation by recorded authors",
+      "invocation_class": "documentation-guided local work, not authenticated lifecycle runtime dispatch",
+      "source_repository_commit": null
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/my-academic-verification-kernel/SKILL.md",
+      "resolved_path": "/Users/yuningyang/.codex/skills/my-academic-verification-kernel/SKILL.md",
+      "sha256": "1cd6246cf54d01123f908f29252b508faf1812bc3d411b266e65abbe0d11c802",
+      "use": "independent review documentation read by baseline_audit and reverse_pass2",
+      "invocation_class": "documentation-guided local work, not authenticated lifecycle runtime dispatch",
+      "source_repository_commit": null
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/.system/openai-docs/SKILL.md",
+      "resolved_path": "/Users/yuningyang/.codex/skills/.system/openai-docs/SKILL.md",
+      "sha256": "7cb8fa1b2a0c635b5c61ffe1da7b8594a7ea0fce5b71e8d523e2025d88b2a05e",
+      "use": "official Astra requirement check by root",
+      "invocation_class": "documentation-guided local work, not authenticated lifecycle runtime dispatch",
+      "source_repository_commit": null
+    },
+    {
+      "path": "/Users/yuningyang/.codex/plugins/cache/openai-bundled/latex/0.2.6/skills/latex-compile/SKILL.md",
+      "resolved_path": "/Users/yuningyang/.codex/plugins/cache/openai-bundled/latex/0.2.6/skills/latex-compile/SKILL.md",
+      "sha256": "7f75388cc330a4e6e63ad31c397bb5dad563e825abf9060f602e6dbeb2443d9d",
+      "use": "frozen TeX compilation by root",
+      "invocation_class": "documentation-guided local work, not authenticated lifecycle runtime dispatch",
+      "source_repository_commit": null
+    },
+    {
+      "path": "/Users/yuningyang/.codex/skills/pdf/SKILL.md",
+      "resolved_path": "/Users/yuningyang/.codex/skills/pdf/SKILL.md",
+      "sha256": "d108cf2b36355ab37eb5962933f4d09785ec002f3105c506129320209306b9d2",
+      "use": "frozen rendered diagram inspection by root",
+      "invocation_class": "documentation-guided local work, not authenticated lifecycle runtime dispatch",
+      "source_repository_commit": null
+    }
+  ],
+  "installed_sources_changed_by_task": false,
+  "authenticated_runtime_receipts": "NOT_AVAILABLE_NOT_FABRICATED"
+}

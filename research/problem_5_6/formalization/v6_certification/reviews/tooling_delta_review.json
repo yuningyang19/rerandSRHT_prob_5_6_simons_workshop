@@ -1,0 +1,113 @@
+{
+  "reviewer_context": "/root/baseline_audit",
+  "time_utc": "2026-09-06T12:28:59.305292+00:00",
+  "tooling_hashes": {
+    "research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py": "9b4c564047ebf3c682cc13bd058c1466e93e7f603001d541fcbf5ae6bea2ada1",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_suite.py": "0449a143e3c428ff5a15dbc9922c47015fbec50be0b3fa1a15f9ab384c1a026e",
+    "research/problem_5_6/formalization/v6_certification/scripts/record_environment.py": "92a7308f0b0549dbb47d317c317feb9e0eec546e24e30f59534a2b59cb4abb37",
+    "research/problem_5_6/formalization/v6_certification/scripts/run_logged.py": "7204dd717c1e4f7b168cc52ed5df337673e55115f7cc87344e29a471ef3ee73c",
+    "research/problem_5_6/formalization/v6_certification/scripts/prepare_audit.py": "8fcb88166c65c2d4a7f964c1bda6deee2b3f9789f2ec8ca653a3e0a505fe00f7",
+    "research/problem_5_6/formalization/v6_certification/scripts/test_verifier.py": "17b5b721be43224e6b036284a4c988806d7cd937349096080ea4c72a9d095fe6",
+    "research/problem_5_6/formalization/v6_certification/scripts/export_companion.py": "407af43cc26395a972ba650478e03692f7c5d84ba46f6dae931dafd8a6ae8873"
+  },
+  "source_policy_direct_test": "PASS for current imported local source closure",
+  "negative_fixture_run": {
+    "command": [
+      "python3",
+      "research/problem_5_6/formalization/v6_certification/scripts/test_verifier.py"
+    ],
+    "returncode": 0,
+    "results": {
+      "missing_target": "REJECTED",
+      "forbidden_axiom_record": "REJECTED",
+      "changed_expected_type": "REJECTED",
+      "corrupted_manifest": "REJECTED",
+      "duplicate_inventory": "REJECTED",
+      "wrong_kind": "REJECTED",
+      "missing_dependency": "REJECTED",
+      "outside_namespace_axiom": "REJECTED",
+      "incomplete_graph_output": "REJECTED",
+      "duplicated_graph_end": "REJECTED",
+      "changed_primitive_definition": "REJECTED",
+      "skipped_mandatory_checks": "REJECTED",
+      "mandatory_command_substitution": "REJECTED",
+      "omitted_manifest_member": "REJECTED",
+      "deleted_execution_source_bindings": "REJECTED",
+      "anonymous_example_hole": "REJECTED",
+      "unchecked_insertion": "REJECTED",
+      "deleted_paper_interface": "REJECTED",
+      "duplicated_paper_interface": "REJECTED"
+    }
+  },
+  "crosswalk_empty_binding_witness": "Claimed-closed NAMED_RESULT row with valid source hash but empty actual_lean_types passed validate_crosswalk_rows at reviewed verifier hash; root notified and fixing.",
+  "remaining_binding_findings": [
+    "Require actual type bindings on covered theorem/interface rows and verify actual definition type/value records",
+    "Pin final independently reviewed crosswalk hash and frozen A/B/C manifests/source hashes",
+    "Fresh receipts after final script/source freeze"
+  ],
+  "exact_interface_locators": {
+    "I-V6-08": {
+      "public_targets": [
+        "Problem56.bernoulli_coordinate_sampling_corollary_of_trace",
+        "Problem56.bernoulli_coordinate_sampling_corollary"
+      ],
+      "source": "Problem56/BernoulliSamplingCorollary.lean:93",
+      "qualification": "Conditional theorem contains the trace premise; the separately closed corollary discharges it. Do not report conditional type alone as the full probability theorem."
+    },
+    "I-V6-23": {
+      "public_targets": [
+        "Problem56.signBernoulliExpectation_trace_centered_product_pow_expansion",
+        "Problem56.trace_centeredSelector_product_pow_expansion"
+      ],
+      "source": "Problem56/SignedTraceExpectationExpansion.lean:49; Problem56/TraceCyclicExpansion.lean:203",
+      "qualification": "The first identity explicitly separates Bernoulli selector expectation and sign-pair expectation; second supplies the deterministic cyclic expansion."
+    },
+    "I-V6-24": {
+      "public_targets": [
+        "Problem56.signBernoulliExpectation_trace_eq_partition_cumulant_sum"
+      ],
+      "body_dependencies": [
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.functionPartitionEquiv",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorMoment_eq_zero_of_singleton"
+      ],
+      "source": "Problem56/SignedTraceExpansion.lean:1413; :254; :398",
+      "qualification": "The finite bijection includes actual injective block labels. Singleton vanishing is a separate actual helper and enters the subsequent surviving-selector estimate."
+    },
+    "I-V6-40": {
+      "public_targets": [
+        "Problem56.signedTrace_master_geometric_bound"
+      ],
+      "body_dependencies": [
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.signedTrace_abs_le_boundedSelectorData",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEqualityData_contribution_sum_le"
+      ],
+      "source": "Problem56/SignedTraceExpansion.lean:2035; :1526; :1622",
+      "qualification": "The public root has the later infinite geometric majorant; actual private helper types and its body contain the literal finite majorization. These are source/proof-dependent correspondence, not identical public root type."
+    }
+  },
+  "locator_graph_sha256": "d71c4db87cad0fce2be6b4d8c85ebcc4acf6b310b44934635f4dca5ca037b3e7",
+  "recursor_review": {
+    "pinned_source": "Lean/Declaration.lean:348-372 and Lean/Util/CollectAxioms.lean:65",
+    "existing_implementation": "Visits recursor type, matching pinned collectAxioms; checked recursors are kernel-generated, so omission is not a demonstrated proof safety bypass.",
+    "completeness_improvement": "Visit RecursorVal.rules RHS used constants, rule constructor names and RecursorVal.all for a full explicit expression dependency graph; retain fresh stored-proof replay and report graph-count changes."
+  },
+  "cold_cache_review": {
+    "lake_help_source": "Installed v4.33.0 src/lean/lake/Lake/CLI/Help.lean:60 says --no-cache builds packages locally and does not download build caches",
+    "mathlib_hook_source": "Pinned .lake/packages/mathlib/lakefile.lean:163-180 conditionally downloads cache unless MATHLIB_NO_CACHE_ON_UPDATE=1",
+    "suite": "Sets MATHLIB_NO_CACHE_ON_UPDATE=1 and mandatory build commands use lake --no-cache build",
+    "limit": "These switches prevent downloads; they do not prove a source-cold build if local compiled objects already exist. Independent empty-.lake setup and raw logs remain necessary."
+  },
+  "environment_review": "record_environment requires exact dependency HEAD and no modified tracked dependency sources, records installed Lean/Lake/Python versions and checks v4.33.0. It does not itself authenticate toolchain binaries or prove local cache absence.",
+  "followup_repairs_reviewed": {
+    "frozen_source_manifest_hash_pins": {
+      "path": "research/problem_5_6/formalization/v6_certification/scripts/verify_evidence.py",
+      "sha256": "9b4c564047ebf3c682cc13bd058c1466e93e7f603001d541fcbf5ae6bea2ada1",
+      "status": "Exact A/B/C manifest SHA256 pins added and checked before source bytes; addresses editable-manifest finding."
+    },
+    "recursor_and_private_target_audit": {
+      "path": "research/problem_5_6/formalization/lean/Problem56/PaperV6/AuditTools.lean",
+      "sha256": "9a0d02443380d70dfb27dcafc0f1c7654006fb7ffa3ad4abcf1ba137943cae43",
+      "status": "Recursor rules RHS/ctor/all references now traversed; numeric private names parsed as Name.num; existing checked-environment target/kind/axiom validation retained. Component build succeeded in iteration9; final graph refresh pending."
+    }
+  }
+}

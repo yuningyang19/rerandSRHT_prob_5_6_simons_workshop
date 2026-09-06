@@ -1,0 +1,1186 @@
+{
+  "source": "independently reviewed three_way_crosswalk.json",
+  "source_sha256": "f0e0702505d1a5fc25b0e3f2da0bf448f15378f37bc28ce24033288941382ca0",
+  "entries": [
+    {
+      "inventory_id": "thm:main",
+      "category": "NAMED_RESULT",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.main_universal_ose",
+        "Problem56.PaperV6.fixed_frame_ose",
+        "Problem56.PaperV6.squared_edges_iff_spectral_bound",
+        "Problem56.PaperV6.fixed_frame_squared_norm_success"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:transfer",
+      "category": "NAMED_RESULT",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.two_projection_spectral_transfer"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "prop:trace",
+      "category": "NAMED_RESULT",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.signed_trace_proposition"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "cor:bernoulli",
+      "category": "NAMED_RESULT",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.bernoulli_coordinate_sampling_corollary"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:graph",
+      "category": "NAMED_RESULT",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.graph_orientation",
+        "Problem56.PaperV6.graph_rank"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:cumulant-identities",
+      "category": "NAMED_RESULT",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.generalMomentIdentity",
+        "Problem56.PaperV6.generalProductIdentity",
+        "Problem56.PaperV6.generalMultilinearity",
+        "Problem56.PaperV6.generalMixedIndependence",
+        "Problem56.PaperV6.generalShiftInvariance",
+        "Problem56.PaperV6.generalOddSymmetry"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:cumulants",
+      "category": "NAMED_RESULT",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.joint_entry_cumulant_lemma"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:count",
+      "category": "NAMED_RESULT",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.selector_equality_graph_count"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:binary-constraints",
+      "category": "NAMED_RESULT",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.binary_forbidden_pair",
+        "Problem56.PaperV6.binary_count",
+        "Problem56.PaperV6.binary_odd_incidence"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "prop:entry-contribution",
+      "category": "NAMED_RESULT",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.entry_weighted_count",
+        "Problem56.PaperV6.entry_absolute_contribution"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:sampling",
+      "category": "NAMED_RESULT",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.PaperV6.general_sampling",
+        "Problem56.PaperV6.finiteNoiseFailureLaw",
+        "Problem56.PaperV6.general_sampling_joint"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "lem:small",
+      "category": "NAMED_RESULT",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.small_rank_second_moment"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "NAMED_STATEMENT_CORRESPONDENCE_CHECKED"
+    },
+    {
+      "inventory_id": "I-V6-01",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I01_walsh_card",
+        "Problem56.I01_walsh_symmetry",
+        "Problem56.I01_walsh_involution",
+        "Problem56.I02_exact_gram_reduction"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-02",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.fixed_frame_ose",
+        "Problem56.PaperV6.squared_edges_iff_spectral_bound",
+        "Problem56.PaperV6.fixed_frame_squared_norm_success"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-03",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.I02_exact_gram_reduction",
+        "Problem56.I15_projection_mean_and_centering",
+        "Problem56.PaperV6.rectangular_trace_power",
+        "Problem56.PaperV6.gram_centering"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-04",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I31_two_projection_block_decomposition"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-05",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I31_two_projection_block_decomposition"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-06",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I32_quadratic_root_even_power_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-07",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I33_bad_spectral_edge_large_root",
+        "Problem56.I34_bernoulli_failure_arithmetic"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-08",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.bernoulli_coordinate_sampling_corollary_of_trace"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-09",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.graph_orientation",
+        "Problem56.PaperV6.graph_boundary",
+        "Problem56.PaperV6.graph_operator"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-10",
+      "category": "INTERFACE",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.PaperV6.generalBridgeless_modification",
+        "Problem56.PaperV6.rooted_history",
+        "Problem56.PaperV6.general_bridgeless_matrix_conversion"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-11",
+      "category": "INTERFACE",
+      "classification": "SOURCE_OR_CORRESPONDENCE_REPAIR_REQUIRED",
+      "actual_theorems": [
+        "Problem56.PaperV6.graph_fiber_boundary",
+        "Problem56.PaperV6.graph_reversal_boundary",
+        "Problem56.PaperV6.paper_identity_norm",
+        "Problem56.PaperV6.graph_fiber_norm_product",
+        "Problem56.PaperV6.rooted_elementary",
+        "Problem56.PaperV6.rooted_history",
+        "Problem56.PaperV6.rooted_graph_norm_product"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": false,
+      "formal_coverage_status": "SOURCE_DIMENSION_SCOPE_REPAIR_REQUIRED"
+    },
+    {
+      "inventory_id": "I-V6-12",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I06_connected_even_multigraph_has_no_bridge"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-13",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.I07_rank_edge_factorization_bound",
+        "Problem56.PaperV6.graph_rank"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-14",
+      "category": "INTERFACE",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.PaperV6.measure_moment_cumulant_inverse_nonempty_index",
+        "Problem56.PaperV6.generalCumulantIdentities",
+        "Problem56.PaperV6.squarefreePowerCoefficient",
+        "Problem56.PaperV6.squarefreePowerTruncation",
+        "Problem56.PaperV6.formalLogMomentCoefficient",
+        "Problem56.PaperV6.formalExpLogMoment",
+        "Problem56.PaperV6.formalLogEmptyCoefficients",
+        "Problem56.PaperV6.formalLogMomentInterface"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-15",
+      "category": "INTERFACE",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.PaperV6.measure_product_cumulant_connected_identity_nonempty",
+        "Problem56.PaperV6.generalProductIdentity"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-16",
+      "category": "INTERFACE",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.PaperV6.generalMultilinearity",
+        "Problem56.PaperV6.generalMixedIndependence",
+        "Problem56.PaperV6.generalShiftInvariance",
+        "Problem56.PaperV6.generalOddSymmetry"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-17",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I11_projection_entry_expansion"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-18",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I09_product_cumulant_connected_partition_identity",
+        "Problem56.I10_independent_families_mixed_cumulant_vanish",
+        "Problem56.I12_occurrence_partitions_form_connected_even_graph"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-19",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I12_occurrence_partitions_form_connected_even_graph"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-20",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I13_rademacher_cumulant_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-21",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I14_walsh_translation_modulation"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-22",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I15_projection_mean_and_centering"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-23",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.signBernoulliExpectation_trace_centered_product_pow_expansion",
+        "Problem56.trace_centeredSelector_product_pow_expansion"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-24",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.signBernoulliExpectation_trace_eq_partition_cumulant_sum"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-25",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I16_selector_quotient_degree_excess"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-26",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I17_centered_bernoulli_moment_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-27",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I18_exceptional_vertex_degree_budget",
+        "Problem56.I19_degree_four_classification_and_loop_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-28",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I20_contracted_core_encoding_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-29",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I20_contracted_core_encoding_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-30",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I21_euler_transition_count"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-31",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I08_moment_cumulant_inverse",
+        "Problem56.I15_projection_mean_and_centering"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-32",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.not_forbidden_iff_surviving",
+        "Problem56.PaperV6.binary_forbidden_pair"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-33",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.binary_count"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-34",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I24_large_block_and_support_rank_bound",
+        "Problem56.PaperV6.binary_odd_incidence"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-35",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I25_large_block_partition_constant_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-36",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I26_disjoint_pair_support_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-37",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I27_loop_parallel_pairing_bound"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-38",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.entry_weighted_count"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-39",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.PaperV6.paper_sum_injective_labels_bound",
+        "Problem56.PaperV6.paper_dimension_factor",
+        "Problem56.PaperV6.entry_absolute_contribution"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-40",
+      "category": "INTERFACE",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [
+        "Problem56.signedTrace_master_geometric_bound",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.signedTrace_abs_le_boundedSelectorData",
+        "_private.Problem56.SignedTraceExpansion.0.Problem56.selectorEqualityData_contribution_sum_le"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-41",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I30_trace_geometric_summation"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-42",
+      "category": "INTERFACE",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.I35_uniform_key_nested_coupling",
+        "Problem56.PaperV6.sampling_pointwise",
+        "Problem56.PaperV6.continuousCoupling",
+        "Problem56.PaperV6.continuousKey_frame_marginal"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-43",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I36_sampling_sandwich_spectral_conversion"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-44",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I37_binomial_tail_bounds"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-45",
+      "category": "INTERFACE",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [
+        "Problem56.PaperV6.sampling_pointwise",
+        "Problem56.PaperV6.general_sampling",
+        "Problem56.PaperV6.general_sampling_joint"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-46",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I38_finite_population_second_moment_identity"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-47",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I39_rademacher_vector_fourth_moment"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-48",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I40_operator_norm_le_frobenius"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-49",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I41_large_rank_cutoff_arithmetic"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "I-V6-50",
+      "category": "INTERFACE",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [
+        "Problem56.I42_final_width_constant_assembly"
+      ],
+      "actual_definitions": [],
+      "literal_source_kernel_covered": true,
+      "formal_coverage_status": "SOURCE_INTERFACE_AND_ACTUAL_KERNEL_ROUTE_REVIEWED"
+    },
+    {
+      "inventory_id": "def:graph-contraction",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.PaperV6.paperGraphContraction"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "def:boundary-matrix",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.PaperV6.paperBoundaryMatrix"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "def:input-output",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.PaperV6.PaperInputOutput"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "def:joint-cumulant",
+      "category": "DEFINITION",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.PaperV6.FiniteJointMoments",
+        "Problem56.PaperV6.measureJointCumulant"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "def:partition-join",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.ProductPartitionConnected",
+        "Problem56.productJoinRelated"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "def:equality-class",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.SelectorEqualityData",
+        "Problem56.selectorEqualityCount"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "def:binary-constraint",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.entryConstraintMatrix",
+        "Problem56.PaperV6.PaperXorConstraints"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-08",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.WalshIndex",
+        "Problem56.normalizedWalsh",
+        "Problem56.SignLayer",
+        "Problem56.FixedSubset",
+        "Problem56.sampleMatrix",
+        "Problem56.rerandomizedSRHT",
+        "Problem56.transformedFrame",
+        "Problem56.randomProjection"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-09",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.euclideanOperatorNorm"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-10",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.frobeniusNormSq"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-11",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.bernoulliProjection",
+        "Problem56.bernoulliWeight",
+        "Problem56.signBernoulliExpectation"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-12",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.K\u2082",
+        "Problem56.K\u2080"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-13",
+      "category": "DEFINITION",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.GraphConnected",
+        "Problem56.PaperV6.EveryEdgeDeletionConnected"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-14",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.ProductPartitionConnected",
+        "Problem56.ProductOccurrence",
+        "Problem56.OccurrencePartitionData.middle",
+        "Problem56.OccurrencePartitionData.input"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-15",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.walshCharacter",
+        "Problem56.signValue"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-16",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.rademacherCumulant",
+        "Problem56.OccurrencePartitionData.middle",
+        "Problem56.OccurrencePartitionData.input",
+        "Problem56.occurrenceContraction"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-17",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.walshTranslation",
+        "Problem56.walshModulation"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-18",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.cyclicSucc",
+        "Problem56.centeredSelector"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-19",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.SelectorEqualityData"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-20",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.equalityEdgeMultiplicity",
+        "Problem56.equalityLoopOccurrences",
+        "Problem56.equalityOddIncidentVertices"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-21",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.equalityExceptionalVertices",
+        "Problem56.equalityExceptionalDegree"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-22",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.IsEqualityInternal",
+        "Problem56.IsEqualityLoopTerminal",
+        "Problem56.IsEqualityFourEdgeTerminal"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-23",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.EqualityRetainedVertex",
+        "Problem56.EqualityHalfEdge",
+        "Problem56.EqualityRetainedPorts",
+        "Problem56.ContractedCorePort",
+        "Problem56.ContractedCoreLinkPortIndex",
+        "Problem56.ContractedCoreLinkData.linkCount",
+        "Problem56.ContractedCoreLinkData.linkPorts",
+        "Problem56.ContractedCoreLinkData.linkLength",
+        "Problem56.ContractedCoreTopology.portPairing",
+        "Problem56.ContractedCoreTopology.links",
+        "Problem56.equalityRemovedComponentLengthCode"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-24",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.EulerTransitions",
+        "Problem56.CanonicalLocalTransitionSystem",
+        "Problem56.canonicalLocalTransitionMate",
+        "Problem56.canonicalExpandedEdgeMate",
+        "Problem56.canonicalEulerStep"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-25",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.EntryCumulantPartitionData.selector",
+        "Problem56.EntryCumulantPartitionData.entry",
+        "Problem56.PaperV6.paperBlockCumulant",
+        "Problem56.PaperV6.paperEntryCumulantProduct"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-26",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.AggregateEntryPartition",
+        "Problem56.entryPartitionCumulantConstant",
+        "Problem56.aggregateEntryPartitionCumulantSum",
+        "Problem56.PaperV6.paperEntryAbsoluteContribution"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-27",
+      "category": "DEFINITION",
+      "classification": "WRAPPER_ONLY",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.disjointConstraintSupport",
+        "Problem56.disjointPairRows",
+        "_private.Problem56.AggregatePartitionCumulant.0.Problem56.IsDisjointEntryPart",
+        "_private.Problem56.AggregatePartitionCumulant.0.Problem56.blockEndpointSupport"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "EXACT_DISJOINT_PAIR_PREDICATE_AND_SUPPORT_INCLUSION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-28",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.equalityEdgeMultiplicity"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-29",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.coordinateProjection",
+        "Problem56.bernoulliProjection"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-30",
+      "category": "DEFINITION",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.PaperV6.GeneralSamplingExpected",
+        "Problem56.PaperV6.GeneralSamplingJointExpected",
+        "Problem56.PaperV6.averagedBernoulliFailureProbability",
+        "Problem56.PaperV6.averagedFixedFailureProbability"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-31",
+      "category": "DEFINITION",
+      "classification": "NEW_FORMALIZATION",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.PaperV6.continuousUnitUniform",
+        "Problem56.PaperV6.continuousKeyLaw",
+        "Problem56.PaperV6.continuousThreshold",
+        "Problem56.PaperV6.continuousThresholdSet",
+        "Problem56.PaperV6.KeysOrdered",
+        "Problem56.PaperV6.ContinuousCouplingExpected"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-32",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.fixedSampleGram"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-33",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.R\u2080",
+        "Problem56.explicitUniversalConstant"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    },
+    {
+      "inventory_id": "D-V6-34",
+      "category": "DEFINITION",
+      "classification": "EXACT_REUSE",
+      "actual_theorems": [],
+      "actual_definitions": [
+        "Problem56.K\u2080"
+      ],
+      "literal_source_kernel_covered": null,
+      "formal_coverage_status": "SOURCE_DEFINITION_AND_ACTUAL_REPRESENTATION_REVIEWED"
+    }
+  ]
+}
