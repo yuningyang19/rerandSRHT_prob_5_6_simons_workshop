@@ -32,10 +32,14 @@
   "STATIC_PREFLIGHT_PASS": true,
   "DECLARATION_CLOSURE_PASS": true,
   "GOVERNANCE_FROZEN": true,
-  "FIRST_UNMET_GATE": "Pinned Linux Comparator and NanoDa compatibility run",
+  "FIRST_UNMET_GATE": "User agreement to the prepared exact service submission tuple",
   "RETURN_TO_CONTROLLER": "Same task; continue authorized packaging without extra handoff approval",
   "SUBMIT_AUTHORIZATION": "Not yet bound to a prepared exact tuple; do not call service intake",
   "REGISTER_AUTHORIZATION": "Not given; requires actual review and exact digest",
   "SOURCE_BYTES_CHANGED": false,
-  "ASTRA_GUIDANCE": "Use current user authorization, bounded mechanical recovery and proportional verification; no autonomous author attestations or service review consent."
+  "ASTRA_GUIDANCE": "Use current user authorization, bounded mechanical recovery and proportional verification; no autonomous author attestations or service review consent.",
+  "PALOMAR_PACKAGE_STATUS": "PASS",
+  "SUBMISSION_CANDIDATE_SHA": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+  "OFFICIAL_COMPATIBLE_COMPARATOR_STATUS": "PASS on own repository Linux runner",
+  "COMPATIBILITY_EVIDENCE": "palomar/compatibility_evidence/receipt.json"
 }

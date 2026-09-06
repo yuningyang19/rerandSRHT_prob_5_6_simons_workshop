@@ -1,0 +1,16 @@
+{
+  "source_commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+  "workflow_url": "https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/actions/runs/34049757010",
+  "evidence_kind": "Pinned Palomar verifier on this repository own GitHub Actions runner; not a Palomar service submission",
+  "mechanical_report_sha256": "1191259bff37b09a50b795d4055ba87a43e473a73c2db900b17b88ce48c242ce",
+  "status": "pass",
+  "comparator": "pass",
+  "lean_kernel": "pass",
+  "nanoda_kernel": "pass",
+  "challenge_provenance": "pass",
+  "source_identity": "601/601 PASS in workflow",
+  "mathlib_cache_reused": true,
+  "service_submission_id": null,
+  "workflow_request_id": "pkg260907002",
+  "documentation_commit_policy": "This evidence is recorded after the tested candidate. Submit the exact source_commit above; later evidence-only commits are not claimed as separately CI-tested."
+}

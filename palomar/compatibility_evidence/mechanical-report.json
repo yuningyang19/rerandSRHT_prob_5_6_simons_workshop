@@ -1,0 +1,485 @@
+{
+  "challenge": {
+    "bytes": 8177,
+    "canonical_olean_sha256": "52f13aac0a44d42cebde6f3bc5f019d14e56670fcc625d6b71df1bb9ed37e907",
+    "dependencies": [
+      {
+        "provenance": "allowlisted",
+        "repository": "leanprover-community/mathlib4"
+      }
+    ],
+    "direct_imports": [
+      "Mathlib"
+    ],
+    "lines": 178,
+    "module": "Challenge",
+    "path": "Challenge.lean",
+    "sha256": "695eac8c5205db715f5ac66da0b87772e1ec58c4d42f36a413dd710bf1d103d0",
+    "transitive_source_count": 2,
+    "trust_level": "high",
+    "untrusted_sources": []
+  },
+  "checked_at": "2026-09-06T18:04:07Z",
+  "classification": {
+    "arxiv": [
+      {
+        "code": "math.NA",
+        "name": "Numerical Analysis"
+      },
+      {
+        "code": "math.PR",
+        "name": "Probability"
+      }
+    ],
+    "msc2020": [
+      {
+        "code": "65F55",
+        "name": "Numerical methods for low-rank matrix approximation; matrix compression"
+      },
+      {
+        "code": "60B20",
+        "name": "Random matrices (probabilistic aspects)"
+      }
+    ]
+  },
+  "comparator": {
+    "challenge_module": "Challenge",
+    "definition_names": [],
+    "path": "comparator.json",
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "sha256": "0ea1b5122119bd9d05c80d83739fb5ddea31adb5e2aba975500d328d23b0f754",
+    "solution_module": "Solution",
+    "theorem_names": [
+      "Problem56.main_universal_ose",
+      "Problem56.PaperV6.fixed_frame_squared_norm_success"
+    ]
+  },
+  "comparator_commit": "575674928e239f5bc452aab72d1dd7b0f1326494",
+  "comparator_log_tail": "blem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCount.lean:236:0: 'Problem56.equalityPortsAt_card_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCount.lean:237:0: 'Problem56.equalityPortsAt_card_even' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCount.lean:238:0: 'Problem56.equalityEncoding_nonempty_of_boundedCanonicalInjection' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCount.lean:239:0: 'Problem56.contracted_core_encoding_bound_of_boundedCanonicalInjection' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n\u26a0 [8776/8784] Built Problem56.ContractedCoreCanonicalSource (6.0s)\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean:73:4: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean:76:4: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean:139:0: 'Problem56.equalityContractedRetainedPortOpposite_sourceLink' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean:140:0: 'Problem56.equalityStandardContractedPortOpposite_linkPort' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalSource.lean:141:0: 'Problem56.equalityAbstractContractedCore_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u26a0 [8777/8784] Built Problem56.ContractedCoreCanonicalEncoding (5.9s)\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:172:2: Try this: \n  letI\u0335\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:203:2: Try this: \n  letI\u0335\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:551:0: 'Problem56.canonicalSourcePortsAtEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:552:0: 'Problem56.canonicalSourcePortsAtCanonicalVertexEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:553:0: 'Problem56.canonicalSourceBounds_of_realization' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:554:0: 'Problem56.fixedPointFreeInvolutionTransport' depends on axioms: [Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:555:0: 'Problem56.equalityCyclicTransitionMate_target' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:556:0: 'Problem56.equalityCyclicTransitionMate_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:557:0: 'Problem56.canonicalLocalTransitionOfRealization' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:558:0: 'Problem56.canonicalLocalTransitionOfRealization_mate' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:559:0: 'Problem56.canonicalTailOfRealization_next' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:560:0: 'Problem56.canonicalTailOfRealization_class_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:561:0: 'Problem56.canonicalTailOfRealization_eq_iterate' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:562:0: 'Problem56.canonicalDynamicsPartition_dataOfRealization' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:563:0: 'Problem56.boundedCanonicalInjectionOfRealizations' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:564:0: 'Problem56.contracted_core_encoding_bound_of_realizations' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:565:0: 'Problem56.equalityEncoding_nonempty_of_eulerInjection' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalEncoding.lean:566:0: 'Problem56.contracted_core_encoding_bound_zero_of_eulerInjection' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n\u26a0 [8778/8784] Built Problem56.ContractedCoreCanonicalRealization (37s)\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:33:6: Unused tactic linter: `change E (equalitySourceLinkRetainedPort hp Q ha w) = E z` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:525:6: This simp argument is unused:\n  equalityRemovedComponentInternalSegmentHalfEdge\n\nHint: Omit it from the simp argument list.\n  [apply] simp [equalityCanonicalLinkSegmentSourceHalfEdge, hkzero]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:529:8: This simp argument is unused:\n  equalityRemovedComponentInternalSegmentHalfEdge\n\nHint: Omit it from the simp argument list.\n  [apply] simp [equalityCanonicalLinkSegmentSourceHalfEdge, hkzero, hklast, hlenne]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:529:57: This simp argument is unused:\n  hkzero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [equalityCanonicalLinkSegmentSourceHalfEdge, equalityRemovedComponentInternalSegmentHalfEdge, hklast,\n    hlenne]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:582:5: Variable name `hkzero` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hkzero\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:592:64: This simp argument is unused:\n  hkzero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [equalityCanonicalLinkSegmentSourceHalfEdge, hklast, hlenvalne]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:631:4: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:635:4: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1177:63: This simp argument is unused:\n  hkzero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [equalityCanonicalLinkSegmentSourceHalfEdge, hklast, hlenne, hlenvalne, \u2193reduceDIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1178:18: This simp argument is unused:\n  hlenne\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [equalityCanonicalLinkSegmentSourceHalfEdge, hkzero, hklast, hlenvalne, \u2193reduceDIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1189:63: This simp argument is unused:\n  hkzero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [equalityCanonicalLinkSegmentSourceHalfEdge, hklast, hlenne, hlenvalne, \u2193reduceDIte,\n    equalitySourceLinkBoundaryHalfEdge]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1190:18: This simp argument is unused:\n  hlenne\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [equalityCanonicalLinkSegmentSourceHalfEdge, hkzero, hklast, hlenvalne, \u2193reduceDIte,\n    equalitySourceLinkBoundaryHalfEdge]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1231:16: This simp argument is unused:\n  j\n\nHint: Omit it from the simp argument list.\n  [apply] simp\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1364:12: This simp argument is unused:\n  canonicalExpandedEdgeMate\n\nHint: Omit it from the simp argument list.\n  [apply] simp [canonicalExpandedPortVertex, hkzero, hlenpos] at hvertMate\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1371:12: This simp argument is unused:\n  canonicalExpandedEdgeMate\n\nHint: Omit it from the simp argument list.\n  [apply] simp [canonicalExpandedPortVertex, hkzero] at hvertMate\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1460:0: 'Problem56.equalityStandardPort_isLinkPort_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1461:0: 'Problem56.equalityDirectRetainedPortEquivCanonicalDirectPort' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1462:0: 'Problem56.equalityVertexEquivCanonicalExpandedVertex' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1463:0: 'Problem56.equalityCanonicalLinkSegmentSourceHalfEdge_toggle' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1464:0: 'Problem56.equalityCanonicalExpandedPortSourceHalfEdge_edgeMate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1465:0: 'Problem56.equalityCanonicalLinkSegmentSourceHalfEdge_injective' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1466:0: 'Problem56.equalityCanonicalDirectPortSourceHalfEdge_ne_link' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1467:0: 'Problem56.equalityCanonicalExpandedPortSourceHalfEdge_injective' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalRealization.lean:1468:0: 'Problem56.equalityRetainedPorts_card_add_four_removed' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2139 [8779/8784] Built Problem56.ContractedCoreCanonicalCard (4.5s)\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreCanonicalCard.lean:127:0: 'Problem56.equalityCanonicalExpandedPort_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2139 [8780/8784] Built Problem56.ContractedCoreEncodingClosure (4.3s)\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreEncodingClosure.lean:90:0: 'Problem56.equalityCanonicalExpandedPortSourceHalfEdge_bijective' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreEncodingClosure.lean:91:0: 'Problem56.equalityCanonicalExpandedPortEquivSourceHalfEdge' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreEncodingClosure.lean:92:0: 'Problem56.equalityCanonicalSourceRealizationData' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: research/problem_5_6/formalization/lean/Problem56/ContractedCoreEncodingClosure.lean:93:0: 'Problem56.contracted_core_encoding_bound_closed' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u26a0 [8781/8784] Built Problem56.Statements (27s)\nwarning: research/problem_5_6/formalization/lean/Problem56/Statements.lean:359:2: Try this: \n  letI\u0335\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nwarning: research/problem_5_6/formalization/lean/Problem56/Statements.lean:350:40: Variable name `hr` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hr\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: research/problem_5_6/formalization/lean/Problem56/Statements.lean:617:48: Variable name `hp` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hp\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nwarning: research/problem_5_6/formalization/lean/Problem56/Statements.lean:1107:41: This simp argument is unused:\n  Finset.sum_filter\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.natCast_card_filter, Finset.mem_univ, if_true] at *\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/Statements.lean:1108:4: This simp argument is unused:\n  Finset.mem_univ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.natCast_card_filter, Finset.sum_filter, if_true] at *\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nwarning: research/problem_5_6/formalization/lean/Problem56/Statements.lean:1108:21: This simp argument is unused:\n  if_true\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.natCast_card_filter, Finset.sum_filter, Finset.mem_univ] at *\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n\u26a0 [8782/8784] Built Problem56.PaperV6.FixedFrame (5.1s)\nwarning: research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrame.lean:139:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nwarning: research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrame.lean:139:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nwarning: research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrame.lean:139:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nwarning: research/problem_5_6/formalization/lean/Problem56/PaperV6/FixedFrame.lean:160:2: Try this: \n  letI\u0335\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\n\u2139 [8783/8784] Built Solution (3.8s)\ninfo: Solution.lean:5:0: Problem56.main_universal_ose :\n  \u2203 C,\n    C = Problem56.explicitUniversalConstant \u2227\n      1 \u2264 C \u2227\n        \u2200 (m r : \u2115) (\u03b5 : \u211d),\n          1 \u2264 r \u2192\n            r \u2264 Problem56.walshCard m \u2192\n              0 < \u03b5 \u2192\n                \u03b5 < 1 \u2192\n                  \u2203 k,\n                    r \u2264 k \u2227\n                      k \u2264 Problem56.walshCard m \u2227\n                        k \u2264 (Problem56.walshCard m).min \u2308\u2191C * \u2191r / \u03b5 ^ 2\u2309\u208a \u2227\n                          Problem56.spectralFailureSup m r k \u03b5 \u2264 1 / 100\ninfo: Solution.lean:6:0: Problem56.PaperV6.fixed_frame_squared_norm_success :\n  \u2203 C,\n    C = Problem56.explicitUniversalConstant \u2227\n      1 \u2264 C \u2227\n        \u2200 (m r : \u2115) (\u03b5 : \u211d),\n          1 \u2264 r \u2192\n            r \u2264 Problem56.walshCard m \u2192\n              0 < \u03b5 \u2192\n                \u03b5 < 1 \u2192\n                  \u2203 k,\n                    r \u2264 k \u2227\n                      k \u2264 Problem56.walshCard m \u2227\n                        k \u2264 (Problem56.walshCard m).min \u2308\u2191C * \u2191r / \u03b5 ^ 2\u2309\u208a \u2227\n                          \u2200 (V : Matrix (Problem56.WalshIndex m) (Fin r) \u211d),\n                            Problem56.OrthonormalFrame V \u2192\n                              99 / 100 \u2264\n                                Problem56.uniformProbability fun \u03c9 =>\n                                  Problem56.PaperV6.SquaredNormEdges \u03b5 V \u03c9.1 \u03c9.2.1 \u03c9.2.2\nBuild completed successfully (8784 jobs).\nExporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, Problem56.main_universal_ose, Problem56.PaperV6.fixed_frame_squared_norm_success, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution.\nLean default kernel accepts the solution\nYour solution is okay!",
+  "errors": [],
+  "existing_id": null,
+  "formalization": {
+    "automation_method_count": 1,
+    "path": "formalization.yaml",
+    "project_name": "Subspace embeddings with the rerandomized SRHT",
+    "review_status": "agent-reviewed",
+    "sha256": "ee97bfdfe3c28bf8c39eb52207afbcc95df0ab95fa3c984ce78936885cdfd951",
+    "source_count": 2
+  },
+  "lake_manifest": {
+    "path": "lake-manifest.json",
+    "sha256": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540"
+  },
+  "lakefile": {
+    "format": "toml",
+    "path": "lakefile.toml",
+    "sha256": "cba6a9636d4ff59fbf377967cb6f5da41626b25270b6df6a73ac95d9875c99e8"
+  },
+  "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+  "lean4export_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "lean_toolchain_path": "lean-toolchain",
+  "license": {
+    "declared_identifier": "Apache-2.0",
+    "detected_identifier": "Apache-2.0",
+    "path": "LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  "mathlib_cache": {
+    "available": true,
+    "required": true
+  },
+  "nanoda_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+  "orcid_validation": {
+    "checked_at": "2026-09-06T17:49:04Z",
+    "records": [],
+    "registry": "https://orcid.org",
+    "schema_version": 1
+  },
+  "phase": "verification",
+  "project_dependencies": [
+    {
+      "name": "mathlib",
+      "repository": "leanprover-community/mathlib4",
+      "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "url": "https://github.com/leanprover-community/mathlib4.git"
+    },
+    {
+      "name": "plausible",
+      "repository": "leanprover-community/plausible",
+      "revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "url": "https://github.com/leanprover-community/plausible"
+    },
+    {
+      "name": "LeanSearchClient",
+      "repository": "leanprover-community/LeanSearchClient",
+      "revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "url": "https://github.com/leanprover-community/LeanSearchClient"
+    },
+    {
+      "name": "importGraph",
+      "repository": "leanprover-community/import-graph",
+      "revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "url": "https://github.com/leanprover-community/import-graph"
+    },
+    {
+      "name": "proofwidgets",
+      "repository": "leanprover-community/ProofWidgets4",
+      "revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "url": "https://github.com/leanprover-community/ProofWidgets4"
+    },
+    {
+      "name": "aesop",
+      "repository": "leanprover-community/aesop",
+      "revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "url": "https://github.com/leanprover-community/aesop"
+    },
+    {
+      "name": "Qq",
+      "repository": "leanprover-community/quote4",
+      "revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "url": "https://github.com/leanprover-community/quote4"
+    },
+    {
+      "name": "batteries",
+      "repository": "leanprover-community/batteries",
+      "revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "url": "https://github.com/leanprover-community/batteries"
+    },
+    {
+      "name": "Cli",
+      "repository": "leanprover/lean4-cli",
+      "revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "url": "https://github.com/leanprover/lean4-cli"
+    }
+  ],
+  "provenance": {
+    "mathematical_sources": [
+      {
+        "authors": [
+          {
+            "name": "Yuning Yang"
+          }
+        ],
+        "identifier": "https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/blob/d0276b4b5bb85e25a43e6f677356dd625a19c1d6/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/snapshots/research/problem_5_6/paper/v6/main.tex",
+        "location": "Frozen v6 paper f279b6fac180125dce81a82d824da971bb7ae715, Theorem 1 and its squared-norm interpretation",
+        "note": "The link is a public byte-identical snapshot of the frozen paper. The source TeX retains its original empty author field; Yuning Yang supplied the author name for this metadata. The independent current three-way correspondence map and exact source hashes are included in the repository.",
+        "relationship": "formalizes",
+        "title": "Subspace embeddings with the rerandomized SRHT",
+        "type": "paper"
+      },
+      {
+        "authors": [],
+        "identifier": "https://arxiv.org/abs/2602.05394v3",
+        "location": "Definitions 5.1 and 5.3 and Problem 5.6",
+        "note": "Source of the motivating open question and the rerandomized transform. The submitted theorem concerns the without-replacement model specified in the frozen v6 paper; prior results and proof sources are cited there.",
+        "relationship": "background",
+        "title": "Linear Systems and Eigenvalue Problems: Open Questions from a Simons Workshop",
+        "type": "paper"
+      }
+    ],
+    "related_formalizations": [],
+    "repository_role": "substantive-development",
+    "responsible_maintainers": [
+      {
+        "name": "Yuning Yang"
+      }
+    ],
+    "result_origin": "source-based"
+  },
+  "resource_usage": [
+    {
+      "elapsed_seconds": 0.004,
+      "max_rss_kib": 13188,
+      "peak_tasks_observed": 1,
+      "phase": "touch",
+      "returncode": 0,
+      "system_cpu_seconds": 0.001,
+      "user_cpu_seconds": 0.003,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.007,
+      "max_rss_kib": 13188,
+      "peak_tasks_observed": 1,
+      "phase": "landrun",
+      "returncode": 0,
+      "system_cpu_seconds": 0.007,
+      "user_cpu_seconds": 0.0,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.004,
+      "max_rss_kib": 13204,
+      "peak_tasks_observed": 1,
+      "phase": "touch",
+      "returncode": 1,
+      "system_cpu_seconds": 0.002,
+      "user_cpu_seconds": 0.002,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13024,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 0,
+      "system_cpu_seconds": 0.007,
+      "user_cpu_seconds": 0.018,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.026,
+      "max_rss_kib": 13188,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 1,
+      "system_cpu_seconds": 0.009,
+      "user_cpu_seconds": 0.018,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13240,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 1,
+      "system_cpu_seconds": 0.007,
+      "user_cpu_seconds": 0.018,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.022,
+      "max_rss_kib": 13064,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 1,
+      "system_cpu_seconds": 0.008,
+      "user_cpu_seconds": 0.014,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 2.252,
+      "max_rss_kib": 894828,
+      "peak_tasks_observed": 1,
+      "phase": "lake",
+      "returncode": 0,
+      "system_cpu_seconds": 0.464,
+      "user_cpu_seconds": 1.841,
+      "workspace_disk_peak_bytes": 704512
+    },
+    {
+      "elapsed_seconds": 0.069,
+      "max_rss_kib": 92016,
+      "peak_tasks_observed": 1,
+      "phase": "lean",
+      "returncode": 0,
+      "system_cpu_seconds": 0.049,
+      "user_cpu_seconds": 0.041,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 49.057,
+      "max_rss_kib": 1029608,
+      "peak_tasks_observed": 1,
+      "phase": "lake",
+      "returncode": 0,
+      "system_cpu_seconds": 42.842,
+      "user_cpu_seconds": 72.442,
+      "workspace_disk_peak_bytes": 7787659264
+    },
+    {
+      "elapsed_seconds": 7.202,
+      "max_rss_kib": 1023860,
+      "peak_tasks_observed": 1,
+      "phase": "lake",
+      "returncode": 0,
+      "system_cpu_seconds": 3.489,
+      "user_cpu_seconds": 7.495,
+      "workspace_disk_peak_bytes": 1466368
+    },
+    {
+      "elapsed_seconds": 2.678,
+      "max_rss_kib": 892744,
+      "peak_tasks_observed": 1,
+      "phase": "lake",
+      "returncode": 0,
+      "system_cpu_seconds": 0.629,
+      "user_cpu_seconds": 2.006,
+      "workspace_disk_peak_bytes": 729088
+    },
+    {
+      "elapsed_seconds": 10.686,
+      "max_rss_kib": 6773724,
+      "peak_tasks_observed": 1,
+      "phase": "lean",
+      "returncode": 0,
+      "system_cpu_seconds": 2.706,
+      "user_cpu_seconds": 3.25,
+      "workspace_disk_peak_bytes": 16384
+    },
+    {
+      "elapsed_seconds": 0.067,
+      "max_rss_kib": 91984,
+      "peak_tasks_observed": 1,
+      "phase": "lean",
+      "returncode": 0,
+      "system_cpu_seconds": 0.033,
+      "user_cpu_seconds": 0.047,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.07,
+      "max_rss_kib": 92096,
+      "peak_tasks_observed": 1,
+      "phase": "lean",
+      "returncode": 0,
+      "system_cpu_seconds": 0.036,
+      "user_cpu_seconds": 0.048,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.004,
+      "max_rss_kib": 13236,
+      "peak_tasks_observed": 1,
+      "phase": "touch",
+      "returncode": 0,
+      "system_cpu_seconds": 0.003,
+      "user_cpu_seconds": 0.002,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.007,
+      "max_rss_kib": 13204,
+      "peak_tasks_observed": 1,
+      "phase": "landrun",
+      "returncode": 0,
+      "system_cpu_seconds": 0.006,
+      "user_cpu_seconds": 0.002,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.004,
+      "max_rss_kib": 13240,
+      "peak_tasks_observed": 1,
+      "phase": "touch",
+      "returncode": 1,
+      "system_cpu_seconds": 0.004,
+      "user_cpu_seconds": 0.001,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13064,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 0,
+      "system_cpu_seconds": 0.004,
+      "user_cpu_seconds": 0.021,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13200,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 0,
+      "system_cpu_seconds": 0.01,
+      "user_cpu_seconds": 0.015,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13052,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 1,
+      "system_cpu_seconds": 0.006,
+      "user_cpu_seconds": 0.019,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.026,
+      "max_rss_kib": 13240,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 1,
+      "system_cpu_seconds": 0.009,
+      "user_cpu_seconds": 0.017,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 0.022,
+      "max_rss_kib": 13076,
+      "peak_tasks_observed": 1,
+      "phase": "python3.11",
+      "returncode": 1,
+      "system_cpu_seconds": 0.004,
+      "user_cpu_seconds": 0.018,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 1.247,
+      "max_rss_kib": 846040,
+      "peak_tasks_observed": 1,
+      "phase": "lake",
+      "returncode": 0,
+      "system_cpu_seconds": 0.563,
+      "user_cpu_seconds": 0.717,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 1.245,
+      "max_rss_kib": 845992,
+      "peak_tasks_observed": 1,
+      "phase": "lake",
+      "returncode": 0,
+      "system_cpu_seconds": 0.586,
+      "user_cpu_seconds": 0.694,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "elapsed_seconds": 605.728,
+      "max_rss_kib": 6989100,
+      "peak_tasks_observed": 1,
+      "phase": "comparator",
+      "returncode": 0,
+      "system_cpu_seconds": 171.588,
+      "user_cpu_seconds": 1284.885,
+      "workspace_disk_peak_bytes": 1044996096
+    }
+  ],
+  "schema_version": 1,
+  "solution": {
+    "module": "Solution",
+    "path": "Solution.lean",
+    "sha256": "96a8fb6662cd00cd7e5b5a7be9af4f032cd24920add3b23aac0416d3a8e03305"
+  },
+  "source": {
+    "bytes": 300376597,
+    "commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+    "repository": "yuningyang19/rerandSRHT_prob_5_6_simons_workshop",
+    "repository_url": "https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop",
+    "tree_url": "https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/tree/158a716c07e16ec4fca14e36836b14d8d20ee7c8"
+  },
+  "stage": "complete",
+  "status": "pass",
+  "submission": {
+    "authorization": {
+      "evidence": "Local package compatibility test requested by the repository maintainer; no service intake or ownership proof is claimed.",
+      "relationship": "maintainer"
+    },
+    "requested_paths": {
+      "comparator_config_path": "comparator.json",
+      "formalization_metadata_path": "",
+      "project_path": ""
+    },
+    "submission_id": "pkg260907002"
+  },
+  "warnings": [],
+  "workflow_url": "https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/actions/runs/34049757010"
+}
