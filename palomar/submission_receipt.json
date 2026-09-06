@@ -1,0 +1,25 @@
+{
+  "operation": "SUBMIT",
+  "submission_id": "99q9xdqita2v",
+  "repository": "yuningyang19/rerandSRHT_prob_5_6_simons_workshop",
+  "commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+  "comparator_config_path": "comparator.json",
+  "authorization_relationship": "maintainer",
+  "exact_tuple_user_consent": "Explicit user agreement following full tuple presentation",
+  "created_at": "2026-09-06T23:24:10Z",
+  "status_at_capture": "verifying",
+  "official_run": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391",
+  "temporary_ownership_artifacts": {
+    "tag": "deleted",
+    "gist": "deleted"
+  },
+  "registration_consent": false,
+  "policy_drift": {
+    "submission_protocol": "unchanged",
+    "policy_and_pipeline": "unchanged",
+    "comparator_upstream": "2312244ac716564a61cc0bf4e107d9abf1757a61",
+    "effective_pinned_comparator": "575674928e239f5bc452aab72d1dd7b0f1326494",
+    "impact": "No change to current service-pinned verifier; existing compatibility evidence remains applicable"
+  },
+  "private_review_policy": "Do not commit or publish unregistered review or access credentials"
+}

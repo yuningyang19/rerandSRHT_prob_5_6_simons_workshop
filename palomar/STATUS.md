@@ -14,7 +14,9 @@ documentation-only commit; that later commit is not the CI-tested candidate.
 - Challenge provenance: PASS; no untrusted sources.
 - Mechanical report: complete/pass, no report-level errors or warnings.
 - GitHub Actions terminal result: success.
-- Service submission, editorial review, and registration: NOT_RUN.
+- Service submission: accepted as `99q9xdqita2v`; official verification running.
+- Editorial review: pending official mechanical verification.
+- Registration: NOT_RUN; no review-specific registration consent.
 
 [Compatibility run](https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/actions/runs/34049757010) completed at 2026-09-06T18:04:07Z.
 The original [mechanical report](compatibility_evidence/mechanical-report.json),
@@ -34,9 +36,12 @@ request identifier, not a Palomar service submission ID.
 - Comparator configuration: `comparator.json`
 - Relationship: `maintainer` (Yuning Yang, previously confirmed)
 
-The current service protocol requires user agreement to this exact tuple before
-intake. No ownership proof, intake, review request, or registration was made.
-Registration will separately require the actual review and its exact SHA-256.
+The user agreed to this exact tuple and intake was accepted at 2026-09-06T23:24:10Z.
+Both temporary ownership artifacts were deleted.
+[Official verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391) is running;
+this is distinct from the completed own-repository compatibility run above.
+See [submission_receipt.json](submission_receipt.json). Registration remains
+NOT_RUN and will require the complete actual review and its exact SHA-256.
 
 See [operation.json](operation.json), [return.json](return.json), and
 [policy_snapshot.json](policy_snapshot.json). No mathematical scope, novelty,
