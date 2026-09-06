@@ -53,3 +53,5 @@ The final revision makes positive coordinate dimensions explicit in Definition 3
 The combined audit covers 359 targets and 134 primitive definitions. Audited theorem dependencies use only a subset of `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx` is accepted. Lean and its installed standard kernel remain trusted. Independent review records statement correspondence and proof routes, including places where the formal proof uses a valid alternative route to the written proof.
 
 Mathematical certification does not establish novelty, priority, citation accuracy, author comprehension, or editorial acceptance. The retained [workflow metadata limitations](research/problem_5_6/formalization/v6_certification/workflow_limitations.md) are separate from the mathematical checks. See [source binding](audit/SOURCE_BINDING.md) for exact versions and the distinction between inherited cold verification and this package's reproduction checks.
+
+The exported package also passed a fresh local proof build, the current scope gate, and kernel replay. See the [public-package verification record](audit/STATUS.md) for actual execution evidence and dependency-cache reuse.

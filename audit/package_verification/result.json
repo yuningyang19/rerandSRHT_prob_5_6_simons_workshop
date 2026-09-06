@@ -1,0 +1,104 @@
+{
+  "source_commit": "93acaadec26c715917c1cf54d22781820a8a20c6",
+  "paper_commit": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "work_directory": "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om",
+  "dependency_cache_reused": "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/lean/.lake/packages",
+  "compiled_Problem56_cache_reused": false,
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "Problem56.PaperV6.AuditTools",
+        "Problem56.PaperV6.Certification"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 702.6966499169939,
+      "log": "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/check-1.log",
+      "published_log": "check-1.log.gz",
+      "log_sha256": "5101d70f6f1423333ddf5ed45c9eeae49a663e4e86e4ef3874da6ab4db55c76a"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/run_logged.py",
+        "current_graph_history_client",
+        "lake",
+        "env",
+        "lean",
+        "Problem56/PaperV6/ExpectedGraphHistoryChecks.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 19.283484084007796,
+      "log": "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/check-2.log",
+      "published_log": "check-2.log.gz",
+      "log_sha256": "5cc37d36a3210ea396caec601f8b6f40828c69653230df7555f6833bb10063ae"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/run_logged.py",
+        "current_combined_audit",
+        "lake",
+        "env",
+        "lean",
+        "Problem56/PaperV6/CombinedAudit.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 32.12945195904467,
+      "log": "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/check-3.log",
+      "published_log": "check-3.log.gz",
+      "log_sha256": "ab2b6a0fb669dbc2f2fe980706e9cecde1b6168c8d452f166d0568e19cbf0abd"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/check_full_paper_scope.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 10.308723833004478,
+      "log": "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/check-4.log",
+      "published_log": "check-4.log.gz",
+      "log_sha256": "6fe69f19e72ed76068b60a0dab256261563490bab5cec8814ee6fdfa39df2101"
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/test_revision_gate.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.8784582079970278,
+      "log": "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/check-5.log",
+      "published_log": "check-5.log.gz",
+      "log_sha256": "fdabf3ccddb7edf712567db8f7299a191bf3112dad1dc18548e6458b017b8d18"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "-v",
+        "Problem56.PaperV6.Certification"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 969.8126937909983,
+      "log": "/Users/yuningyang/GitHub/rerandSRHT_prob_5_6_simons_workshop/.verification/run-xwy9g4om/check-6.log",
+      "published_log": "check-6.log.gz",
+      "log_sha256": "d90ac4b8825593db94e2bacd3980be32d9f060dc5cc0af018ba6a5f97718bfc3"
+    }
+  ],
+  "status": "PASS",
+  "completed_utc": "2026-09-06T17:22:10.668317+00:00",
+  "package_commit": "6d0e93cf04a2c8bc543c5d6a93f3e7a3a681bf3c",
+  "export_manifest_sha256": "80181167590998c82a02e7b233793b5abb3176c2f268d5d03f03e03c9ec51a49",
+  "remote_clone_source_identity": "PASS: all 601 immutable inputs verified in a separate clone of the public remote",
+  "receipt_kind": "Actual local execution record; not an authenticated external attestation",
+  "additional_receipt_sha256": {
+    "current_graph_history_client.log.gz": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+    "current_graph_history_client.execution.json": "f002c14f85e83cd66174d5f3f4adb2c048ffb9cafaf100b731df921339f35c41",
+    "current_combined_audit.log.gz": "bc8b0bdcdf5a50ed1dd32407e840402f3e25f369cd11265027e206eacc760393",
+    "current_combined_audit.execution.json": "1e3b048be7e4bf37abfb7fe01fdd5764137df90ae65a8c42b0a1819cdfbafcf3"
+  }
+}
