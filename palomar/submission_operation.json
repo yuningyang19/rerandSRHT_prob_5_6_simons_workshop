@@ -32,10 +32,10 @@
   "STATIC_PREFLIGHT_PASS": true,
   "DECLARATION_CLOSURE_PASS": true,
   "GOVERNANCE_FROZEN": true,
-  "FIRST_UNMET_GATE": "Complete private review not yet available",
+  "FIRST_UNMET_GATE": "Registration consent for the actual privately shown review and its exact digest",
   "RETURN_TO_CONTROLLER": "Continue authorized official verification monitoring and private review retrieval; do not register without actual review-specific consent",
   "SUBMIT_AUTHORIZATION": "Explicit user agreement to repository, 158a716c07e16ec4fca14e36836b14d8d20ee7c8, comparator.json, maintainer",
-  "REGISTER_AUTHORIZATION": "Not given; requires actual review and exact digest",
+  "REGISTER_AUTHORIZATION": "NOT_GIVEN; do not infer from SUBMIT agreement",
   "SOURCE_BYTES_CHANGED": false,
   "ASTRA_GUIDANCE": "Use current user authorization, bounded mechanical recovery and proportional verification; no autonomous author attestations or service review consent.",
   "PALOMAR_PACKAGE_STATUS": "PASS",
@@ -44,5 +44,6 @@
   "COMPATIBILITY_EVIDENCE": "palomar/compatibility_evidence/receipt.json",
   "SUBMISSION_ID": "99q9xdqita2v",
   "SUBMISSION_RECEIPT": "palomar/submission_receipt.json",
-  "PALOMAR_MECHANICAL_STATUS": "PASS"
+  "PALOMAR_MECHANICAL_STATUS": "PASS",
+  "SUBMIT_STATUS": "COMPLETE"
 }

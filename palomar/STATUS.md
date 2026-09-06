@@ -15,7 +15,7 @@ documentation-only commit; that later commit is not the CI-tested candidate.
 - Mechanical report: complete/pass, no report-level errors or warnings.
 - GitHub Actions terminal result: success.
 - Service submission: accepted as `99q9xdqita2v`; official mechanical verification PASS.
-- Editorial review: awaiting review.
+- Editorial review: complete and retrieved privately; contents are not published here.
 - Registration: NOT_RUN; no review-specific registration consent.
 
 [Compatibility run](https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/actions/runs/34049757010) completed at 2026-09-06T18:04:07Z.
@@ -49,3 +49,7 @@ manuscript-readiness, or research release status is promoted by this package.
 
 Official [mechanical report](official_evidence/mechanical-report.json) and
 [receipt](official_evidence/receipt.json) confirm PASS for the submitted SHA.
+
+Submission `99q9xdqita2v` is now `review-ready`. The complete review and
+its digest were retrieved privately for the user. Registration remains NOT_RUN
+and depends on explicit consent after the actual review is shown.

@@ -7,7 +7,7 @@
   "authorization_relationship": "maintainer",
   "exact_tuple_user_consent": "Explicit user agreement following full tuple presentation",
   "created_at": "2026-09-06T23:24:10Z",
-  "status_at_capture": "awaiting-review",
+  "status_at_capture": "review-ready",
   "official_run": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391",
   "temporary_ownership_artifacts": {
     "tag": "deleted",
@@ -23,5 +23,7 @@
   },
   "private_review_policy": "Do not commit or publish unregistered review or access credentials",
   "mechanical_status": "PASS",
-  "official_mechanical_receipt": "palomar/official_evidence/receipt.json"
+  "official_mechanical_receipt": "palomar/official_evidence/receipt.json",
+  "private_review_retrieved": true,
+  "private_review_published": false
 }

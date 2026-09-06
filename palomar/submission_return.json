@@ -1,7 +1,7 @@
 {
   "TARGET_SKILL_EXECUTED": "YES",
   "PALOMAR_OPERATION": "SUBMIT",
-  "EXACT_WORK_COMPLETED": "Authorized exact-SHA service submission; write-access proof; temporary tag and gist deleted; official Comparator, Lean and NanoDa verification PASS; awaiting private review",
+  "EXACT_WORK_COMPLETED": "Authorized exact-SHA service submission; ownership artifacts removed; official mechanical PASS; complete private review and matching digest retrieved",
   "FILES_CHANGED": "palomar/STATUS.md, submission_receipt.json, submission_operation.json, official_evidence/**, submission_return.json",
   "PROTECTED_MATHEMATICAL_BYTES_CHANGED": "NO",
   "POLICY_AND_TOOL_REVISIONS": "policy_snapshot.json and compatibility_evidence/mechanical-report.json",
@@ -22,8 +22,8 @@
   "SUBMISSION_SHA": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
   "SUBMISSION_ID": "99q9xdqita2v",
   "PALOMAR_MECHANICAL_STATUS": "PASS official run 34066787391",
-  "PALOMAR_EDITORIAL_STATUS": "AWAITING_REVIEW",
-  "REVIEW_SHA256": "NOT_REACHED",
+  "PALOMAR_EDITORIAL_STATUS": "REVIEW_READY; findings shown privately, not published in this repository",
+  "REVIEW_SHA256": "RETRIEVED_PRIVATELY_NOT_PUBLISHED",
   "PALOMAR_REGISTRATION_STATUS": "NOT_RUN",
   "REGISTRATION_ID": "NOT_APPLICABLE",
   "REGISTRATION_VERSION": "NOT_APPLICABLE",
@@ -39,14 +39,14 @@
   "FAILURE_PACKET_ID": "NOT_APPLICABLE",
   "SKILL_UPDATE_PROPOSAL": "NONE",
   "PUBLIC_RECORD_AND_PRESERVATION_EVIDENCE": "Official run https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391; no registration or source-preservation action",
-  "GAPS_OR_BLOCKERS": "Review not yet available; no reported service issue",
+  "GAPS_OR_BLOCKERS": "SUBMIT complete; REGISTER awaits actual review-specific user consent",
   "SEMANTIC_SCOPE_CHANGED": "NO",
   "CLAIMS_AFFECTED_WITH_THREE_AXES": {
     "mathematical": "Frozen source certification unchanged; compatibility PASS",
     "formalization": "Two public theorem closures accepted by Comparator, Lean, NanoDa",
     "editorial_and_release": "No promotion; no service review or registration"
   },
-  "RECOMMENDED_RETURN_STATE": "CONTINUE_AUTHORIZED_REVIEW_RETRIEVAL",
-  "REQUIRED_CONTROLLER_DECISION": "None during monitoring; actual review-specific consent required only for registration",
+  "RECOMMENDED_RETURN_STATE": "SUBMIT_COMPLETE_AWAIT_REVIEW_SPECIFIC_REGISTRATION_CONSENT",
+  "REQUIRED_CONTROLLER_DECISION": "User decides registration only after seeing complete review, exact digest, and permanent publication/preservation effects",
   "COMMIT": "Evidence commit containing this file; submitted SHA unchanged"
 }
