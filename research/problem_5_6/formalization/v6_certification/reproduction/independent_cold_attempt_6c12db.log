@@ -1,0 +1,12 @@
+{"command": ["lake", "--no-cache", "build", "Problem56.PaperV6.Certification"], "returncode": -15, "elapsed_seconds": 227.28595104202395, "stdout_stderr": "logs/final_unified_build.log"}
+Traceback (most recent call last):
+  File "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6c12db598e56/research/problem_5_6/formalization/v6_certification/scripts/run_suite.py", line 17, in <module>
+    run('final_'+name,MANDATORY_COMMANDS[name])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6c12db598e56/research/problem_5_6/formalization/v6_certification/scripts/run_suite.py", line 14, in run
+    subprocess.run([sys.executable,str(E/'scripts/run_logged.py'),name]+cmd,cwd=L,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/opt/homebrew/opt/python@3.14/bin/python3.14', '/Users/yuningyang/GitHub/rsvd_essential_v6_certification/research/problem_5_6/formalization/v6_certification/packages/cold-6c12db598e56/research/problem_5_6/formalization/v6_certification/scripts/run_logged.py', 'final_unified_build', 'lake', '--no-cache', 'build', 'Problem56.PaperV6.Certification']' returned non-zero exit status 241.
