@@ -1,0 +1,14 @@
+{
+  "submission_id": "99q9xdqita2v",
+  "source_commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+  "official_workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391",
+  "status": "pass",
+  "checked_at": "2026-09-06T23:39:34Z",
+  "mechanical_report_sha256": "6afa1ffe70abbe610294bbe7b5204b5d1b09ee4268a71cf8efcaff950907e84b",
+  "comparator": "PASS",
+  "lean_kernel": "PASS",
+  "nanoda_kernel": "PASS",
+  "challenge_provenance": "PASS",
+  "errors": [],
+  "warnings": []
+}

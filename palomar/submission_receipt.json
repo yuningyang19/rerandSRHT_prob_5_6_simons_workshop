@@ -7,7 +7,7 @@
   "authorization_relationship": "maintainer",
   "exact_tuple_user_consent": "Explicit user agreement following full tuple presentation",
   "created_at": "2026-09-06T23:24:10Z",
-  "status_at_capture": "verifying",
+  "status_at_capture": "awaiting-review",
   "official_run": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391",
   "temporary_ownership_artifacts": {
     "tag": "deleted",
@@ -21,5 +21,7 @@
     "effective_pinned_comparator": "575674928e239f5bc452aab72d1dd7b0f1326494",
     "impact": "No change to current service-pinned verifier; existing compatibility evidence remains applicable"
   },
-  "private_review_policy": "Do not commit or publish unregistered review or access credentials"
+  "private_review_policy": "Do not commit or publish unregistered review or access credentials",
+  "mechanical_status": "PASS",
+  "official_mechanical_receipt": "palomar/official_evidence/receipt.json"
 }

@@ -32,7 +32,7 @@
   "STATIC_PREFLIGHT_PASS": true,
   "DECLARATION_CLOSURE_PASS": true,
   "GOVERNANCE_FROZEN": true,
-  "FIRST_UNMET_GATE": "Official verification and complete private review",
+  "FIRST_UNMET_GATE": "Complete private review not yet available",
   "RETURN_TO_CONTROLLER": "Continue authorized official verification monitoring and private review retrieval; do not register without actual review-specific consent",
   "SUBMIT_AUTHORIZATION": "Explicit user agreement to repository, 158a716c07e16ec4fca14e36836b14d8d20ee7c8, comparator.json, maintainer",
   "REGISTER_AUTHORIZATION": "Not given; requires actual review and exact digest",
@@ -43,5 +43,6 @@
   "OFFICIAL_COMPATIBLE_COMPARATOR_STATUS": "PASS on own repository Linux runner",
   "COMPATIBILITY_EVIDENCE": "palomar/compatibility_evidence/receipt.json",
   "SUBMISSION_ID": "99q9xdqita2v",
-  "SUBMISSION_RECEIPT": "palomar/submission_receipt.json"
+  "SUBMISSION_RECEIPT": "palomar/submission_receipt.json",
+  "PALOMAR_MECHANICAL_STATUS": "PASS"
 }

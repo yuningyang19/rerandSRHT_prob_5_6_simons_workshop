@@ -14,8 +14,8 @@ documentation-only commit; that later commit is not the CI-tested candidate.
 - Challenge provenance: PASS; no untrusted sources.
 - Mechanical report: complete/pass, no report-level errors or warnings.
 - GitHub Actions terminal result: success.
-- Service submission: accepted as `99q9xdqita2v`; official verification running.
-- Editorial review: pending official mechanical verification.
+- Service submission: accepted as `99q9xdqita2v`; official mechanical verification PASS.
+- Editorial review: awaiting review.
 - Registration: NOT_RUN; no review-specific registration consent.
 
 [Compatibility run](https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/actions/runs/34049757010) completed at 2026-09-06T18:04:07Z.
@@ -38,7 +38,7 @@ request identifier, not a Palomar service submission ID.
 
 The user agreed to this exact tuple and intake was accepted at 2026-09-06T23:24:10Z.
 Both temporary ownership artifacts were deleted.
-[Official verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391) is running;
+[Official verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391) completed successfully;
 this is distinct from the completed own-repository compatibility run above.
 See [submission_receipt.json](submission_receipt.json). Registration remains
 NOT_RUN and will require the complete actual review and its exact SHA-256.
@@ -46,3 +46,6 @@ NOT_RUN and will require the complete actual review and its exact SHA-256.
 See [operation.json](operation.json), [return.json](return.json), and
 [policy_snapshot.json](policy_snapshot.json). No mathematical scope, novelty,
 manuscript-readiness, or research release status is promoted by this package.
+
+Official [mechanical report](official_evidence/mechanical-report.json) and
+[receipt](official_evidence/receipt.json) confirm PASS for the submitted SHA.
