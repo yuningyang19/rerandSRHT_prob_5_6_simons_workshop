@@ -1,0 +1,52 @@
+{
+  "PALOMAR_OPERATION": "REGISTER",
+  "SKILL_PROTOCOL_VERSION": "1.0.0",
+  "TARGET_REPOSITORY": "yuningyang19/rerandSRHT_prob_5_6_simons_workshop",
+  "TARGET_BRANCH_OR_DIRECT_COMMIT_POLICY": "main; commit and push authorized repository packaging",
+  "MANUSCRIPT_AUTHORITY": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "MATHEMATICAL_CERTIFICATION_COMMIT": "93acaadec26c715917c1cf54d22781820a8a20c6",
+  "PROTECTED_MATHEMATICAL_PATHS": "Every path in EXPORT_MANIFEST.json",
+  "SOURCE_IDENTITY_MANIFEST": "EXPORT_MANIFEST.json",
+  "PUBLIC_THEOREM_NAMES": [
+    "Problem56.main_universal_ose",
+    "Problem56.PaperV6.fixed_frame_squared_norm_success"
+  ],
+  "PERMITTED_AXIOMS": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "CHALLENGE_PATH": "Challenge.lean",
+  "SOLUTION_PATH": "Solution.lean",
+  "COMPARATOR_CONFIG_PATH": "comparator.json",
+  "ALLOWED_FILES": [
+    "Root Palomar packaging and documentation",
+    "palomar/**",
+    "scripts/verify_palomar.py",
+    ".github/workflows/palomar-compatibility.yml"
+  ],
+  "EXPECTED_DELIVERABLES": "Exact Challenge/Solution, metadata, user-confirmed Apache-2.0, local extraction/declaration checks, supported Linux Comparator/NanoDa verification, pushed candidate",
+  "POLICY_DRIFT_DETECTED": "NO for effective service policy and pinned tools",
+  "POLICY_REAUDIT_STATUS": "PASS for packaging requirements after live retrieval and current parser/schema validation",
+  "PALOMAR_POLICY_SNAPSHOT_SHA256": "5b5918d239ec7441fb858bffaf1101c3b2333aa1dafd6674d98bd96de50f84ca",
+  "STATIC_PREFLIGHT_PASS": true,
+  "DECLARATION_CLOSURE_PASS": true,
+  "GOVERNANCE_FROZEN": true,
+  "FIRST_UNMET_GATE": "Terminal registration and public/preservation verification",
+  "RETURN_TO_CONTROLLER": "Continue authorized registration monitoring, exact public record and preservation checks, then deliver immutable snapshot",
+  "SUBMIT_AUTHORIZATION": "Explicit user agreement to repository, 158a716c07e16ec4fca14e36836b14d8d20ee7c8, comparator.json, maintainer",
+  "REGISTER_AUTHORIZATION": "User explicitly agreed after complete review, exact digest and permanent publication/archive effects were shown",
+  "SOURCE_BYTES_CHANGED": false,
+  "ASTRA_GUIDANCE": "Use current user authorization, bounded mechanical recovery and proportional verification; no autonomous author attestations or service review consent.",
+  "PALOMAR_PACKAGE_STATUS": "PASS",
+  "SUBMISSION_CANDIDATE_SHA": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+  "OFFICIAL_COMPATIBLE_COMPARATOR_STATUS": "PASS on own repository Linux runner",
+  "COMPATIBILITY_EVIDENCE": "palomar/compatibility_evidence/receipt.json",
+  "SUBMISSION_ID": "99q9xdqita2v",
+  "SUBMISSION_RECEIPT": "palomar/submission_receipt.json",
+  "PALOMAR_MECHANICAL_STATUS": "PASS",
+  "SUBMIT_STATUS": "COMPLETE",
+  "REGISTRATION_SUBMISSION_ID": "99q9xdqita2v",
+  "REVIEW_CONSENT_SHA256": "8118675c7f51b005652f55257a3449dc019f227f57af4b6f1df8130415477d92",
+  "REGISTRATION_REQUEST_STATUS": "HTTP 200 accepted; not yet claimed registered"
+}
