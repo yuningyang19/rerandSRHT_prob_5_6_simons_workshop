@@ -4,8 +4,6 @@ This repository contains the Lean 4 companion to the v6 manuscript on rerandomiz
 
 The registered companion is bound to manuscript commit `f279b6fac180125dce81a82d824da971bb7ae715`. Independent correspondence review covers **12/12 named results, 50/50 mathematical interfaces, and 34/34 definitions**. The certified inputs are copied byte-for-byte from development commit `93acaadec26c715917c1cf54d22781820a8a20c6`.
 
-The manuscript source is available in [`manuscript/main.tex`](manuscript/main.tex).
-
 ## Main result
 
 For every power-of-two ambient dimension $n$, rank $1\le r\le n$, and accuracy $0<\varepsilon<1$, there is a deterministic sketch width
