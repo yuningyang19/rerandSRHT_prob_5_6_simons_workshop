@@ -2,7 +2,9 @@
 
 This repository contains the Lean 4 companion to the v6 manuscript on rerandomized subsampled randomized Hadamard transforms (SRHT), addressing Problem 5.6 of the Simons workshop problem collection. It includes the complete exported Lean development, supporting proofs, and evidence connecting the paper statements to their formal statements and proofs.
 
-The current manuscript is frozen at `f279b6fac180125dce81a82d824da971bb7ae715`. Independent correspondence review covers **12/12 named results, 50/50 mathematical interfaces, and 34/34 definitions**. The certified inputs are copied byte-for-byte from development commit `93acaadec26c715917c1cf54d22781820a8a20c6`.
+The registered companion is bound to manuscript commit `f279b6fac180125dce81a82d824da971bb7ae715`. Independent correspondence review covers **12/12 named results, 50/50 mathematical interfaces, and 34/34 definitions**. The certified inputs are copied byte-for-byte from development commit `93acaadec26c715917c1cf54d22781820a8a20c6`.
+
+The manuscript source is available in [`manuscript/main.tex`](manuscript/main.tex).
 
 ## Main result
 
@@ -41,12 +43,6 @@ python3 scripts/verify_companion.py
 The package pins Lean **v4.33.0** and Mathlib commit **`db584cd6d46c92f209a44c0f1c829460d327499d`**. The second command creates a disposable copy, builds the local proofs, checks the current 12/50/34 manuscript mapping and transitive axiom audit, rejects invalid revision fixtures, and replays stored proof objects with `leanchecker --fresh`. It preserves historical evidence. Without an explicitly supplied dependency cache, dependencies are built from source; this can take substantial time and disk space.
 
 For direct Lean use and the dependency-cache option, see [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
-
-## Paper-to-Lean correspondence
-
-The current [reviewed three-way map](research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/three_way_crosswalk.md) links the frozen paper to formal statements, definitions, and proved declarations. The [machine-readable map](research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/reviewed_crosswalk.json) retains exact source anchors, type hashes, and review decisions. The [frozen TeX](research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/snapshots/research/problem_5_6/paper/v6/main.tex) is included for comparison.
-
-The final revision makes positive coordinate dimensions explicit in Definition 3.1 and closes interface I-V6-11 using existing Lean proofs. All 96 current inventory rows pass. Older records referring to paper commit `4551d08` retain their historical I11 repair verdict; the [current certification record](research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/certification_record.json) and [independent report](research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/independent_report.md) document the updated binding.
 
 ## Certification boundary
 

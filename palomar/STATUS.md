@@ -36,3 +36,6 @@ The package's earlier operation and return files are historical stage receipts.
 Current completion is recorded in [registration_return.json](registration_return.json).
 This registration does not independently establish novelty, priority, or a new
 research-controller manuscript release verdict.
+
+The updated manuscript in `manuscript/` is a separately identified copy of the
+paper working tree; it does not replace the v1 frozen paper binding or source.

@@ -1,0 +1,13 @@
+{
+  "source_repository": "yuningyang19/rsvd_essential",
+  "source_branch": "codex/problem-5-6-paper",
+  "source_base_commit": "479f7d7a73a2749ccd392f6bc6968b40c38d3738",
+  "source_subdirectory": "research/problem_5_6/paper/v6",
+  "includes_saved_uncommitted_changes": true,
+  "copied_at_utc": "2026-09-07T03:09:10.802389+00:00",
+  "files": {
+    "main.tex": "f80a3c6e4a51ebbd5fb90490cefbf6e33244d9965941f92c3e9d3adcca112ebb",
+    "figures/p7_contraction.tex": "9df62c726d52766be5996124d3257b751bcbc5116ff770f80f452d6089bddabe"
+  },
+  "relationship_to_registration": "Latest supplied manuscript, copied verbatim. The Palomar v1 paper binding remains the historical frozen snapshot at paper commit f279b6fac180125dce81a82d824da971bb7ae715; this copy does not create a new registration or correspondence audit."
+}
