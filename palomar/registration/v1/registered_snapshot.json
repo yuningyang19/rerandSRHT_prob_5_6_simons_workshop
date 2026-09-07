@@ -1,0 +1,57 @@
+{
+  "REGISTRATION_ID": "PALOMAR-2026-09-07-000001",
+  "REGISTRATION_VERSION": 1,
+  "REGISTERED_URL": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-07-000001&version=1",
+  "SOURCE_REPOSITORY": "yuningyang19/rerandSRHT_prob_5_6_simons_workshop",
+  "SOURCE_SHA": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+  "PROJECT_PATH": "",
+  "COMPARATOR_CONFIG_PATH": "comparator.json",
+  "COMPARATOR_CONFIG_SHA256": "0ea1b5122119bd9d05c80d83739fb5ddea31adb5e2aba975500d328d23b0f754",
+  "CHALLENGE_SHA256": "695eac8c5205db715f5ac66da0b87772e1ec58c4d42f36a413dd710bf1d103d0",
+  "SOLUTION_SHA256": "96a8fb6662cd00cd7e5b5a7be9af4f032cd24920add3b23aac0416d3a8e03305",
+  "FORMALIZATION_YAML_SHA256": "ee97bfdfe3c28bf8c39eb52207afbcc95df0ab95fa3c984ce78936885cdfd951",
+  "LAKE_MANIFEST_SHA256": "10fd094d0eea626975e5913984eef8a51cd565e0c7129c3ffac189ec5bf56540",
+  "LEAN_TOOLCHAIN": "leanprover/lean4:v4.33.0",
+  "PUBLIC_THEOREM_NAMES": [
+    "Problem56.main_universal_ose",
+    "Problem56.PaperV6.fixed_frame_squared_norm_success"
+  ],
+  "PERMITTED_AXIOMS": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "PAPER_AUTHORITY": "f279b6fac180125dce81a82d824da971bb7ae715",
+  "THEOREM_FINGERPRINT_SET_SHA256": "41d4c4731692a20c4524d4bb21dc0263ad5e5121e9567a410c1dc7803443a8f1",
+  "THEOREM_FINGERPRINT_SCOPE": "Canonical exact signature-hash mapping from extraction_manifest.json; not a new semantic correspondence certification",
+  "EXISTING_CORRESPONDENCE_EVIDENCE": {
+    "research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/reviewed_crosswalk.json": "898866de175fce289b442d122036f89074ea18b35f6949a7e7b63131e55038f6",
+    "research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/independent_report.json": "a0d16e00fc0f14dbe23e1cf95c3546caea0ebd021cfccdf93e3b10e8d606884a",
+    "research/problem_5_6/formalization/v6_certification/revisions/20260907_positive_dimensions/certification_record.json": "7912418817b89e3ac1f1bfbf83ef35373212d47b7e9c380928b901d053aee846"
+  },
+  "POLICY_COMMIT_OR_RETRIEVAL_IDENTITY": "42cc43f70b1b019d20d4b64e9016396e666a6bc7",
+  "MECHANICAL_RUN_URL": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391",
+  "TRUSTED_TOOL_REVISIONS": {
+    "comparator_commit": "575674928e239f5bc452aab72d1dd7b0f1326494",
+    "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "lean4export_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "nanoda_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+    "workflow_commit": "c605f23466450a52999fcfb3c6d68ed8febc56bf"
+  },
+  "REVIEW_CONSENT_SHA256": "8118675c7f51b005652f55257a3449dc019f227f57af4b6f1df8130415477d92",
+  "PUBLIC_REVIEW_SHA256": "ef4f3fb99b407334937ffc8361003e6d2ffe8b1c0f397b971df8710881b4f7a9",
+  "REVIEW_HASH_SCOPE": "Consent digest identifies the private API review shown to the user; public review hash identifies the separately redacted public report bytes",
+  "PUBLIC_ENTRY_SHA256": "0d2fb36354102e2261e7811f7ff2060b2729edb4986d2fd8735c7ee3e433667e",
+  "PRESERVATION_REPOSITORY_AND_REF": {
+    "repository": "PalomarArchive/yuningyang19--rerandSRHT_prob_5_6_simons_workshop--ce13805ae8b2",
+    "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+    "commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8"
+  },
+  "PRESERVATION_RECEIPT_SHA256": "c1e188ff94f7046dda45ac9bc8d3e68954520277df4fbd1f53bd54d91acab8b0",
+  "ARCHIVE_REF_CHECKS_SHA256": "b9096fd0e9148fdb06d72a5f30d52f06aa36494368192a3accee9adad261bace",
+  "PRESERVATION_REFERENCE_COUNT": 10,
+  "PRESERVATION_CHECK_STATUS": "PASS 10/10 remote Git ref reads",
+  "STORAGE_BOUNDARY": "Recorded in a later documentation commit; registered source SHA remains immutable",
+  "SNAPSHOT_HASH_RULE": "SHA-256 of UTF-8 canonical JSON with sorted keys, compact separators, ensure_ascii=False, excluding SNAPSHOT_SHA256",
+  "SNAPSHOT_SHA256": "d880878b3b4beeee3092ab19c2162757fcf1f756827d3a02d886c7ce01a32362"
+}

@@ -1,55 +1,38 @@
-# Palomar packaging status
+# Palomar status
 
-PACKAGE is complete. The prepared submission candidate is
-`158a716c07e16ec4fca14e36836b14d8d20ee7c8`. This status and its reports are recorded in a later
-documentation-only commit; that later commit is not the CI-tested candidate.
+Registered as **PALOMAR-2026-09-07-000001, version 1**.
 
-- Immutable certified inputs: 601/601 PASS, unchanged.
-- Current formalization.yaml parser and v0.4 schema: PASS.
-- Local Challenge and Solution elaboration: PASS.
-- Declaration closure: 11,960 declarations identical; 61,548 proof dependencies.
-- Two public theorem axiom audits: PASS, only the three permitted axioms.
-- Pinned Linux Comparator: PASS; solution build completed with 8,784 jobs.
-- Lean default kernel and independent NanoDa kernel: both accepted the solution.
-- Challenge provenance: PASS; no untrusted sources.
-- Mechanical report: complete/pass, no report-level errors or warnings.
-- GitHub Actions terminal result: success.
-- Service submission: accepted as `99q9xdqita2v`; official mechanical verification PASS.
-- Editorial review: complete and retrieved privately; contents are not published here.
-- Registration: exact-review consent given; request accepted, publication pending.
+- [Public entry](https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-07-000001&version=1)
+- Registered source: `158a716c07e16ec4fca14e36836b14d8d20ee7c8`
+- Submission: `99q9xdqita2v`
+- Official Comparator, Lean kernel, NanoDa kernel and Challenge provenance: PASS.
+- Public review outcome: `neutral`; no findings or requested changes.
+- Public entry/source/configuration identity: PASS.
+- Source plus nine pinned Git dependency archive refs: 10/10 PASS.
+- Immutable source inputs: 601/601 unchanged.
 
-[Compatibility run](https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/actions/runs/34049757010) completed at 2026-09-06T18:04:07Z.
-The original [mechanical report](compatibility_evidence/mechanical-report.json),
-[GitHub run](compatibility_evidence/github-run.json), and
-[receipt](compatibility_evidence/receipt.json) are retained here.
-Mathlib caches were reused. Ordinary Lean linter messages remain in the build
-log; they are distinct from report-level warnings.
+The [registered snapshot](registration/v1/registered_snapshot.json) binds exact
+source, root-file hashes, existing correspondence evidence, policy, tool
+revisions, review consent, public report and preservation identities.
+The [public entry copy](registration/v1/entry.json),
+[public review](registration/v1/review.json),
+[source archive receipt](registration/v1/source-archive.json), and
+[remote ref checks](registration/v1/archive-ref-checks.json) are retained.
 
-The verification used the pinned public Palomar pipeline on this repository's
-own Ubuntu runner. The report's `pkg260907002` identifier is a local workflow
-request identifier, not a Palomar service submission ID.
+The review-consent hash and public-report hash identify different serialized
+artifacts; both are recorded explicitly. No access credential is included.
 
-## Prepared service submission
+## Verification evidence
 
-- Repository: `yuningyang19/rerandSRHT_prob_5_6_simons_workshop`
-- Commit: `158a716c07e16ec4fca14e36836b14d8d20ee7c8`
-- Comparator configuration: `comparator.json`
-- Relationship: `maintainer` (Yuning Yang, previously confirmed)
+The own-repository [compatibility run](https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop/actions/runs/34049757010)
+and the [official service run](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391) both passed for
+exactly `158a716c07e16ec4fca14e36836b14d8d20ee7c8`. The official report is in
+[official_evidence](official_evidence/receipt.json). Mathlib caches were reused.
+The final evidence and README updates are later documentation commits, not new
+registered source versions. Registration covers the two public declarations
+in `comparator.json`; the complete supporting v6 development is preserved.
 
-The user agreed to this exact tuple and intake was accepted at 2026-09-06T23:24:10Z.
-Both temporary ownership artifacts were deleted.
-[Official verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/34066787391) completed successfully;
-this is distinct from the completed own-repository compatibility run above.
-See [submission_receipt.json](submission_receipt.json). The complete review was shown and its exact digest authorized.
-Registration was requested; public record and preservation checks are pending.
-
-See [operation.json](operation.json), [return.json](return.json), and
-[policy_snapshot.json](policy_snapshot.json). No mathematical scope, novelty,
-manuscript-readiness, or research release status is promoted by this package.
-
-Official [mechanical report](official_evidence/mechanical-report.json) and
-[receipt](official_evidence/receipt.json) confirm PASS for the submitted SHA.
-
-Submission `99q9xdqita2v` is now `review-ready`. The complete review and
-its digest were retrieved privately for the user. The user subsequently authorized registration of that exact review.
-The request returned HTTP 200; terminal registration is not yet claimed.
+The package's earlier operation and return files are historical stage receipts.
+Current completion is recorded in [registration_return.json](registration_return.json).
+This registration does not independently establish novelty, priority, or a new
+research-controller manuscript release verdict.

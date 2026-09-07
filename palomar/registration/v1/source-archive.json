@@ -1,0 +1,69 @@
+{
+  "archive_owner": "PalomarArchive",
+  "archived_at": "2026-09-07T00:10:21Z",
+  "id": "PALOMAR-2026-09-07-000001",
+  "repositories": [
+    {
+      "commit": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "fork_repository": "PalomarArchive/leanprover-community--aesop--01b46b609077",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "source_repository": "leanprover-community/aesop"
+    },
+    {
+      "commit": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "fork_repository": "PalomarArchive/leanprover-community--batteries--1b4c776305c9",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "source_repository": "leanprover-community/batteries"
+    },
+    {
+      "commit": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "fork_repository": "PalomarArchive/leanprover-community--import-graph--e0a79261b05a",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/16f02aa7642864af59f1ff0e384a015994db9118",
+      "source_repository": "leanprover-community/import-graph"
+    },
+    {
+      "commit": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "fork_repository": "PalomarArchive/leanprover-community--LeanSearchClient--9de355ab5f53",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "source_repository": "leanprover-community/LeanSearchClient"
+    },
+    {
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "fork_repository": "PalomarArchive/leanprover-community--mathlib4--67b3d817d8a2",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/db584cd6d46c92f209a44c0f1c829460d327499d",
+      "source_repository": "leanprover-community/mathlib4"
+    },
+    {
+      "commit": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "fork_repository": "PalomarArchive/leanprover-community--plausible--fb632f6f7bf4",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "source_repository": "leanprover-community/plausible"
+    },
+    {
+      "commit": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "fork_repository": "PalomarArchive/leanprover-community--ProofWidgets4--26014acbbaff",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "source_repository": "leanprover-community/ProofWidgets4"
+    },
+    {
+      "commit": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "fork_repository": "PalomarArchive/leanprover-community--quote4--90d31d153685",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "source_repository": "leanprover-community/quote4"
+    },
+    {
+      "commit": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "fork_repository": "PalomarArchive/leanprover--lean4-cli--df175a7fc790",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/6130a47896ce867c6a4a55373441e59e565bad0f",
+      "source_repository": "leanprover/lean4-cli"
+    },
+    {
+      "commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+      "fork_repository": "PalomarArchive/yuningyang19--rerandSRHT_prob_5_6_simons_workshop--ce13805ae8b2",
+      "ref": "refs/tags/palomar/PALOMAR-2026-09-07-000001-v1/158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+      "source_repository": "yuningyang19/rerandSRHT_prob_5_6_simons_workshop"
+    }
+  ],
+  "schema_version": 1,
+  "version": 1
+}

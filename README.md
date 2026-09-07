@@ -58,6 +58,12 @@ The exported package also passed a fresh local proof build, the current scope ga
 
 ## Palomar-facing surface
 
+Registered as [PALOMAR-2026-09-07-000001, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-07-000001&version=1), for source commit
+`158a716c07e16ec4fca14e36836b14d8d20ee7c8`. Official mechanical verification passed;
+the public review identified no blocking problem. Source and all nine pinned Git
+dependencies are preserved by PalomarArchive. See the [registration record](palomar/STATUS.md)
+for exact identities and verification evidence.
+
 The root [Challenge](Challenge.lean) and [Solution](Solution.lean) expose two
 certified declarations: the main spectral OSE theorem and its fixed-frame
 squared-norm guarantee. The other v6 results remain in the complete supporting

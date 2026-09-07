@@ -32,8 +32,8 @@
   "STATIC_PREFLIGHT_PASS": true,
   "DECLARATION_CLOSURE_PASS": true,
   "GOVERNANCE_FROZEN": true,
-  "FIRST_UNMET_GATE": "Terminal registration and public/preservation verification",
-  "RETURN_TO_CONTROLLER": "Continue authorized registration monitoring, exact public record and preservation checks, then deliver immutable snapshot",
+  "FIRST_UNMET_GATE": "NONE",
+  "RETURN_TO_CONTROLLER": "REGISTER complete; no outstanding action",
   "SUBMIT_AUTHORIZATION": "Explicit user agreement to repository, 158a716c07e16ec4fca14e36836b14d8d20ee7c8, comparator.json, maintainer",
   "REGISTER_AUTHORIZATION": "User explicitly agreed after complete review, exact digest and permanent publication/archive effects were shown",
   "SOURCE_BYTES_CHANGED": false,
@@ -48,5 +48,8 @@
   "SUBMIT_STATUS": "COMPLETE",
   "REGISTRATION_SUBMISSION_ID": "99q9xdqita2v",
   "REVIEW_CONSENT_SHA256": "8118675c7f51b005652f55257a3449dc019f227f57af4b6f1df8130415477d92",
-  "REGISTRATION_REQUEST_STATUS": "HTTP 200 accepted; not yet claimed registered"
+  "REGISTRATION_REQUEST_STATUS": "COMPLETE; public entry and all archive references verified",
+  "REGISTRATION_ID": "PALOMAR-2026-09-07-000001",
+  "REGISTRATION_VERSION": 1,
+  "REGISTERED_SNAPSHOT": "palomar/registration/v1/registered_snapshot.json"
 }
